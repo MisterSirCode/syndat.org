@@ -1,0 +1,9 @@
+[
+    {
+        "id": "0",
+        "label": "Corundum",
+        "chemical": "Aluminium Oxide",
+        "formula": "Al2O3",
+        "synthesis": [ "czok", "vern", "flux", "hdth", "kyrp", "sint", "zone" ]
+    }
+]

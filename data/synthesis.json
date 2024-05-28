@@ -1,0 +1,67 @@
+{
+    "czok": {
+        "title": "Czochralski Method",
+        "aliases": ["CZ", "CZO"],
+        "disc": "Jan Czochralski",
+        "desc": "",
+        "related": ["kyrp", "brst"]
+    },
+    "vern": {
+        "title": "Verneuil Method",
+        "aliases": ["Flame Fusion"],
+        "disc": "Auguste Verneuil",
+        "desc": ""
+    },
+    "hdth": {
+        "title": "Hydrothermal Method",
+        "disc": "",
+        "desc": ""
+    },
+    "flux": {
+        "title": "Flux Method",
+        "disc": "Carroll Chatham",
+        "desc": ""
+    },
+    "kyrp": {
+        "title": "Kyropoulos Method",
+        "aliases": ["KY"],
+        "disc": "Spyro Kyropoulos",
+        "desc": "",
+        "related": ["brst", "czok"]
+    },
+    "zone": {
+        "title": "Zone Melting",
+        "disc": "",
+        "desc": ""
+    },
+    "skul": {
+        "title": "Skull Crucible Process",
+        "disc": "The Lebedev Physical Institute, Moscow",
+        "desc": ""
+    },
+    "brst": {
+        "title": "Bridgman-Stockbarger Method",
+        "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
+        "desc": "",
+        "related": ["czok", "kyrp"]
+    },
+    "hdsm": {
+        "title": "Horizontal Direction Solidification Method",
+        "aliases": ["Bagdasarov Modification", "HDSM"],
+        "disc": "Khachik Bagdasarov",
+        "desc": "",
+        "related": ["brst"]
+    },
+    "hpht": {
+        "title": "High-Pressure High-Temperature Synthesis",
+        "aliases": ["HPHT"],
+        "disc": "",
+        "desc": ""
+    },
+    "cvdp": {
+        "title": "Chemical Vapor Deposition",
+        "aliases": ["CVD"],
+        "disc": "",
+        "desc": ""
+    }
+}
