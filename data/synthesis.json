@@ -10,17 +10,22 @@
         "title": "Verneuil Method",
         "aliases": ["Flame Fusion"],
         "disc": "Auguste Verneuil",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "hdth": {
         "title": "Hydrothermal Method",
+        "aliases": [],
         "disc": "",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "flux": {
         "title": "Flux Method",
+        "aliases": [],
         "disc": "Carroll Chatham",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "kyrp": {
         "title": "Kyropoulos Method",
@@ -31,16 +36,21 @@
     },
     "zone": {
         "title": "Zone Melting",
+        "aliases": [],
         "disc": "",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "skul": {
         "title": "Skull Crucible Process",
+        "aliases": [],
         "disc": "The Lebedev Physical Institute, Moscow",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "brst": {
         "title": "Bridgman-Stockbarger Method",
+        "aliases": [],
         "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
         "desc": "",
         "related": ["czok", "kyrp"]
@@ -56,12 +66,14 @@
         "title": "High-Pressure High-Temperature Synthesis",
         "aliases": ["HPHT"],
         "disc": "",
-        "desc": ""
+        "desc": "",
+        "related": []
     },
     "cvdp": {
         "title": "Chemical Vapor Deposition",
         "aliases": ["CVD"],
         "disc": "",
-        "desc": ""
+        "desc": "",
+        "related": []
     }
 }

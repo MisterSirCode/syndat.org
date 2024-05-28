@@ -2,8 +2,510 @@
     {
         "id": "0",
         "label": "Corundum",
+        "aliases": "Sapphire",
         "chemical": "Aluminium Oxide",
         "formula": "Al2O3",
-        "synthesis": [ "czok", "vern", "flux", "hdth", "kyrp", "sint", "zone" ]
+        "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
+        "properties": {
+            "mohs_min": 9,
+            "mohs_max": 9,
+            "grav_min": 3.98,
+            "grav_max": 4.1,
+            "ref_min": [1.767, 1.759],
+            "ref_max": [1.772, 1.763]
+        },
+        "variants": [
+            {
+                "cause": "Chromium",
+                "aliases": "Ruby, Sapphire",
+                "color": "red, pink",
+                "fluor": "red, pink",
+                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics, Gemstones"
+            },
+            {
+                "cause": "Iron, Titanium",
+                "aliases": "Sapphire",
+                "color": "blue",
+                "fluor": "none",
+                "usage": "Clock Jewels, Bearings, Gemstones"
+            },
+            {
+                "cause": "Iron",
+                "aliases": "Sapphire",
+                "color": "green",
+                "fluor": "none",
+                "usage": "Gemstones"
+            },
+            {
+                "cause": "Titanium",
+                "aliases": "Sapphire",
+                "color": "red, pink, orange",
+                "fluor": "none",
+                "usage": "Laser Rods, Specialty Optics"
+            },
+            {
+                "cause": "Cobalt",
+                "aliases": "Sapphire",
+                "color": "blue, cyan",
+                "fluor": "none",
+                "usage": "Gemstones"
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "label": "Spinel",
+        "aliases": "",
+        "chemical": "Magnesium Aluminium Oxide",
+        "formula": "MgAl2O4",
+        "synthesis": ["czok", "vern"],
+        "properties": {
+            "mohs_min": 7.5,
+            "mohs_max": 8,
+            "grav_min": 3.6,
+            "grav_max": 4.1,
+            "ref_min": 1.719,
+            "ref_max": 1.719
+        },
+        "variants": [
+            {
+                "cause": "Cobalt",
+                "aliases": "Spinel",
+                "color": ["blue", "cyan"],
+                "fluor": "red",
+                "usage": "Q-Switchers, Gemstones"
+            },
+            {
+                "cause": "Chromium",
+                "aliases": "Spinel",
+                "color": ["red", "pink"],
+                "fluor": "red",
+                "usage": "Gemstones"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "label": "Beryl",
+        "aliases": "Goshenite",
+        "chemical": "Beryllium Aluminium Cyclosilicate",
+        "formula": "Be3Al2(Si6O18)",
+        "synthesis": ["hdth", "flux"],
+        "properties": {
+            "mohs_min": 7.5,
+            "mohs_max": 8,
+            "grav_min": 2.63,
+            "grav_max": 2.92,
+            "ref_min": [1.568, 1.564],
+            "ref_max": [1.602, 1.595]
+        },
+        "variants": [
+            {
+                "cause": "Chromium, Vanadium, Copper, Iron",
+                "aliases": "Emerald",
+                "color": "green, cyan",
+                "fluor": "red",
+                "usage": "Gemstones"
+            },
+            {
+                "cause": "Manganese",
+                "aliases": "Morganite, Red Beryl",
+                "color": "pink, red, orange",
+                "fluor": "none",
+                "usage": "Gemstones"
+            },
+            {
+                "cause": "Iron",
+                "aliases": "Aquamarine",
+                "color": "blue, cyan",
+                "fluor": "none",
+                "usage": "Gemstones"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "label": "Quartz",
+        "aliases": "",
+        "chemical": "Silicon Oxide",
+        "formula": "SiO2",
+        "synthesis": ["hdth"],
+        "properties": {
+            "mohs_min": 7,
+            "mohs_max": 7,
+            "grav_min": 2.65,
+            "grav_max": 2.66,
+            "ref_min": [1.544, 1.553],
+            "ref_max": [1.544, 1.553]
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "4",
+        "label": "Cubic Zirconia",
+        "aliases": "",
+        "chemical": "Zirconium Oxide",
+        "formula": "ZrO2",
+        "synthesis": ["skul"],
+        "properties": {
+            "mohs_min": 8,
+            "mohs_max": 8.5,
+            "grav_min": 5.6,
+            "grav_max": 6.0,
+            "ref_min": 2.15,
+            "ref_max": 2.18
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "5",
+        "label": "Fluorite",
+        "aliases": "",
+        "chemical": "Calcium Fluoride",
+        "formula": "CaF2",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 4,
+            "mohs_max": 4,
+            "grav_min": 3.175,
+            "grav_max": 3.56,
+            "ref_min": 1.433,
+            "ref_max": 1.448
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "6",
+        "label": "Rutile",
+        "aliases": "",
+        "chemical": "Titanium Oxide",
+        "formula": "TiO2",
+        "synthesis": ["vern"],
+        "properties": {
+            "mohs_min": 6,
+            "mohs_max": 6.5,
+            "grav_min": 4.23,
+            "grav_max": 4.23,
+            "ref_min": [2.605, 2.899],
+            "ref_max": [2.613, 2.901]
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "7",
+        "label": "Moissanite",
+        "aliases": "",
+        "chemical": "Silicon Carbide",
+        "formula": "SiC",
+        "synthesis": ["hpht", "cvdp"],
+        "properties": {
+            "mohs_min": 9.25,
+            "mohs_max": 9.25,
+            "grav_min": 3.218,
+            "grav_max": 3.22,
+            "ref_min": [2.616, 2.654],
+            "ref_max": [2.757, 2.812]
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "8",
+        "label": "Sphalerite",
+        "aliases": "",
+        "chemical": "Zinc Sulfide",
+        "formula": "ZnS",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "9",
+        "label": "Silicon",
+        "aliases": "",
+        "chemical": "Silicon",
+        "formula": "Si",
+        "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "9",
+        "label": "Diamond",
+        "chemical": "Carbon",
+        "formula": "C",
+        "synthesis": ["hpht", "cvdp"],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "10",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "11",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "12",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "13",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "14",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "15",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "",
+        "label": "",
+        "chemical": "",
+        "formula": "",
+        "synthesis": [""],
+        "properties": {
+            "mohs_min": ,
+            "mohs_max": ,
+            "grav_min": ,
+            "grav_max": ,
+            "ref_min": ,
+            "ref_max": 
+        },
+        "variants": [
+            
+        ]
     }
 ]
