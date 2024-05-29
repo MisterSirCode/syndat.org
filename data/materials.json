@@ -312,5 +312,214 @@
         "variants": [
             
         ]
+    },
+    {
+        "id": "12",
+        "label": "LYSO",
+        "aliases": "",
+        "chemical": "Lutetium-Yttrium Oxyorthosilicate",
+        "formula": "Lu2(1-x)Y2xSiO5",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 5.8,
+            "mohs_max": 5.8,
+            "grav_min": 4.44,
+            "grav_max": 7.4,
+            "ref_min": 1.82,
+            "ref_max": 1.82
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "13",
+        "label": "BGO",
+        "aliases": "",
+        "chemical": "Bismuth Germanate",
+        "formula": "Bi4Ge3O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 5,
+            "mohs_max": 5,
+            "grav_min": 7.12,
+            "grav_max": 7.13,
+            "ref_min": 2.15,
+            "ref_max": 2.15
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "14",
+        "label": "CsI",
+        "aliases": "",
+        "chemical": "Cesium Iodide",
+        "formula": "CsI",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 2,
+            "mohs_max": 2,
+            "grav_min": 4.51,
+            "grav_max": 4.53,
+            "ref_min": 1.78,
+            "ref_max": 1.95
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "15",
+        "label": "NaI",
+        "aliases": "",
+        "chemical": "Sodium Iodide",
+        "formula": "NaI",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 2,
+            "mohs_max": 2,
+            "grav_min": 3.67,
+            "grav_max": 3.67,
+            "ref_min": 1.85,
+            "ref_max": 1.85
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "16",
+        "label": "YAG",
+        "aliases": "",
+        "chemical": "Yttrium Aluminium Garnet",
+        "formula": "Y3Al5O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 8.5,
+            "mohs_max": 8.5,
+            "grav_min": 4.5,
+            "grav_max": 4.6,
+            "ref_min": 1.823,
+            "ref_max": 1.843 
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "17",
+        "label": "GAGG",
+        "aliases": "",
+        "chemical": "Gadolinium Aluminium Gallium Garnet",
+        "formula": "Gd3Al2Ga3O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 6.5,
+            "mohs_max": 7.5,
+            "grav_min": 7.08,
+            "grav_max": 7.08,
+            "ref_min": 1.95,
+            "ref_max": 1.95
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "18",
+        "label": "GGG",
+        "aliases": "",
+        "chemical": "Gadolinium Gallium Garnet",
+        "formula": "Gd3Ga5O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 6.5,
+            "mohs_max": 7.5,
+            "grav_min": 7.08,
+            "grav_max": 7.08,
+            "ref_min": 1.97,
+            "ref_max": 2.03
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "19",
+        "label": "YIG",
+        "aliases": "",
+        "chemical": "Yttrium Iron Garnet",
+        "formula": "Y3Fe5O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 5.11,
+            "grav_max": 5.11,
+            "ref_min": 0,
+            "ref_max": 0
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "20",
+        "label": "TGG",
+        "aliases": "",
+        "chemical": "Terbium Gallium Garnet",
+        "formula": "Tb3Ga5O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 7.13,
+            "grav_max": 7.13,
+            "ref_min": 1.95,
+            "ref_max": 1.95
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "21",
+        "label": "LuAG",
+        "aliases": "",
+        "chemical": "Lutetium Aluminium Garnet",
+        "formula": "Lu3Al5O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 8.5,
+            "mohs_max": 8.5,
+            "grav_min": 6.71,
+            "grav_max": 6.71,
+            "ref_min": 1.84,
+            "ref_max": 1.84
+        },
+        "variants": [
+            
+        ]
+    },
+    {
+        "id": "22",
+        "label": "YSGG",
+        "aliases": "",
+        "chemical": "Yttrium Scandium Gallium Garnet",
+        "formula": "Y3Sc2Ga3O12",
+        "synthesis": ["czok"],
+        "properties": {
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 5.2,
+            "grav_max": 5.2,
+            "ref_min": 1.93,
+            "ref_max": 1.93
+        },
+        "variants": [
+            
+        ]
     }
 ]
