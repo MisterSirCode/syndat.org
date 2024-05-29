@@ -4,7 +4,7 @@
     margin: 0;
     color: #fff;
     text-align: center;
-    font-family: 'firacode';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Top Bar of Website */
@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+.visibleLink {
+    text-decoration: underline;
+}
+
 .navi {
     position: fixed;
     top: 0;
@@ -35,7 +39,7 @@ a {
     box-shadow: 0em 0em 30px black;
 }
 
-.navilinks {
+.naviLinks {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -44,12 +48,35 @@ a {
     padding-right: 2px;
 }
 
-.navilinks > a {
+.naviLinks > a:not([href]) {
+    color: #666;
+}
+
+.naviLinks > a {
     padding-right: 0.5em;
 }
 
-.navilinks > a:hover {
+.naviLinks > a:hover {
     text-decoration: underline;
+}
+
+.socialLinks {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5em;
+}
+
+.socialLinks > a {
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 0.8em;
+    line-height: 16px;
+    padding-left: 1em;
+}
+
+.socialLinks > a > img {
+    margin-right: 0.5em;
 }
 
 .logoButton {
@@ -90,4 +117,14 @@ a {
     padding: 0.5em;
     padding-top: 10em;
     height: 100vh;
+}
+
+hr {
+    width: 50%;
+}
+
+p {
+    line-height: 2em;
+    padding-left: 15%;
+    padding-right: 15%;
 }
