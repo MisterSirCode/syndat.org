@@ -7,6 +7,8 @@
     font-family: 'firacode';
 }
 
+/* Top Bar of Website */
+
 .staticBar {
     position: fixed;
     bottom: 0;
@@ -29,6 +31,7 @@ a {
     height: 3em;
     background-color: #222;
     border-radius: 0 0 5px 5px;
+    z-index: 2;
 }
 
 .navilinks {
@@ -72,4 +75,18 @@ a {
     background: darkred;
     border-radius: 3px;
     padding: 0.5em;
+}
+
+/* Body Content */
+
+.pageContent {
+    background: #111;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    right: 10vw;
+    z-index: 0;
+    padding: 0.5em;
+    padding-top: 10em;
+    height: 100vh;
 }
