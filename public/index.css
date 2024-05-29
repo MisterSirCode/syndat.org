@@ -1,0 +1,75 @@
+:root {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'firacode';
+}
+
+.staticBar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navi {
+    position: fixed;
+    top: 0;
+    left: 10vw;
+    right: 10vw;
+    padding: 0.5em;
+    height: 3em;
+    background-color: #222;
+    border-radius: 0 0 5px 5px;
+}
+
+.navilinks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5em;
+    font-size: 0.9em;
+    padding-right: 2px;
+}
+
+.navilinks > a {
+    padding-right: 0.5em;
+}
+
+.navilinks > a:hover {
+    text-decoration: underline;
+}
+
+.logoButton {
+    position: absolute;
+    line-height: 3em;
+    vertical-align: middle;
+}
+
+.mainLogoLink {
+    display: flex;
+    vertical-align: middle;
+    font-size: 1.5em;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+
+.mainLogo {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+.warningLink {
+    background: darkred;
+    border-radius: 3px;
+    padding: 0.5em;
+}

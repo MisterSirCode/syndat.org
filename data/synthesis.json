@@ -3,7 +3,7 @@
         "title": "Czochralski Method",
         "aliases": ["CZ", "CZO"],
         "disc": "Jan Czochralski",
-        "desc": "",
+        "desc": "Test Description",
         "related": ["kyrp", "brst"]
     },
     "vern": {
