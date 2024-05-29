@@ -226,12 +226,12 @@
         "formula": "ZnS",
         "synthesis": ["czok"],
         "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
+            "mohs_min": 3.5,
+            "mohs_max": 4,
+            "grav_min": 3.9,
+            "grav_max": 4.1,
+            "ref_min": 2.369,
+            "ref_max": 2.369
         },
         "variants": [
             
@@ -245,12 +245,12 @@
         "formula": "Si",
         "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
         "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
+            "mohs_min": 7,
+            "mohs_max": 7,
+            "grav_min": 2.329,
+            "grav_max": 2.329,
+            "ref_min": 0,
+            "ref_max": 0
         },
         "variants": [
             
@@ -259,16 +259,17 @@
     {
         "id": "9",
         "label": "Diamond",
+        "aliases": "",
         "chemical": "Carbon",
         "formula": "C",
         "synthesis": ["hpht", "cvdp"],
         "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
+            "mohs_min": 10,
+            "mohs_max": 10,
+            "grav_min": 3.5,
+            "grav_max": 3.53,
+            "ref_min": 2.4354,
+            "ref_max": 2.4354
         },
         "variants": [
             
@@ -276,17 +277,18 @@
     },
     {
         "id": "10",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
+        "label": "Tausonite",
+        "aliases": "Fabulite, STO, Marvelite, Diagem",
+        "chemical": "Strontium Titanate",
+        "formula": "SrTiO3",
+        "synthesis": ["vern"],
         "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
+            "mohs_min": 5.5,
+            "mohs_max": 6.5,
+            "grav_min": 4.88,
+            "grav_max": 5.11,
+            "ref_min": 2.394,
+            "ref_max": 2.417
         },
         "variants": [
             
@@ -294,215 +296,18 @@
     },
     {
         "id": "11",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
+        "label": "Lithium Niobate",
+        "aliases": "Linobate",
+        "chemical": "Lithium Niobate",
+        "formula": "LiNbO3",
+        "synthesis": ["czok"],
         "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "12",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "13",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "14",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "15",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "",
-        "label": "",
-        "chemical": "",
-        "formula": "",
-        "synthesis": [""],
-        "properties": {
-            "mohs_min": ,
-            "mohs_max": ,
-            "grav_min": ,
-            "grav_max": ,
-            "ref_min": ,
-            "ref_max": 
+            "mohs_min": 5,
+            "mohs_max": 5,
+            "grav_min": 4.3,
+            "grav_max": 4.3,
+            "ref_min": [2.3007, 2.2116],
+            "ref_max": [2.3007, 2.2116]
         },
         "variants": [
             
