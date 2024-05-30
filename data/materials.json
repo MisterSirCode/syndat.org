@@ -2,9 +2,9 @@
     {
         "id": "0",
         "label": "Corundum",
-        "aliases": "Sapphire",
+        "aliases": "Sapphire, Ruby",
         "chemical": "Aluminium Oxide",
-        "formula": "Al2O3",
+        "formula": "Al<sub2</sub>O<sub>3</sub>",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
         "properties": {
             "mohs_min": 9,
@@ -17,35 +17,35 @@
         "variants": [
             {
                 "cause": "Chromium",
-                "aliases": "Ruby, Sapphire",
+                "aliases": "Ruby",
                 "color": "red, pink",
                 "fluor": "red, pink",
                 "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics, Gemstones"
             },
             {
                 "cause": "Iron, Titanium",
-                "aliases": "Sapphire",
+                "aliases": "",
                 "color": "blue",
                 "fluor": "none",
                 "usage": "Clock Jewels, Bearings, Gemstones"
             },
             {
                 "cause": "Iron",
-                "aliases": "Sapphire",
+                "aliases": "",
                 "color": "green",
                 "fluor": "none",
                 "usage": "Gemstones"
             },
             {
                 "cause": "Titanium",
-                "aliases": "Sapphire",
+                "aliases": "",
                 "color": "red, pink, orange",
                 "fluor": "none",
                 "usage": "Laser Rods, Specialty Optics"
             },
             {
                 "cause": "Cobalt",
-                "aliases": "Sapphire",
+                "aliases": "",
                 "color": "blue, cyan",
                 "fluor": "none",
                 "usage": "Gemstones"
@@ -57,7 +57,7 @@
         "label": "Spinel",
         "aliases": "",
         "chemical": "Magnesium Aluminium Oxide",
-        "formula": "MgAl2O4",
+        "formula": "MgAl<sub>2</sub>O<sub>4</sub>",
         "synthesis": ["czok", "vern"],
         "properties": {
             "mohs_min": 7.5,
@@ -70,14 +70,14 @@
         "variants": [
             {
                 "cause": "Cobalt",
-                "aliases": "Spinel",
+                "aliases": "",
                 "color": ["blue", "cyan"],
                 "fluor": "red",
                 "usage": "Q-Switchers, Gemstones"
             },
             {
                 "cause": "Chromium",
-                "aliases": "Spinel",
+                "aliases": "",
                 "color": ["red", "pink"],
                 "fluor": "red",
                 "usage": "Gemstones"
@@ -87,9 +87,9 @@
     {
         "id": "2",
         "label": "Beryl",
-        "aliases": "Goshenite",
+        "aliases": "",
         "chemical": "Beryllium Aluminium Cyclosilicate",
-        "formula": "Be3Al2(Si6O18)",
+        "formula": "Be<sub>3</sub>Al<sub>2</sub>(Si<sub>6</sub>O<sub>18</sub>)",
         "synthesis": ["hdth", "flux"],
         "properties": {
             "mohs_min": 7.5,
@@ -128,7 +128,7 @@
         "label": "Quartz",
         "aliases": "",
         "chemical": "Silicon Oxide",
-        "formula": "SiO2",
+        "formula": "SiO<sub>2</sub>",
         "synthesis": ["hdth"],
         "properties": {
             "mohs_min": 7,
@@ -147,7 +147,7 @@
         "label": "Cubic Zirconia",
         "aliases": "",
         "chemical": "Zirconium Oxide",
-        "formula": "ZrO2",
+        "formula": "ZrO<sub>2</sub>",
         "synthesis": ["skul"],
         "properties": {
             "mohs_min": 8,
@@ -166,7 +166,7 @@
         "label": "Fluorite",
         "aliases": "",
         "chemical": "Calcium Fluoride",
-        "formula": "CaF2",
+        "formula": "CaF<sub>2</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 4,
@@ -185,7 +185,7 @@
         "label": "Rutile",
         "aliases": "",
         "chemical": "Titanium Oxide",
-        "formula": "TiO2",
+        "formula": "TiO<sub>2</sub>",
         "synthesis": ["vern"],
         "properties": {
             "mohs_min": 6,
@@ -280,7 +280,7 @@
         "label": "Tausonite",
         "aliases": "Fabulite, STO, Marvelite, Diagem",
         "chemical": "Strontium Titanate",
-        "formula": "SrTiO3",
+        "formula": "SrTiO<sub>3</sub>",
         "synthesis": ["vern"],
         "properties": {
             "mohs_min": 5.5,
@@ -299,7 +299,7 @@
         "label": "Lithium Niobate",
         "aliases": "Linobate",
         "chemical": "Lithium Niobate",
-        "formula": "LiNbO3",
+        "formula": "LiNbO<sub>3</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 5,
@@ -318,7 +318,7 @@
         "label": "LYSO",
         "aliases": "",
         "chemical": "Lutetium-Yttrium Oxyorthosilicate",
-        "formula": "Lu2(1-x)Y2xSiO5",
+        "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 5.8,
@@ -337,7 +337,7 @@
         "label": "BGO",
         "aliases": "",
         "chemical": "Bismuth Germanate",
-        "formula": "Bi4Ge3O12",
+        "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 5,
@@ -394,7 +394,7 @@
         "label": "YAG",
         "aliases": "",
         "chemical": "Yttrium Aluminium Garnet",
-        "formula": "Y3Al5O12",
+        "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 8.5,
@@ -413,7 +413,7 @@
         "label": "GAGG",
         "aliases": "",
         "chemical": "Gadolinium Aluminium Gallium Garnet",
-        "formula": "Gd3Al2Ga3O12",
+        "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 6.5,
@@ -432,7 +432,7 @@
         "label": "GGG",
         "aliases": "",
         "chemical": "Gadolinium Gallium Garnet",
-        "formula": "Gd3Ga5O12",
+        "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 6.5,
@@ -451,7 +451,7 @@
         "label": "YIG",
         "aliases": "",
         "chemical": "Yttrium Iron Garnet",
-        "formula": "Y3Fe5O12",
+        "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 0,
@@ -470,7 +470,7 @@
         "label": "TGG",
         "aliases": "",
         "chemical": "Terbium Gallium Garnet",
-        "formula": "Tb3Ga5O12",
+        "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 0,
@@ -489,7 +489,7 @@
         "label": "LuAG",
         "aliases": "",
         "chemical": "Lutetium Aluminium Garnet",
-        "formula": "Lu3Al5O12",
+        "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 8.5,
@@ -508,7 +508,7 @@
         "label": "YSGG",
         "aliases": "",
         "chemical": "Yttrium Scandium Gallium Garnet",
-        "formula": "Y3Sc2Ga3O12",
+        "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "properties": {
             "mohs_min": 0,
