@@ -1,0 +1,37 @@
+{
+    "id": "",
+    "label": "",
+    "aliases": "",
+    "synthesis": ["", ""],
+    "chem_prop": {
+        "chemical": "",
+        "formula": "",
+        "mohs_min": 0,
+        "mohs_max": 0,
+        "grav_min": 0,
+        "grav_max": 0
+    },
+    "optic_prop": {
+        "type": "",
+        "ref_min": [0, 0],
+        "ref_max": [0, 0],
+        "disp": "",
+        "bir_min": 0,
+        "bir_max": 0,
+        "pleo": ""
+    },
+    "cry_prop": {
+        "parent": ["", ""],
+        "system": ""
+    },
+    "minID": 0,
+    "variants": [
+        {
+            "cause": "",
+            "aliases": "",
+            "color": "",
+            "fluor": "",
+            "usage": ""
+        }
+    ]
+}

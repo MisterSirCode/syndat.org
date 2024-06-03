@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const id = Array.from(params.keys())[0];
         const el = document.querySelector(".pageContent");
         let mat;
-        let props;
         el.innerHTML = '';
         fetch("../data/materials.json").then(res => res.json()).then(materials => {
             console.info('Material Database Loaded');
@@ -23,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch("tempmat.html").then(res2 => res2.text()).then(template => {
                     console.info('Template Loaded');
                     document.querySelector("a.target").setAttribute('href', '../materials/');
+                    materials.shift(); // Clear extra info sector from the working database
                     if (isNumeric(id)) {
                         if (materials[id].id)
                             mat = materials[id];
@@ -33,38 +33,63 @@ document.addEventListener('DOMContentLoaded', () => {
                         });
                     }
                     if (mat.id) {
-                        props = mat.properties;
-                        template = template.replace('TITLE', mat.label);
-                        if (mat.aliases.length > 0) 
-                            template = template.replace('ALIAS', mat.aliases);
-                        template = template.replace('FORMULA', mat.formula);
-                        template = template.replace('CHEM', mat.chemical);
-                        if (props.grav_min == props.grav_max)
-                            template = template.replace('GRAV', props.grav_min);
-                        else
-                            template = template.replace('GRAV', `${props.grav_min} - ${props.grav_max}`);
-                        if (props.mohs_min == props.mohs_max)
-                            template = template.replace('MOHS', props.mohs_min);
-                        else
-                            template = template.replace('MOHS', `${props.mohs_min} - ${props.mohs_max}`);
-                        if (Array.isArray(props.ref_min)) {
-                            if (props.ref_min.length == 2 && props.ref_min[0] == props.ref_max[0])
-                                template = template.replace('REF', `n<sub>ω</sub> = ${props.ref_min[0]}, n<sub>ε</sub> = ${props.ref_min[1]}`);
-                            else if (props.ref_min.length == 2)
-                                template = template.replace('REF', `n<sub>ω</sub> = ${props.ref_min[0]} - ${props.ref_max[0]}, n<sub>ε</sub> = ${props.ref_min[1]} - ${props.ref_max[1]}`);
-                        } else {
-                            if (props.ref_min == props.ref_max)
-                                template = template.replace('REF', props.ref_min);
-                            else
-                                template = template.replace('REF', `${props.ref_min} - ${props.ref_max}`);
-                        }
-                        el.innerHTML = template;
-
-                        if (mat.aliases.length == 0) {
-                            let tmp = document.querySelector('.aliases');
+                        let chem = mat.chem_prop;
+                        let optic = mat.optic_prop;
+                        let cry = mat.cry_prop;
+                        const fix = (tag, value) => { template = template.replace(tag, value); }
+                        fix('TITLE', mat.label);
+                        const delPair = (locator) => { 
+                            let tmp = document.querySelector(locator);
                             tmp.nextElementSibling.remove();
                             tmp.remove();
+                        };
+
+                        if (mat.minID) fix('MINID', mat.minID);
+
+                        if (mat.aliases.length > 0) fix('ALIAS', mat.aliases);
+
+                        fix('FORMULA', chem.formula);
+                        fix('CHEM', chem.chemical);
+
+                        if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min);
+                        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max}`);
+
+                        if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
+                        else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
+
+                        if (cry.parent) fix('ITEM PARENT', `${cry.parent[1]} ${cry.parent[0]}`);
+                        if (cry.system) fix('CRYSTM', cry.system);
+
+                        if (optic.type) fix('OPTYPE', optic.type);
+
+                        if (Array.isArray(optic.ref_min)) {
+                            if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
+                                fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
+                                            n<sub>ε</sub> = ${optic.ref_min[1]}`);
+                            else if (optic.ref_min.length == 2)
+                                fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                            n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
+                        } else {
+                            if (optic.ref_min == optic.ref_max) fix('REF', optic.ref_min);
+                            else fix('REF', `${optic.ref_min} - ${optic.ref_max}`);
                         }
+
+                        if (optic.disp_min) {
+                            if (optic.disp_min == optic.disp_max) fix('DISP', optic.disp_min);
+                            else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
+                        }
+
+                        if (optic.bir_min) {
+                            if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
+                            else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
+                        }
+
+                        el.innerHTML = template;
+
+                        if (mat.aliases.length == 0) delPair('.aliases');
+                        if (!optic.disp_min) delPair('.dispersion');
+                        if (!optic.bir_min) delPair('.birefringence');
+                        if (!mat.minID) document.querySelector('.minSubTitle').remove();
                     }
                 }).catch(err => fireErr(err));
             }).catch(err => fireErr(err));

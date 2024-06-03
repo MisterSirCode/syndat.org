@@ -1,8 +1,11 @@
 [
     {
+        "version": "0.0.1"
+    },
+    {
         "id": "0",
         "label": "Corundum",
-        "aliases": "Sapphire, Ruby",
+        "aliases": "Sapphire, Ruby, Carbuncle",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
@@ -13,8 +16,11 @@
             "grav_max": 4.1
         },
         "optic_prop": {
+            "type": "Uniaxial (-)",
             "ref_min": [1.767, 1.759],
             "ref_max": [1.772, 1.763],
+            "disp_min": 0.018,
+            "disp_max": 0.018,
             "bir_min": 0.008,
             "bir_max": 0.009,
             "pleo": "Weak"
@@ -23,6 +29,7 @@
             "parent": ["Group", "Hematite"],
             "system": "Trigonal"
         },
+        "minID": 1136,
         "variants": [
             {
                 "cause": "Chromium",
@@ -33,28 +40,24 @@
             },
             {
                 "cause": "Iron, Titanium",
-                "aliases": "",
                 "color": "blue",
                 "fluor": "none",
                 "usage": "Clock Jewels, Bearings, Gemstones"
             },
             {
                 "cause": "Iron",
-                "aliases": "",
                 "color": "green",
                 "fluor": "none",
                 "usage": "Gemstones"
             },
             {
                 "cause": "Titanium",
-                "aliases": "",
                 "color": "red, pink, orange",
                 "fluor": "none",
                 "usage": "Laser Rods, Specialty Optics"
             },
             {
                 "cause": "Cobalt",
-                "aliases": "",
                 "color": "blue, cyan",
                 "fluor": "none",
                 "usage": "Gemstones"
@@ -75,11 +78,10 @@
             "grav_max": 4.1
         },
         "optic_prop": {
+            "type": "Isotropic",
             "ref_min": 1.719,
             "ref_max": 1.719,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "disp": "Weak"
         },
         "cry_prop": {
             "parent": ["Subgroup", "Spinel"],
@@ -88,14 +90,12 @@
         "variants": [
             {
                 "cause": "Cobalt",
-                "aliases": "",
                 "color": ["blue", "cyan"],
                 "fluor": "red",
                 "usage": "Q-Switchers, Gemstones"
             },
             {
                 "cause": "Chromium",
-                "aliases": "",
                 "color": ["red", "pink"],
                 "fluor": "red",
                 "usage": "Gemstones"
@@ -105,7 +105,7 @@
     {
         "id": "2",
         "label": "Beryl",
-        "aliases": "",
+        "aliases": "Goshenite, Emerald, Morganite, Red Beryl, Aquamarine, Heliodor, Maxixe, Davidsonite, Rosterite, Vorobyevite",
         "synthesis": ["hdth", "flux"],
         "chem_prop": {
             "chemical": "Beryllium Aluminium Cyclosilicate",
@@ -116,16 +116,18 @@
             "grav_max": 2.92
         },
         "optic_prop": {
+            "type": "Uniaxial (-)",
             "ref_min": [1.568, 1.564],
             "ref_max": [1.602, 1.595],
-            "bir_min": 0.008,
-            "bir_max": 0.009,
-            "pleo": ""
+            "bir_min": 0.004,
+            "bir_max": 0.007,
+            "pleo": "Weak to Modest in some Varieties"
         },
         "cry_prop": {
             "parent": ["Group", "Beryl"],
             "system": "Hexagonal"
         },
+        "minID": 819,
         "variants": [
             {
                 "cause": "Chromium, Vanadium, Copper, Iron",
@@ -153,122 +155,106 @@
     {
         "id": "3",
         "label": "Quartz",
-        "aliases": "",
-        "chemical": "Silicon Oxide",
-        "formula": "SiO<sub>2</sub>",
+        "aliases": "Rock Crystal, Agate, Chalcedony, Smokey Quartz, Amethyst, Citrine, Rose Quartz, Prasiolite, Prase, Morion, Qwindel, Quartzine, Aventurine, Ametrine, Jasper, Carnelian, Herkimer Diamond, Onyx, Sardonyx",
         "synthesis": ["hdth"],
         "chem_prop": {
+            "chemical": "Silicon Oxide",
+            "formula": "SiO<sub>2</sub>",
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.65,
-            "grav_max": 2.66,
-            "ref_min": [1.544, 1.553],
-            "ref_max": [1.544, 1.553]
+            "grav_max": 2.66
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "type": "Uniaxial (+)",
+            "ref_min": [1.544, 1.553],
+            "ref_max": [1.544, 1.553],
+            "disp": "Weak",
+            "bir_min": 0.009,
+            "bir_max": 0.009,
+            "pleo": "Weak in some Varieties"
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "system": "Trigonal"
         },
-        "variants": [
-            
-        ]
+        "minID": 3337
     },
     {
         "id": "4",
         "label": "Cubic Zirconia",
-        "aliases": "",
-        "chemical": "Zirconium Oxide",
-        "formula": "ZrO<sub>2</sub>",
+        "aliases": "Diamonique, Diamonite, Djevalite",
         "synthesis": ["skul"],
         "chem_prop": {
+            "chemical": "Zirconium Oxide",
+            "formula": "ZrO<sub>2</sub>",
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 5.6,
-            "grav_max": 6.0,
-            "ref_min": 2.15,
-            "ref_max": 2.18
+            "grav_max": 6.0
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "type": "Isotropic",
+            "ref_min": 2.150,
+            "ref_max": 2.182,
+            "disp_min": 0.058,
+            "disp_max": 0.066
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+            "system": "Isometric"
+        }
     },
     {
         "id": "5",
         "label": "Fluorite",
-        "aliases": "",
-        "chemical": "Calcium Fluoride",
-        "formula": "CaF<sub>2</sub>",
+        "aliases": "Fluorspar",
         "synthesis": ["czok"],
         "chem_prop": {
+            "chemical": "Calcium Fluoride",
+            "formula": "CaF<sub>2</sub>",
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 3.175,
-            "grav_max": 3.56,
+            "grav_max": 3.56
+        },
+        "optic_prop": {
+            "type": "Isotropic",
             "ref_min": 1.433,
             "ref_max": 1.448
         },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "parent": ["Group", "Fluorite"],
+            "system": "Isometric"
         },
-        "variants": [
-            
-        ]
+        "minID": 1576
     },
     {
         "id": "6",
         "label": "Rutile",
         "aliases": "",
-        "chemical": "Titanium Oxide",
-        "formula": "TiO<sub>2</sub>",
         "synthesis": ["vern"],
         "chem_prop": {
+            "chemical": "Titanium Oxide",
+            "formula": "TiO<sub>2</sub>",
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
-            "grav_max": 4.23,
-            "ref_min": [2.605, 2.899],
-            "ref_max": [2.613, 2.901]
+            "grav_max": 4.23
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "type": "Uniaxial (+)",
+            "ref_min": [2.605, 2.899],
+            "ref_max": [2.613, 2.901],
+            "disp_min": 0.28,
+            "disp_max": 0.33,
+            "bir_min": 0.294,
+            "bir_max": 0.296,
+            "pleo": "Moderate"
+
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+            "parent": ["Group", "Rutile"],
+            "system": "Tetragonal"
+        }
     },
     {
         "id": "7",
@@ -394,20 +380,18 @@
         "id": "10",
         "label": "Tausonite",
         "aliases": "Fabulite, STO, Marvelite, Diagem",
-        "chemical": "Strontium Titanate",
-        "formula": "SrTiO<sub>3</sub>",
         "synthesis": ["vern"],
         "chem_prop": {
+            "chemical": "Strontium Titanate",
+            "formula": "SrTiO<sub>3</sub>",
             "mohs_min": 5.5,
             "mohs_max": 6.5,
             "grav_min": 4.88,
-            "grav_max": 5.11,
-            "ref_min": 2.394,
-            "ref_max": 2.417
+            "grav_max": 5.11
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
+            "ref_min": 2.394,
+            "ref_max": 2.417,
             "bir_min": 0,
             "bir_max": 0,
             "pleo": ""
@@ -424,20 +408,20 @@
         "id": "11",
         "label": "Lithium Niobate",
         "aliases": "Linobate",
-        "chemical": "Lithium Niobate",
-        "formula": "LiNbO<sub>3</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
+            "chemical": "Lithium Niobate",
+            "formula": "LiNbO<sub>3</sub>",
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.3,
-            "grav_max": 4.3,
-            "ref_min": [2.3007, 2.2116],
-            "ref_max": [2.3007, 2.2116]
+            "grav_max": 4.65
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
+            "ref_min": [2.3007, 2.2116],
+            "ref_max": [2.3007, 2.2116],
+            "disp_min": 0.125,
+            "disp_max": 0.125,
             "bir_min": 0,
             "bir_max": 0,
             "pleo": ""
@@ -482,7 +466,7 @@
     },
     {
         "id": "13",
-        "label": "BGO",
+        "label": "BGO-12",
         "aliases": "",
         "chemical": "Bismuth Germanate",
         "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",

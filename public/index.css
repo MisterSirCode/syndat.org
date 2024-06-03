@@ -139,7 +139,47 @@ p {
 }
 
 .pageSectionTitle {
-    
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.pageSectionItem {
+    font-size: 0.9em;
+    line-height: 0.6em;
+    font-weight: bold;
+}
+
+.pageSectionValue {
+    padding-top: 0.4em;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+
+.pageRegionRight {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    text-align: right;
+}
+
+.mindatMicroLink {
+    background-color: #333;
+    padding: 0.2em;
+    border-radius: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.mindatMicroIcon {
+    width: auto;
+    height: 16px;
+}
+
+sub, sup {
+    line-height: 0;
 }
 
 /* Specific Page Stuff */
