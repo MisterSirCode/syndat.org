@@ -3,16 +3,25 @@
         "id": "0",
         "label": "Corundum",
         "aliases": "Sapphire, Ruby",
-        "chemical": "Aluminium Oxide",
-        "formula": "Al<sub2</sub>O<sub>3</sub>",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
-        "properties": {
+        "chem_prop": {
+            "chemical": "Aluminium Oxide",
+            "formula": "Al<sub2</sub>O<sub>3</sub>",
             "mohs_min": 9,
             "mohs_max": 9,
             "grav_min": 3.98,
-            "grav_max": 4.1,
+            "grav_max": 4.1
+        },
+        "optic_prop": {
             "ref_min": [1.767, 1.759],
-            "ref_max": [1.772, 1.763]
+            "ref_max": [1.772, 1.763],
+            "bir_min": 0.008,
+            "bir_max": 0.009,
+            "pleo": "Weak"
+        },
+        "cry_prop": {
+            "parent": ["Group", "Hematite"],
+            "system": "Trigonal"
         },
         "variants": [
             {
@@ -56,16 +65,25 @@
         "id": "1",
         "label": "Spinel",
         "aliases": "",
-        "chemical": "Magnesium Aluminium Oxide",
-        "formula": "MgAl<sub>2</sub>O<sub>4</sub>",
         "synthesis": ["czok", "vern"],
-        "properties": {
+        "chem_prop": {
+            "chemical": "Magnesium Aluminium Oxide",
+            "formula": "MgAl<sub>2</sub>O<sub>4</sub>",
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 3.6,
-            "grav_max": 4.1,
+            "grav_max": 4.1
+        },
+        "optic_prop": {
             "ref_min": 1.719,
-            "ref_max": 1.719
+            "ref_max": 1.719,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["Subgroup", "Spinel"],
+            "system": "Isometric"
         },
         "variants": [
             {
@@ -88,16 +106,25 @@
         "id": "2",
         "label": "Beryl",
         "aliases": "",
-        "chemical": "Beryllium Aluminium Cyclosilicate",
-        "formula": "Be<sub>3</sub>Al<sub>2</sub>(Si<sub>6</sub>O<sub>18</sub>)",
         "synthesis": ["hdth", "flux"],
-        "properties": {
+        "chem_prop": {
+            "chemical": "Beryllium Aluminium Cyclosilicate",
+            "formula": "Be<sub>3</sub>Al<sub>2</sub>(Si<sub>6</sub>O<sub>18</sub>)",
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 2.63,
-            "grav_max": 2.92,
+            "grav_max": 2.92
+        },
+        "optic_prop": {
             "ref_min": [1.568, 1.564],
-            "ref_max": [1.602, 1.595]
+            "ref_max": [1.602, 1.595],
+            "bir_min": 0.008,
+            "bir_max": 0.009,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["Group", "Beryl"],
+            "system": "Hexagonal"
         },
         "variants": [
             {
@@ -130,13 +157,24 @@
         "chemical": "Silicon Oxide",
         "formula": "SiO<sub>2</sub>",
         "synthesis": ["hdth"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.65,
             "grav_max": 2.66,
             "ref_min": [1.544, 1.553],
             "ref_max": [1.544, 1.553]
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -149,13 +187,24 @@
         "chemical": "Zirconium Oxide",
         "formula": "ZrO<sub>2</sub>",
         "synthesis": ["skul"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 5.6,
             "grav_max": 6.0,
             "ref_min": 2.15,
             "ref_max": 2.18
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -168,13 +217,24 @@
         "chemical": "Calcium Fluoride",
         "formula": "CaF<sub>2</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 3.175,
             "grav_max": 3.56,
             "ref_min": 1.433,
             "ref_max": 1.448
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -187,13 +247,24 @@
         "chemical": "Titanium Oxide",
         "formula": "TiO<sub>2</sub>",
         "synthesis": ["vern"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
             "grav_max": 4.23,
             "ref_min": [2.605, 2.899],
             "ref_max": [2.613, 2.901]
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -206,13 +277,24 @@
         "chemical": "Silicon Carbide",
         "formula": "SiC",
         "synthesis": ["hpht", "cvdp"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 9.25,
             "mohs_max": 9.25,
             "grav_min": 3.218,
             "grav_max": 3.22,
             "ref_min": [2.616, 2.654],
             "ref_max": [2.757, 2.812]
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -225,13 +307,24 @@
         "chemical": "Zinc Sulfide",
         "formula": "ZnS",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.9,
             "grav_max": 4.1,
             "ref_min": 2.369,
             "ref_max": 2.369
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -244,13 +337,24 @@
         "chemical": "Silicon",
         "formula": "Si",
         "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
             "grav_max": 2.329,
             "ref_min": 0,
             "ref_max": 0
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -263,13 +367,24 @@
         "chemical": "Carbon",
         "formula": "C",
         "synthesis": ["hpht", "cvdp"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 10,
             "mohs_max": 10,
             "grav_min": 3.5,
             "grav_max": 3.53,
             "ref_min": 2.4354,
             "ref_max": 2.4354
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -282,13 +397,24 @@
         "chemical": "Strontium Titanate",
         "formula": "SrTiO<sub>3</sub>",
         "synthesis": ["vern"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 5.5,
             "mohs_max": 6.5,
             "grav_min": 4.88,
             "grav_max": 5.11,
             "ref_min": 2.394,
             "ref_max": 2.417
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -301,13 +427,24 @@
         "chemical": "Lithium Niobate",
         "formula": "LiNbO<sub>3</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.3,
             "grav_max": 4.3,
             "ref_min": [2.3007, 2.2116],
             "ref_max": [2.3007, 2.2116]
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -320,13 +457,24 @@
         "chemical": "Lutetium-Yttrium Oxyorthosilicate",
         "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 5.8,
             "mohs_max": 5.8,
             "grav_min": 4.44,
             "grav_max": 7.4,
             "ref_min": 1.82,
             "ref_max": 1.82
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -339,13 +487,24 @@
         "chemical": "Bismuth Germanate",
         "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 7.12,
             "grav_max": 7.13,
             "ref_min": 2.15,
             "ref_max": 2.15
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -358,13 +517,24 @@
         "chemical": "Cesium Iodide",
         "formula": "CsI",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 4.51,
             "grav_max": 4.53,
             "ref_min": 1.78,
             "ref_max": 1.95
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -377,13 +547,24 @@
         "chemical": "Sodium Iodide",
         "formula": "NaI",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 3.67,
             "grav_max": 3.67,
             "ref_min": 1.85,
             "ref_max": 1.85
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -396,13 +577,24 @@
         "chemical": "Yttrium Aluminium Garnet",
         "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 4.5,
             "grav_max": 4.6,
             "ref_min": 1.823,
             "ref_max": 1.843 
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -415,13 +607,24 @@
         "chemical": "Gadolinium Aluminium Gallium Garnet",
         "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 6.5,
             "mohs_max": 7.5,
             "grav_min": 7.08,
             "grav_max": 7.08,
             "ref_min": 1.95,
             "ref_max": 1.95
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -434,13 +637,24 @@
         "chemical": "Gadolinium Gallium Garnet",
         "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 6.5,
             "mohs_max": 7.5,
             "grav_min": 7.08,
             "grav_max": 7.08,
             "ref_min": 1.97,
             "ref_max": 2.03
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -453,13 +667,24 @@
         "chemical": "Yttrium Iron Garnet",
         "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 5.11,
             "grav_max": 5.11,
             "ref_min": 0,
             "ref_max": 0
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -472,13 +697,24 @@
         "chemical": "Terbium Gallium Garnet",
         "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 7.13,
             "grav_max": 7.13,
             "ref_min": 1.95,
             "ref_max": 1.95
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -491,13 +727,24 @@
         "chemical": "Lutetium Aluminium Garnet",
         "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 6.71,
             "grav_max": 6.71,
             "ref_min": 1.84,
             "ref_max": 1.84
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             
@@ -510,13 +757,24 @@
         "chemical": "Yttrium Scandium Gallium Garnet",
         "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
-        "properties": {
+        "chem_prop": {
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 5.2,
             "grav_max": 5.2,
             "ref_min": 1.93,
             "ref_max": 1.93
+        },
+        "optic_prop": {
+            "ref_min": 0,
+            "ref_max": 0,
+            "bir_min": 0,
+            "bir_max": 0,
+            "pleo": ""
+        },
+        "cry_prop": {
+            "parent": ["", ""],
+            "system": ""
         },
         "variants": [
             

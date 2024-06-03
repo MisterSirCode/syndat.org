@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let mat;
         let props;
         el.innerHTML = '';
-        fetch("../../data/materials.json").then(res => res.json()).then(materials => {
+        fetch("../data/materials.json").then(res => res.json()).then(materials => {
             console.info('Material Database Loaded');
-            fetch("../../data/synthesis.json").then(res2 => res2.json()).then(synthesis => {
+            fetch("../data/synthesis.json").then(res2 => res2.json()).then(synthesis => {
                 console.info('Synthesis Database Loaded');
                 fetch("tempmat.html").then(res2 => res2.text()).then(template => {
                     console.info('Template Loaded');
