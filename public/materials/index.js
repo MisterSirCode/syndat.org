@@ -30,7 +30,7 @@ async function loadSite() {
     } else needsUpdate = true;
 
     // TURN OFF ON DISTRIBUTION TO SAVE BANDWIDTH
-    needsUpdate = true;
+    //needsUpdate = true;
 
     if (needsUpdate) {
         const matres = await fetch("../data/materials.json").catch((err) => { console.error(`Info Failed to Load with Error: ${err}`); FAILTOLOAD = true; });
