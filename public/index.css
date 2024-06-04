@@ -182,4 +182,14 @@ sub, sup {
     line-height: 0;
 }
 
-/* Specific Page Stuff */
+.mainList {
+    color: white;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.mainList > li {
+    padding: 0.5em;
+    display: inline-block;
+    zoom: 1;
+}

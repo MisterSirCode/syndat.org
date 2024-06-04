@@ -15,13 +15,14 @@
         "type": "",
         "ref_min": [0, 0],
         "ref_max": [0, 0],
-        "disp": "",
+        "disp_min": 0,
+        "disp_max": 0,
         "bir_min": 0,
         "bir_max": 0,
         "pleo": ""
     },
     "cry_prop": {
-        "parent": ["", ""],
+        "parent": "",
         "system": ""
     },
     "minID": 0,

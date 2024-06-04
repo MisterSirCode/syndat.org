@@ -1,6 +1,6 @@
 [
     {
-        "version": "0.0.1"
+        "version": "0.1.0"
     },
     {
         "id": "0",
@@ -26,7 +26,7 @@
             "pleo": "Weak"
         },
         "cry_prop": {
-            "parent": ["Group", "Hematite"],
+            "parent": "Hematite Group",
             "system": "Trigonal"
         },
         "minID": 1136,
@@ -84,7 +84,7 @@
             "disp": "Weak"
         },
         "cry_prop": {
-            "parent": ["Subgroup", "Spinel"],
+            "parent": "Spinel Subgroup",
             "system": "Isometric"
         },
         "variants": [
@@ -124,7 +124,7 @@
             "pleo": "Weak to Modest in some Varieties"
         },
         "cry_prop": {
-            "parent": ["Group", "Beryl"],
+            "parent": "Beryl Group",
             "system": "Hexagonal"
         },
         "minID": 819,
@@ -222,7 +222,7 @@
             "ref_max": 1.448
         },
         "cry_prop": {
-            "parent": ["Group", "Fluorite"],
+            "parent": "Fluorite Group",
             "system": "Isometric"
         },
         "minID": 1576
@@ -252,134 +252,112 @@
 
         },
         "cry_prop": {
-            "parent": ["Group", "Rutile"],
+            "parent": "Rutile Group",
             "system": "Tetragonal"
-        }
+        },
+        "minID": 3486
     },
     {
         "id": "7",
         "label": "Moissanite",
         "aliases": "",
-        "chemical": "Silicon Carbide",
-        "formula": "SiC",
         "synthesis": ["hpht", "cvdp"],
         "chem_prop": {
+            "chemical": "Silicon Carbide",
+            "formula": "SiC",
             "mohs_min": 9.25,
             "mohs_max": 9.25,
             "grav_min": 3.218,
-            "grav_max": 3.22,
-            "ref_min": [2.616, 2.654],
-            "ref_max": [2.757, 2.812]
+            "grav_max": 3.22
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "type":"Uniaxial (+)",
+            "ref_min": [2.616, 2.654],
+            "ref_max": [2.757, 2.812],
+            "disp_min": 0.104,
+            "disp_max": 0.104,
+            "bir_min": 0.038,
+            "bir_max": 0.038,
+            "pleo": "Weak to Strong in some Varieties"
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "system": "Hexagonal"
         },
-        "variants": [
-            
-        ]
+        "minID": 2743
     },
     {
         "id": "8",
         "label": "Sphalerite",
         "aliases": "",
-        "chemical": "Zinc Sulfide",
-        "formula": "ZnS",
         "synthesis": ["czok"],
         "chem_prop": {
+            "chemical": "Zinc Sulfide",
+            "formula": "ZnS",
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.9,
-            "grav_max": 4.1,
-            "ref_min": 2.369,
-            "ref_max": 2.369
+            "grav_max": 4.1
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 2.369,
+            "ref_max": 2.369,
+            "disp_min": 0.163,
+            "disp_max": 0.163
+
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "parent": "Sphalerite Group",
+            "system": "Isometric"
         },
-        "variants": [
-            
-        ]
+        "minID": 3727
     },
     {
         "id": "9",
         "label": "Silicon",
         "aliases": "",
-        "chemical": "Silicon",
-        "formula": "Si",
         "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
         "chem_prop": {
+            "chemical": "Silicon",
+            "formula": "Si",
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
-            "grav_max": 2.329,
-            "ref_min": 0,
-            "ref_max": 0
+            "grav_max": 2.329
         },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
+        "optic_prop": { },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "9",
-        "label": "Diamond",
-        "aliases": "",
-        "chemical": "Carbon",
-        "formula": "C",
-        "synthesis": ["hpht", "cvdp"],
-        "chem_prop": {
-            "mohs_min": 10,
-            "mohs_max": 10,
-            "grav_min": 3.5,
-            "grav_max": 3.53,
-            "ref_min": 2.4354,
-            "ref_max": 2.4354
-        },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+            "system": "Isometric"
+        }
     },
     {
         "id": "10",
+        "label": "Diamond",
+        "aliases": "Bort, Carbanado, Adamant",
+        "synthesis": ["hpht", "cvdp"],
+        "chem_prop": {
+            "chemical": "Carbon",
+            "formula": "C",
+            "mohs_min": 10,
+            "mohs_max": 10,
+            "grav_min": 3.5,
+            "grav_max": 3.53
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 2.4076,
+            "ref_max": 2.4354,
+            "disp_min": 0.044,
+            "disp_max": 0.044
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "minID": 1282
+    },
+    {
+        "id": "11",
         "label": "Tausonite",
-        "aliases": "Fabulite, STO, Marvelite, Diagem",
+        "aliases": "Fabulite, Marvelite, Diagem",
         "synthesis": ["vern"],
         "chem_prop": {
             "chemical": "Strontium Titanate",
@@ -390,22 +368,20 @@
             "grav_max": 5.11
         },
         "optic_prop": {
+            "type": "Isotropic",
             "ref_min": 2.394,
             "ref_max": 2.417,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "disp_min": 0.19,
+            "disp_max": 0.19
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "parent": "Perovskite Subgroup",
+            "system": "Isometric"
         },
-        "variants": [
-            
-        ]
+        "minID": 3895
     },
     {
-        "id": "11",
+        "id": "12",
         "label": "Lithium Niobate",
         "aliases": "Linobate",
         "synthesis": ["czok"],
@@ -418,227 +394,140 @@
             "grav_max": 4.65
         },
         "optic_prop": {
+            "type": "Uniaxial (-)",
             "ref_min": [2.3007, 2.2116],
             "ref_max": [2.3007, 2.2116],
             "disp_min": 0.125,
-            "disp_max": 0.125,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "disp_max": 0.125
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "12",
-        "label": "LYSO",
-        "aliases": "",
-        "chemical": "Lutetium-Yttrium Oxyorthosilicate",
-        "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub>",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "mohs_min": 5.8,
-            "mohs_max": 5.8,
-            "grav_min": 4.44,
-            "grav_max": 7.4,
-            "ref_min": 1.82,
-            "ref_max": 1.82
-        },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+            "system": "Trigonal"
+        }
     },
     {
         "id": "13",
-        "label": "BGO-12",
+        "label": "LYSO",
         "aliases": "",
-        "chemical": "Bismuth Germanate",
-        "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 5,
-            "mohs_max": 5,
-            "grav_min": 7.12,
-            "grav_max": 7.13,
-            "ref_min": 2.15,
-            "ref_max": 2.15
+            "chemical": "Lutetium-Yttrium Oxyorthosilicate",
+            "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub> (YSO > LSO)",
+            "mohs_min": 5.8,
+            "mohs_max": 5.8,
+            "grav_min": 4.44,
+            "grav_max": 7.4
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 1.8,
+            "ref_max": 1.82,
+            "disp_min": 0.03,
+            "disp_max": 0.03
         },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+        "cry_prop": { }
     },
     {
         "id": "14",
-        "label": "CsI",
+        "label": "BGO-12",
         "aliases": "",
-        "chemical": "Cesium Iodide",
-        "formula": "CsI",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 2,
-            "mohs_max": 2,
-            "grav_min": 4.51,
-            "grav_max": 4.53,
-            "ref_min": 1.78,
-            "ref_max": 1.95
+            "chemical": "Bismuth Germanate",
+            "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
+            "mohs_min": 4.5,
+            "mohs_max": 5,
+            "grav_min": 7.12,
+            "grav_max": 7.13
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 2.09,
+            "ref_max": 2.15,
+            "disp_min": 0.102,
+            "disp_max": 0.102
         },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+        "cry_prop": { }
     },
     {
         "id": "15",
-        "label": "NaI",
+        "label": "BGO-20",
         "aliases": "",
-        "chemical": "Sodium Iodide",
-        "formula": "NaI",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 2,
-            "mohs_max": 2,
-            "grav_min": 3.67,
-            "grav_max": 3.67,
-            "ref_min": 1.85,
-            "ref_max": 1.85
+            "chemical": "Bismuth Germanate",
+            "formula": "Bi<sub>12</sub>Ge<sub></sub>O<sub>20</sub>",
+            "mohs_min": 4.5,
+            "mohs_max": 5.0,
+            "grav_min": 9.22,
+            "grav_max": 9.22
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 2.57,
+            "ref_max": 2.57,
+            "disp_min": 0.221,
+            "disp_max": 0.221
         },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+        "cry_prop": { }
     },
     {
         "id": "16",
-        "label": "YAG",
+        "label": "CsI",
         "aliases": "",
-        "chemical": "Yttrium Aluminium Garnet",
-        "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 8.5,
-            "mohs_max": 8.5,
-            "grav_min": 4.5,
-            "grav_max": 4.6,
-            "ref_min": 1.823,
-            "ref_max": 1.843 
+            "chemical": "Cesium Iodide",
+            "formula": "CsI",
+            "mohs_min": 2,
+            "mohs_max": 2,
+            "grav_min": 4.51,
+            "grav_max": 4.53
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 1.78,
+            "ref_max": 1.95
         },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+        "cry_prop": { }
     },
     {
         "id": "17",
-        "label": "GAGG",
+        "label": "NaI",
         "aliases": "",
-        "chemical": "Gadolinium Aluminium Gallium Garnet",
-        "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 6.5,
-            "mohs_max": 7.5,
-            "grav_min": 7.08,
-            "grav_max": 7.08,
-            "ref_min": 1.95,
-            "ref_max": 1.95
+            "chemical": "Sodium Iodide",
+            "formula": "NaI",
+            "mohs_min": 2,
+            "mohs_max": 2,
+            "grav_min": 3.67,
+            "grav_max": 3.67
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "ref_min": 1.85,
+            "ref_max": 1.85
         },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+        "cry_prop": { }
     },
     {
         "id": "18",
-        "label": "GGG",
+        "label": "YAG",
         "aliases": "",
-        "chemical": "Gadolinium Gallium Garnet",
-        "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 6.5,
-            "mohs_max": 7.5,
-            "grav_min": 7.08,
-            "grav_max": 7.08,
-            "ref_min": 1.97,
-            "ref_max": 2.03
+            "chemical": "Yttrium Aluminium Garnet",
+            "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 8.5,
+            "mohs_max": 8.5,
+            "grav_min": 4.5,
+            "grav_max": 4.6
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
+            "type": "Isotropic",
+            "ref_min": 1.823,
+            "ref_max": 1.843,
             "bir_min": 0,
             "bir_max": 0,
             "pleo": ""
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "system": "Isometric"
         },
         "variants": [
             
@@ -646,122 +535,158 @@
     },
     {
         "id": "19",
+        "label": "GAGG",
+        "aliases": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Gadolinium Aluminium Gallium Garnet",
+            "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
+            "mohs_min": 6.5,
+            "mohs_max": 8,
+            "grav_min": 6.6,
+            "grav_max": 7.08
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 1.9,
+            "ref_max": 1.95,
+            "disp_min": 0.033,
+            "disp_max": 0.033
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": "20",
+        "label": "GGG",
+        "aliases": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Gadolinium Gallium Garnet",
+            "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 6.5,
+            "mohs_max": 7.5,
+            "grav_min": 7.08,
+            "grav_max": 7.08
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 1.97,
+            "ref_max": 2.03,
+            "disp_min": 0.045,
+            "disp_max": 0.045
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": "21",
         "label": "YIG",
         "aliases": "",
         "chemical": "Yttrium Iron Garnet",
         "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
+            "type": "Isotropic",
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 5.11,
-            "grav_max": 5.11,
-            "ref_min": 0,
-            "ref_max": 0
+            "grav_max": 5.11
         },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
+        "optic_prop": { },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "20",
-        "label": "TGG",
-        "aliases": "",
-        "chemical": "Terbium Gallium Garnet",
-        "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 7.13,
-            "grav_max": 7.13,
-            "ref_min": 1.95,
-            "ref_max": 1.95
-        },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
-    },
-    {
-        "id": "21",
-        "label": "LuAG",
-        "aliases": "",
-        "chemical": "Lutetium Aluminium Garnet",
-        "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "mohs_min": 8.5,
-            "mohs_max": 8.5,
-            "grav_min": 6.71,
-            "grav_max": 6.71,
-            "ref_min": 1.84,
-            "ref_max": 1.84
-        },
-        "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
-        },
-        "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
-        },
-        "variants": [
-            
-        ]
+            "system": "Isometric"
+        }
     },
     {
         "id": "22",
-        "label": "YSGG",
+        "label": "TGG",
         "aliases": "",
-        "chemical": "Yttrium Scandium Gallium Garnet",
-        "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 5.2,
-            "grav_max": 5.2,
-            "ref_min": 1.93,
-            "ref_max": 1.93
+            "chemical": "Terbium Gallium Garnet",
+            "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 8,
+            "mohs_max": 8,
+            "grav_min": 7.13,
+            "grav_max": 7.13
         },
         "optic_prop": {
-            "ref_min": 0,
-            "ref_max": 0,
-            "bir_min": 0,
-            "bir_max": 0,
-            "pleo": ""
+            "type": "Isotropic",
+            "ref_min": 1.95,
+            "ref_max": 1.95,
+            "disp_min": 0.045,
+            "disp_max": 0.045
         },
         "cry_prop": {
-            "parent": ["", ""],
-            "system": ""
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": "23",
+        "label": "LuAG",
+        "aliases": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lutetium Aluminium Garnet",
+            "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 8,
+            "mohs_max": 8.5,
+            "grav_min": 6.7,
+            "grav_max": 6.71
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 1.84,
+            "ref_max": 1.9,
+            "disp_min": 0.025,
+            "disp_max": 0.025
+        },
+        "cry_prop": {
+            "system": "Isometric"
         },
         "variants": [
             
         ]
+    },
+    {
+        "id": "24",
+        "label": "YSGG",
+        "aliases": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Scandium Gallium Garnet",
+            "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
+            "mohs_min": 8,
+            "mohs_max": 8,
+            "grav_min": 5.2,
+            "grav_max": 5.2
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 1.93,
+            "ref_max": 1.93
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": "25",
+        "label": "LaB6",
+        "aliases": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lanthanum Hexaboride",
+            "formula": "LaB<sub>6</sub>",
+            "mohs_min": 8,
+            "mohs_max": 9,
+            "grav_min": 4.72,
+            "grav_max": 4.72
+        },
+        "optic_prop": { },
+        "cry_prop": { }
     }
 ]
