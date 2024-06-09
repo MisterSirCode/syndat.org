@@ -60,7 +60,8 @@ function generateTemplates() {
 
         fix('TITLE', mat.label);
         if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIAS', mat.aliases);
+        if (mat.aliases.length > 0) fix('ALIASES', `<br><span>Material Varieties or Aliases: ${mat.aliases}</span><br>`);
+        else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);
         if (!chem.grav_min) fix('GRAV', 'Missing Information')

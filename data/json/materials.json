@@ -69,6 +69,7 @@
         "id": "1",
         "label": "Spinel",
         "aliases": "",
+        "desc": "Spinel is a quite common synthetic material. It is unique in the aspect that it doesn't have a large amount of industrial uses beyond a few specific varieties. Most commonly you may come by synthetic spinels in the gem industry. Like corundum, spinel is easy to grow and cheap. It also has a large amount of stable colors with known dopants. In nature, it is quite a sought-after mineral for the very same reasons. There are a large variety of colors and gem qualities from some finds.<br><br>Interestingly, a very specific blue variety of spinel, called Cobalt Spinel (which is, as its name implies, doped with cobalt) is actively used industrially as a Q-Switcher. This allows it to be used in some forms of specialty lasers, mostly in the medical industry. This variety of spinel does exist in nature, though it is much more rare and valuable.",
         "synthesis": ["czok", "vern"],
         "chem_prop": {
             "chemical": "Magnesium Aluminium Oxide",
@@ -107,6 +108,7 @@
         "id": "2",
         "label": "Beryl",
         "aliases": "Goshenite, Emerald, Morganite, Red Beryl, Aquamarine, Heliodor, Maxixe, Davidsonite, Rosterite, Vorobyevite",
+        "desc": "Beryl is not often thought of when it comes to synthetic materials, but it's actually quite common in the gem industry. Beryl in of itself doesn't have much or really any industrial use, but it is exceptionally popular in gemology for obvious reasons. The main method of production for it (hydrothermal) also makes very realistical / natural looking stones with inclusions, similarly to natural specimens. Flux synthesis does aswell, though it's not nearly as common of a production method in the modern era.<br><br> A large benefit of synthetic beryl is that it costs far less and can be grown in basically any of the natural color varieties. Unfortunately, the gem industry has kept quite a tight hold on the mass-production of synthetic beryl, so finding it for reasonable prices can still be difficult.",
         "synthesis": ["hdth", "flux"],
         "chem_prop": {
             "chemical": "Beryllium Aluminium Cyclosilicate",
@@ -157,6 +159,7 @@
         "id": "3",
         "label": "Quartz",
         "aliases": "Rock Crystal, Agate, Chalcedony, Smokey Quartz, Amethyst, Citrine, Rose Quartz, Prasiolite, Prase, Morion, Qwindel, Quartzine, Aventurine, Ametrine, Jasper, Carnelian, Herkimer Diamond, Onyx, Sardonyx",
+        "desc": "Quartz is one of if not the most manufactured synthetic crystals in the world. It's extremely useful in a variety of industries and is often used in some of the most central technology in our world. For this reason, it has been optimized and developed to a scale that producing it costs basically nothing. It's even cheaper then synthetic corundum. Add on the fact that hydrothermally, it grows with nil to no inclusions (unlike beryl), it is quite optimal for both industrial and gemological use.<br><br>Most commonly, you'll find synthetic beryl used within Piezoelectrics, where it's main attraction is. Quartz, when charged with the right current, outputs a very clean nearly flawless sine wave. This aspect is what makes it so important for oscillators and timing circuits. Furthermore, you'll often come by synthetic quartz in just about any situation involving inert / high termperature surfaces. Quartz tubes and machined containers are extremely useful in chemical sciences, because quartz is far tougher and harder then normal glass, while also being even less susceptible to high temperatures. It still retains the optical clarity and chemical resistance of glass aswell.<br><br>Beyond just basic quartz in industrial and gemological use, quartz also has quite a few artificial varieties that come in different colors. Some have even managed to recreate transitional zoning. This limited but colorful set of varieties has made it even more popular to grow, and it has appeared quite often in the form of cut stones meant to replicate common colorful varieties of natural quartz, like citrine and amethyst.",
         "synthesis": ["hdth"],
         "chem_prop": {
             "chemical": "Silicon Oxide",
@@ -184,6 +187,7 @@
         "id": "4",
         "label": "Cubic Zirconia",
         "aliases": "Diamonique, Diamonite, Djevalite",
+        "desc": "Right next to Corundum on the production scale is Cubic Zirconia. Scientifically referred to as Yttria-Stabilized Cubic Zirconia. This material has made its way to the top of the best diamond simulants in use. It's exceptionally easy to make, comes in just about any color you can think of, is harder then quartz, is very durable / tough, has a refractive index close to / above diamond, and a dispersion that is much greater then diamond. These facts have made it one of the most popular gemstones in the world, even though it doesnt occur naturally at all (Or at significant enough quantities to matter). The only comparable / better simulant would be moissanite, but due to production costs, CZ has held its thrown for many years now.<br><br>Cubic Zirconia, interestingly enough, doesnt have a huge amount of industrial uses. However, it's ceramic is incredibly common in the industry. Most 'ceramic knives' you may have ever come by, are usually made of CZ ceramic. Its toughness, affordability, and temperature resistance have made it into a very attractive but cheap material for high quality blades. The ceramics can be polished to a mirror finish and machined into really any shape.",
         "synthesis": ["skul"],
         "chem_prop": {
             "chemical": "Zirconium Oxide",
@@ -207,7 +211,8 @@
     {
         "id": "5",
         "label": "Fluorite",
-        "aliases": "Fluorspar",
+        "aliases": "Fluorspar, Fluoride",
+        "desc": "Fluorite is an interesting material. It produces some of the most visually appealing mineral specimens in nature, with a huge variety of colors and habits. Add on it's weak refractive index, and it has made for very visually interesting cubic specimens.<br><br>Industrially, it's rather unique. It has optical qualities that make it exceptionally attractive for use. It allows a large range of wavelengths to pass through without issues. Still, it is among the rarer synthetics out there. It's quite uncommon to come by lenses made out of it, let alone uncut boules. Sadly it's not always preferred in some situations because fluoride lenses still suffer from the softness, brittleness, and thermal sensitivity of natural fluorite. This makes it less optimal for situations where tougher lenses are required for the environment that they're being used in.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Calcium Fluoride",
@@ -232,6 +237,7 @@
         "id": "6",
         "label": "Rutile",
         "aliases": "",
+        "desc": "Rutile is a very curious case in the synthetic and natural world. Naturally speaking, most people aren't aware that rutile can be anything but an opaque / dark red blob. However, it turns out that it's one of, if not the most dispersive materials on the planet. Synthetic rutile has often been described as 'Crystallized RGB' because it expresses so much color that it's almost overwhelming in a professionally cut stone. It's high refractive index also makes it extremely refractive, which further excentuates the dispersion.<br><br>An unfortunate pairing for rutile is its difficulty in production. Rutile is grown using the most common method for corundum and spinel, but unlike them, it's not easy or affordable in any way. Resulting boules are often extremely defective or riddled with errors. Many times the finished crystals have to heat-treated / annealed to be optically clear, and even after that they may still be unusable. It has some important uses as a piezoelectric and in niche optics, so a lot of defect material often leeches into the synthetic market. This is why weve managed to have so many pure cut rutiles in the niche part of the gem world, even if they cost a small fortune. Unfortunately, even with how attractive these specimens are, the complexities of production and softness / weakness of the material would make it very unappealing to be mass-produced, so it's unlikely that it'll ever get cheaper or become popular in the gem industry.",
         "synthesis": ["vern"],
         "chem_prop": {
             "chemical": "Titanium Oxide",
@@ -262,6 +268,7 @@
         "id": "7",
         "label": "Moissanite",
         "aliases": "",
+        "desc": "Moissanite has to be one of the most impressive synthetic materials humans have made. It doesn't form in large quantities in nature, which makes it rather unique. This is a bonus, because this material isnt able to be abused by inhuman mining practices, unlike diamond. This material is interesting in that it's extremely hard, extremely refractive, extremely tough, and very dispersive. At 9.25 on the mohs scale, it's not that far off from diamond. These properties have made it one of the most well-respected synthetics in the gem industry. Like diamond however, there are complications with production. It requires less complexity for both CVD and HPHT growth, so generally resulting material is larger and cleaner most of the time. However, it's still limited to these two methods, both of which are somewhat expensive and time consuming. If it weren't for these limitations, Moissanite would've likely taken over even cubic zirconia as one of the most common diamond simulants in the world. It far exceeds diamond in every way other then conductivity and hardness.<br><br>Beyond it's use in the gem world, Moissanite, or more specifically Silicon Carbide, is quite useful in the industrial machining sector. SiC Ceramics are some of the most affordable 'superhard' materials, and its often used as the core material for machining / drilling bits. You can even find it used in traditional tool bits too, alongside tungsten carbide.",
         "synthesis": ["hpht", "cvdp"],
         "chem_prop": {
             "chemical": "Silicon Carbide",
