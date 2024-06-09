@@ -223,3 +223,11 @@ sub, sup {
     display: inline-block;
     zoom: 1;
 }
+
+li > a.statusRed {
+    color: #f88;
+}
+
+li > a.statusYellow {
+    color: #ff8;
+}
