@@ -94,9 +94,9 @@ function generateTemplates() {
         }
 
         console.log('Writing Template...');
-        if (!fs.existsSync(`./xls/${mat.label}/`))
-            fs.mkdirSync(`./xls/${mat.label}/`);
-        fs.writeFileSync(`./xls/${mat.label}/index.html`, template);
+        if (!fs.existsSync(`../public/materials/xls/${mat.label}/`))
+            fs.mkdirSync(`../public/materials/xls/${mat.label}/`);
+        fs.writeFileSync(`../public/materials/xls/${mat.label}/index.html`, template);
     }
     console.log('Finished');
     console.log('Writing Truncated List...');
