@@ -134,8 +134,11 @@ p {
     position: absolute;
     left: 0;
     right: 0;
-    padding: 0.5em;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .pageSectionTitle {
@@ -156,11 +159,38 @@ p {
     margin-bottom: 1.5em;
 }
 
+.pageRegion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.pageRegionLeft {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+}
+
 .pageRegionRight {
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
+    width: calc(100% - 1em);
+    padding: 0.5em;
     text-align: right;
+}
+
+.pageRegionSeparator {
+    width: 100%;
+    background: #333;
+}
+
+.pageRegionSeparator > .pageSectionTitle {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    width: 50%;
+    margin: 0.3em;
+}
+
+.pageArticle {
+    padding: 0.5em;
 }
 
 .mindatMicroLink {

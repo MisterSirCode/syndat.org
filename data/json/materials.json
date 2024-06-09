@@ -1,11 +1,12 @@
 [
     {
-        "version": "0.1.0"
+        "revision": "0.1.0"
     },
     {
         "id": "0",
         "label": "Corundum",
         "aliases": "Sapphire, Ruby, Carbuncle",
+        "desc": "",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",

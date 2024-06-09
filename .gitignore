@@ -67,3 +67,5 @@ node_modules/
 
 # custom stuff
 /public/data/*
+/data/xls
+/public/materials/xls
