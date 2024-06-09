@@ -11,7 +11,7 @@
         "title": "Verneuil Method",
         "aliases": ["Flame Fusion"],
         "disc": "Auguste Verneuil",
-        "trunc": "Involes sputtering molten material onto a boule similarly to plasma coating. Produces gem-grade quickly and cheaply, but often with defects.",
+        "trunc": "Involves sputtering molten material onto a boule similarly to plasma coating. Produces gem-grade quickly and cheaply, but often with defects.",
         "desc": "",
         "related": []
     },
@@ -50,6 +50,7 @@
         "title": "Skull Crucible Process",
         "aliases": [],
         "disc": "The Lebedev Physical Institute, Moscow",
+        "trunc": "Unique to Cubic Zirconia. Involves compressing ingredients into a puck, and using Induction Heating to cook the inside of the puck into CZ, structured like a brain in a skull.",
         "desc": "",
         "related": []
     },
@@ -71,6 +72,7 @@
         "title": "High-Pressure High-Temperature Synthesis",
         "aliases": ["HPHT"],
         "disc": "",
+        "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
         "desc": "",
         "related": []
     },
@@ -78,6 +80,7 @@
         "title": "Chemical Vapor Deposition",
         "aliases": ["CVD"],
         "disc": "",
+        "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
         "desc": "",
         "related": []
     }
