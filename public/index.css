@@ -115,8 +115,8 @@ a {
     right: 10vw;
     z-index: 0;
     padding: 0.5em;
-    padding-top: 10em;
-    height: 100vh;
+    padding-top: 6em;
+    height: 200vh;
 }
 
 hr {
@@ -212,10 +212,16 @@ sub, sup {
     line-height: 0;
 }
 
+.contentList {
+    text-align: center;
+}
+
 .mainList {
     color: white;
     list-style-type: none;
     list-style-position: outside;
+    width: 50%;
+    padding-left: 25%;
 }
 
 .mainList > li {
@@ -230,4 +236,40 @@ li > a.statusRed {
 
 li > a.statusYellow {
     color: #ff8;
+}
+
+.pageSpecialtyGrid {
+    display: flex;
+    padding: 0.5em;
+    width: calc(100% - 1em);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.specialtyGridItem {
+    position: relative;
+    padding: 0.5em;
+    padding-right: 0;
+    width: 30%;
+}
+
+.specialtyGridImage {
+    width: 6em;
+    height: 6em;
+    margin-right: 0.5em;
+}
+
+.specialtyGridContent {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: calc(100% - 7.5em);
+}
+
+.specialtyGridTitle {
+    font-weight: bold;
+}
+
+.specialtyGridDesc {
+    font-size: 0.8em;
 }

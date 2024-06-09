@@ -1,12 +1,13 @@
 const fs = require('fs');
 const materials = require('./json/materials.json');
+const revision = materials[0].revision;
 const synthesis = require('./json/synthesis.json');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function completionStatus(mat) {
     let points = 0;
     if (Object.keys(mat.chem_prop).length > 0) points++;
-    if (Object.keys(mat.optic_prop).length > 0) points++;
+    if (Object.keys(mat.optic_prop).length > 0 || mat.bypass_optic) points++;
     if (Object.keys(mat.cry_prop).length > 0) points++;
     if (mat.desc) points++;
     return points;
@@ -48,7 +49,8 @@ function generateTemplates() {
         if (!optic.ref_min) delPair('Refractive Index:', 'REF');
         if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
         if (!optic.bir_min) delPair('Birefringence:', 'BIREF');
-        if (Object.keys(optic).length == 0) { fix('<div class="pageRegionRight opticProps"></div>', ''); }
+        if (Object.keys(optic).length == 0)
+            fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
         if (!cry.parent) delPair('Member of:', 'PARENT');
         if (!cry.system) delPair('Crystal System:', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
@@ -93,6 +95,37 @@ function generateTemplates() {
             else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
         }
 
+        // Write Article
+
+        if (mat.desc) fix('ARTICLE', mat.desc);
+        else fix('ARTICLE', 'Not much is known about this material besides synthesis');
+
+        // Add Production Methods
+
+        let methods = mat.synthesis;
+
+        let tempList = [];
+
+        for (var m = 0; m < methods.length; m++) {
+            let method = methods[m];
+            let data = synthesis[method];
+            let temp = `
+            <div class="specialtyGridItem">
+                <img src="PRODIMAGE" class="specialtyGridImage">
+                <div class="specialtyGridContent">
+                <div class="specialtyGridTitle">PRODTITLE</div>
+                <div class="specialtyGridDesc">PRODDESC</div>
+                </div>
+            </div>`;
+            temp = temp.replace('PRODTITLE', data.title);
+            temp = temp.replace('PRODDESC', data.trunc);
+            tempList.push(temp);
+        }
+
+        fix('SYNLIST', tempList.join(""));
+
+        fix('REV', revision);
+
         console.log('Writing Template...');
         if (!fs.existsSync(`../public/materials/xls/${mat.label}/`))
             fs.mkdirSync(`../public/materials/xls/${mat.label}/`);
@@ -100,7 +133,7 @@ function generateTemplates() {
     }
     console.log('Finished');
     console.log('Writing Truncated List...');
-    fs.writeFileSync('./public/materials/generatedList.json', JSON.stringify(genlist));
+    fs.writeFileSync('../public/materials/generatedList.json', JSON.stringify(genlist));
     console.log('Finished');
 }
 
