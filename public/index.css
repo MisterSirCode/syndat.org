@@ -15,6 +15,8 @@
     width: 100vw;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    margin-left: 0;
+    left: 0;
 }
 
 a {
@@ -36,7 +38,7 @@ a {
     background-color: #222;
     border-radius: 0 0 5px 5px;
     z-index: 2;
-    box-shadow: 0em 0em 30px black;
+    box-shadow: 0em 0.5em 30px black;
 }
 
 .naviLinks {
@@ -115,8 +117,8 @@ a {
     right: 10vw;
     z-index: 0;
     padding: 0.5em;
-    padding-top: 6em;
-    height: 200vh;
+    padding-top: 8em;
+    min-height: 100vh;
 }
 
 hr {
@@ -230,6 +232,10 @@ sub, sup {
     zoom: 1;
 }
 
+li > a {
+    color: #8f8;
+}
+
 li > a.statusRed {
     color: #f88;
 }
@@ -272,4 +278,52 @@ li > a.statusYellow {
 
 .specialtyGridDesc {
     font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .logoButton {
+        line-height: 1.8em;
+    }
+
+    .mainLogo {
+        width: 2em;
+        height: 2em;
+    }
+
+    .mainLogoLink {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navi {
+        left: 0;
+        right: 0;
+        max-width: 100vw;
+        border-radius: 0;
+    }
+
+    .pageContent {
+        padding-top: 6em;
+        left: 0;
+        right: 0;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .mainList {
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .specialtyGridItem {
+        width: 100%;
+    }
 }
