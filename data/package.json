@@ -1,0 +1,11 @@
+{
+  "name": "datagen",
+  "version": "1.0.0",
+  "description": "generates data and page for syndat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "taylor schneider",
+  "license": "ISC"
+}
