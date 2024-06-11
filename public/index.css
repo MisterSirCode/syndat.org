@@ -134,8 +134,8 @@ p {
 .pageSection {
     background: #222;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 6em;
+    right: 6em;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -280,20 +280,7 @@ li > a.statusYellow {
     font-size: 0.8em;
 }
 
-@media (max-width: 768px) {
-    .logoButton {
-        line-height: 1.8em;
-    }
-
-    .mainLogo {
-        width: 2em;
-        height: 2em;
-    }
-
-    .mainLogoLink {
-        font-size: 0.9em;
-    }
-}
+/* Landscape mode Mobile Devices and Tablets */
 
 @media (max-width: 1024px) {
     .navi {
@@ -308,14 +295,47 @@ li > a.statusYellow {
         left: 0;
         right: 0;
     }
+    
+    .pageSection {
+        left: 0;
+        right: 0;
+    }
+
+    .pageRegionLeft {
+        width: calc(100% - 4em);
+        padding: 2em;
+    }
+    
+    .pageRegionRight {
+        width: calc(100% - 4em);
+        padding: 2em;
+        text-align: right;
+    }
+
+    .pageRegionSeparator {
+        width: 100%;
+        background: #333;
+    }
+    
+    .pageRegionSeparator > .pageSectionTitle {
+        margin-bottom: 0;
+        font-size: 1.5em;
+        width: 50%;
+        margin: 0.5em;
+        margin-left: 1.3em;
+    }
+    
+    .pageArticle {
+        padding: 0.5em 2em 0.5 2em;
+    }
 
     hr {
         width: 90%;
     }
 
     p {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .mainList {
@@ -325,5 +345,54 @@ li > a.statusYellow {
 
     .specialtyGridItem {
         width: 100%;
+    }
+}
+
+/* Portrait-mode Mobile Devices */
+
+@media (max-width: 768px) {
+    .logoButton {
+        line-height: 1.8em;
+    }
+
+    .pageRegionLeft {
+        width: calc(100% - 1em);
+        padding: 0.5em;
+    }
+    
+    .pageRegionRight {
+        width: calc(100% - 1em);
+        padding: 0.5em;
+        text-align: right;
+    }
+
+    .pageRegionSeparator {
+        width: 100%;
+        background: #333;
+    }
+    
+    .pageRegionSeparator > .pageSectionTitle {
+        margin-bottom: 0;
+        font-size: 1.5em;
+        width: 90%;
+        margin: 0.3em;
+    }
+    
+    .pageArticle {
+        padding: 0.5em;
+    }
+
+    p {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .mainLogo {
+        width: 2em;
+        height: 2em;
+    }
+
+    .mainLogoLink {
+        font-size: 0.9em;
     }
 }

@@ -81,8 +81,8 @@ function generateTemplates() {
                     fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
                                 n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
             } else {
-                if (optic.ref_min == optic.ref_max) fix('REF', optic.ref_min);
-                else fix('REF', `${optic.ref_min} - ${optic.ref_max}`);
+                if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
+                else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
             }
         }
 
