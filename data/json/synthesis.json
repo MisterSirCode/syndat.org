@@ -71,7 +71,7 @@
     "hpht": {
         "title": "High-Pressure High-Temperature Synthesis",
         "aliases": ["HPHT"],
-        "disc": "",
+        "disc": "Tracy Hall & Co",
         "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
         "desc": "",
         "related": []
@@ -79,7 +79,7 @@
     "cvdp": {
         "title": "Chemical Vapor Deposition",
         "aliases": ["CVD"],
-        "disc": "",
+        "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
         "desc": "",
         "related": []
