@@ -60,7 +60,7 @@ function generateTemplates() {
 
         fix('TITLE', mat.label);
         if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<br><span>Material Varieties or Aliases: ${mat.aliases}</span><br>`);
+        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Varieties or Aliases: ${mat.aliases}</span><br>`);
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);
@@ -112,7 +112,7 @@ function generateTemplates() {
             let data = synthesis[method];
             let temp = `
             <div class="specialtyGridItem">
-                <img src="PRODIMAGE" class="specialtyGridImage">
+                <img class="specialtyGridImage">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle">PRODTITLE</div>
                 <div class="specialtyGridDesc">PRODDESC</div>
