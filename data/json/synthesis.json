@@ -1,10 +1,11 @@
 {
     "czok": {
         "title": "Czochralski Method",
-        "aliases": ["CZ", "CZO"],
+        "aliases": ["CZ"],
         "disc": "Jan Czochralski",
         "trunc": "Involves pulling a crystal (boule) upward from a molten solution. Produces some of the purest crystals but requires a cleanroom environment.",
-        "desc": "Test Description",
+        "desc": "The Czochralski Method is common process used in the production of artificial crystals and purified elements. Part of the reason for this process's popularity industrially comes from the fact that it produces exceptionally pure crystals when done properly. Compared to other methods, it's an optimal mix of speed and quality. However, it typically tends to be quite costly because of the strict parameters needed for use. As a result, this process has some very specific requirements; It requires a chemically inert, high-temperature, durable crucible. These crucibles are often made of quartz, platinum, boron nitride, or other specialty materials depending on the type of crystal being grown. The machine itself requires a cleanroom setting to operate properly. The general process is simple. Solid ingredients in the crucible are melted into a liquid. The seed crystal is lowered into the molten material, and using precise magnetic rotation, the crystal is spun and pulled out of the mixture at a controlled speed. The result of this process is a 3-part columnar crystal called a boule.<br>The boule is made of a head, body, and tail. The head and tail are usually smaller and cone shaped. They can be thought of as the “terminations” of the crystal. Often, they're too small or can have impurities concentrated at a level that makes them useless, so they tend to be destroyed and remelted / repurified for future pulls. The body of the crystal is the main material of interest. An optimal boule will have a cylindrical body with a consistent width across the vertical axis. The shape of the boule is a limiter to what kind of materials can be produced from them. For example, Silicon boules grown with this method are often calibrated and grinded into perfect circular wafers. They choose this form factor because it makes optimal use of the boule's shape.",
+        "history": "",
         "related": ["kyrp", "brst"]
     },
     "vern": {
