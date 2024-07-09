@@ -1,1 +1,1 @@
-cmd /k "firebase deploy"
+firebase deploy & pause >nul
