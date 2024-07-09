@@ -4,7 +4,7 @@ async function siteLoad() {
     const listres = await fetch("generatedList.json").catch((err) => { console.error(`List Failed to Load with Error: ${err}`); FAILTOLOAD = true; });
     list = await listres.json();
     const mainList = document.querySelector('.mainList');
-    list.forEach((item) => {
+    list.data.forEach((item) => {
         let el = document.createElement('a');
         let le = document.createElement('li');
         el.href = 'xls/' + item[1];
@@ -16,4 +16,6 @@ async function siteLoad() {
         le.appendChild(el);
         mainList.appendChild(le);
     });
+    const revElm = document.querySelector('.revision');
+    revElm.innerText = list.version;
 }

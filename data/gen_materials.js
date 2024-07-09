@@ -134,7 +134,7 @@ function generateTemplates() {
     }
     console.log('Finished');
     console.log('Writing Truncated List...');
-    fs.writeFileSync('../public/materials/generatedList.json', JSON.stringify(genlist));
+    fs.writeFileSync('../public/materials/generatedList.json', JSON.stringify({ version: revision, data: genlist }));
     console.log('Finished');
 }
 
