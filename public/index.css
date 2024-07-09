@@ -196,6 +196,10 @@ p {
     padding: 2% 4% 2% 4%;
 }
 
+span.pageArticle {
+    padding: 2% 4% 0 4%;
+}
+
 .mindatMicroLink {
     background-color: #333;
     padding: 0.2em;
@@ -248,7 +252,7 @@ li > a.statusYellow {
 .pageSpecialtyGrid {
     display: flex;
     padding: 4%;
-    padding-top: 0.5em;
+    padding-top: 0;
     width: calc(100% - 8%);
     flex-direction: row;
     flex-wrap: wrap;

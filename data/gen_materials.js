@@ -45,6 +45,7 @@ function generateTemplates() {
         // Adjust Template As Needed
 
         //if (mat.aliases.length == 0) delPair('.aliases');
+        fix('MATREF', 'Information about ' + mat.label)
         if (!optic.type) delPair('Type:', 'OPTYPE');
         if (!optic.ref_min) delPair('Refractive Index:', 'REF');
         if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
@@ -60,7 +61,7 @@ function generateTemplates() {
 
         fix('TITLE', mat.label);
         if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Varieties or Aliases: ${mat.aliases}</span><br>`);
+        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Varieties or Aliases: ${mat.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);

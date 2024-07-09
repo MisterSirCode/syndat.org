@@ -1,16 +1,16 @@
 [
     {
-        "revision": "0.1.2"
+        "revision": "0.1.3"
     },
     {
         "id": "0",
         "label": "Corundum",
         "aliases": "Sapphire, Ruby, Carbuncle",
         "desc": "Corundum is one of the most common synthetic materials grown today. It is an extremely versatile product with exceptional properties. In nature, this material is often known by Sapphire or Ruby. It is sought after because of its optimal hardness and variety of possible colorations. Add on the fact that it's easy to produce, and its not hard to see why its one of the most popular synthetic and natural gemstones in the world.<br><br>As far as synthetic corundum, some of the most common usecases involve specialty optics, such as in Thermal Sensors, Lasers, High-Durability Screens / Viewports, Specialty Lenses, and even in Weaponry / Imaging systems.<br><br>Corundum can also be used in Machining, Bearings, and Polishing. Furthermore, Alumina Ceramics (Microcorundum crystals suspended in solid alumina) are also extensively used across the industry. Most commonly they're used as a high-temperature ceramic barrier, but have also seen use in grinding or even in sintering to produce extremely large optical boules.<br><br>Part of the reason for its wide availability and use is how easy it is to produce. It can be synthesized using a massive variety of methods, some not even listed here. Not to mention, alumina is cheap and easy to purify, making production even simpler. See below for a list of common production methods.",
-        "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
+        "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
-            "formula": "Al<sub>2</sub>O<sub>3</sub>",
+            "formula": "Al<sub2</sub>O<sub>3</sub>",
             "mohs_min": 9,
             "mohs_max": 9,
             "grav_min": 3.98,
@@ -188,7 +188,7 @@
         "label": "Cubic Zirconia",
         "aliases": "Diamonique, Diamonite, Djevalite",
         "desc": "Right next to Corundum on the production scale is Cubic Zirconia. Scientifically referred to as Yttria-Stabilized Cubic Zirconia. This material has made its way to the top of the best diamond simulants in use. It's exceptionally easy to make, comes in just about any color you can think of, is harder then quartz, is very durable / tough, has a refractive index close to / above diamond, and a dispersion that is much greater then diamond. These facts have made it one of the most popular gemstones in the world, even though it doesnt occur naturally at all (Or at significant enough quantities to matter). The only comparable / better simulant would be moissanite, but due to production costs, CZ has held its thrown for many years now.<br><br>Cubic Zirconia, interestingly enough, doesnt have a huge amount of industrial uses. However, it's ceramic is incredibly common in the industry. Most 'ceramic knives' you may have ever come by, are usually made of CZ ceramic. Its toughness, affordability, and temperature resistance have made it into a very attractive but cheap material for high quality blades. The ceramics can be polished to a mirror finish and machined into really any shape.",
-        "synthesis": ["skul"],
+        "synthesis": ["skul", "sint"],
         "chem_prop": {
             "chemical": "Zirconium Oxide",
             "formula": "ZrO<sub>2</sub>",
@@ -238,7 +238,7 @@
         "label": "Rutile",
         "aliases": "",
         "desc": "Rutile is a very curious case in the synthetic and natural world. Naturally speaking, most people aren't aware that rutile can be anything but an opaque / dark red blob. However, it turns out that it's one of, if not the most dispersive materials on the planet. Synthetic rutile has often been described as 'Crystallized RGB' because it expresses so much color that it's almost overwhelming in a professionally cut stone. It's high refractive index also makes it extremely refractive, which further excentuates the dispersion.<br><br>An unfortunate pairing for rutile is its difficulty in production. Rutile is grown using the most common method for corundum and spinel, but unlike them, it's not easy or affordable in any way. Resulting boules are often extremely defective or riddled with errors. Many times the finished crystals have to heat-treated / annealed to be optically clear, and even after that they may still be unusable. It has some important uses as a piezoelectric and in niche optics, so a lot of defect material often leeches into the synthetic market. This is why weve managed to have so many pure cut rutiles in the niche part of the gem world, even if they cost a small fortune. Unfortunately, even with how attractive these specimens are, the complexities of production and softness / weakness of the material would make it very unappealing to be mass-produced, so it's unlikely that it'll ever get cheaper or become popular in the gem industry.",
-        "synthesis": ["vern"],
+        "synthesis": ["vern", "sint"],
         "chem_prop": {
             "chemical": "Titanium Oxide",
             "formula": "TiO<sub>2</sub>",
@@ -269,7 +269,7 @@
         "label": "Moissanite",
         "aliases": "",
         "desc": "Moissanite has to be one of the most impressive synthetic materials humans have made. It doesn't form in large quantities in nature, which makes it rather unique. This is a bonus, because this material isnt able to be abused by inhuman mining practices, unlike diamond. This material is interesting in that it's extremely hard, extremely refractive, extremely tough, and very dispersive. At 9.25 on the mohs scale, it's not that far off from diamond. These properties have made it one of the most well-respected synthetics in the gem industry. Like diamond however, there are complications with production. It requires less complexity for both CVD and HPHT growth, so generally resulting material is larger and cleaner most of the time. However, it's still limited to these two methods, both of which are somewhat expensive and time consuming. If it weren't for these limitations, Moissanite would've likely taken over even cubic zirconia as one of the most common diamond simulants in the world. It far exceeds diamond in every way other then conductivity and hardness.<br><br>Beyond it's use in the gem world, Moissanite, or more specifically Silicon Carbide, is quite useful in the industrial machining sector. SiC Ceramics are some of the most affordable 'superhard' materials, and its often used as the core material for machining / drilling bits. You can even find it used in traditional tool bits too, alongside tungsten carbide.",
-        "synthesis": ["hpht", "cvdp"],
+        "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
             "chemical": "Silicon Carbide",
             "formula": "SiC",
@@ -342,7 +342,7 @@
         "id": "10",
         "label": "Diamond",
         "aliases": "Bort, Carbanado, Adamant",
-        "synthesis": ["hpht", "cvdp"],
+        "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
             "chemical": "Carbon",
             "formula": "C",
@@ -518,7 +518,7 @@
         "id": "18",
         "label": "YAG",
         "aliases": "",
-        "synthesis": ["czok"],
+        "synthesis": ["czok", "sint"],
         "chem_prop": {
             "chemical": "Yttrium Aluminium Garnet",
             "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
@@ -594,17 +594,18 @@
         "id": "21",
         "label": "YIG",
         "aliases": "",
-        "chemical": "Yttrium Iron Garnet",
-        "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
         "synthesis": ["czok"],
         "chem_prop": {
-            "type": "Isotropic",
+            "chemical": "Yttrium Iron Garnet",
+            "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 5.11,
             "grav_max": 5.11
         },
-        "optic_prop": { },
+        "optic_prop": { 
+            "opt": "Opaque in Visible Spectrum"
+        },
         "bypass_optic": true,
         "cry_prop": {
             "system": "Isometric"

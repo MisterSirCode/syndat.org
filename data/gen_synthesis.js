@@ -1,8 +1,7 @@
 const fs = require('fs');
-const materials = require('./json/materials.json');
-const revision = materials[0].revision;
 const synthesis = require('./json/synthesis.json');
-let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
+const revision = synthesis[0].revision;
+let materialTemplate = fs.readFileSync('./synthesisTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function completionStatus(mat) {
     let points = 0;
@@ -33,68 +32,14 @@ function generateTemplates() {
 
         // Begin Template Construction
 
-        let chem = mat.chem_prop;
-        let optic = mat.optic_prop;
-        let cry = mat.cry_prop;
-
         const fix = (tag, value) => { template = template.replace(tag, value); }
         const delPair = (tag, repl) => {
             template = template.replace(`<div class="pageSectionItem">${tag}</div><div class="pageSectionValue">${repl}</div>`, '');
         }
 
-        // Adjust Template As Needed
-
-        //if (mat.aliases.length == 0) delPair('.aliases');
-        if (!optic.type) delPair('Type:', 'OPTYPE');
-        if (!optic.ref_min) delPair('Refractive Index:', 'REF');
-        if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
-        if (!optic.bir_min) delPair('Birefringence:', 'BIREF');
-        if (Object.keys(optic).length == 0)
-            fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
-        if (!cry.parent) delPair('Member of:', 'PARENT');
-        if (!cry.system) delPair('Crystal System:', 'CRYSTM');
-        if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
-        <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
-
         // Smaller Replacements
 
         fix('TITLE', mat.label);
-        if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Varieties or Aliases: ${mat.aliases}</span><br>`);
-        else fix('ALIASES', '');
-        fix('FORMULA', chem.formula);
-        fix('CHEM', chem.chemical);
-        if (!chem.grav_min) fix('GRAV', 'Missing Information')
-        if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min);
-        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max}`);
-        if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
-        else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
-        if (cry.parent) fix('PARENT', cry.parent);
-        if (cry.system) fix('CRYSTM', cry.system);
-        if (optic.type) fix('OPTYPE', optic.type);
-        if (optic.ref_min) {
-            if (Array.isArray(optic.ref_min)) {
-                if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]}`);
-                else if (optic.ref_min.length == 2)
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
-            } else {
-                if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
-                else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
-            }
-        }
-
-        if (optic.disp_min) {
-            if (optic.disp_min == optic.disp_max) fix('DISP', optic.disp_min);
-            else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
-        }
-
-        if (optic.bir_min) {
-            if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
-            else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
-        }
 
         // Write Article
 

@@ -1,4 +1,5 @@
 {
+    "revision": "0.1.0",
     "czok": {
         "title": "Czochralski Method",
         "aliases": ["CZ"],
@@ -45,11 +46,12 @@
         "title": "Zone Melting",
         "aliases": [],
         "disc": "",
+        "trunc": "",
         "desc": "",
         "related": []
     },
     "skul": {
-        "title": "Skull Crucible Process",
+        "title": "Skull Melting",
         "aliases": [],
         "disc": "The Lebedev Physical Institute, Moscow",
         "trunc": "Unique to Cubic Zirconia. Involves compressing ingredients into a puck, and using Induction Heating to cook the inside of the puck into CZ, structured like a brain in a skull.",
@@ -60,6 +62,7 @@
         "title": "Bridgman-Stockbarger Method",
         "aliases": [],
         "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
+        "trunc": "",
         "desc": "",
         "related": ["czok", "kyrp"]
     },
@@ -67,6 +70,7 @@
         "title": "Horizontal Direction Solidification Method",
         "aliases": ["Bagdasarov Modification", "HDSM"],
         "disc": "Khachik Bagdasarov",
+        "trunc": "",
         "desc": "",
         "related": ["brst"]
     },
@@ -83,6 +87,14 @@
         "aliases": ["CVD"],
         "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
+        "desc": "",
+        "related": []
+    },
+    "sint": {
+        "title": "Sintering and Annealing",
+        "aliases": [],
+        "disc": "",
+        "trunc": "An umbrella of methods involving heat treatment or controlled heating / burning to form solids crystals. Often used for making polycrystalline media or annealing monocrystalline media.",
         "desc": "",
         "related": []
     }
