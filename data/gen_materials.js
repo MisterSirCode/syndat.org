@@ -3,6 +3,7 @@ const materials = require('./json/materials.json');
 const revision = materials[0].revision;
 const synthesis = require('./json/synthesis.json');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
+let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function completionStatus(mat) {
     let points = 0;
@@ -105,9 +106,7 @@ function generateTemplates() {
         // Add Production Methods
 
         let methods = mat.synthesis;
-
         let tempList = [];
-
         for (var m = 0; m < methods.length; m++) {
             let method = methods[m];
             let data = synthesis[method];
@@ -115,16 +114,14 @@ function generateTemplates() {
             <div class="specialtyGridItem">
                 <img class="specialtyGridImage">
                 <div class="specialtyGridContent">
-                <div class="specialtyGridTitle">PRODTITLE</div>
-                <div class="specialtyGridDesc">PRODDESC</div>
+                <div class="specialtyGridTitle">${data.title}</div>
+                <div class="specialtyGridDesc">${data.trunc}</div>
                 </div>
             </div>`;
-            temp = temp.replace('PRODTITLE', data.title);
-            temp = temp.replace('PRODDESC', data.trunc);
             tempList.push(temp);
         }
 
-        fix('SYNLIST', tempList.join(""));
+        fix('SYNLIST', tempList.join(''));
 
         fix('REV', revision);
 
@@ -133,9 +130,23 @@ function generateTemplates() {
             fs.mkdirSync(`../public/materials/xls/${mat.label}/`);
         fs.writeFileSync(`../public/materials/xls/${mat.label}/index.html`, template);
     }
+    let tempList = [];
+    for (let i = 0; i < genlist.length; i++) {
+        const link = genlist[i];
+        const status = link[2] > 3 ? ' statusGreen' : (link[2] == 3 ? ' statusYellow' : ' statusRed');
+        let temp = `
+        <div class="linkGridItem">
+            <a href="xls/${link[1]}" class="linkGridLink${status}">${link[1]}</a>
+        </div>`;
+        tempList.push(temp);
+    }
+    matHomeTemplate = matHomeTemplate.replace('REV', revision);
+    matHomeTemplate = matHomeTemplate.replace('MATLIST', tempList.join(''));
     console.log('Finished');
     console.log('Writing Truncated List...');
     fs.writeFileSync('../public/materials/generatedList.json', JSON.stringify({ version: revision, data: genlist }));
+    console.log('Writing Material Index File...');
+    fs.writeFileSync('../public/materials/index.html', matHomeTemplate);
     console.log('Finished');
 }
 

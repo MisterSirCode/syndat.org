@@ -24,6 +24,7 @@
         "disc": "Henri Hureau de Sénarmont",
         "trunc": "Involves suspending a seed crystal into a high pressure / high temperature autoclave with liquid ingredients. Sometimes produces optics-grade ingots.",
         "desc": "",
+        "history": "",
         "related": []
     },
     "flux": {
@@ -32,6 +33,7 @@
         "disc": "Carroll Chatham",
         "trunc": "Involves suspending a seed crystal near or inside flux with ingredients. Allows lower-temperature production. Sometimes produces gem-grade crystals.",
         "desc": "",
+        "history": "",
         "related": []
     },
     "kyrp": {
@@ -40,6 +42,7 @@
         "disc": "Spyro Kyropoulos",
         "trunc": "Derivative of the Czochralski method. Involves a similar setup but with a spinning basin or seed. Can change the output purity and may be preferred.",
         "desc": "",
+        "history": "",
         "related": ["brst", "czok"]
     },
     "zone": {
@@ -48,6 +51,7 @@
         "disc": "",
         "trunc": "",
         "desc": "",
+        "history": "",
         "related": []
     },
     "skul": {
@@ -56,6 +60,7 @@
         "disc": "The Lebedev Physical Institute, Moscow",
         "trunc": "Unique to Cubic Zirconia. Involves compressing ingredients into a puck, and using Induction Heating to cook the inside of the puck into CZ, structured like a brain in a skull.",
         "desc": "",
+        "history": "",
         "related": []
     },
     "brst": {
@@ -64,6 +69,7 @@
         "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
         "trunc": "",
         "desc": "",
+        "history": "",
         "related": ["czok", "kyrp"]
     },
     "hdsm": {
@@ -72,6 +78,7 @@
         "disc": "Khachik Bagdasarov",
         "trunc": "",
         "desc": "",
+        "history": "",
         "related": ["brst"]
     },
     "hpht": {
@@ -80,6 +87,7 @@
         "disc": "Tracy Hall & Co",
         "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
         "desc": "",
+        "history": "",
         "related": []
     },
     "cvdp": {
@@ -88,6 +96,7 @@
         "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
         "desc": "",
+        "history": "",
         "related": []
     },
     "sint": {
@@ -96,6 +105,7 @@
         "disc": "",
         "trunc": "An umbrella of methods involving heat treatment or controlled heating / burning to form solids crystals. Often used for making polycrystalline media or annealing monocrystalline media.",
         "desc": "",
+        "history": "",
         "related": []
     }
 }

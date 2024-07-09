@@ -237,15 +237,15 @@ sub, sup {
     zoom: 1;
 }
 
-li > a {
+a.statusGreen {
     color: #8f8;
 }
 
-li > a.statusRed {
+a.statusRed {
     color: #f88;
 }
 
-li > a.statusYellow {
+a.statusYellow {
     color: #ff8;
 }
 
@@ -286,6 +286,27 @@ li > a.statusYellow {
     font-size: 0.8em;
 }
 
+.pageLinkGrid {
+    display: flex;
+    padding: 4%;
+    padding-top: 0;
+    width: calc(100% - 8%);
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.linkGridItem {
+    position: relative;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    width: 20%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Landscape mode Mobile Devices and Tablets */
 
 @media (max-width: 1300px) {
@@ -296,6 +317,12 @@ li > a.statusYellow {
     p {
         padding-left: 1em;
         padding-right: 1em;
+    }
+
+    
+    .linkGridItem {
+        width: 25%;
+        height: 1.5em;
     }
 }
 
@@ -338,6 +365,11 @@ li > a.statusYellow {
 
     .specialtyGridItem {
         width: 100%;
+    }
+
+    .linkGridItem {
+        width: 33%;
+        height: 1.5em;
     }
 }
 
@@ -387,5 +419,9 @@ li > a.statusYellow {
 
     .mainLogoLink {
         font-size: 0.9em;
+    }
+
+    .linkGridItem {
+        width: 50%;
     }
 }
