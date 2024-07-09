@@ -1,1 +1,1 @@
-cmd /k firebase deploy
+cmd /k "firebase deploy"
