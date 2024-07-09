@@ -69,4 +69,5 @@ node_modules/
 /public/data/*
 /data/xls
 /public/materials/xls
+/public/materials/generatedList.json
 /public/synthesis/methods
