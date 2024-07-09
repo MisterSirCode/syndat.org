@@ -1,0 +1,1 @@
+cd data & node gen_synthesis.js & cd ../ & pause

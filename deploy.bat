@@ -1,1 +1,1 @@
-firebase deploy & pause >nul
+firebase deploy & pause

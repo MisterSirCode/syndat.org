@@ -1,1 +1,1 @@
-cd data & node gen_materials.js & cd ../ & pause >nul
+cd data & node gen_materials.js & cd ../ & pause

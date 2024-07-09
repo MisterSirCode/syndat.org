@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.1.1"
+        "revision": "0.1.2"
     },
     {
         "id": "0",
@@ -696,7 +696,9 @@
             "grav_min": 4.72,
             "grav_max": 4.72
         },
-        "optic_prop": { },
+        "optic_prop": {
+            "opt": "Opaque in Visible Spectrum"
+        },
         "bypass_optic": true,
         "cry_prop": { }
     }

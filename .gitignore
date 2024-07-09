@@ -69,3 +69,4 @@ node_modules/
 /public/data/*
 /data/xls
 /public/materials/xls
+/public/synthesis/methods
