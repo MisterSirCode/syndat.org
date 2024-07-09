@@ -10,7 +10,7 @@
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
-            "formula": "Al<sub2</sub>O<sub>3</sub>",
+            "formula": "Al<sub>2</sub>O<sub>3</sub>",
             "mohs_min": 9,
             "mohs_max": 9,
             "grav_min": 3.98,
