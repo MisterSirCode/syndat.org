@@ -2,6 +2,7 @@ const fs = require('fs');
 const synthesis = require('./json/synthesis.json');
 const revision = synthesis.revision;
 let synthesisTemplate = fs.readFileSync('./synthesisTemplate.html', { encoding: 'utf-8', flag: 'r' });
+let synHomeTemplate = fs.readFileSync('./synHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function generateTemplates() {
     let keys = Object.keys(synthesis);
@@ -16,14 +17,6 @@ function generateTemplates() {
         let method = synthesis[key];
         let template = synthesisTemplate;
 
-        // Create Truncated List
-
-        genlist.push([
-            key,
-            method.title,
-            method.trunc
-        ]);
-
         // Begin Template Construction
 
         const fix = (tag, value) => { template = template.replace(tag, value); }
@@ -33,7 +26,7 @@ function generateTemplates() {
 
         // Replacements
 
-        fix('SYNREF', 'Information about ' + method.title);
+        fix('SYNREF', 'Information about ' + method.prefix + method.title);
         fix('TITLE', method.title);
         fix('SUBTITLE', 'Developed by ' + method.disc);
         if (method.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by: ${method.aliases}</span><br><br>`);
@@ -43,13 +36,29 @@ function generateTemplates() {
         else fix('HISTORY', 'Data Missing');
         fix('REV', revision);
 
+        // Construct List for Index Page
+
+        let temp = `
+        <a class="specialtyGridItem" href="methods/${key}/">
+            <img class="specialtyGridImage">
+            <div class="specialtyGridContent">
+            <div class="specialtyGridTitle">${method.title}</div>
+            <div class="specialtyGridDesc">${method.trunc}</div>
+            </div>
+        </a>`;
+        genlist.push(temp);
+
         console.log('Writing Template...');
         if (!fs.existsSync(`../public/synthesis/methods/${key}/`))
             fs.mkdirSync(`../public/synthesis/methods/${key}/`);
         fs.writeFileSync(`../public/synthesis/methods/${key}/index.html`, template);
     }
+    synHomeTemplate = synHomeTemplate.replace('REV', revision);
+    synHomeTemplate = synHomeTemplate.replace('SYNLIST', genlist.join(''));
     console.log('Finished');
-    fs.writeFileSync('../public/synthesis/generatedList.json', JSON.stringify(genlist));
+    console.log('Writing Synthesis Index File...');
+    fs.writeFileSync('../public/synthesis/index.html', synHomeTemplate);
+    console.log('Finished');
 }
 
 generateTemplates();

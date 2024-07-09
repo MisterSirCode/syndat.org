@@ -89,6 +89,7 @@
             "parent": "Spinel Subgroup",
             "system": "Isometric"
         },
+        "minID": 3729,
         "variants": [
             {
                 "cause": "Cobalt",
