@@ -132,8 +132,11 @@ function generateTemplates() {
             </a>`;
             tempList.push(temp);
         }
-
         fix('SYNLIST', tempList.join(''));
+
+        // Image
+
+        fix('MATIMG', mat.label.toLowerCase().replace(' ', ''));
 
         fix('REV', revision);
 

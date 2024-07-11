@@ -81,8 +81,10 @@
         },
         "optic_prop": {
             "type": "Isotropic",
-            "ref_min": 1.719,
-            "ref_max": 1.719,
+            "ref_min": 1.712,
+            "ref_max": 1.736,
+            "disp_min": 0.026,
+            "disp_max": 0.026,
             "disp": "Weak"
         },
         "cry_prop": {
@@ -123,6 +125,8 @@
             "type": "Uniaxial (-)",
             "ref_min": [1.568, 1.564],
             "ref_max": [1.602, 1.595],
+            "disp_min": 0.014,
+            "disp_max": 0.014,
             "bir_min": 0.004,
             "bir_max": 0.007,
             "pleo": "Weak to Modest in some Varieties"
@@ -174,7 +178,8 @@
             "type": "Uniaxial (+)",
             "ref_min": [1.544, 1.553],
             "ref_max": [1.544, 1.553],
-            "disp": "Weak",
+            "disp_min": 0.013,
+            "disp_max": 0.013,
             "bir_min": 0.009,
             "bir_max": 0.009,
             "pleo": "Weak in some Varieties"
@@ -226,7 +231,9 @@
         "optic_prop": {
             "type": "Isotropic",
             "ref_min": 1.433,
-            "ref_max": 1.448
+            "ref_max": 1.448,
+            "disp_min": 0.007,
+            "disp_max": 0.007
         },
         "cry_prop": {
             "parent": "Fluorite Group",
