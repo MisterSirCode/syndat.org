@@ -1,5 +1,5 @@
 {
-    "revision": "0.1.0",
+    "revision": "0.1.1",
     "czok": {
         "title": "Czochralski Method",
         "prefix": "The ",
@@ -45,7 +45,7 @@
         "prefix": "The ",
         "aliases": ["KY"],
         "disc": "Spyro Kyropoulos",
-        "trunc": "Derivative of the Czochralski method. Involves a similar setup but with a spinning basin or seed. Can change the output purity and may be preferred.",
+        "trunc": "Derivative of the Czochralski method. Crystal grows into the feed material instead of being pulled. Can change the output purity and may be preferred.",
         "desc": "",
         "history": "",
         "related": ["brst", "czok"]
@@ -53,9 +53,9 @@
     "zone": {
         "title": "Zone Melting",
         "prefix": "",
-        "aliases": [],
-        "disc": "",
-        "trunc": "",
+        "aliases": ["Zone Refining", "Floating-Zone Method"],
+        "disc": "John Desmond Bernal and William G. Pfann (Bell Laboratories)",
+        "trunc": "Involves passing cold / hot zones over a melt / seed to concentrate impurities in specific regions, while forming a monocrystalline ingot at the end of the path.",
         "desc": "",
         "history": "",
         "related": []
@@ -71,11 +71,11 @@
         "related": []
     },
     "brst": {
-        "title": "Bridgman-Stockbarger Method",
+        "title": "Bridgman Technique",
         "prefix": "The ",
-        "aliases": [],
+        "aliases": ["Bridgman-Stockbarger Method"],
         "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
-        "trunc": "",
+        "trunc": "Related to the Czochralski method. Material is melted in a crucible and the crucible itself is moved slowly into a colder zone, allowing for crystallization.",
         "desc": "",
         "history": "",
         "related": ["czok", "kyrp"]
@@ -85,7 +85,7 @@
         "prefix": "The ",
         "aliases": ["Bagdasarov Modification", "HDSM"],
         "disc": "Khachik Bagdasarov",
-        "trunc": "",
+        "trunc": "Related to the Bridgman technique. Material is melted and a crucible is moved horizontally instead of vertically, as with other methods. ",
         "desc": "",
         "history": "",
         "related": ["brst"]

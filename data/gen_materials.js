@@ -52,7 +52,15 @@ function generateTemplates() {
         if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
         if (!optic.bir_min) delPair('Birefringence:', 'BIREF');
         if (!optic.opt) fix('MISC', '');
-        else fix('MISC', optic.opt)
+        else {
+            switch (optic.opt) {
+                case 'opaque':
+                    fix('MISC', 'Opaque in Visible Spectrum');
+                    break;
+                default: 
+                    break;
+            }
+        }
         if (Object.keys(optic).length == 0)
             fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
         if (!cry.parent) delPair('Member of:', 'PARENT');
@@ -73,6 +81,8 @@ function generateTemplates() {
         else fix('GRAV', `${chem.grav_min} - ${chem.grav_max}`);
         if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
         else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
+        if (chem.neut_col) fix('NEUCOL', chem.neut_col);
+        else fix('NEUCOL', 'Colorless')
         if (cry.parent) fix('PARENT', cry.parent);
         if (cry.system) fix('CRYSTM', cry.system);
         if (optic.type) fix('OPTYPE', optic.type);

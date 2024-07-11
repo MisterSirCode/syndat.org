@@ -188,7 +188,7 @@
         "id": "4",
         "label": "Cubic Zirconia",
         "aliases": "Diamonique, Diamonite, Djevalite",
-        "desc": "Right next to Corundum on the production scale is Cubic Zirconia. Scientifically referred to as Yttria-Stabilized Cubic Zirconia. This material has made its way to the top of the best diamond simulants in use. It's exceptionally easy to make, comes in just about any color you can think of, is harder then quartz, is very durable / tough, has a refractive index close to / above diamond, and a dispersion that is much greater then diamond. These facts have made it one of the most popular gemstones in the world, even though it doesnt occur naturally at all (Or at significant enough quantities to matter). The only comparable / better simulant would be moissanite, but due to production costs, CZ has held its thrown for many years now.<br><br>Cubic Zirconia, interestingly enough, doesnt have a huge amount of industrial uses. However, it's ceramic is incredibly common in the industry. Most 'ceramic knives' you may have ever come by, are usually made of CZ ceramic. Its toughness, affordability, and temperature resistance have made it into a very attractive but cheap material for high quality blades. The ceramics can be polished to a mirror finish and machined into really any shape.",
+        "desc": "Right next to Corundum on the production scale is Cubic Zirconia. Scientifically referred to as Yttria-Stabilized Cubic Zirconia. This material has made its way to the top of the most common diamond simulants on the market. It's exceptionally easy to make, comes in just about any color you can think of, is harder then quartz, is very durable / tough, has a refractive index close to diamond, and a dispersion factor that is greater than diamond. These facts have made it one of the most popular gemstones in the world, even though it doesnt occur naturally (Atleast not in significant enough quantities to matter). The only comparable / better simulant would be moissanite, but due to production costs, CZ has held its thrown for many years now.<br><br>Cubic Zirconia, interestingly enough, doesnt have a huge amount of industrial uses. However, it's ceramic is incredibly common in the industry. Most 'ceramic knives' you may have ever come by, are usually made of CZ ceramic. Its toughness, affordability, and temperature resistance have made it into a very attractive but cheap material for high quality blades. The ceramics can be polished to a mirror finish and machined into really any shape.",
         "synthesis": ["skul", "sint"],
         "chem_prop": {
             "chemical": "Zirconium Oxide",
@@ -246,7 +246,8 @@
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
-            "grav_max": 4.23
+            "grav_max": 4.23,
+            "neut_col": "Near-Colorless / Yellow / Blue"
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -268,7 +269,7 @@
         "id": "7",
         "label": "Moissanite",
         "aliases": "",
-        "desc": "Moissanite has to be one of the most impressive synthetic materials humans have made. It doesn't form in large quantities in nature, which makes it rather unique. This is a bonus, because this material isnt able to be abused by inhuman mining practices, unlike diamond. This material is interesting in that it's extremely hard, extremely refractive, extremely tough, and very dispersive. At 9.25 on the mohs scale, it's not that far off from diamond. These properties have made it one of the most well-respected synthetics in the gem industry. Like diamond however, there are complications with production. It requires less complexity for both CVD and HPHT growth, so generally resulting material is larger and cleaner most of the time. However, it's still limited to these two methods, both of which are somewhat expensive and time consuming. If it weren't for these limitations, Moissanite would've likely taken over even cubic zirconia as one of the most common diamond simulants in the world. It far exceeds diamond in every way other then conductivity and hardness.<br><br>Beyond it's use in the gem world, Moissanite, or more specifically Silicon Carbide, is quite useful in the industrial machining sector. SiC Ceramics are some of the most affordable 'superhard' materials, and its often used as the core material for machining / drilling bits. You can even find it used in traditional tool bits too, alongside tungsten carbide.",
+        "desc": "Moissanite has to be one of the most impressive synthetic materials humans have made. It doesn't form in large quantities in nature, which makes it rather unique. This is a bonus, because this material isnt able to be abused by inhuman mining practices, unlike diamond. This material is interesting in that it's extremely hard, extremely refractive, extremely tough, and very dispersive. At 9.25 on the mohs scale, it's not that far off from diamond. These properties have made it one of the most well-respected synthetics in the gem industry. Like diamond however, there are complications with production. It requires less complexity for both CVD and HPHT growth, so generally resulting material is larger and cleaner most of the time. However, it's still limited to these two methods, both of which are somewhat expensive and time consuming. If it weren't for these limitations, Moissanite would've likely taken over even cubic zirconia as one of the most common diamond simulants in the world. It far exceeds diamond in every way other then conductivity and hardness.<br><br>Beyond it's use in the gem world, Moissanite, or more specifically Silicon Carbide, is quite useful in the industrial machining sector. SiC Ceramics are some of the most affordable 'superhard' materials, and its often used as the core material for machining / drilling bits. You can even find it used in traditional tool bits too, alongside tungsten carbide. Silicon Carbide ceramics have also found a niche use in Armored Plating. Small polygonal pucks of it are produced and used as deflection shielding for both human and machine armor.",
         "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
             "chemical": "Silicon Carbide",
@@ -329,7 +330,8 @@
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
-            "grav_max": 2.329
+            "grav_max": 2.329,
+            "neut_col": "Grey"
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -382,7 +384,8 @@
             "ref_min": 2.394,
             "ref_max": 2.417,
             "disp_min": 0.19,
-            "disp_max": 0.19
+            "disp_max": 0.19,
+            "neut_col": "Near-Colorless / Yellow"
         },
         "cry_prop": {
             "parent": "Perovskite Subgroup",
@@ -401,7 +404,8 @@
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.3,
-            "grav_max": 4.65
+            "grav_max": 4.65,
+            "neut_col": "Near-Colorless / Yellow"
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
@@ -599,10 +603,11 @@
         "chem_prop": {
             "chemical": "Yttrium Iron Garnet",
             "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
-            "mohs_min": 0,
-            "mohs_max": 0,
+            "mohs_min": 6.5,
+            "mohs_max": 7,
             "grav_min": 5.11,
-            "grav_max": 5.11
+            "grav_max": 5.17,
+            "neut_col": "Black"
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -647,7 +652,8 @@
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 6.7,
-            "grav_max": 6.71
+            "grav_max": 6.71,
+            "neut_col": "Green / Yellow"
         },
         "optic_prop": {
             "type": "Isotropic",
