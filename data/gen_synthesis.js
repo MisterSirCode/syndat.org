@@ -1,4 +1,5 @@
 const fs = require('fs');
+const materials = require('./json/materials.json');
 const synthesis = require('./json/synthesis.json');
 const revision = synthesis.revision;
 let synthesisTemplate = fs.readFileSync('./synthesisTemplate.html', { encoding: 'utf-8', flag: 'r' });
@@ -20,9 +21,6 @@ function generateTemplates() {
         // Begin Template Construction
 
         const fix = (tag, value) => { template = template.replace(tag, value); }
-        const delPair = (tag, repl) => {
-            template = template.replace(`<div class="pageSectionItem">${tag}</div><div class="pageSectionValue">${repl}</div>`, '');
-        }
 
         // Replacements
 

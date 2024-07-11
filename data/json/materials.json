@@ -257,7 +257,6 @@
             "bir_min": 0.294,
             "bir_max": 0.296,
             "pleo": "Moderate"
-
         },
         "cry_prop": {
             "parent": "Rutile Group",
@@ -312,7 +311,6 @@
             "ref_max": 2.369,
             "disp_min": 0.163,
             "disp_max": 0.163
-
         },
         "cry_prop": {
             "parent": "Sphalerite Group",
@@ -333,7 +331,9 @@
             "grav_min": 2.329,
             "grav_max": 2.329
         },
-        "optic_prop": { },
+        "optic_prop": { 
+            "opt": "opaque"
+        },
         "bypass_optic": true,
         "cry_prop": {
             "system": "Isometric"
@@ -605,7 +605,7 @@
             "grav_max": 5.11
         },
         "optic_prop": { 
-            "opt": "Opaque in Visible Spectrum"
+            "opt": "opaque"
         },
         "bypass_optic": true,
         "cry_prop": {
@@ -699,7 +699,7 @@
             "grav_max": 4.72
         },
         "optic_prop": {
-            "opt": "Opaque in Visible Spectrum"
+            "opt": "opaque"
         },
         "bypass_optic": true,
         "cry_prop": { }

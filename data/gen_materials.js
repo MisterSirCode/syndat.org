@@ -51,6 +51,8 @@ function generateTemplates() {
         if (!optic.ref_min) delPair('Refractive Index:', 'REF');
         if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
         if (!optic.bir_min) delPair('Birefringence:', 'BIREF');
+        if (!optic.opt) fix('MISC', '');
+        else fix('MISC', optic.opt)
         if (Object.keys(optic).length == 0)
             fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
         if (!cry.parent) delPair('Member of:', 'PARENT');
