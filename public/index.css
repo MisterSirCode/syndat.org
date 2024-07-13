@@ -445,6 +445,7 @@ a.statusYellow {
 
     .mainLogoLink {
         font-size: 0.9em;
+        text-shadow: -0.5px -0.5px 0px white, 0.5px 0.5px 0px white;
     }
 
     .linkGridItem {
