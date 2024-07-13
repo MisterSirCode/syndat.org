@@ -120,10 +120,12 @@ function generateTemplates() {
         let methods = mat.synthesis;
         let tempList = [];
         for (var m = 0; m < methods.length; m++) {
+            let additional = '';
+            if (m == 0) additional = ' firstChild';
             let method = methods[m];
             let data = synthesis[method];
             let temp = `
-            <a class="specialtyGridItem" href="../../../synthesis/methods/${method}/">
+            <a class="specialtyGridItem${additional}" href="../../../synthesis/methods/${method}/">
                 <img class="specialtyGridImage">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle">${data.title}</div>

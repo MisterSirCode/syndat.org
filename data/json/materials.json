@@ -304,8 +304,9 @@
     {
         "id": "8",
         "label": "Sphalerite",
-        "aliases": "",
-        "synthesis": ["czok"],
+        "aliases": "Cleiophane, Blende, Zinc Blende, Ruby Blende, Ruby Jack, Marmatite, Black Jack",
+        "desc": "Sphalerite is an interesting material in the synthetic world. It doesn't hold a huge amount of uses, but in some very niche material science and optics projects, Sphalerite lenses can be grown for use. The most common form you'll come by are colorless polycrystalline 'ceramic' lenses made of sphalerite. They're useful because of sphalerite's unusually high Refractive Index. The high dispersion accordingly makes for quite colorful stones when cut.<br><br>Similarly to Rutile, Sphalerite tends to form quite included and dirty as a natural mineral. However, it can form large gem-grade material in nature. It's not sought after much by the gem industry due to its softness.",
+        "synthesis": ["czok", "sint"],
         "chem_prop": {
             "chemical": "Zinc Sulfide",
             "formula": "ZnS",
@@ -315,8 +316,9 @@
             "grav_max": 4.1
         },
         "optic_prop": {
-            "ref_min": 2.369,
-            "ref_max": 2.369,
+            "type": "Isotropic",
+            "ref_min": 2.368,
+            "ref_max": 2.5,
             "disp_min": 0.163,
             "disp_max": 0.163
         },
