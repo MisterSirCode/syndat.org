@@ -13,3 +13,11 @@ If you want to contribute or test things on your own, you can fork the repositor
 * `gensyns` - Only regenerates synthesis pages
 
 `deploy` - Deploys the site to firebase (Only for my use. You wont need it)
+
+## How to edit constant info
+The main "database" is stored in two json files:
+
+* [`data/json/materials.json`](data/json/materials.json)
+* [`data/json/synthesis.json`](data/json/synthesis.json)
+
+Editing these and running the `generate` command will update the pages with any changes.
