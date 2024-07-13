@@ -88,6 +88,14 @@ function generateTemplates() {
         if (optic.type) fix('OPTYPE', optic.type);
         if (optic.ref_min) {
             if (Array.isArray(optic.ref_min)) {
+                if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
+                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
+                                n<sub>ε</sub> = ${optic.ref_min[1]}<br>
+                                n<sub>a</sub> = ${optic.ref_min[2]}`);
+                else if (optic.ref_min.length == 3)
+                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
+                                n<sub>a</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
                 if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
                     fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
                                 n<sub>ε</sub> = ${optic.ref_min[1]}`);
