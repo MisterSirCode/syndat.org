@@ -72,3 +72,5 @@ node_modules/
 /public/materials/generatedList.json
 /public/synthesis/methods
 /public/synthesis/generatedList.json
+/public/materials/index.html
+/public/synthesis/index.html
