@@ -1,5 +1,5 @@
 {
-    "revision": "0.1.1",
+    "revision": "0.1.2",
     "czok": {
         "title": "Czochralski Method",
         "prefix": "The ",
@@ -81,9 +81,10 @@
         "related": ["czok", "kyrp"]
     },
     "hdsm": {
-        "title": "Horizontal Direction Solidification Method",
+        "title": "HDSM",
         "prefix": "The ",
-        "aliases": ["Bagdasarov Modification", "HDSM"],
+        "shorthand": true,
+        "aliases": ["Horizontal Direction Solidification Method", "Bagdasarov Modification"],
         "disc": "Khachik Bagdasarov",
         "trunc": "Related to the Bridgman technique. Material is melted and a crucible is moved horizontally instead of vertically, as with other methods. ",
         "desc": "",
@@ -91,9 +92,10 @@
         "related": ["brst"]
     },
     "hpht": {
-        "title": "High-Pressure High-Temperature Synthesis",
+        "title": "HPHT",
         "prefix": "",
-        "aliases": ["HPHT"],
+        "shorthand": true,
+        "aliases": ["High-Pressure High-Temperature Synthesis"],
         "disc": "Tracy Hall & Co",
         "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
         "desc": "",
@@ -101,9 +103,10 @@
         "related": []
     },
     "cvdp": {
-        "title": "Chemical Vapor Deposition",
+        "title": "CVD",
         "prefix": "",
-        "aliases": ["CVD"],
+        "shorthand": true,
+        "aliases": ["Chemical Vapor Deposition"],
         "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
         "desc": "",

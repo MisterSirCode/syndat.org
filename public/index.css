@@ -294,10 +294,10 @@ a.statusYellow {
     line-clamp: 4;
     -webkit-box-orient: vertical;
     font-size: 0.8em;
-    height: 5em;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    bottom: 0;
 }
 
 .pageLinkGrid {
