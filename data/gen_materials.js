@@ -63,6 +63,18 @@ function generateTemplates() {
         }
         if (Object.keys(optic).length == 0)
             fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
+        if (!mat.bypass_optic) {
+            let fixer = `      
+            <div class="pageRegionSeparator">
+                <div class="pageSectionTitle">Optical Simulation</div>
+            </div>
+            <span class="pageArticle">
+                These may not be fully accurate. Use them only for quick reference, not for scientific use.
+                <br><br>
+                <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
+            </span>`;
+            fix('OPSIM', fixer);
+        } else fix('OPSIM', '');
         if (!cry.parent) delPair('Member of:', 'PARENT');
         if (!cry.system) delPair('Crystal System:', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
@@ -89,13 +101,13 @@ function generateTemplates() {
         if (optic.ref_min) {
             if (Array.isArray(optic.ref_min)) {
                 if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]}<br>
-                                n<sub>a</sub> = ${optic.ref_min[2]}`);
+                    fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]}<br>
+                                n<sub>β</sub> = ${optic.ref_min[1]}<br>
+                                n<sub>γ</sub> = ${optic.ref_min[2]}`);
                 else if (optic.ref_min.length == 3)
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
-                                n<sub>a</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
+                    fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                n<sub>β</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
+                                n<sub>γ</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
                 if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
                     fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
                                 n<sub>ε</sub> = ${optic.ref_min[1]}`);
