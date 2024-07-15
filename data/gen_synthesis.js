@@ -41,7 +41,8 @@ function generateTemplates() {
         <a class="specialtyGridItem" href="methods/${key}/">
             <img class="specialtyGridImage">
             <div class="specialtyGridContent">
-            <div class="specialtyGridTitle">${method.title}</div>
+            <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
+            <div class="specialtyGridTitle shortGridTitle">${method.shorthand || method.title}</div>
             <div class="specialtyGridDesc">${method.trunc}</div>
             </div>
         </a>`;

@@ -799,5 +799,34 @@
             "system": "Orthorhombic"
         },
         "minID": 1039
+    },
+    {
+        "id": 27,
+        "label": "Malachite",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["hdth"],
+        "chem_prop": {
+            "chemical": "Copper(II) Carbonate Hydroxide",
+            "formula": "Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub>",
+            "mohs_min": 3.5,
+            "mohs_max": 4,
+            "grav_min": 3.6,
+            "grav_max": 4.05
+        },
+        "optic_prop": {
+            "type": "Biaxial (-)",
+            "ref_min": [1.655, 1.875, 1.909],
+            "ref_max": [1.655, 1.875, 1.909],
+            "bir_min": 0.254,
+            "bir_max": 0.254,
+            "disp_min": 0.015,
+            "disp_max": 0.015
+        },
+        "cry_prop": {
+            "system": "Monoclinic",
+            "parent": "Rosasite Group"
+        },
+        "minID": 2550
     }
 ]

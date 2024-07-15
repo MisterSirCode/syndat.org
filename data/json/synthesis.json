@@ -58,7 +58,7 @@
         "trunc": "Involves passing cold / hot zones over a melt / seed to concentrate impurities in specific regions, while forming a monocrystalline ingot at the end of the path.",
         "desc": "",
         "history": "",
-        "related": []
+        "related": ["frfr"]
     },
     "skul": {
         "title": "Skull Melting",
@@ -81,10 +81,10 @@
         "related": ["czok", "kyrp"]
     },
     "hdsm": {
-        "title": "HDSM",
+        "title": "Horizontal Direction Solidification Method",
         "prefix": "The ",
-        "shorthand": true,
-        "aliases": ["Horizontal Direction Solidification Method", "Bagdasarov Modification", "HDSM"],
+        "shorthand": "HDSM",
+        "aliases": ["Bagdasarov Modification", "HDSM"],
         "disc": "Khachik Bagdasarov",
         "trunc": "Related to the Bridgman technique. Material is melted and a crucible is moved horizontally instead of vertically, as with other methods. ",
         "desc": "",
@@ -92,10 +92,10 @@
         "related": ["brst"]
     },
     "hpht": {
-        "title": "HPHT",
+        "title": "High-Pressure High-Temperature Synthesis",
         "prefix": "",
-        "shorthand": true,
-        "aliases": ["High-Pressure High-Temperature Synthesis", "HPHT"],
+        "shorthand": "HPHT",
+        "aliases": ["HPHT"],
         "disc": "Tracy Hall & Co",
         "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
         "desc": "",
@@ -103,15 +103,15 @@
         "related": []
     },
     "cvdp": {
-        "title": "CVD",
+        "title": "Chemical Vapor Deposition",
         "prefix": "",
-        "shorthand": true,
-        "aliases": ["Chemical Vapor Deposition", "CVD"],
+        "shorthand": "CVD",
+        "aliases": ["CVD"],
         "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
         "desc": "",
         "history": "",
-        "related": []
+        "related": ["eptx"]
     },
     "sint": {
         "title": "Sintering and Annealing",
@@ -122,5 +122,89 @@
         "desc": "",
         "history": "",
         "related": []
+    },
+    "frcr": {
+        "title": "Fractional Crystallization",
+        "prefix": "",
+        "shorthand": "Fractional Crys.",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A simple method of crystallization involving stages of temperature changes to pull crystals out of a solution.",
+        "desc": "",
+        "history": "",
+        "related": ["frfr"]
+    },
+    "frfr": {
+        "title": "Fractional Freezing",
+        "prefix": "",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A simple method of crystallization involving melted ingredients shifting down to certain temperatures to isolate or purify certain materials",
+        "desc": "",
+        "history": "",
+        "related": ["frcr"]
+    },
+    "eptx": {
+        "title": "Epitaxy",
+        "prefix": "",
+        "aliases": [],
+        "disc": "",
+        "trunc": "An umbrella of methods revolving around film or layer-based crystallization. Can involve phase changes, temperature changes, among other factors.",
+        "desc": "",
+        "history": "",
+        "related": ["cvdp"]
+    },
+    "lhpg": {
+        "title": "Laser-Heated Pedestal Growth",
+        "prefix": "",
+        "shorthand": "LHPG",
+        "aliases": ["LHPG", "Laser Floating Zone", "LFZ"],
+        "disc": "",
+        "trunc": "A process involving melting a transition zone within a crystal using lasers. Similar to Zone Melting.",
+        "desc": "",
+        "history": "",
+        "related": ["zone"]
+    },
+    "mpdn": {
+        "title": "Micro-Pulling Down",
+        "prefix": "",
+        "aliases": ["μ-PD"],
+        "disc": "",
+        "trunc": "A method involving a heated crucible with an orifice on the bottom. A seed crystal is placed through the bottom and is slowly pulled down, forming a monocrystalline rod / fiber.",
+        "desc": "",
+        "history": "",
+        "related": []
+    },
+    "rclz": {
+        "title": "Recrystallization",
+        "prefix": "",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A simple method of purifying materials by dissolving a crystal in a solvent and letting the desired compound precipitate / crystallize out of solution",
+        "desc": "",
+        "history": "",
+        "related": []
+    },
+    "evap": {
+        "title": "Evaporative Crystallization",
+        "prefix": "",
+        "shorthand": "Evaporative Crys.",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A simple method of crystallization done by drying a solution until the solute concentration is high enough, and it crystallizes into a solid.",
+        "desc": "",
+        "history": "",
+        "related": ["cool"]
+    },
+    "cool": {
+        "title": "Cooling Crystallization",
+        "prefix": "",
+        "shorthand": "Cooling Crys.",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A simple method of crystallization that involves slowly cooling a liquid until it stabilizes and freezes into a crystalline solid.",
+        "desc": "",
+        "history": "",
+        "related": ["evap"]
     }
 }

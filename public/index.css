@@ -290,6 +290,10 @@ a.statusYellow {
     height: 1.5em;
 }
 
+.shortGridTitle {
+    display: none;
+}
+
 .specialtyGridDesc {
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -325,9 +329,27 @@ a.statusYellow {
 
 /* Landscape mode Mobile Devices and Tablets */
 
-@media (max-width: 1300px) {
+@media (max-width: 1800px) {
+    .mainGridTitle {
+        display: none;
+    }
+
+    .shortGridTitle {
+        display: inline;
+    }
+}
+
+@media (max-width: 1400px) {
     .specialtyGridItem {
         width: 100%;
+    }
+
+    .mainGridTitle {
+        display: inline;
+    }
+
+    .shortGridTitle {
+        display: none;
     }
 
     p {
@@ -380,6 +402,14 @@ a.statusYellow {
 
     .specialtyGridItem {
         width: 50%;
+    }
+
+    .mainGridTitle {
+        display: none;
+    }
+
+    .shortGridTitle {
+        display: inline;
     }
 
     .linkGridItem {
@@ -445,7 +475,7 @@ a.statusYellow {
 
     .mainLogoLink {
         font-size: 0.9em;
-        text-shadow: -0.5px -0.5px 0px white, 0.5px 0.5px 0px white;
+        text-shadow: -0.2px -0.2px 0.2px white, 0.2px 0.2px 0.2px white;
     }
 
     .linkGridItem {
