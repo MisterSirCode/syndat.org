@@ -7,7 +7,7 @@
         "label": "Corundum",
         "aliases": "Sapphire, Ruby, Carbuncle",
         "desc": "Corundum is one of the most common synthetic materials grown today. It is an extremely versatile product with exceptional properties. In nature, this material is often known by Sapphire or Ruby. It is sought after because of its optimal hardness and variety of possible colorations. Add on the fact that it's easy to produce, and its not hard to see why its one of the most popular synthetic and natural gemstones in the world.<br><br>As far as synthetic corundum, some of the most common usecases involve specialty optics, such as in Thermal Sensors, Lasers, High-Durability Screens / Viewports, Specialty Lenses, and even in Weaponry / Imaging systems.<br><br>Corundum can also be used in Machining, Bearings, and Polishing. Furthermore, Alumina Ceramics (Microcorundum crystals suspended in solid alumina) are also extensively used across the industry. Most commonly they're used as a high-temperature ceramic barrier, but have also seen use in grinding or even in sintering to produce extremely large optical boules.<br><br>Part of the reason for its wide availability and use is how easy it is to produce. It can be synthesized using a massive variety of methods, some not even listed here. Not to mention, alumina is cheap and easy to purify, making production even simpler. See below for a list of common production methods.",
-        "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint"],
+        "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint", "edfg", "zone"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
             "formula": "Al<sub>2</sub>O<sub>3</sub>",
@@ -784,7 +784,8 @@
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 3.5,
-            "grav_max": 3.84
+            "grav_max": 3.84,
+            "neut_col": "Colorless"
         },
         "optic_prop": {
             "type": "Biaxial (+)",
@@ -805,23 +806,22 @@
         "label": "Malachite",
         "aliases": "",
         "desc": "",
-        "synthesis": ["hdth"],
+        "synthesis": ["hdth", "evap", "rclz"],
         "chem_prop": {
             "chemical": "Copper(II) Carbonate Hydroxide",
             "formula": "Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub>",
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.6,
-            "grav_max": 4.05
+            "grav_max": 4.05,
+            "neut_col": "Pale Green to Dark Green"
         },
         "optic_prop": {
             "type": "Biaxial (-)",
             "ref_min": [1.655, 1.875, 1.909],
             "ref_max": [1.655, 1.875, 1.909],
             "bir_min": 0.254,
-            "bir_max": 0.254,
-            "disp_min": 0.015,
-            "disp_max": 0.015
+            "bir_max": 0.254
         },
         "cry_prop": {
             "system": "Monoclinic",

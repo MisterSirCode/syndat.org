@@ -267,7 +267,8 @@ a.statusYellow {
 .specialtyGridItem {
     position: relative;
     /* margin-bottom: 1em; */
-    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     width: 50%;
 }
 

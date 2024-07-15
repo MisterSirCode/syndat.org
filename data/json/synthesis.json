@@ -175,6 +175,16 @@
         "history": "",
         "related": []
     },
+    "edfg": {
+        "title": "Edge-Defined Film-Fed Growth",
+        "prefix": "",
+        "aliases": [],
+        "disc": "",
+        "trunc": "A method that involves pulling a seed through a vertical channel, with a die that feeds a film of molten material upward.",
+        "desc": "",
+        "history": "",
+        "related": []
+    },
     "rclz": {
         "title": "Recrystallization",
         "prefix": "",
