@@ -88,10 +88,12 @@ function generateTemplates() {
                     <img class="specialtyGridImage">
                     <div class="specialtyGridContent">
                     <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
-                    <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.title}</div>
-                    ${variant.color ? `<div class="specialtyGridDesc">Color: ${variant.color}</div><br>` : ''}
-                    ${variant.effect ? `<div class="specialtyGridDesc">Effect: ${variant.effect}</div><br>` : ''}
-                    ${variant.usage ? `<div class="specialtyGridDesc">Used for ${variant.usage}</div>` : ''}
+                    <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.label}</div>
+                    ${variant.color ? `<div class="specialtyGridDesc variantDesc">Color: ${variant.color}</div>` : ''}
+                    ${variant.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${variant.fluor}</div>` : ''}
+                    ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${variant.cause}</div>` : ''}
+                    ${variant.effect ? `<div class="specialtyGridDesc variantDesc">Effect: ${variant.effect}</div>` : ''}
+                    ${variant.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${variant.usage}</div>` : ''}
                     </div>
                 </span>`;
                 final += temp;
