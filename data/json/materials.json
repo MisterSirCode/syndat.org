@@ -37,50 +37,45 @@
                 "label": "Ruby",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink, Magenta",
-                "fluor": "Red (255-365nm), Pink (255nm)",
-                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics, Gemstones"
+                "fluor": "Red (255-395nm), Pink (255nm)",
+                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics"
             },
             {
                 "label": "Padparadscha",
                 "cause": "Iron and Chromium Ions",
-                "color": "Purple, Pink, Salmon, Orange",
-                "usage": "Gemstones"
+                "color": "Purple, Pink, Salmon, Orange"
             },
             {
                 "label": "Traditional Sapphire",
                 "cause": "Iron and Titanium Ions",
                 "color": "Blue",
-                "usage": "Clock Jewels, Bearings, Gemstones"
+                "usage": "Clock Jewels, Bearings"
             },
             {
                 "label": "Ferric Sapphire",
                 "cause": "Iron Ions",
-                "color": "Green, Yellow",
-                "usage": "Gemstones"
+                "color": "Green, Yellow"
             },
             {
                 "label": "Laser Sapphire",
                 "cause": "Titanium Ions",
                 "color": "Red, Pink, Orange",
-                "usage": "Laser Rods, Specialty Optics, Gemstones"
+                "usage": "Laser Rods, Specialty Optics"
             },
             {
                 "label": "Cobaltoan Sapphire",
                 "cause": "Cobalt Ions",
-                "color": "Blue, Cyan",
-                "usage": "Gemstones"
+                "color": "Blue, Cyan"
             },
             {
                 "label": "Color-Change Sapphire",
                 "cause": "Vanadium Ions",
-                "color": "Purple, Red, Green, Blue, etc",
-                "usage": "Gemstones"
+                "color": "Purple, Red, Green, Blue, etc"
             },
             {
                 "label": "Star Sapphire / Ruby",
-                "cause": "Rutile Crystals (TiO2)",
-                "effect": "Asterism / Cat's Eye",
-                "usage": "Gemstones"
+                "cause": "Rutile (TiO2) Inclusions",
+                "effect": "Asterism / Cat's Eye"
             }
         ]
     },
@@ -118,14 +113,13 @@
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
                 "fluor": "Red",
-                "usage": "Q-Switchers, Laser Rods, Gemstones"
+                "usage": "Q-Switchers, Laser Rods"
             },
             {
                 "label": "Traditional Spinel",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink",
-                "fluor": "Red",
-                "usage": "Gemstones"
+                "fluor": "Red"
             }
         ]
     },
@@ -164,20 +158,17 @@
                 "label": "Emerald",
                 "cause": "Chromium, Vanadium, Copper and Iron Ions",
                 "color": "Green, Cyan, Lime",
-                "fluor": "Red",
-                "usage": "Gemstones"
+                "fluor": "Red"
             },
             {
                 "label": "Morganite, Red Beryl",
                 "cause": "Manganese Ions",
-                "color": "Pink, Red, Orange",
-                "usage": "Gemstones"
+                "color": "Pink, Red, Orange"
             },
             {
                 "label": "Aquamarine, Heliodor",
                 "cause": "Iron Ions",
-                "color": "Blue, Cyan, Yellow, Orange",
-                "usage": "Gemstones"
+                "color": "Blue, Cyan, Yellow, Orange"
             },
             {
                 "label": "Alkali Beryl",
