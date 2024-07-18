@@ -34,34 +34,52 @@
         "minID": 1136,
         "variants": [
             {
-                "cause": "Chromium",
-                "aliases": "Ruby",
-                "color": "red, pink",
-                "fluor": "red, pink",
+                "label": "Ruby",
+                "cause": "Chromium Ions",
+                "color": "Red, Pink, Magenta",
+                "fluor": "Red (255-365nm), Pink (255nm)",
                 "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics, Gemstones"
             },
             {
-                "cause": "Iron, Titanium",
-                "color": "blue",
-                "fluor": "none",
-                "usage": "Clock Jewels, Bearings, Gemstones"
-            },
-            {
-                "cause": "Iron",
-                "color": "green",
-                "fluor": "none",
+                "label": "Padparadscha",
+                "cause": "Iron and Chromium Ions",
+                "color": "Purple, Pink, Salmon, Orange",
                 "usage": "Gemstones"
             },
             {
-                "cause": "Titanium",
-                "color": "red, pink, orange",
-                "fluor": "none",
-                "usage": "Laser Rods, Specialty Optics"
+                "label": "Traditional Sapphire",
+                "cause": "Iron and Titanium Ions",
+                "color": "Blue",
+                "usage": "Clock Jewels, Bearings, Gemstones"
             },
             {
-                "cause": "Cobalt",
-                "color": "blue, cyan",
-                "fluor": "none",
+                "label": "Ferric Sapphire",
+                "cause": "Iron Ions",
+                "color": "Green, Yellow",
+                "usage": "Gemstones"
+            },
+            {
+                "label": "Laser Sapphire",
+                "cause": "Titanium Ions",
+                "color": "Red, Pink, Orange",
+                "usage": "Laser Rods, Specialty Optics, Gemstones"
+            },
+            {
+                "label": "Cobaltoan Sapphire",
+                "cause": "Cobalt Ions",
+                "color": "Blue, Cyan",
+                "usage": "Gemstones"
+            },
+            {
+                "label": "Color-Change Sapphire",
+                "cause": "Vanadium Ions",
+                "color": "Purple, Red, Green, Blue, etc",
+                "usage": "Gemstones"
+            },
+            {
+                "label": "Star Sapphire / Ruby",
+                "cause": "Rutile Crystals (TiO2)",
+                "effect": "Asterism / Cat's Eye",
                 "usage": "Gemstones"
             }
         ]
@@ -96,15 +114,17 @@
         "minID": 3729,
         "variants": [
             {
-                "cause": "Cobalt",
-                "color": ["blue", "cyan"],
-                "fluor": "red",
-                "usage": "Q-Switchers, Gemstones"
+                "label": "Cobalt Spinel",
+                "cause": "Cobalt Ions",
+                "color": "Blue, Cyan",
+                "fluor": "Red",
+                "usage": "Q-Switchers, Laser Rods, Gemstones"
             },
             {
-                "cause": "Chromium",
-                "color": ["red", "pink"],
-                "fluor": "red",
+                "label": "Traditional Spinel",
+                "cause": "Chromium Ions",
+                "color": "Red, Pink",
+                "fluor": "Red",
                 "usage": "Gemstones"
             }
         ]
@@ -141,25 +161,28 @@
         "minID": 819,
         "variants": [
             {
-                "cause": "Chromium, Vanadium, Copper, Iron",
-                "aliases": "Emerald",
-                "color": "green, cyan",
-                "fluor": "red",
+                "label": "Emerald",
+                "cause": "Chromium, Vanadium, Copper and Iron Ions",
+                "color": "Green, Cyan, Lime",
+                "fluor": "Red",
                 "usage": "Gemstones"
             },
             {
-                "cause": "Manganese",
-                "aliases": "Morganite, Red Beryl",
-                "color": "pink, red, orange",
-                "fluor": "none",
+                "label": "Morganite, Red Beryl",
+                "cause": "Manganese Ions",
+                "color": "Pink, Red, Orange",
                 "usage": "Gemstones"
             },
             {
-                "cause": "Iron",
-                "aliases": "Aquamarine",
-                "color": "blue, cyan",
-                "fluor": "none",
+                "label": "Aquamarine, Heliodor",
+                "cause": "Iron Ions",
+                "color": "Blue, Cyan, Yellow, Orange",
                 "usage": "Gemstones"
+            },
+            {
+                "label": "Alkali Beryl",
+                "cause": "Alkaline Ions",
+                "color": "Blue, White"
             }
         ]
     },
