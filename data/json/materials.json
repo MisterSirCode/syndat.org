@@ -644,7 +644,82 @@
             "system": "Isometric"
         },
         "variants": [
-            
+            {
+                "label": "Ce:YAG",
+                "cause": "Cerium Ions",
+                "color": "Yellow",
+                "fluor": "Yellow",
+                "usage": "Lasers, Sensors, Emission Caps"
+            },
+            {
+                "label": "Ce:Nd:YAG",
+                "cause": "Cerium and Neodymium Ions",
+                "color": "Yellow, Orange",
+                "fluor": "Yellow",
+                "usage": "Medical Lasers, Dual-Laser Mediums"
+            },
+            {
+                "label": "Nd:YAG",
+                "cause": "Neodymium Ions",
+                "color": "Pale Pink, Pale Purple",
+                "usage": "Medical Lasers"
+            },
+            {
+                "label": "Cr:YAG",
+                "cause": "Chromium Ions",
+                "color": "Green",
+                "fluor": "Red",
+                "usage": "Dual-Laser Mediums, Sensors, Specialty Optics"
+            },
+            {
+                "label": "CTH:YAG",
+                "cause": "Chromium, Thulium and Holmium Ions",
+                "color": "Green", 
+                "usage": "Lasers, Specialty Optics"
+            },
+            {
+                "label": "Co:YAG",
+                "cause": "Cobalt Ions",
+                "color": "Blue",
+                "usage": "Specialty Optics"
+            },
+            {
+                "label": "Tm:YAG",
+                "cause": "Thulium Ions",
+                "color": "Pale Green, Pale Yellow",
+                "usage": "Medical Lasers, Specialty Optics"
+            },
+            {
+                "label": "Er:YAG",
+                "cause": "Erbium Ions",
+                "color": "Color Change - Orange, Pink",
+                "usage": "Lasers, Specialty Optics"
+            },
+            {
+                "label": "V:YAG",
+                "cause": "Vanadium Ions",
+                "color": "Green",
+                "usage": "Specialty Optics"
+            },
+            {
+                "label": "Yb:YAG",
+                "cause": "Ytterbium Ions",
+                "color": "Cyan, Pale Blue",
+                "usage": "Specialty Optics"
+            },
+            {
+                "label": "Sm:YAG",
+                "cause": "Samarium Ions",
+                "color": "Pale Yellow, Pale Orange",
+                "fluor": "Orange",
+                "usage": "Specialty Optics"
+            },
+            {
+                "label": "Ho:YAG",
+                "cause": "Holmium Ions",
+                "color": "Pale Green",
+                "usage": "Specialty Optics"
+            }
         ]
     },
     {
