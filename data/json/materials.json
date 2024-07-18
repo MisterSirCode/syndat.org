@@ -37,7 +37,7 @@
                 "label": "Ruby",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink, Magenta",
-                "fluor": "Red (255-395nm), Pink (255nm)",
+                "fluor": "Red, Pink (255nm)",
                 "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics"
             },
             {
@@ -109,7 +109,7 @@
         "minID": 3729,
         "variants": [
             {
-                "label": "Cobalt Spinel",
+                "label": "Cobaltoan Spinel",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
                 "fluor": "Red",
@@ -238,7 +238,7 @@
                 "color": "Red, Brown, Orange"
             },
             {
-                "label": "Cobalt Quartz",
+                "label": "Cobaltoan Quartz",
                 "cause": "Cobalt Ions",
                 "color": "Blue",
                 "usage": "Specialty Optics"
