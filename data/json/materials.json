@@ -854,5 +854,33 @@
         "cry_prop": {
             "system": "Tetragonal"
         }
+    },
+    {
+        "id": 29,
+        "label": "Scheelite",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Calcium Tunstate",
+            "formula": "Ca(WO<sub>4</sub>)",
+            "mohs_min": 4.5,
+            "mohs_max": 5,
+            "grav_min": 6.1,
+            "grav_max": 6.1,
+            "neut_col": "Colorless / Yellow / Orange"
+        },
+        "optic_prop": {
+            "type": "Uniaxial (+)",
+            "ref_min": [1.918, 1.935],
+            "ref_max": [1.921, 1.938],
+            "bir_min": 0.017,
+            "bir_max": 0.017
+        },
+        "cry_prop": {
+            "system": "Tetragonal",
+            "parent": "Scheelite Group"
+        },
+        "minID": 3560
     }
 ]
