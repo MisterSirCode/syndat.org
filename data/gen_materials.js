@@ -64,27 +64,53 @@ function generateTemplates() {
         if (Object.keys(optic).length == 0)
             fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties</div></div>', '');
         if (!mat.bypass_optic) {
-            let fixer = `      
-            <div class="pageRegionSeparator">
-                <div class="pageSectionTitle">Optical Simulation</div>
-            </div>
-            <span class="pageArticle">
-                These may not be fully accurate. Use them only for quick reference, not for scientific use.
-                <br><br>
-                <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
-            </span>`;
-            fix('OPSIM', fixer);
+            fix('OPSIM', `
+                <div class="pageRegionSeparator">
+                    <div class="pageSectionTitle">Optical Simulation</div>
+                </div>
+                <span class="pageArticle">
+                    These may not be fully accurate. Use them only for quick reference, not for scientific use.
+                    <br><br>
+                    <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
+                </span>
+            `);
         } else fix('OPSIM', '');
         if (!cry.parent) delPair('Member of', 'PARENT');
         if (!cry.system) delPair('Crystal System', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
         <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
+        if (mat.variants && mat.variants.length > 0) {
+            let final = '';
+            for (let j = 0; j < mat.variants.length; j++) {
+                let variant = mat.variants[j];
+                let temp = `
+                <span class="specialtyGridItem variantItem">
+                    <img class="specialtyGridImage">
+                    <div class="specialtyGridContent">
+                    <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
+                    <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.title}</div>
+                    ${variant.color ? `<div class="specialtyGridDesc">Color: ${variant.color}</div><br>` : ''}
+                    ${variant.effect ? `<div class="specialtyGridDesc">Effect: ${variant.effect}</div><br>` : ''}
+                    ${variant.usage ? `<div class="specialtyGridDesc">Used for ${variant.usage}</div>` : ''}
+                    </div>
+                </span>`;
+                final += temp;
+            }
+            fix('VARTYPES', `
+                <div class="pageRegionSeparator">
+                    <div class="pageSectionTitle">Variants and Types</div>
+                </div>
+                <div class="pageSpecialtyGrid">
+                    ${final}
+                </div>
+            `);
+        } else fix('VARTYPES', '');
 
         // Smaller Replacements
 
         fix('TITLE', mat.label);
         if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Varieties or Aliases: ${mat.aliases}</span><br><br>`);
+        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Aliases: ${mat.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);
