@@ -882,5 +882,29 @@
             "parent": "Scheelite Group"
         },
         "minID": 3560
+    },
+    {
+        "id": 30,
+        "label": "CWO",
+        "aliases": "CWO",
+        "desc": "",
+        "synthesis": ["czok", "hdth"],
+        "chem_prop": {
+            "chemical": "Cadmium Tunstate",
+            "formula": "Cd(WO<sub>4</sub>)",
+            "mohs_min": 4,
+            "mohs_max": 4.5,
+            "grav_min": 7.9,
+            "grav_max": 8.0,
+            "neut_col": "Colorless / Yellow / Orange"
+        },
+        "optic_prop": {
+            "type": "Uniaxial (?)",
+            "ref_min": [2.2, 2.2],
+            "ref_max": [2.3, 2.3]
+        },
+        "cry_prop": {
+            "system": "Tetragonal"
+        }
     }
 ]
