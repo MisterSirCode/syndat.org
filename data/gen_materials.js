@@ -47,10 +47,10 @@ function generateTemplates() {
 
         //if (mat.aliases.length == 0) delPair('.aliases');
         fix('MATREF', 'Information about ' + mat.label)
-        if (!optic.type) delPair('Type:', 'OPTYPE');
-        if (!optic.ref_min) delPair('Refractive Index:', 'REF');
-        if (!optic.disp_min) delPair('Dispersion Factor:', 'DISP');
-        if (!optic.bir_min) delPair('Birefringence:', 'BIREF');
+        if (!optic.type) delPair('Type', 'OPTYPE');
+        if (!optic.ref_min) delPair('Refractive Index', 'REF');
+        if (!optic.disp_min) delPair('Dispersion Factor', 'DISP');
+        if (!optic.bir_min) delPair('Birefringence', 'BIREF');
         if (!optic.opt) fix('MISC', '');
         else {
             switch (optic.opt) {
@@ -62,7 +62,7 @@ function generateTemplates() {
             }
         }
         if (Object.keys(optic).length == 0)
-            fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties:</div></div>', '');
+            fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties</div></div>', '');
         if (!mat.bypass_optic) {
             let fixer = `      
             <div class="pageRegionSeparator">
@@ -75,8 +75,8 @@ function generateTemplates() {
             </span>`;
             fix('OPSIM', fixer);
         } else fix('OPSIM', '');
-        if (!cry.parent) delPair('Member of:', 'PARENT');
-        if (!cry.system) delPair('Crystal System:', 'CRYSTM');
+        if (!cry.parent) delPair('Member of', 'PARENT');
+        if (!cry.system) delPair('Crystal System', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
         <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
 
