@@ -181,7 +181,7 @@
         "id": 3,
         "label": "Quartz",
         "aliases": "Rock Crystal, Agate, Chalcedony, Smokey Quartz, Amethyst, Citrine, Rose Quartz, Prasiolite, Prase, Morion, Qwindel, Quartzine, Aventurine, Ametrine, Jasper, Carnelian, Herkimer Diamond, Onyx, Sardonyx",
-        "desc": "Quartz is one of if not the most manufactured synthetic crystals in the world. It's extremely useful in a variety of industries and is often used in some of the most central technology in our world. For this reason, it has been optimized and developed to a scale that producing it costs basically nothing. It's even cheaper then synthetic corundum. Add on the fact that hydrothermally, it grows with nil to no inclusions (unlike beryl), it is quite optimal for both industrial and gemological use.<br><br>Most commonly, you'll find synthetic beryl used within Piezoelectrics, where it's main attraction is. Quartz, when charged with the right current, outputs a very clean nearly flawless sine wave. This aspect is what makes it so important for oscillators and timing circuits. Furthermore, you'll often come by synthetic quartz in just about any situation involving inert / high termperature surfaces. Quartz tubes and machined containers are extremely useful in chemical sciences, because quartz is far tougher and harder then normal glass, while also being even less susceptible to high temperatures. It still retains the optical clarity and chemical resistance of glass aswell.<br><br>Beyond just basic quartz in industrial and gemological use, quartz also has quite a few artificial varieties that come in different colors. Some have even managed to recreate transitional zoning. This limited but colorful set of varieties has made it even more popular to grow, and it has appeared quite often in the form of cut stones meant to replicate common colorful varieties of natural quartz, like citrine and amethyst.",
+        "desc": "Quartz is one of the most manufactured synthetic crystals in the world. It's extremely useful in a variety of industries and is often central to modern computing technology. For this reason, it has been optimized and developed to a scale that producing it costs basically nothing. It's even cheaper then synthetic corundum. Add on the fact that hydrothermally, it grows with nil to no inclusions (unlike beryl), it is quite optimal for both industrial and gemological use.<br><br>Most commonly, you'll find synthetic quartz used within Piezoelectrics, where it's main attraction is. Quartz, when charged with the right current, outputs a nearly flawless sine wave. This aspect is what makes it so important for oscillators and timing circuits. Furthermore, you'll often come by synthetic quartz in just about any situation involving inert / high termperature surfaces. Quartz tubes and machined containers are extremely useful in chemical sciences, because quartz is far tougher and harder then normal glass, while also being even less susceptible to high temperatures. It still retains the optical clarity and chemical resistance of glass aswell.<br><br>Beyond just basic quartz in industrial and gemological use, quartz also has quite a few artificial varieties that come in different colors. Some have even managed to recreate transitional zoning. This limited but colorful set of varieties has made it even more popular to grow, and it has appeared quite often in the form of cut stones meant to replicate common colorful varieties of natural quartz, like citrine and amethyst.",
         "synthesis": ["hdth"],
         "chem_prop": {
             "chemical": "Silicon Oxide",
@@ -205,7 +205,45 @@
         "cry_prop": {
             "system": "Trigonal"
         },
-        "minID": 3337
+        "minID": 3337,
+        "variants": [
+            {
+                "label": "Amethyst",
+                "cause": "Iron Ions",
+                "color": "Pink, Purple"
+            },
+            {
+                "label": "Smoky Quartz",
+                "cause": "Iraddiation with Aluminium Ions",
+                "color": "Gray, Brown"
+            },
+            {
+                "label": "Citrine",
+                "cause": "Iron Oxide Suspension",
+                "color": "Yellow, Orange, Brown"
+            },
+            {
+                "label": "Rose Quartz",
+                "cause": "Pink Silicate Inclusions",
+                "color": "Pink, Red"
+            },
+            {
+                "label": "Pink Quartz",
+                "cause": "Iraddiation with Aluminium and Phosphorous Ions",
+                "color": "Pink"
+            },
+            {
+                "label": "Orange Quartz",
+                "cause": "Hematite / Iron Oxide Suspension",
+                "color": "Red, Brown, Orange"
+            },
+            {
+                "label": "Cobalt Quartz",
+                "cause": "Cobalt Ions",
+                "color": "Blue",
+                "usage": "Specialty Optics"
+            }
+        ]
     },
     {
         "id": 4,
