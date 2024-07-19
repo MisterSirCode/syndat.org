@@ -178,7 +178,8 @@
     "edfg": {
         "title": "Edge-Defined Film-Fed Growth",
         "prefix": "",
-        "aliases": [],
+        "shorthand": "EDFFG",
+        "aliases": ["EDFFG"],
         "disc": "",
         "trunc": "A method that involves pulling a seed through a vertical channel, with a die that feeds a film of molten material upward.",
         "desc": "",
