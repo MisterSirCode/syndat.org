@@ -68,9 +68,9 @@
                 "color": "Blue, Cyan"
             },
             {
-                "label": "Color-Change Sapphire",
+                "label": "Alexandrite Sapphire",
                 "cause": "Vanadium Ions",
-                "color": "Purple, Red, Green, Blue, etc"
+                "color": "Color Change - Purple, Red, Green, Blue, etc"
             },
             {
                 "label": "Star Sapphire / Ruby",
@@ -849,7 +849,19 @@
             "system": "Isometric"
         },
         "variants": [
-            
+            {
+                "label": "Ce:LuAG",
+                "cause": "Cerium Ions",
+                "color": "Green, Lime",
+                "fluor": "Green",
+                "usage": "Lasers, Sensors"
+            },
+            {
+                "label": "Pr:LuAG",
+                "cause": "Praseodymium Ions",
+                "color": "Pale Green",
+                "usage": "Lasers, Sensors"
+            }
         ]
     },
     {
@@ -902,7 +914,7 @@
     {
         "id": 26,
         "label": "Chrysoberyl",
-        "aliases": "Alexandrite, Cymophane",
+        "aliases": "Alexandrite, Diaphanite, Cymophane",
         "desc": "",
         "synthesis": ["czok", "flux", "hdth"],
         "chem_prop": {
@@ -926,7 +938,14 @@
         "cry_prop": {
             "system": "Orthorhombic"
         },
-        "minID": 1039
+        "minID": 1039,
+        "variants": [
+            {
+                "label": "Alexandrite",
+                "cause": "Chromium Ions",
+                "color": "Color Change - Green, Blue, Red, Purple"
+            }
+        ]
     },
     {
         "id": 27,
@@ -980,7 +999,33 @@
         },
         "cry_prop": {
             "system": "Tetragonal"
-        }
+        },
+        "variants": [
+            {
+                "label": "Nd:YVO4",
+                "cause": "Neodymium Ions",
+                "color": "Purple, Blue, Green, Yelloow",
+                "usage": "Lasers"
+            },
+            {
+                "label": "Cr:Nd:YVO4",
+                "cause": "Chromium and Neodymium Ions",
+                "color": "Green",
+                "usage": "Lasers"
+            },
+            {
+                "label": "Pr:YVO4",
+                "cause": "Praseodymium Ions",
+                "color": "Green, Lime, Yellow",
+                "usage": "Lasers"
+            },
+            {
+                "label": "Tm:Ho:YVO4",
+                "cause": "Thulium and Holmium Ions",
+                "color": "Pink",
+                "usage": "Lasers"
+            }
+        ]
     },
     {
         "id": 29,
