@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.1.5"
+        "revision": "0.1.6"
     },
     {
         "id": 0,
@@ -46,13 +46,11 @@
                 "color": "Purple, Pink, Salmon, Orange"
             },
             {
-                "label": "Traditional Sapphire",
                 "cause": "Iron and Titanium Ions",
                 "color": "Blue",
                 "usage": "Clock Jewels, Bearings"
             },
             {
-                "label": "Ferric Sapphire",
                 "cause": "Iron Ions",
                 "color": "Green, Yellow"
             },
@@ -63,12 +61,10 @@
                 "usage": "Laser Rods, Specialty Optics"
             },
             {
-                "label": "Cobaltoan Sapphire",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan"
             },
             {
-                "label": "Alexandrite Sapphire",
                 "cause": "Vanadium Ions",
                 "color": "Color Change - Purple, Red, Green, Blue, etc"
             },
@@ -109,14 +105,13 @@
         "minID": 3729,
         "variants": [
             {
-                "label": "Cobaltoan Spinel",
+                "label": "Cobalt Spinel",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
                 "fluor": "Red",
                 "usage": "Q-Switchers, Laser Rods"
             },
             {
-                "label": "Traditional Spinel",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink",
                 "fluor": "Red"
@@ -210,7 +205,7 @@
             {
                 "label": "Amethyst",
                 "cause": "Iron Ions",
-                "color": "Pink, Purple"
+                "color": "Pale Pink, Purple"
             },
             {
                 "label": "Smoky Quartz",
@@ -233,12 +228,11 @@
                 "color": "Pink"
             },
             {
-                "label": "Orange Quartz",
                 "cause": "Hematite / Iron Oxide Suspension",
                 "color": "Red, Brown, Orange"
             },
             {
-                "label": "Cobaltoan Quartz",
+                "label": "Cobalt Quartz",
                 "cause": "Cobalt Ions",
                 "color": "Blue",
                 "usage": "Specialty Optics"
@@ -269,7 +263,73 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "variants": [
+            {
+                "cause": "Ce, CeO<sub>2</sub>, Ce<sub>2</sub>O<sub>3</sub>",
+                "color": "Yellow, Orange, Red"
+            },
+            {
+                "cause": "Chromium and Vanadium Ions",
+                "color": "Green"
+            },
+            {
+                "cause": "Cr<sub>2</sub>O<sub>3</sub>, Tm<sub>2</sub>O<sub>3</sub>, V<sub>2</sub>O<sub>3</sub>",
+                "color": "Green, Olive"
+            },
+            {
+                "cause": "Er, Eu, Er<sub>2</sub>O<sub>3</sub>, Eu<sub>2</sub>O<sub>3</sub>, Ho<sub>2</sub>O<sub>3</sub>",
+                "color": "Pink"
+            },
+            {
+                "cause": "Co<sub>2</sub>O<sub>3</sub>, MnO<sub>2</sub>, Nd<sub>2</sub>O<sub>3</sub>",
+                "color": "Lilac, Violet"
+            },
+            {
+                "cause": "Cobalt Ions",
+                "color": "Lilac, Violet, Blue"
+            },
+            {
+                "cause": "CuO, Fe<sub>2</sub>O<sub>3</sub>, NiO, Pr<sub>2</sub>O<sub>3</sub>, TiO<sub>2</sub>",
+                "color": "Yellow, Amber, Brown"
+            },
+            {
+                "cause": "Copper Ions",
+                "color": "Yellow, Pale Blue"
+            },
+            {
+                "cause": "Iron Ions",
+                "color": "Yellow"
+            },
+            {
+                "cause": "Holmium Ions",
+                "color": "Pale Brown"
+            },
+            {
+                "cause": "Manganese Ions",
+                "color": "Brown, Violet"
+            },
+            {
+                "cause": "Neodymium Ions",
+                "color": "Purple"
+            },
+            {
+                "cause": "Nickel and Thulium Ions",
+                "color": "Yellow, Brown"
+            },
+            {
+                "cause": "Praseodymium Ions",
+                "color": "Amber"
+            },
+            {
+                "cause": "Titanium Ions",
+                "color": "Amber, Brown"
+            },
+            {
+                "cause": "Vanadium Ions",
+                "color": "Green"
+            }
+        ]
     },
     {
         "id": 5,
