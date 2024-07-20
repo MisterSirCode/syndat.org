@@ -6,15 +6,15 @@ let synthesisTemplate = fs.readFileSync('./synthesisTemplate.html', { encoding: 
 let synHomeTemplate = fs.readFileSync('./synHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function generateTemplates() {
-    let mats = materials[1];
+    materials.shift();
     let keys = Object.keys(synthesis);
     // Clear extra info sector from the working database
     keys.shift();
     let genlist = [];
     let synListForSummary = [];
     let matListForSummary = [];
-    for (let i = 0; i < mats.length; i++) {
-        const mat = mats[i];
+    for (let i = 0; i < materials.length; i++) {
+        const mat = materials[i];
 
         matListForSummary[i] = [
             mat.label,
