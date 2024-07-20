@@ -26,7 +26,6 @@ function generateTemplates() {
             mat.aliases,
             mat.chem_prop.chemical,
             mat.chem_prop.formula,
-            
         ];
     }
     for (let i = 0; i < keys.length; i++) {
