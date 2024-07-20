@@ -16,12 +16,17 @@ function generateTemplates() {
     for (let i = 0; i < materials.length; i++) {
         const mat = materials[i];
 
+        const trueIds = [];
+        mat.synthesis.forEach((id, i) => {
+            trueIds[i] = synthesis[id].title
+        });
+
         matListForSummary[i] = [
             mat.label,
             mat.aliases,
             mat.chem_prop.chemical,
             mat.chem_prop.formula,
-            mat.synthesis
+            
         ];
     }
     for (let i = 0; i < keys.length; i++) {
