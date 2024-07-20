@@ -1,0 +1,1 @@
+const conf = document.querySelector('.pageSearchConfirm');
