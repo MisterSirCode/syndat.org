@@ -452,7 +452,7 @@
         "id": 9,
         "label": "Silicon",
         "aliases": "",
-        "desc": "",
+        "desc": "Silicon is a particularly unique synthetic element. It is one of the most common materials grown to exceptional purities, and is the backbone of modern civilization. Effectively every device with an integrated circuit most likely uses a doped / etched die made from polished wafers of pure silicon grown via the czochralski method or similar processes. Without these dies there would be virtually no smart devices or compact computing.<br><br>The process of chemically and optically modifying wafers to create microscopic digital circuits is one of mankind's greatest achievements, and this material makes it possible. Furthermore, the technology developed around silicon helped propel the material science industry as a whole. Silicon and other semiconductors are really what started it all.",
         "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
         "chem_prop": {
             "chemical": "Silicon",
@@ -475,7 +475,7 @@
         "id": 10,
         "label": "Diamond",
         "aliases": "Bort, Carbanado, Adamant",
-        "desc": "",
+        "desc": "test",
         "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
             "chemical": "Carbon",
@@ -502,7 +502,7 @@
         "id": 11,
         "label": "Tausonite",
         "aliases": "Fabulite, Marvelite, Diagem",
-        "desc": "",
+        "desc": "test",
         "synthesis": ["vern"],
         "chem_prop": {
             "chemical": "Strontium Titanate",
@@ -530,7 +530,7 @@
         "id": 12,
         "label": "Lithium Niobate",
         "aliases": "Linobate",
-        "desc": "",
+        "desc": "test",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Niobate",
@@ -556,7 +556,7 @@
         "id": 13,
         "label": "LYSO",
         "aliases": "",
-        "desc": "",
+        "desc": "test",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lutetium-Yttrium Oxyorthosilicate",
