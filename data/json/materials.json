@@ -652,7 +652,21 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "variants": [
+            {
+                "label": "Tl:CsI",
+                "cause": "Thallium Ions",
+                "color": "Colorless, Pale Yellow",
+                "usage": "Specialty Scintillators, Sensors"
+            },
+            {
+                "label": "Na:CsI",
+                "cause": "Sodium Ions",
+                "color": "Colorless",
+                "usage": "Specialty Scintillators, Sensors"
+            }
+        ]
     },
     {
         "id": 17,
