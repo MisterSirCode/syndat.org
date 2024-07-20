@@ -565,7 +565,7 @@
         "id": 13,
         "label": "LYSO",
         "aliases": "",
-        "desc": "test",
+        "desc": "LYSO is a very special synthetic material. Chemically, it is a transitional series crystal of YSO and LSO. Varying amounts of the compounds and ions exist throughout the crystal structure. This material has optimal properties for precision scintillation. Accordingly, it's one of the most effective luminescent materials. It is often found in use of Gamma Sensor Arrays.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lutetium-Yttrium Oxyorthosilicate",
@@ -585,7 +585,16 @@
         },
         "cry_prop": {
             "system": "Monoclinic"
-        }
+        },
+        "variants": [
+            {
+                "label": "Ce:LYSO",
+                "cause": "Cerium Ions",
+                "color": "Colorless",
+                "fluor": "Blue",
+                "usage": "Gamma Arrays, Sensors"
+            }
+        ]
     },
     {
         "id": 14,
