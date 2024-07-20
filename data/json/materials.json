@@ -475,7 +475,7 @@
         "id": 10,
         "label": "Diamond",
         "aliases": "Bort, Carbanado, Adamant",
-        "desc": "test",
+        "desc": "Diamond, while one of the simplest minerals on the planet, is one of the most difficult to produce. It is extremely sought-after because of it's historical, symbolical, gemological, and scientific importance. Natural diamonds have sparked social imbalance because of their attraction, so synthetic diamonds have become very important in the modern age.<br><br>Synthesizing diamonds is far from a simple task. Due to the extreme environmental factors that diamonds grow in, recreating it or finding alternatives has proven to be a challenge for engineers and material scientists. Synthesizing them at an affordable and commercial scale has only been possible in recent decades. Processes like CVD were exceptionally useful at producing large optical-grade crystals of diamond, though yields are not high and the process can be expensive. Furthermore, the gem industry has fueled control over synthetic material. This means that ultimately nothing has changed in regards to their market. Thankfully alternatives exist for optical appreciation, such as Cubic Zirconia and Moissanite. Diamonds are still quite exceptional for their properties and are actively used in a variety of industries because of it. Unfortunately in many use cases, diamonds are the only usable option due to it's extreme hardness and thermal properties. For this reason (and many others) they will likely continue to be a commonly synthesized material, regardless of cost and complexity.",
         "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
             "chemical": "Carbon",
