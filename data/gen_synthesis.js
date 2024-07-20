@@ -20,7 +20,8 @@ function generateTemplates() {
             mat.label,
             mat.aliases,
             mat.chem_prop.chemical,
-            mat.chem_prop.formula
+            mat.chem_prop.formula,
+            mat.synthesis
         ];
     }
     for (let i = 0; i < keys.length; i++) {
