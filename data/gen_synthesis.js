@@ -11,7 +11,7 @@ function generateTemplates() {
     // Clear extra info sector from the working database
     keys.shift();
     let genlist = [];
-    let synListForSummary = {};
+    let synListForSummary = [];
     let matListForSummary = [];
     for (let i = 0; i < mats.length; i++) {
         const mat = mats[i];
