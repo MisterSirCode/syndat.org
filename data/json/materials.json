@@ -502,7 +502,7 @@
         "id": 11,
         "label": "Tausonite",
         "aliases": "Fabulite, Marvelite, Diagem",
-        "desc": "test",
+        "desc": "Strontium Titanate, known naturally as the mineral Tausonite, was an old-age diamond simulant that was popular during the early days of the diamond marketing campaigns (Often called Fabulite). This material has some niche uses in specialty optical mediums and piezoelectrics, so it's far from a common material in the modern age. Not many surviving cut stones and rough from previous decades still exists, because the material itself is quite soft and fragile. This is one of the reasons it never took off as an attractive diamond alternative.<br><br>If it weren't for its downsides, Strontium Titanate would actually be one of the most accurate replacements for diamonds. To my knowledge, it has the closest refractive index to diamond, while also being an isotropic medium. As a bonus, it has a much higher dispersion factor then diamond; This results in a much more colorful stone. However, as already mentioned, the stone's weakness was an unbearable fault to becoming a marketable alternative.",
         "synthesis": ["vern"],
         "chem_prop": {
             "chemical": "Strontium Titanate",
@@ -530,7 +530,7 @@
         "id": 12,
         "label": "Lithium Niobate",
         "aliases": "Linobate",
-        "desc": "test",
+        "desc": "Lithium Niobate is a niche optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Niobate",
