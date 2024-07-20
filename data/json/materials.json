@@ -652,7 +652,7 @@
         "id": 16,
         "label": "CsI",
         "aliases": "",
-        "desc": "",
+        "desc": "Cesium Iodide is one of the most common scintillators in scientific use. This material is very effective, especially the commonly doped varieties of it, Thallium and Sodium-based CsI. A major downside of this material is its hygroscopic nature. The Thallium variant is especially poisonous. Accordingly, almost every crystal of this material is precut to spec, and are sealed inside of an optical chamber that cuts it off from the normal atmosphere.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Cesium Iodide",
@@ -690,7 +690,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "",
+        "desc": "This material shares some similarity and use with Cesium Iodide, but I do not know of anything particularly special about it.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
