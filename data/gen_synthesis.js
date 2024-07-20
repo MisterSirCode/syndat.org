@@ -31,7 +31,8 @@ function generateTemplates() {
         let method = synthesis[key];
         let template = synthesisTemplate;
 
-        synListForSummary[key] = [
+        synListForSummary[i] = [
+            key,
             method.title,
             method.aliases,
             method.disc
