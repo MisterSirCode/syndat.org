@@ -550,7 +550,16 @@
         },
         "cry_prop": {
             "system": "Trigonal"
-        }
+        },
+        "variants": [
+            {
+                "label": "Er:LiNbO3",
+                "cause": "Erbium Ions",
+                "color": "Pink",
+                "fluor": "Green",
+                "usage": "Integrated Lasing and Optical Circuits"
+            }
+        ]
     },
     {
         "id": 13,
