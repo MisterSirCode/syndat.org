@@ -806,7 +806,16 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "variants": [
+            {
+                "label": "Ce:GAGG",
+                "cause": "Cerium Ions",
+                "color": "Yellow",
+                "fluor": "Yellow",
+                "usage": "Lasers, Sensors, Gamma Arrays"
+            }
+        ]
     },
     {
         "id": 20,
