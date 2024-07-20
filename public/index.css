@@ -103,15 +103,18 @@ a {
 }
 
 .mainLogo {
-    width: 2em;
+    object-fit: contain;
+    width: 8.5em;
     height: 2em;
     margin-right: 0.5em;
 }
 
 .warningLink {
-    background: darkred;
+    background: rgb(78, 0, 0);
     border-radius: 3px;
     padding: 0.5em;
+    position: relative;
+    bottom: 0;
 }
 
 /* Body Content */
@@ -258,7 +261,7 @@ a.statusYellow {
 .pageSpecialtyGrid {
     display: flex;
     padding: 2% 4% 2% 4%;
-    width: calc(100% - 8%);
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -416,6 +419,11 @@ a.statusYellow {
         width: 25%;
         height: 1.5em;
     }
+
+    .warningLink {
+        font-size: 0.8em;
+        bottom: 0;
+    }
 }
 
 /* Portrait-mode Mobile Devices */
@@ -469,7 +477,8 @@ a.statusYellow {
     }
 
     .mainLogo {
-        width: 2em;
+        object-fit: contain;
+        width: 8em;
         height: 2em;
     }
 
