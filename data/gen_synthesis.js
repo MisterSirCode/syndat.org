@@ -6,10 +6,23 @@ let synthesisTemplate = fs.readFileSync('./synthesisTemplate.html', { encoding: 
 let synHomeTemplate = fs.readFileSync('./synHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function generateTemplates() {
+    let mats = materials[1];
     let keys = Object.keys(synthesis);
     // Clear extra info sector from the working database
     keys.shift();
     let genlist = [];
+    let synListForSummary = {};
+    let matListForSummary = [];
+    for (let i = 0; i < mats.length; i++) {
+        const mat = mats[i];
+
+        matListForSummary[i] = [
+            mat.label,
+            mat.aliases,
+            mat.chem_prop.chemical,
+            mat.chem_prop.formula
+        ];
+    }
     for (let i = 0; i < keys.length; i++) {
         console.clear();
         console.log(`Finishing Template ${i + 1} / ${keys.length}`);
@@ -17,6 +30,12 @@ function generateTemplates() {
         let key = keys[i];
         let method = synthesis[key];
         let template = synthesisTemplate;
+
+        synListForSummary[key] = [
+            method.title,
+            method.aliases,
+            method.disc
+        ];
 
         // Begin Template Construction
 
@@ -52,6 +71,7 @@ function generateTemplates() {
         if (!fs.existsSync(`../public/synthesis/methods/${key}/`))
             fs.mkdirSync(`../public/synthesis/methods/${key}/`);
         fs.writeFileSync(`../public/synthesis/methods/${key}/index.html`, template);
+        fs.writeFileSync(`../public/search/summary.json`, JSON.stringify([synListForSummary, matListForSummary]));
     }
     synHomeTemplate = synHomeTemplate.replace('REV', revision);
     synHomeTemplate = synHomeTemplate.replace('SYNLIST', genlist.join(''));

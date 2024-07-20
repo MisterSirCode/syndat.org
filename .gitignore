@@ -74,3 +74,4 @@ node_modules/
 /public/synthesis/generatedList.json
 /public/materials/index.html
 /public/synthesis/index.html
+public/search/summary.json
