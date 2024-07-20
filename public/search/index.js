@@ -1,10 +1,18 @@
 const conf = document.querySelector('.pageSearchConfirm');
 const input = document.querySelector('.pageSearchInput');
-const loading = true;
+let loading = true;
 
 async function load() {
-    const res = await fetch("summary.json").catch((err) => { console.error(`Info Failed to Load with Error: ${err}`); });
-    const info = await res.json();
+    const res = await fetch("summary.json").catch((err) => { 
+        console.error(`Info Failed to Load with Error: ${err}`); 
+    });
+    if (res.ok) {
+        const info = await res.json();
+        if (info.length > 0) {
+            loading = false;
+            input.setAttribute('placeholder', 'Search...');
+        }
+    } else input.setAttribute('placeholder', 'Search Load Failed. Contact Dev');
 }
 
 load();
