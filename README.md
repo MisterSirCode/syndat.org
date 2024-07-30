@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="repository_graphic.png" />
+  <img src="./public/content/icons/large_graphic.png" />
 </p>
 
 # Syndat.org
