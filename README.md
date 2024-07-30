@@ -3,8 +3,6 @@
   <h1>A Material Science Database</h1>
 </p>
 
-<hr>
-
 A work in progress pairing to Mindat.org, but for material science / synthesis in-general
 
 ## How to use
