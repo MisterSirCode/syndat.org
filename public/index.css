@@ -4,9 +4,16 @@
     margin: 0;
     color: #fff;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
+h1, h2, h3 {
+    font-weight: 400;
+}
 
 body {
     background-color: #050505;
@@ -96,7 +103,6 @@ a {
     display: flex;
     vertical-align: middle;
     font-size: 1.5em;
-    font-family: 'montserrat';
     font-style: normal;
     font-weight: bold;
     text-shadow: -0.5px -0.5px 0px white;
@@ -369,6 +375,20 @@ a.statusYellow {
 
 .pageSearchConfirm:hover {
     cursor: pointer;
+}
+
+.centeredImage {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.largeImage {
+    object-fit: fill;
+    width: 100%;
+    max-width: 1000px;
 }
 
 /* Landscape mode Mobile Devices and Tablets */

@@ -11,7 +11,7 @@ If you want to contribute or test things on your own, you can fork the repositor
 * `genmats` - Only regenerates material pages
 * `gensyns` - Only regenerates synthesis pages
 
-`deploy` - Deploys the site to firebase (Only for my use. You wont need it)
+`deploy` - Deploys the site to firebase (Only for my use. It won't do anything)
 
 ## How to edit constant info
 The main "database" is stored in two json files:
