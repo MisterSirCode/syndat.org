@@ -63,18 +63,18 @@ function generateTemplates() {
         }
         if (Object.keys(optic).length == 0)
             fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties</div></div>', '');
-        if (!mat.bypass_optic) {
-            fix('OPSIM', `
-                <div class="pageRegionSeparator">
-                    <div class="pageSectionTitle">Optical Simulation</div>
-                </div>
-                <span class="pageArticle">
-                    These may not be fully accurate. Use them only for quick reference, not for scientific use.
-                    <br><br>
-                    <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
-                </span>
-            `);
-        } else fix('OPSIM', '');
+        // if (!mat.bypass_optic) {
+        //     fix('OPSIM', `
+        //         <div class="pageRegionSeparator">
+        //             <div class="pageSectionTitle">Optical Simulation</div>
+        //         </div>
+        //         <span class="pageArticle">
+        //             These may not be fully accurate. Use them only for quick reference, not for scientific use.
+        //             <br><br>
+        //             <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
+        //         </span>
+        //     `);
+        // } else fix('OPSIM', '');
         if (!cry.parent) delPair('Member of', 'PARENT');
         if (!cry.system) delPair('Crystal System', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
@@ -85,7 +85,8 @@ function generateTemplates() {
                 let variant = mat.variants[j];
                 let temp = `
                 <span class="specialtyGridItem variantItem">
-                    <img class="specialtyGridImage">
+                    <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../../content/materials/${mat.label}/var${j}.jpg"` : ''}
+                        ${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
                     <div class="specialtyGridContent">
                     ${variant.label ? `
                         <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>

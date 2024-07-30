@@ -38,40 +38,51 @@
                 "cause": "Chromium Ions",
                 "color": "Red, Pink, Magenta",
                 "fluor": "Red, Pink (255nm)",
-                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics"
+                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics",
+                "imgsrc": "https://www.langantiques.com/university/czochralski/"
             },
             {
                 "label": "Padparadscha",
                 "cause": "Iron and Chromium Ions",
-                "color": "Purple, Pink, Salmon, Orange"
+                "color": "Purple, Pink, Salmon, Orange",
+                "imgsrc": "Unknown"
             },
             {
+                "label": "Typical Sapphire",
                 "cause": "Iron and Titanium Ions",
                 "color": "Blue",
-                "usage": "Clock Jewels, Bearings"
+                "usage": "Clock Jewels, Bearings",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-blue-sapphire-rough/"
             },
             {
                 "cause": "Iron Ions",
-                "color": "Green, Yellow"
+                "color": "Green, Yellow, Orange",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-yellow-sapphire-rough/"
             },
             {
                 "label": "Laser Sapphire",
                 "cause": "Titanium Ions",
                 "color": "Red, Pink, Orange",
-                "usage": "Laser Rods, Specialty Optics"
+                "usage": "Laser Rods, Specialty Optics",
+                "imgsrc": "https://www.civillaser.com/index.php?main_page=product_info&products_id=1762"
             },
             {
                 "cause": "Cobalt Ions",
-                "color": "Blue, Cyan"
+                "color": "Blue, Cyan, Green",
+                "imgsrc": "https://www.etsy.com/listing/1648770374/dark-paraiba-colored-lab-created?frs=1&sts=1"
             },
             {
+                "label": "'Alexandrite' Sapphire",
                 "cause": "Vanadium Ions",
-                "color": "Color Change - Purple, Red, Green, Blue, etc"
+                "color": "Purple, Red, Green, Blue, etc",
+                "effect": "Color Change",
+                "imgsrc": "https://www.etsy.com/listing/1218426689/alexandrite-46-colored-lab-created"
             },
             {
                 "label": "Star Sapphire / Ruby",
                 "cause": "Rutile (TiO2) Inclusions",
-                "effect": "Asterism / Cat's Eye"
+                "effect": "Asterism / Cat's Eye",
+                "imgsrc": "Site Owner"
             }
         ]
     },
@@ -105,16 +116,19 @@
         "minID": 3729,
         "variants": [
             {
+                "label": "Typical Spinel",
+                "cause": "Chromium Ions",
+                "color": "Red, Pink",
+                "fluor": "Red",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-pulled-czochralski-red-spinel-rough/"
+            },
+            {
                 "label": "Cobalt Spinel",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
                 "fluor": "Red",
-                "usage": "Q-Switchers, Laser Rods"
-            },
-            {
-                "cause": "Chromium Ions",
-                "color": "Red, Pink",
-                "fluor": "Red"
+                "usage": "Q-Switchers, Laser Rods",
+                "imgsrc": "https://www.etsy.com/listing/1605713029/cobalt-blue-114-djeva-lab-created-spinel"
             }
         ]
     },
