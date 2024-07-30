@@ -2,7 +2,6 @@
   <img src="./public/content/icons/large_graphic.png" />
 </p>
 
-# Syndat.org
 A work in progress pairing to Mindat.org, but for material science / synthesis in-general
 
 ## How to use
