@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.1.6"
+        "revision": "0.1.7"
     },
     {
         "id": 0,
@@ -167,22 +167,27 @@
                 "label": "Emerald",
                 "cause": "Chromium, Vanadium, Copper and Iron Ions",
                 "color": "Green, Cyan, Lime",
-                "fluor": "Red"
+                "fluor": "Red",
+                "imgsrc": "https://djeva.com/collections/lab-emerald"
             },
             {
                 "label": "Morganite, Red Beryl",
                 "cause": "Manganese Ions",
-                "color": "Pink, Red, Orange"
+                "color": "Pink, Red, Orange",
+                "imgsrc": "https://tomsboxofrocks.com/collections/beryl"
             },
             {
                 "label": "Aquamarine, Heliodor",
                 "cause": "Iron Ions",
-                "color": "Blue, Cyan, Yellow, Orange"
+                "color": "Blue, Cyan, Yellow, Orange",
+                "imgsrc": "https://www.ebay.com/itm/155056421996"
             },
             {
-                "label": "Alkali Beryl",
-                "cause": "Alkaline Ions",
-                "color": "Blue, White"
+                "label": "(Needs Research)",
+                "cause": "Cobalt, Copper, other Ions.",
+                "color": "Blue, Cyan, Green",
+                "effect": "Pleochroism",
+                "imgsrc": "Site Owner"
             }
         ]
     },
@@ -219,22 +224,20 @@
             {
                 "label": "Amethyst",
                 "cause": "Iron Ions",
-                "color": "Pale Pink, Purple"
+                "color": "Pale Pink, Purple, Violet",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-amethyst-quartz-rough/"
             },
             {
                 "label": "Smoky Quartz",
                 "cause": "Iraddiation with Aluminium Ions",
-                "color": "Gray, Brown"
+                "color": "Gray, Brown",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-smoky-quartz-rough/"
             },
             {
                 "label": "Citrine",
                 "cause": "Iron Oxide Suspension",
-                "color": "Yellow, Orange, Brown"
-            },
-            {
-                "label": "Rose Quartz",
-                "cause": "Pink Silicate Inclusions",
-                "color": "Pink, Red"
+                "color": "Yellow, Orange, Brown",
+                "imgsrc": "https://www.alibaba.com/product-detail/Hydrothermal-quartz-synthetic-gems-rough_60494569676.html"
             },
             {
                 "label": "Pink Quartz",
@@ -242,14 +245,11 @@
                 "color": "Pink"
             },
             {
-                "cause": "Hematite / Iron Oxide Suspension",
-                "color": "Red, Brown, Orange"
-            },
-            {
                 "label": "Cobalt Quartz",
                 "cause": "Cobalt Ions",
                 "color": "Blue",
-                "usage": "Specialty Optics"
+                "usage": "Specialty Optics",
+                "imgsrc": "https://www.alibaba.com/product-detail/Hydrothermal-quartz-synthetic-gems-rough_60494569676.html"
             }
         ]
     },
@@ -281,67 +281,78 @@
         "variants": [
             {
                 "cause": "Ce, CeO<sub>2</sub>, Ce<sub>2</sub>O<sub>3</sub>",
-                "color": "Yellow, Orange, Red"
+                "color": "Yellow, Orange, Red",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Chromium and Vanadium Ions",
-                "color": "Green"
+                "color": "Green",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Cr<sub>2</sub>O<sub>3</sub>, Tm<sub>2</sub>O<sub>3</sub>, V<sub>2</sub>O<sub>3</sub>",
-                "color": "Green, Olive"
+                "color": "Green, Olive",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Er, Eu, Er<sub>2</sub>O<sub>3</sub>, Eu<sub>2</sub>O<sub>3</sub>, Ho<sub>2</sub>O<sub>3</sub>",
-                "color": "Pink"
+                "color": "Pink",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Co<sub>2</sub>O<sub>3</sub>, MnO<sub>2</sub>, Nd<sub>2</sub>O<sub>3</sub>",
-                "color": "Lilac, Violet"
+                "color": "Lilac, Violet",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Cobalt Ions",
-                "color": "Lilac, Violet, Blue"
+                "color": "Lilac, Violet, Blue",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "CuO, Fe<sub>2</sub>O<sub>3</sub>, NiO, Pr<sub>2</sub>O<sub>3</sub>, TiO<sub>2</sub>",
-                "color": "Yellow, Amber, Brown"
+                "color": "Yellow, Amber, Brown",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Copper Ions",
-                "color": "Yellow, Pale Blue"
+                "color": "Yellow, Pale Blue",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Iron Ions",
-                "color": "Yellow"
+                "color": "Yellow",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Holmium Ions",
-                "color": "Pale Brown"
+                "color": "Pale Brown",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Manganese Ions",
-                "color": "Brown, Violet"
+                "color": "Brown, Violet",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Neodymium Ions",
-                "color": "Purple"
+                "color": "Purple",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Nickel and Thulium Ions",
-                "color": "Yellow, Brown"
+                "color": "Yellow, Brown",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Praseodymium Ions",
-                "color": "Amber"
+                "color": "Amber",
+                "imgsrc": "Unknown"
             },
             {
                 "cause": "Titanium Ions",
-                "color": "Amber, Brown"
-            },
-            {
-                "cause": "Vanadium Ions",
-                "color": "Green"
+                "color": "Amber, Brown",
+                "imgsrc": "Unknown"
             }
         ]
     },
@@ -771,11 +782,17 @@
                 "usage": "Medical Lasers"
             },
             {
-                "label": "Cr:YAG",
-                "cause": "Chromium Ions",
+                "label": "Cr3+:YAG",
+                "cause": "Chromium 3+ Ions",
                 "color": "Green",
                 "fluor": "Red",
                 "usage": "Dual-Laser Mediums, Sensors, Specialty Optics"
+            },
+            {
+                "label": "Cr4+:YAG",
+                "cause": "Chromium 4+ Ions",
+                "color": "Black, Green",
+                "usage": "Specialty Optics"
             },
             {
                 "label": "CTH:YAG",
