@@ -63,7 +63,7 @@ function generateTemplates() {
         // Construct List for Index Page
 
         let temp = `
-        <a class="specialtyGridItem" href="methods/${key}/">
+        <a class="specialtyGridItem" href="${key}/">
             <img class="specialtyGridImage">
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
@@ -74,9 +74,9 @@ function generateTemplates() {
         genlist.push(temp);
 
         console.log('Writing Template...');
-        if (!fs.existsSync(`../public/synthesis/methods/${key}/`))
-            fs.mkdirSync(`../public/synthesis/methods/${key}/`);
-        fs.writeFileSync(`../public/synthesis/methods/${key}/index.html`, template);
+        if (!fs.existsSync(`../public/synthesis/${key}/`))
+            fs.mkdirSync(`../public/synthesis/${key}/`);
+        fs.writeFileSync(`../public/synthesis/${key}/index.html`, template);
         fs.writeFileSync(`../public/search/summary.json`, JSON.stringify([synListForSummary, matListForSummary]));
     }
     synHomeTemplate = synHomeTemplate.replace('REV', revision);

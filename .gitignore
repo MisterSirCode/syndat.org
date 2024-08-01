@@ -68,10 +68,6 @@ node_modules/
 # custom stuff
 /public/data/*
 /data/xls
-/public/materials/xls
-/public/materials/generatedList.json
-/public/synthesis/methods
-/public/synthesis/generatedList.json
+/public/synthesis/*
 /public/materials/*
-/public/synthesis/index.html
 public/search/summary.json

@@ -87,7 +87,7 @@ function generateTemplates() {
         //         <span class="pageArticle">
         //             These may not be fully accurate. Use them only for quick reference, not for scientific use.
         //             <br><br>
-        //             <img src="../../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
+        //             <img src="../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
         //         </span>
         //     `);
         // } else fix('OPSIM', '');
@@ -208,7 +208,7 @@ function generateTemplates() {
             let method = methods[m];
             let data = synthesis[method];
             let temp = `
-            <a class="specialtyGridItem${additional}" href="../../synthesis/methods/${method}/">
+            <a class="specialtyGridItem${additional}" href="../../synthesis/${method}/">
                 <img class="specialtyGridImage">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
