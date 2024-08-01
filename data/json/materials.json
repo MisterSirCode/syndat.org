@@ -557,7 +557,7 @@
     {
         "id": 11,
         "label": "Tausonite",
-        "aliases": "Fabulite, Marvelite, Diagem",
+        "aliases": "STO, Fabulite, Marvelite, Diagem",
         "desc": "Strontium Titanate, known naturally as the mineral Tausonite, was an old-age diamond simulant that was popular during the early days of the diamond marketing campaigns (Often called Fabulite). This material has some niche uses in specialty optical mediums and piezoelectrics, so it's far from a common material in the modern age. Not many surviving cut stones and rough from previous decades still exists, because the material itself is quite soft and fragile. This is one of the reasons it never took off as an attractive diamond alternative.<br><br>If it weren't for its downsides, Strontium Titanate would actually be one of the most accurate replacements for diamonds. To my knowledge, it has the closest refractive index to diamond, while also being an isotropic medium. As a bonus, it has a much higher dispersion factor then diamond; This results in a much more colorful stone. However, as already mentioned, the stone's weakness was an unbearable fault to becoming a marketable alternative.",
         "synthesis": ["vern"],
         "chem_prop": {
@@ -1088,7 +1088,14 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "variants": [
+            {
+                "label": "Er:Cr:YSGG",
+                "cause": "Erbium and Chromium Ions",
+                "usage": "Lamp Pumped Medical Applications"
+            }
+        ]
     },
     {
         "id": 25,
@@ -1282,30 +1289,38 @@
         },
         "neutral": {
             "color": "Beige to Dark Orange",
-            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html",
-            "usage": "Specialty Scintillators, Sensors"
+            "fluor": "Blue",
+            "usage": "Specialty Scintillators, Sensors",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html"
         }
     },
     {
         "id": 31,
-        "label": "PbWO4",
+        "label": "PWO",
         "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lead Tungstate",
             "formula": "PbWO<sub>4</sub>",
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 0,
-            "grav_max": 0,
+            "mohs_min": 4,
+            "mohs_max": 4,
+            "grav_min": 8.28,
+            "grav_max": 8.28,
             "neut_col": "Colorless"
         },
         "optic_prop": {
-            "type": "Uniaxial (?)"
+            "type": "Uniaxial (?)",
+            "ref_min": [2.16, 2.16],
+            "ref_max": [2.16, 2.16]
         },
         "cry_prop": {
             "system": "Tetragonal"
+        },
+        "neutral": {
+            "color": "Colorless to Beige",
+            "fluor": "Blue",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/pbwo4-crystal.html"
         }
     },
     {
@@ -1319,7 +1334,7 @@
             "formula": "YAlO<sub>3</sub>",
             "mohs_min": 8.5,
             "mohs_max": 8.5,
-            "grav_min": 5.35,
+            "grav_min": 4.88,
             "grav_max": 5.35,
             "neut_col": "Colorless"
         },
@@ -1341,7 +1356,7 @@
         ]
     },
     {
-        "id": 32,
+        "id": 33,
         "label": "GSGG",
         "aliases": "",
         "desc": "",
@@ -1368,5 +1383,49 @@
                 "usage": "High Transfer Efficiency Lamp Pumped Systems"
             }
         ]
+    },
+    {
+        "id": 34,
+        "label": "YGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Gallium Garnet",
+            "formula": "Y<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 0,
+            "grav_max": 0,
+            "neut_col": "Colorless"
+        },
+        "optic_prop": {
+            "type": "Isotropic"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 35,
+        "label": "LuGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lutetium Gallium Garnet",
+            "formula": "Lu<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 0,
+            "grav_max": 0,
+            "neut_col": "Colorless"
+        },
+        "optic_prop": {
+            "type": "Isotropic"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
     }
 ]

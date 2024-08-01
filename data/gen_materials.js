@@ -8,13 +8,12 @@ let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 
 
 function completionStatus(mat) {
     let points = 0;
+    if (mat.desc) points++;
     if (Object.keys(mat.chem_prop).length > 0) {
-        points++;
         if (mat.chem_prop.mohs_min > 0) points++;
         if (mat.chem_prop.grav_min > 0) points++;
     }
     if (mat.bypass_optic || Object.keys(mat.optic_prop).length > 0) {
-        points++;
         if (mat.optic_prop.opt) points += 4;
         else {
             if (mat.optic_prop.type) points++;
@@ -26,7 +25,6 @@ function completionStatus(mat) {
     if (Object.keys(mat.cry_prop).length > 0) {
         if (mat.cry_prop.system) points++;
     }
-    if (mat.desc) points++;
     return points;
 }
 
@@ -95,14 +93,14 @@ function generateTemplates() {
         // } else fix('OPSIM', '');
         if (!cry.parent) delPair('Member of', 'PARENT');
         if (!cry.system) delPair('Crystal System', 'CRYSTM');
-        if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
+        if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
         <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
         if (mat.variants || mat.neutral) {
             let final = '';
             if (mat.neutral) {
                 final += `
                 <span class="specialtyGridItem variantItem">
-                    <img class="specialtyGridImage"${mat.neutral.imgsrc ? ` src="../../../content/materials/${mat.label}/neut.jpg"` : ''}
+                    <img class="specialtyGridImage"${mat.neutral.imgsrc ? ` src="../../content/materials/${mat.label}/neut.jpg"` : ''}
                         ${mat.neutral.imgsrc ? ` title="Photo Source: ${mat.neutral.imgsrc}"` : ''}>
                     <div class="specialtyGridContent">
                     <div class="specialtyGridTitle mainGridTitle">(Undoped / Generic)</div>
@@ -119,7 +117,7 @@ function generateTemplates() {
                     let variant = mat.variants[j];
                     let temp = `
                     <span class="specialtyGridItem variantItem">
-                        <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../../content/materials/${mat.label}/var${j}.jpg"` : ''}
+                        <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../content/materials/${mat.label}/var${j}.jpg"` : ''}
                             ${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
                         <div class="specialtyGridContent">
                         ${variant.label ? `
@@ -210,7 +208,7 @@ function generateTemplates() {
             let method = methods[m];
             let data = synthesis[method];
             let temp = `
-            <a class="specialtyGridItem${additional}" href="../../../synthesis/methods/${method}/">
+            <a class="specialtyGridItem${additional}" href="../../synthesis/methods/${method}/">
                 <img class="specialtyGridImage">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
@@ -229,17 +227,17 @@ function generateTemplates() {
         fix('REV', revision);
 
         console.log('Writing Template...');
-        if (!fs.existsSync(`../public/materials/xls/${mat.label}/`))
-            fs.mkdirSync(`../public/materials/xls/${mat.label}/`);
-        fs.writeFileSync(`../public/materials/xls/${mat.label}/index.html`, template);
+        if (!fs.existsSync(`../public/materials/${mat.label}/`))
+            fs.mkdirSync(`../public/materials/${mat.label}/`);
+        fs.writeFileSync(`../public/materials/${mat.label}/index.html`, template);
     }
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
-        const status = link[2] >= 10 ? ' statusGreen' : (link[2] >= 8 ? ' statusYellow' : ' statusRed');
+        const status = link[2] >= 8 ? ' statusGreen' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
         <div class="linkGridItem">
-            <a href="xls/${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${link[2] * 10}%` : ''}</a>
+            <a href="xls/${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
         </div>`;
         tempList.push(temp);
     }
