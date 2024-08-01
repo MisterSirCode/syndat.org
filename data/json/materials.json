@@ -793,7 +793,7 @@
         "chem_prop": {
             "chemical": "Yttrium Aluminium Garnet",
             "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
-            "mohs_min": 8.5,
+            "mohs_min": 8.2,
             "mohs_max": 8.5,
             "grav_min": 4.5,
             "grav_max": 4.6,
@@ -848,8 +848,8 @@
             {
                 "label": "Cr4+:YAG",
                 "cause": "Chromium 4+ Ions",
-                "color": "Black, Dark Red, Dark Green",
-                "usage": "Specialty Optics",
+                "color": "Black, Dark Red, Dark Orange",
+                "usage": "Q-Switchers, Specialty Optics",
                 "imgsrc": "https://www.findlight.net/optics/crystals/laser-crystals/chromium-doped-yttrium-aluminium-garnet-cr4-yag-crystals-by-casix"
             },
             {
@@ -1299,13 +1299,13 @@
             "mohs_max": 0,
             "grav_min": 0,
             "grav_max": 0,
-            "neut_col": ""
+            "neut_col": "Colorless"
         },
         "optic_prop": {
-
+            "type": "Uniaxial (?)"
         },
         "cry_prop": {
-
+            "system": "Tetragonal"
         }
     },
     {
@@ -1317,17 +1317,56 @@
         "chem_prop": {
             "chemical": "Yttrium Orthoaluminate",
             "formula": "YAlO<sub>3</sub>",
+            "mohs_min": 8.5,
+            "mohs_max": 8.5,
+            "grav_min": 5.35,
+            "grav_max": 5.35,
+            "neut_col": "Colorless"
+        },
+        "optic_prop": {
+            "type": "Biaxial (-)",
+            "ref_min": [1.96, 1.94, 1.97],
+            "ref_max": [1.96, 1.94, 1.97]
+        },
+        "cry_prop": {
+            "system": "Orthorhombic"
+        },
+        "variants": [
+            {
+                "label": "Tm:YAP",
+                "cause": "Thulium Ions",
+                "color": "Beige to Dark Orange",
+                "imgsrc": "https://www.scientificmaterials.com/products/yalo3_yttrium-orthoaluminate.php"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "label": "GSGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Gadolinium Scandium Gallium Garnet",
+            "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
             "grav_max": 0,
-            "neut_col": ""
+            "neut_col": "Colorless"
         },
         "optic_prop": {
-
+            "type": "Isotropic"
         },
         "cry_prop": {
-
-        }
+            "system": "Isometric"
+        },
+        "variants": [
+            {
+                "label": "Cr:Nd:GSGG",
+                "cause": "Chromium and Neodymium Ions",
+                "usage": "High Transfer Efficiency Lamp Pumped Systems"
+            }
+        ]
     }
 ]

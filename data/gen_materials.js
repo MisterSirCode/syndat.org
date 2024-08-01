@@ -1,15 +1,31 @@
 const fs = require('fs');
 const materials = require('./json/materials.json');
 const revision = materials[0].revision;
+let debug = true;
 const synthesis = require('./json/synthesis.json');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
 function completionStatus(mat) {
     let points = 0;
-    if (Object.keys(mat.chem_prop).length > 0) points++;
-    if (Object.keys(mat.optic_prop).length > 0 || mat.bypass_optic) points++;
-    if (Object.keys(mat.cry_prop).length > 0) points++;
+    if (Object.keys(mat.chem_prop).length > 0) {
+        points++;
+        if (mat.chem_prop.mohs_min > 0) points++;
+        if (mat.chem_prop.grav_min > 0) points++;
+    }
+    if (mat.bypass_optic || Object.keys(mat.optic_prop).length > 0) {
+        points++;
+        if (mat.optic_prop.opt) points += 4;
+        else {
+            if (mat.optic_prop.type) points++;
+            if (mat.optic_prop.ref_min) points++;
+            if (mat.optic_prop.bir_min || mat.optic_prop.type == "Isotropic") points++;
+            if (mat.optic_prop.disp_min) points++;
+        }
+    }
+    if (Object.keys(mat.cry_prop).length > 0) {
+        if (mat.cry_prop.system) points++;
+    }
     if (mat.desc) points++;
     return points;
 }
@@ -46,7 +62,9 @@ function generateTemplates() {
         // Adjust Template As Needed
 
         //if (mat.aliases.length == 0) delPair('.aliases');
-        fix('MATREF', 'Information about ' + mat.label)
+        fix('MATREF', 'Information about ' + mat.label);
+        if (!chem.grav_min) delPair('Density', 'GRAV');
+        if (!chem.mohs_min) delPair('Mohs Hardness', 'MOHS');
         if (!optic.type) delPair('Type', 'OPTYPE');
         if (!optic.ref_min) delPair('Refractive Index', 'REF');
         if (!optic.disp_min) delPair('Dispersion Factor', 'DISP');
@@ -136,9 +154,8 @@ function generateTemplates() {
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);
-        if (!chem.grav_min) fix('GRAV', 'Missing Information')
-        if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min);
-        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max}`);
+        if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
+        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
         if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
         else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
         if (chem.neut_col) fix('NEUCOL', chem.neut_col);
@@ -219,10 +236,10 @@ function generateTemplates() {
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
-        const status = link[2] > 3 ? ' statusGreen' : (link[2] == 3 ? ' statusYellow' : ' statusRed');
+        const status = link[2] >= 10 ? ' statusGreen' : (link[2] >= 8 ? ' statusYellow' : ' statusRed');
         let temp = `
         <div class="linkGridItem">
-            <a href="xls/${link[1]}/" class="linkGridLink${status}">${link[1]}</a>
+            <a href="xls/${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${link[2] * 10}%` : ''}</a>
         </div>`;
         tempList.push(temp);
     }
