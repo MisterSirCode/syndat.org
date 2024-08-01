@@ -810,7 +810,8 @@
             "system": "Isometric"
         },
         "neutral": {
-            "color": "Colorless"
+            "color": "Colorless",
+            "imgsrc": "https://www.aemdeposition.com/laser-crystal/undoped-yttrium-aluminum-garnet.html"
         },
         "variants": [
             {
