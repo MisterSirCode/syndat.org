@@ -1,7 +1,7 @@
 const fs = require('fs');
 const materials = require('./json/materials.json');
 const revision = materials[0].revision;
-let debug = true;
+let debug = false;
 const synthesis = require('./json/synthesis.json');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
