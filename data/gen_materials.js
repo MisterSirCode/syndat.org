@@ -237,7 +237,7 @@ function generateTemplates() {
         const status = link[2] >= 8 ? ' statusGreen' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
         <div class="linkGridItem">
-            <a href="xls/${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
+            <a href="${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
         </div>`;
         tempList.push(temp);
     }
