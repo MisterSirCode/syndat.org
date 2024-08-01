@@ -1053,14 +1053,16 @@
                 "cause": "Cerium Ions",
                 "color": "Green, Lime",
                 "fluor": "Green",
-                "usage": "Lasers, Sensors"
+                "usage": "Lasers, Sensors",
+                "imgsrc": "https://djeva.com/collections/ce-luag"
             },
             {
                 "label": "Pr:LuAG",
                 "cause": "Praseodymium Ions",
                 "color": "Pale Green",
                 "fluor": "Salmon",
-                "usage": "Lasers, Sensors"
+                "usage": "Lasers, Sensors",
+                "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php"
             }
         ]
     },
@@ -1258,7 +1260,7 @@
     {
         "id": 30,
         "label": "CWO",
-        "aliases": "CWO",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok", "hdth"],
         "chem_prop": {
@@ -1282,6 +1284,50 @@
             "color": "Beige to Dark Orange",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html",
             "usage": "Specialty Scintillators, Sensors"
+        }
+    },
+    {
+        "id": 31,
+        "label": "PbWO4",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lead Tungstate",
+            "formula": "PbWO<sub>4</sub>",
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 0,
+            "grav_max": 0,
+            "neut_col": ""
+        },
+        "optic_prop": {
+
+        },
+        "cry_prop": {
+
+        }
+    },
+    {
+        "id": 32,
+        "label": "YAP",
+        "aliases": "Yttrium Aluminium Perovskite",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Orthoaluminate",
+            "formula": "YAlO<sub>3</sub>",
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 0,
+            "grav_max": 0,
+            "neut_col": ""
+        },
+        "optic_prop": {
+
+        },
+        "cry_prop": {
+
         }
     }
 ]

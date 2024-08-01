@@ -95,7 +95,8 @@ function generateTemplates() {
                     </div>
                 </span>`;
             }
-            if (mat.variants.length > 0) {
+            if (mat.variants) {
+                if (mat.variants.length > 0)
                 for (let j = 0; j < mat.variants.length; j++) {
                     let variant = mat.variants[j];
                     let temp = `
