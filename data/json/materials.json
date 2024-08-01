@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.1.7"
+        "revision": "0.1.8"
     },
     {
         "id": 0,
@@ -32,6 +32,10 @@
             "system": "Trigonal"
         },
         "minID": 1136,
+        "neutral": {
+            "color": "Colorless",
+            "usage": "Clock Jewels, Bearings, Specialty Optics, and More"
+        },
         "variants": [
             {
                 "label": "Ruby",
@@ -173,8 +177,8 @@
             {
                 "label": "Morganite, Red Beryl",
                 "cause": "Manganese Ions",
-                "color": "Pink, Red, Orange",
-                "imgsrc": "https://tomsboxofrocks.com/collections/beryl"
+                "color": "Pink, Magenta, Red",
+                "imgsrc": "Unknown"
             },
             {
                 "label": "Aquamarine, Heliodor",
@@ -184,10 +188,16 @@
             },
             {
                 "label": "(Needs Research)",
-                "cause": "Cobalt, Copper, other Ions.",
+                "cause": "Cobalt, Copper, and other Ions.",
                 "color": "Blue, Cyan, Green",
                 "effect": "Pleochroism",
                 "imgsrc": "Site Owner"
+            },
+            {
+                "label": "Red Beryl",
+                "cause": "Cobalt and Manganese Ions",
+                "color": "Red, Orange",
+                "imgsrc": "https://tomsboxofrocks.com/collections/beryl"
             }
         ]
     },
@@ -220,6 +230,10 @@
             "system": "Trigonal"
         },
         "minID": 3337,
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "Unknown"
+        },
         "variants": [
             {
                 "label": "Amethyst",
@@ -277,6 +291,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Colorless to Lavender",
+            "imgsrc": "Unknown"
         },
         "variants": [
             {
@@ -382,7 +400,20 @@
             "parent": "Fluorite Group",
             "system": "Isometric"
         },
-        "minID": 1576
+        "minID": 1576,
+        "neutral": {
+
+        },
+        "variants": [
+            {
+                "label": "Eu:CaF2",
+                "cause": "Europium Ions",
+                "color": "Colorless",
+                "fluor": "Blue",
+                "usage": "Specialty Scintillators, Sensors",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/caf2eu-crystal.html"
+            }
+        ]
     },
     {
         "id": 6,
@@ -617,7 +648,8 @@
                 "cause": "Cerium Ions",
                 "color": "Colorless",
                 "fluor": "Blue",
-                "usage": "Gamma Arrays, Sensors"
+                "usage": "Gamma Arrays, Sensors",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html"
             }
         ]
     },
@@ -696,18 +728,28 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "neutral": {
+            "color": "Colorless",
+            "fluor": "Yellow",
+            "usage": "Specialty Scintillators, Sensors",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
+        },
         "variants": [
             {
                 "label": "Tl:CsI",
                 "cause": "Thallium Ions",
-                "color": "Colorless, Pale Yellow",
-                "usage": "Specialty Scintillators, Sensors"
+                "color": "Colorless",
+                "fluor": "Yellow",
+                "usage": "Specialty Scintillators, Sensors",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
             },
             {
                 "label": "Na:CsI",
                 "cause": "Sodium Ions",
                 "color": "Colorless",
-                "usage": "Specialty Scintillators, Sensors"
+                "fluor": "Yellow",
+                "usage": "Specialty Scintillators, Sensors",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
             }
         ]
     },
@@ -715,7 +757,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "This material shares some similarity and use with Cesium Iodide, but I do not know of anything particularly special about it.",
+        "desc": "This material shares some similarity and use with Cesium Iodide, but I do not know of anything particularly special about it. It can also be doped with thallium, but suffers from the same poisonous / hygroscopic issues as Tl:CsI",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
@@ -733,7 +775,14 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "variants": [
+            {
+                "label": "Tl:NaI",
+                "color": "Colorless",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html"
+            }
+        ]
     },
     {
         "id": 18,
@@ -760,88 +809,104 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "neutral": {
+            "color": "Colorless"
+        },
         "variants": [
             {
                 "label": "Ce:YAG",
                 "cause": "Cerium Ions",
                 "color": "Yellow",
                 "fluor": "Yellow",
-                "usage": "Lasers, Sensors, Emission Caps"
+                "usage": "Lasers, Sensors, Emission Caps",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yag-ce-crystal.html"
             },
             {
                 "label": "Ce:Nd:YAG",
                 "cause": "Cerium and Neodymium Ions",
                 "color": "Yellow, Orange",
                 "fluor": "Yellow",
-                "usage": "Medical Lasers, Dual-Laser Mediums"
+                "usage": "Medical Lasers, Dual-Laser Mediums",
+                "imgsrc": "http://bjpcrystal.com/3-nd-laser-crystal-4.html"
             },
             {
                 "label": "Nd:YAG",
                 "cause": "Neodymium Ions",
                 "color": "Pale Pink, Pale Purple",
-                "usage": "Medical Lasers"
+                "usage": "Medical Lasers",
+                "imgsrc": "http://www.bjpcrystal.com/3-yag-laser-crystal-1.html"
             },
             {
                 "label": "Cr3+:YAG",
                 "cause": "Chromium 3+ Ions",
                 "color": "Green",
                 "fluor": "Red",
-                "usage": "Dual-Laser Mediums, Sensors, Specialty Optics"
+                "usage": "Dual-Laser Mediums, Sensors, Specialty Optics",
+                "imgsrc": "Unknown"
             },
             {
                 "label": "Cr4+:YAG",
                 "cause": "Chromium 4+ Ions",
-                "color": "Black, Green",
-                "usage": "Specialty Optics"
+                "color": "Black, Dark Red, Dark Green",
+                "usage": "Specialty Optics",
+                "imgsrc": "https://www.findlight.net/optics/crystals/laser-crystals/chromium-doped-yttrium-aluminium-garnet-cr4-yag-crystals-by-casix"
             },
             {
                 "label": "CTH:YAG",
                 "cause": "Chromium, Thulium and Holmium Ions",
                 "color": "Green", 
-                "usage": "Lasers, Specialty Optics"
+                "usage": "Lasers, Specialty Optics",
+                "imgsrc": "https://www.shalomeo.com/Laser-Crystals-and-Components/CTH-YAG-Crystals/product-287.html"
             },
             {
                 "label": "Co:YAG",
                 "cause": "Cobalt Ions",
                 "color": "Blue",
-                "usage": "Specialty Optics"
+                "usage": "Specialty Optics",
+                "imgsrc": "https://tomsboxofrocks.com/products/blue-yag-ceramic-faceting-rough-for-gem-25141"
             },
             {
                 "label": "Tm:YAG",
                 "cause": "Thulium Ions",
                 "color": "Pale Green, Pale Yellow",
-                "usage": "Medical Lasers, Specialty Optics"
+                "usage": "Medical Lasers, Specialty Optics",
+                "imgsrc": "https://www.scientificmaterials.com/products/tm-yag.php"
             },
             {
                 "label": "Er:YAG",
                 "cause": "Erbium Ions",
                 "color": "Color Change - Orange, Pink",
-                "usage": "Lasers, Specialty Optics"
+                "usage": "Lasers, Specialty Optics",
+                "imgsrc": "https://www.scientificmaterials.com/products/er-yag.php"
             },
             {
                 "label": "V:YAG",
                 "cause": "Vanadium Ions",
                 "color": "Green",
-                "usage": "Specialty Optics"
+                "usage": "Specialty Optics",
+                "imgsrc": "https://store.turtleshoard.com/products/vivid-green-laser-garnet-facet-rough-vanadium-yag"
             },
             {
                 "label": "Yb:YAG",
                 "cause": "Ytterbium Ions",
                 "color": "Cyan, Pale Blue",
-                "usage": "Infrared Lasers, Specialty Optics"
+                "usage": "Infrared Lasers, Specialty Optics",
+                "imgsrc": "https://www.scientificmaterials.com/products/yb-yag.php"
             },
             {
                 "label": "Sm:YAG",
                 "cause": "Samarium Ions",
                 "color": "Pale Yellow, Pale Orange",
                 "fluor": "Orange",
-                "usage": "Specialty Optics"
+                "usage": "Specialty Optics",
+                "imgsrc": "https://djeva.com/collections/sm-yag"
             },
             {
                 "label": "Ho:YAG",
                 "cause": "Holmium Ions",
-                "color": "Pale Green",
-                "usage": "Specialty Optics"
+                "color": "Pale Green, Pale Yellow",
+                "usage": "Specialty Optics",
+                "imgsrc": "https://www.scientificmaterials.com/products/ho-yag.php"
             }
         ]
     },
@@ -876,7 +941,8 @@
                 "cause": "Cerium Ions",
                 "color": "Yellow",
                 "fluor": "Yellow",
-                "usage": "Lasers, Sensors, Gamma Arrays"
+                "usage": "Lasers, Sensors, Gamma Arrays",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/gaggce-crystal.html"
             }
         ]
     },
@@ -992,6 +1058,7 @@
                 "label": "Pr:LuAG",
                 "cause": "Praseodymium Ions",
                 "color": "Pale Green",
+                "fluor": "Salmon",
                 "usage": "Lasers, Sensors"
             }
         ]
@@ -1209,6 +1276,11 @@
         },
         "cry_prop": {
             "system": "Tetragonal"
+        },
+        "neutral": {
+            "color": "Beige to Dark Orange",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html",
+            "usage": "Specialty Scintillators, Sensors"
         }
     }
 ]

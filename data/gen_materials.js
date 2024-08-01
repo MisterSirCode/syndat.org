@@ -79,27 +79,43 @@ function generateTemplates() {
         if (!cry.system) delPair('Crystal System', 'CRYSTM');
         if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
         <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
-        if (mat.variants && mat.variants.length > 0) {
+        if (mat.variants || mat.neutral) {
             let final = '';
-            for (let j = 0; j < mat.variants.length; j++) {
-                let variant = mat.variants[j];
-                let temp = `
+            if (mat.neutral) {
+                final += `
                 <span class="specialtyGridItem variantItem">
-                    <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../../content/materials/${mat.label}/var${j}.jpg"` : ''}
-                        ${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
+                    <img class="specialtyGridImage"${mat.neutral.imgsrc ? ` src="../../../content/materials/${mat.label}/neut.jpg"` : ''}
+                        ${mat.neutral.imgsrc ? ` title="Photo Source: ${mat.neutral.imgsrc}"` : ''}>
                     <div class="specialtyGridContent">
-                    ${variant.label ? `
-                        <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
-                        <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.label}</div>
-                    ` : ''}
-                    ${variant.color ? `<div class="specialtyGridDesc variantDesc">Color: ${variant.color}</div>` : ''}
-                    ${variant.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${variant.fluor}</div>` : ''}
-                    ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${variant.cause}</div>` : ''}
-                    ${variant.effect ? `<div class="specialtyGridDesc variantDesc">Effect: ${variant.effect}</div>` : ''}
-                    ${variant.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${variant.usage}</div>` : ''}
+                    <div class="specialtyGridTitle mainGridTitle">(Undoped / Generic)</div>
+                    <div class="specialtyGridTitle shortGridTitle">(Undoped)</div>
+                    ${mat.neutral.color ? `<div class="specialtyGridDesc variantDesc">Color: ${mat.neutral.color}</div>` : ''}
+                    ${mat.neutral.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${mat.neutral.fluor}</div>` : ''}
+                    ${mat.neutral.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${mat.neutral.usage}</div>` : ''}
                     </div>
                 </span>`;
-                final += temp;
+            }
+            if (mat.variants.length > 0) {
+                for (let j = 0; j < mat.variants.length; j++) {
+                    let variant = mat.variants[j];
+                    let temp = `
+                    <span class="specialtyGridItem variantItem">
+                        <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../../content/materials/${mat.label}/var${j}.jpg"` : ''}
+                            ${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
+                        <div class="specialtyGridContent">
+                        ${variant.label ? `
+                            <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
+                            <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.label}</div>
+                        ` : ''}
+                        ${variant.color ? `<div class="specialtyGridDesc variantDesc">Color: ${variant.color}</div>` : ''}
+                        ${variant.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${variant.fluor}</div>` : ''}
+                        ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${variant.cause}</div>` : ''}
+                        ${variant.effect ? `<div class="specialtyGridDesc variantDesc">Effect: ${variant.effect}</div>` : ''}
+                        ${variant.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${variant.usage}</div>` : ''}
+                        </div>
+                    </span>`;
+                    final += temp;
+                }
             }
             fix('VARTYPES', `
                 <div class="pageRegionSeparator">
