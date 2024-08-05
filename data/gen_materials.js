@@ -31,9 +31,9 @@ function completionStatus(mat) {
 function generateTemplates() {
     materials.shift(); // Clear extra info sector from the working database
     let genlist = [];
+    console.clear();
+    console.log(`Generating ${materials.length} Material Templates`);
     for (let i = 0; i < materials.length; i++) {
-        console.clear();
-        console.log(`Finishing Template ${i + 1} / ${materials.length}`);
         let mat = materials[i];
         let template = materialTemplate;
 
@@ -43,7 +43,9 @@ function generateTemplates() {
         genlist.push([
             mat.id,
             mat.label,
-            status
+            status,
+            mat.chem_prop.formula,
+            mat.neutral ? mat.neutral.imgsrc ? mat.neutral.imgsrc : 0 : 0,
         ]);
 
         // Begin Template Construction
@@ -225,8 +227,6 @@ function generateTemplates() {
         fix('MATIMG', mat.label.toLowerCase().replace(' ', ''));
 
         fix('REV', revision);
-
-        console.log('Writing Template...');
         if (!fs.existsSync(`../public/materials/${mat.label}/`))
             fs.mkdirSync(`../public/materials/${mat.label}/`);
         fs.writeFileSync(`../public/materials/${mat.label}/index.html`, template);
@@ -235,10 +235,20 @@ function generateTemplates() {
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
         const status = link[2] >= 8 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
+        // let temp = `
+        // <div class="linkGridItem">
+        //     <a href="${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
+        // </div>`;
+        console.log(link[4]);
         let temp = `
-        <div class="linkGridItem">
-            <a href="${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
-        </div>`;
+        <a class="specialtyGridItem${status}" href="${link[1]}/">
+            <img class="specialtyGridImage"${link[4].length > 0 ? ` src="../content/materials/${link[1]}/neut.jpg"` : ''}>
+            <div class="specialtyGridContent">
+            <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
+            <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
+            <div class="specialtyGridDesc">${link[3]}</div>
+            </div>
+        </a>`;
         tempList.push(temp);
     }
     matHomeTemplate = matHomeTemplate.replace('REV', revision);
