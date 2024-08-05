@@ -234,7 +234,7 @@ function generateTemplates() {
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
-        const status = link[2] >= 8 ? ' statusGreen' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
+        const status = link[2] >= 8 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
         <div class="linkGridItem">
             <a href="${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
