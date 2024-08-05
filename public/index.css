@@ -175,6 +175,7 @@ p {
     padding-top: 0.7em;
     font-size: 0.8em;
     margin-bottom: 1.5em;
+    line-height: 1.2em;
 }
 
 .pageRegion {
@@ -185,7 +186,7 @@ p {
 }
 
 .pageRegionLeft {
-    width: 92%;
+    width: 84%;
     padding: 4% 8% 4% 8%;
 }
 
@@ -279,6 +280,12 @@ a.statusYellow {
     margin-bottom: 0.5em;
     margin-top: 0.5em;
     width: 50%;
+}
+
+.specialtyGridItem.gridExpander {
+    margin-bottom: 1cap;
+    margin-top: 1em;
+    width: 25%;
 }
 
 .specialtyGridImage {
@@ -499,6 +506,10 @@ a.statusYellow {
         line-height: 1.8em;
     }
 
+    .pageRegion {
+        grid-template-columns: 1fr;
+    }
+
     .pageRegionLeft {
         width: calc(100% - 1em);
         padding: 0.5em;
@@ -507,7 +518,7 @@ a.statusYellow {
     .pageRegionRight {
         width: calc(100% - 1em);
         padding: 0.5em;
-        text-align: right;
+        text-align: left;
     }
 
     .pageRegionSeparator {
