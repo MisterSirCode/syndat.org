@@ -148,7 +148,7 @@ function generateTemplates() {
 
         fix('TITLE', mat.label);
         if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<span>Material Aliases: ${mat.aliases}</span><br><br>`);
+        if (mat.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${mat.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.chemical);
