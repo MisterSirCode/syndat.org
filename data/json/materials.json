@@ -34,7 +34,8 @@
         "minID": 1136,
         "neutral": {
             "color": "Colorless",
-            "usage": "Clock Jewels, Bearings, Specialty Optics, and More"
+            "usage": "Clock Jewels, Bearings, Specialty Optics, and More",
+            "imgsrc": "Site Owner"
         },
         "variants": [
             {
