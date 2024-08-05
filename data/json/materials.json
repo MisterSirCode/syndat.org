@@ -1291,8 +1291,8 @@
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
-            "ref_min": [2.2, 2.2],
-            "ref_max": [2.3, 2.3]
+            "ref_min": 2.2,
+            "ref_max": 2.3
         },
         "cry_prop": {
             "system": "Tetragonal"
@@ -1321,8 +1321,8 @@
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
-            "ref_min": [2.16, 2.16],
-            "ref_max": [2.16, 2.16]
+            "ref_min": 2.16,
+            "ref_max": 2.16
         },
         "cry_prop": {
             "system": "Tetragonal"
@@ -1463,6 +1463,32 @@
         },
         "cry_prop": {
             "system": "Monoclinic"
+        }
+    },
+    {
+        "id": 37,
+        "label": "Lithium Tantalate",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lithium Tantalate",
+            "formula": "LiTaO<sub>3</sub>",
+            "mohs_min": 5.75,
+            "mohs_max": 6,
+            "grav_min": 7.45,
+            "grav_max": 7.46,
+            "neut_col": "colorless"
+        },
+        "optic_prop": {
+            "type": "Uniaxial (?)",
+            "ref_min": [2.176, 2.18],
+            "ref_max": [2.18, 2.18],
+            "disp_min": 0.075,
+            "disp_max": 0.075
+        },
+        "cry_prop": {
+            "system": "Trigonal"
         }
     }
 ]

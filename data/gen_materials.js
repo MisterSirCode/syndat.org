@@ -247,7 +247,7 @@ function generateTemplates() {
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
-            <div class="specialtyGridDesc">${link[3]}</div>
+            <div class="specialtyGridDesc floatDown">${link[3]}</div>
             </div>
         </a>`;
         tempList.push(temp);

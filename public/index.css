@@ -304,7 +304,7 @@ a.statusYellow {
 
 .specialtyGridTitle {
     font-weight: bold;
-    height: 1.5em;
+    height: 20%;
 }
 
 .shortGridTitle {
@@ -321,6 +321,10 @@ a.statusYellow {
     overflow: hidden;
     text-overflow: ellipsis;
     bottom: 0;
+}
+
+.specialtyGridDesc.floatDown {
+    position: relative;
 }
 
 .pageLinkGrid {
