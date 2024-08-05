@@ -5,7 +5,7 @@
     {
         "id": 0,
         "label": "Corundum",
-        "aliases": "Sapphire, Ruby, Carbuncle",
+        "aliases": "Sapphire, Ruby, or Carbuncle",
         "desc": "Corundum is one of the most common synthetic materials grown today. It is an extremely versatile product with exceptional properties. In nature, this material is often known by Sapphire or Ruby. It is sought after because of its optimal hardness and variety of possible colorations. Add on the fact that it's easy to produce, and its not hard to see why its one of the most popular synthetic and natural gemstones in the world.<br><br>As far as synthetic corundum, some of the most common usecases involve specialty optics, such as in Thermal Sensors, Lasers, High-Durability Screens / Viewports, Specialty Lenses, and even in Weaponry / Imaging systems.<br><br>Corundum can also be used in Machining, Bearings, and Polishing. Furthermore, Alumina Ceramics (Microcorundum crystals suspended in solid alumina) are also extensively used across the industry. Most commonly they're used as a high-temperature ceramic barrier, but have also seen use in grinding or even in sintering to produce extremely large optical boules.<br><br>Part of the reason for its wide availability and use is how easy it is to produce. It can be synthesized using a massive variety of methods, some not even listed here. Not to mention, alumina is cheap and easy to purify, making production even simpler. See below for a list of common production methods.",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint", "edfg", "zone"],
         "chem_prop": {
@@ -139,7 +139,7 @@
     {
         "id": 2,
         "label": "Beryl",
-        "aliases": "Goshenite, Emerald, Morganite, Red Beryl, Aquamarine, Heliodor, Maxixe, Davidsonite, Rosterite, Vorobyevite",
+        "aliases": "Goshenite, Emerald, Morganite, Red Beryl, Aquamarine, Heliodor, Maxixe, Davidsonite, Rosterite, or Vorobyevite",
         "desc": "Beryl is not often thought of when it comes to synthetic materials, but it's actually quite common in the gem industry. Beryl in of itself doesn't have much or really any industrial use, but it is exceptionally popular in gemology for obvious reasons. The main method of production for it (hydrothermal) also makes very realistical / natural looking stones with inclusions, similarly to natural specimens. Flux synthesis does aswell, though it's not nearly as common of a production method in the modern era.<br><br> A large benefit of synthetic beryl is that it costs far less and can be grown in basically any of the natural color varieties. Unfortunately, the gem industry has kept quite a tight hold on the mass-production of synthetic beryl, so finding it for reasonable prices can still be difficult.",
         "synthesis": ["hdth", "flux"],
         "chem_prop": {
@@ -204,7 +204,7 @@
     {
         "id": 3,
         "label": "Quartz",
-        "aliases": "Rock Crystal, Agate, Chalcedony, Smokey Quartz, Amethyst, Citrine, Rose Quartz, Prasiolite, Prase, Morion, Qwindel, Quartzine, Aventurine, Ametrine, Jasper, Carnelian, Herkimer Diamond, Onyx, Sardonyx",
+        "aliases": "Rock Crystal, Agate, Chalcedony, Smokey Quartz, Amethyst, Citrine, Rose Quartz, Prasiolite, Prase, Morion, Qwindel, Quartzine, Aventurine, Ametrine, Jasper, Carnelian, Herkimer Diamond, Onyx, or Sardonyx",
         "desc": "Quartz is one of the most manufactured synthetic crystals in the world. It's extremely useful in a variety of industries and is often central to modern computing technology. For this reason, it has been optimized and developed to a scale that producing it costs basically nothing. It's even cheaper then synthetic corundum. Add on the fact that hydrothermally, it grows with nil to no inclusions (unlike beryl), it is quite optimal for both industrial and gemological use.<br><br>Most commonly, you'll find synthetic quartz used within Piezoelectrics, where it's main attraction is. Quartz, when charged with the right current, outputs a nearly flawless sine wave. This aspect is what makes it so important for oscillators and timing circuits. Furthermore, you'll often come by synthetic quartz in just about any situation involving inert / high termperature surfaces. Quartz tubes and machined containers are extremely useful in chemical sciences, because quartz is far tougher and harder then normal glass, while also being even less susceptible to high temperatures. It still retains the optical clarity and chemical resistance of glass aswell.<br><br>Beyond just basic quartz in industrial and gemological use, quartz also has quite a few artificial varieties that come in different colors. Some have even managed to recreate transitional zoning. This limited but colorful set of varieties has made it even more popular to grow, and it has appeared quite often in the form of cut stones meant to replicate common colorful varieties of natural quartz, like citrine and amethyst.",
         "synthesis": ["hdth"],
         "chem_prop": {
@@ -270,7 +270,7 @@
     {
         "id": 4,
         "label": "Cubic Zirconia",
-        "aliases": "Diamonique, Diamonite, Djevalite",
+        "aliases": "Diamonique, Diamonite, Djevalite, YCZ, or CZ",
         "desc": "Right next to Corundum on the production scale is Cubic Zirconia. Scientifically referred to as Yttria-Stabilized Cubic Zirconia. This material has made its way to the top of the most common diamond simulants on the market. It's exceptionally easy to make, comes in just about any color you can think of, is harder then quartz, is very durable / tough, has a refractive index close to diamond, and a dispersion factor that is greater than diamond. These facts have made it one of the most popular gemstones in the world, even though it doesnt occur naturally (Atleast not in significant enough quantities to matter). The only comparable / better simulant would be moissanite, but due to production costs, CZ has held its thrown for many years now.<br><br>Cubic Zirconia, interestingly enough, doesnt have a huge amount of industrial uses. However, it's ceramic is incredibly common in the industry. Most 'ceramic knives' you may have ever come by, are usually made of CZ ceramic. Its toughness, affordability, and temperature resistance have made it into a very attractive but cheap material for high quality blades. The ceramics can be polished to a mirror finish and machined into really any shape.",
         "synthesis": ["skul", "sint"],
         "chem_prop": {
@@ -377,7 +377,7 @@
     {
         "id": 5,
         "label": "Fluorite",
-        "aliases": "Fluorspar, Fluoride",
+        "aliases": "Fluorspar or Fluoride",
         "desc": "Fluorite is an interesting material. It produces some of the most visually appealing mineral specimens in nature, with a huge variety of colors and habits. Add on it's weak refractive index, and it has made for very visually interesting cubic specimens.<br><br>Industrially, it's rather unique. It has optical qualities that make it exceptionally attractive for use. It allows a large range of wavelengths to pass through without issues. Still, it is among the rarer synthetics out there. It's quite uncommon to come by lenses made out of it, let alone uncut boules. Sadly it's not always preferred in some situations because fluoride lenses still suffer from the softness, brittleness, and thermal sensitivity of natural fluorite. This makes it less optimal for situations where tougher lenses are required for the environment that they're being used in.",
         "synthesis": ["czok"],
         "chem_prop": {
@@ -479,7 +479,7 @@
     {
         "id": 8,
         "label": "Sphalerite",
-        "aliases": "Cleiophane, Blende, Zinc Blende, Ruby Blende, Ruby Jack, Marmatite, Black Jack",
+        "aliases": "Cleiophane, Blende, Zinc Blende, Ruby Blende, Ruby Jack, Marmatite, or Black Jack",
         "desc": "Sphalerite is an interesting material in the synthetic world. It doesn't hold a huge amount of uses, but in some very niche material science and optics projects, Sphalerite lenses can be grown for use. The most common form you'll come by are colorless polycrystalline 'ceramic' lenses made of sphalerite. They're useful because of sphalerite's unusually high Refractive Index. The high dispersion accordingly makes for quite colorful stones when cut.<br><br>Similarly to Rutile, Sphalerite tends to form quite included and dirty as a natural mineral. However, it can form large gem-grade material in nature. It's not sought after much by the gem industry due to its softness.",
         "synthesis": ["czok", "sint"],
         "chem_prop": {
@@ -530,7 +530,7 @@
     {
         "id": 10,
         "label": "Diamond",
-        "aliases": "Bort, Carbanado, Adamant",
+        "aliases": "Bort, Carbanado, or Adamant",
         "desc": "Diamond, while one of the simplest minerals on the planet, is one of the most difficult to produce. It is extremely sought-after because of it's historical, symbolical, gemological, and scientific importance. Natural diamonds have sparked social imbalance because of their attraction, so synthetic diamonds have become very important in the modern age.<br><br>Synthesizing diamonds is far from a simple task. Due to the extreme environmental factors that diamonds grow in, recreating it or finding alternatives has proven to be a challenge for engineers and material scientists. Synthesizing them at an affordable and commercial scale has only been possible in recent decades. Processes like CVD were exceptionally useful at producing large optical-grade crystals of diamond, though yields are not high and the process can be expensive. Furthermore, the gem industry has fueled control over synthetic material. This means that ultimately nothing has changed in regards to their market. Thankfully alternatives exist for optical appreciation, such as Cubic Zirconia and Moissanite. Diamonds are still quite exceptional for their properties and are actively used in a variety of industries because of it. Unfortunately in many use cases, diamonds are the only usable option due to it's extreme hardness and thermal properties. For this reason (and many others) they will likely continue to be a commonly synthesized material, regardless of cost and complexity.",
         "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
@@ -557,7 +557,7 @@
     {
         "id": 11,
         "label": "Tausonite",
-        "aliases": "STO, Fabulite, Marvelite, Diagem",
+        "aliases": "STO, Fabulite, Marvelite, or Diagem",
         "desc": "Strontium Titanate, known naturally as the mineral Tausonite, was an old-age diamond simulant that was popular during the early days of the diamond marketing campaigns (Often called Fabulite). This material has some niche uses in specialty optical mediums and piezoelectrics, so it's far from a common material in the modern age. Not many surviving cut stones and rough from previous decades still exists, because the material itself is quite soft and fragile. This is one of the reasons it never took off as an attractive diamond alternative.<br><br>If it weren't for its downsides, Strontium Titanate would actually be one of the most accurate replacements for diamonds. To my knowledge, it has the closest refractive index to diamond, while also being an isotropic medium. As a bonus, it has a much higher dispersion factor then diamond; This results in a much more colorful stone. However, as already mentioned, the stone's weakness was an unbearable fault to becoming a marketable alternative.",
         "synthesis": ["vern"],
         "chem_prop": {
@@ -787,11 +787,11 @@
     {
         "id": 18,
         "label": "YAG",
-        "aliases": "",
+        "aliases": "Yttrium Aluminium Garnet",
         "desc": "",
         "synthesis": ["czok", "sint"],
         "chem_prop": {
-            "chemical": "Yttrium Aluminium Garnet",
+            "chemical": "Triyttrium Pentaluminium Dodecaoxide",
             "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8.2,
             "mohs_max": 8.5,
@@ -914,11 +914,11 @@
     {
         "id": 19,
         "label": "GAGG",
-        "aliases": "",
+        "aliases": "Gadolinium Aluminium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Gadolinium Aluminium Gallium Garnet",
+            "chemical": "Trigadolinium Dialuminium Trigallium Dodecaoxide",
             "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 8,
@@ -950,11 +950,11 @@
     {
         "id": 20,
         "label": "GGG",
-        "aliases": "",
+        "aliases": "Gadolinium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Gadolinium Gallium Garnet",
+            "chemical": "Trigadolinium Pentagallium Dodecaoxide",
             "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 7.5,
@@ -976,11 +976,11 @@
     {
         "id": 21,
         "label": "YIG",
-        "aliases": "",
+        "aliases": "Yttrium Iron Garnet, Yttrium Ferrite",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Yttrium Iron Garnet",
+            "chemical": "Triyttrium Pentaferrous Dodecaoxide",
             "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 7,
@@ -999,11 +999,11 @@
     {
         "id": 22,
         "label": "TGG",
-        "aliases": "",
+        "aliases": "Terbium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Terbium Gallium Garnet",
+            "chemical": "Triterbium Pentagallium Dodecaoxide",
             "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8,
@@ -1025,11 +1025,11 @@
     {
         "id": 23,
         "label": "LuAG",
-        "aliases": "",
+        "aliases": "Lutetium Aluminium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Lutetium Aluminium Garnet",
+            "chemical": "Trilutetium Pentaluminium Dodecaoxide",
             "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8.5,
@@ -1069,11 +1069,11 @@
     {
         "id": 24,
         "label": "YSGG",
-        "aliases": "",
+        "aliases": "Yttrium Scandium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Yttrium Scandium Gallium Garnet",
+            "chemical": "Triyttrium Discandium Trigallium Dodecaoxide",
             "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8,
@@ -1358,11 +1358,11 @@
     {
         "id": 33,
         "label": "GSGG",
-        "aliases": "",
+        "aliases": "Gadolinium Scandium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Gadolinium Scandium Gallium Garnet",
+            "chemical": "Trigadolinium Discandium Trigallium Dodecaoxide",
             "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1387,11 +1387,11 @@
     {
         "id": 34,
         "label": "YGG",
-        "aliases": "",
+        "aliases": "Yttrium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Yttrium Gallium Garnet",
+            "chemical": "Triyttrium Pentagallium Dodecaoxide",
             "formula": "Y<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1409,11 +1409,11 @@
     {
         "id": 35,
         "label": "LuGG",
-        "aliases": "",
+        "aliases": "Lutetium Gallium Garnet",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Lutetium Gallium Garnet",
+            "chemical": "Trilutetium Pentagallium Dodecaoxide",
             "formula": "Lu<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1426,6 +1426,28 @@
         },
         "cry_prop": {
             "system": "Isometric"
+        }
+    },
+    {
+        "id": 36,
+        "label": "YAM",
+        "aliases": "Yttrium Aluminium Monoclinic",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Tetrayttrium Dialuminium Nonoxide",
+            "formula": "Y<sub>4</sub>Al<sub>2</sub>O<sub>9</sub>",
+            "mohs_min": 0,
+            "mohs_max": 0,
+            "grav_min": 0,
+            "grav_max": 0,
+            "neut_col": "Colorless"
+        },
+        "optic_prop": {
+            "type": "Biaxial (?)"
+        },
+        "cry_prop": {
+            "system": "Monoclinic"
         }
     }
 ]
