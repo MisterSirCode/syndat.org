@@ -656,11 +656,12 @@
     {
         "id": 14,
         "label": "BGO-12",
-        "aliases": "",
+        "aliases": "BGO 3",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Bismuth Germanate",
+            "chemical": "Tetrabismuth Trigermanium Dodecaoxide",
+            "alt": "Bismuth Germanate",
             "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 4.5,
             "mohs_max": 5,
@@ -686,7 +687,8 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Bismuth Germanate",
+            "chemical": "Dodecabismuth Germanium Eicosaoxide",
+            "alt": "Bismuth Germanate",
             "formula": "Bi<sub>12</sub>Ge<sub></sub>O<sub>20</sub>",
             "mohs_min": 4.5,
             "mohs_max": 5.0,
@@ -787,11 +789,12 @@
     {
         "id": 18,
         "label": "YAG",
-        "aliases": "Yttrium Aluminium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok", "sint"],
         "chem_prop": {
             "chemical": "Triyttrium Pentaluminium Dodecaoxide",
+            "alt": "Yttrium Aluminium Garnet",
             "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8.2,
             "mohs_max": 8.5,
@@ -914,11 +917,12 @@
     {
         "id": 19,
         "label": "GAGG",
-        "aliases": "Gadolinium Aluminium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Trigadolinium Dialuminium Trigallium Dodecaoxide",
+            "alt": "Gadolinium Aluminium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 8,
@@ -950,11 +954,12 @@
     {
         "id": 20,
         "label": "GGG",
-        "aliases": "Gadolinium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Trigadolinium Pentagallium Dodecaoxide",
+            "alt": "Gadolinium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 7.5,
@@ -976,11 +981,12 @@
     {
         "id": 21,
         "label": "YIG",
-        "aliases": "Yttrium Iron Garnet, Yttrium Ferrite",
+        "aliases": "Yttrium Ferrite",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Triyttrium Pentaferrous Dodecaoxide",
+            "alt": "Yttrium Iron Garnet",
             "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
             "mohs_max": 7,
@@ -999,11 +1005,12 @@
     {
         "id": 22,
         "label": "TGG",
-        "aliases": "Terbium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Triterbium Pentagallium Dodecaoxide",
+            "alt": "Terbium Gallium Garnet",
             "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8,
@@ -1025,11 +1032,12 @@
     {
         "id": 23,
         "label": "LuAG",
-        "aliases": "Lutetium Aluminium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Trilutetium Pentaluminium Dodecaoxide",
+            "alt": "Lutetium Aluminium Garnet",
             "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8.5,
@@ -1069,11 +1077,12 @@
     {
         "id": 24,
         "label": "YSGG",
-        "aliases": "Yttrium Scandium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Triyttrium Discandium Trigallium Dodecaoxide",
+            "alt": "Yttrium Scandium Gallium Garnet",
             "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 8,
             "mohs_max": 8,
@@ -1326,11 +1335,12 @@
     {
         "id": 32,
         "label": "YAP",
-        "aliases": "Yttrium Aluminium Perovskite",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Yttrium Orthoaluminate",
+            "alt": "Yttrium Aluminium Perovskite",
             "formula": "YAlO<sub>3</sub>",
             "mohs_min": 8.5,
             "mohs_max": 8.5,
@@ -1358,11 +1368,12 @@
     {
         "id": 33,
         "label": "GSGG",
-        "aliases": "Gadolinium Scandium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Trigadolinium Discandium Trigallium Dodecaoxide",
+            "alt": "Gadolinium Scandium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1387,11 +1398,12 @@
     {
         "id": 34,
         "label": "YGG",
-        "aliases": "Yttrium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Triyttrium Pentagallium Dodecaoxide",
+            "alt": "Yttrium Gallium Garnet",
             "formula": "Y<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1409,11 +1421,12 @@
     {
         "id": 35,
         "label": "LuGG",
-        "aliases": "Lutetium Gallium Garnet",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Trilutetium Pentagallium Dodecaoxide",
+            "alt": "Lutetium Gallium Garnet",
             "formula": "Lu<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
             "mohs_max": 0,
@@ -1431,11 +1444,12 @@
     {
         "id": 36,
         "label": "YAM",
-        "aliases": "Yttrium Aluminium Monoclinic",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Tetrayttrium Dialuminium Nonoxide",
+            "alt": "Yttrium Aluminium Monoclinic",
             "formula": "Y<sub>4</sub>Al<sub>2</sub>O<sub>9</sub>",
             "mohs_min": 0,
             "mohs_max": 0,

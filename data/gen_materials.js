@@ -154,7 +154,7 @@ function generateTemplates() {
         if (mat.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${mat.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
-        fix('CHEM', chem.chemical);
+        fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
         if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
         else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
         if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
@@ -242,7 +242,7 @@ function generateTemplates() {
         // </div>`;
         console.log(link[4]);
         let temp = `
-        <a class="specialtyGridItem${status}" href="${link[1]}/">
+        <a class="specialtyGridItem${status} gridExpander" href="${link[1]}/">
             <img class="specialtyGridImage"${link[4].length > 0 ? ` src="../content/materials/${link[1]}/neut.jpg"` : link[5].length > 0 ? ` src="../content/materials/${link[1]}/var0.jpg"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
