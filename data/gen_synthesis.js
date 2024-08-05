@@ -53,7 +53,7 @@ function generateTemplates() {
         fix('SYNREF', 'Information about ' + method.prefix + method.title);
         fix('TITLE', method.title);
         fix('SUBTITLE', 'Developed by ' + method.disc);
-        if (method.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by: ${method.aliases.join(', ')}</span><br><br>`);
+        if (method.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${method.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('ARTICLE', method.desc.replace('<br>', '<br><br>'));
         if (method.history) fix('HISTORY', method.history.replace('<br>', '<br><br>'));
