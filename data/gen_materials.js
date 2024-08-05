@@ -46,6 +46,7 @@ function generateTemplates() {
             status,
             mat.chem_prop.formula,
             mat.neutral ? mat.neutral.imgsrc ? mat.neutral.imgsrc : 0 : 0,
+            mat.variants ? mat.variants[0] ? mat.variants[0].imgsrc ? mat.variants[0].imgsrc : 0 : 0 : 0
         ]);
 
         // Begin Template Construction
@@ -242,7 +243,7 @@ function generateTemplates() {
         console.log(link[4]);
         let temp = `
         <a class="specialtyGridItem${status}" href="${link[1]}/">
-            <img class="specialtyGridImage"${link[4].length > 0 ? ` src="../content/materials/${link[1]}/neut.jpg"` : ''}>
+            <img class="specialtyGridImage"${link[4].length > 0 ? ` src="../content/materials/${link[1]}/neut.jpg"` : link[5].length > 0 ? ` src="../content/materials/${link[1]}/var0.jpg"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
