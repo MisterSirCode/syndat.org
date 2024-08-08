@@ -530,7 +530,7 @@
         "label": "Sphalerite",
         "aliases": "Cleiophane, Blende, Zinc Blende, Ruby Blende, Ruby Jack, Marmatite, or Black Jack",
         "desc": "Sphalerite is an interesting material in the synthetic world. It doesn't hold a huge amount of uses, but in some very niche material science and optics projects, Sphalerite lenses can be grown for use. The most common form you'll come by are colorless polycrystalline 'ceramic' lenses made of sphalerite. They're useful because of sphalerite's unusually high Refractive Index. The high dispersion accordingly makes for quite colorful stones when cut.<br><br>Similarly to Rutile, Sphalerite tends to form quite included and dirty as a natural mineral. However, it can form large gem-grade material in nature. It's not sought after much by the gem industry due to its softness.",
-        "synthesis": ["czok", "sint"],
+        "synthesis": ["cvdp"],
         "chem_prop": {
             "chemical": "Zinc Sulfide",
             "formula": "ZnS",
@@ -551,6 +551,20 @@
             "parent": "Sphalerite Group",
             "system": "Isometric"
         },
+        "neutral": {
+            "color": "Colorless to Amber",
+            "usage": "Specialty Optics",
+            "imgsrc": "https://www.wts-photonics.com/ir-windows-zinc-sulfide-zns-windows_p116.html"
+        },
+        "variants": [
+            {
+                "label": "Cr:ZnS",
+                "color": "Amber to Vermillion",
+                "cause": "Chromium Ions",
+                "usage": "Infrared Lasers, Specialty Optics",
+                "imgsrc": "https://www.wts-photonics.com/ir-windows-zinc-sulfide-zns-windows_p116.html"
+            }
+        ],
         "minID": 3727
     },
     {
@@ -656,13 +670,19 @@
         "cry_prop": {
             "system": "Trigonal"
         },
+        "neutral": {
+            "color": "Colorless to Golden Yellow",
+            "imgsrc": "https://www.smm.co.jp/en/business/material/products/lithium/",
+            "usage": "Piezoelectrics and Specialty Optics"
+        },
         "variants": [
             {
                 "label": "Er:LiNbO3",
                 "cause": "Erbium Ions",
-                "color": "Pink",
+                "color": "Orange, Salmon, Pink",
                 "fluor": "Green",
-                "usage": "Integrated Lasing and Optical Circuits"
+                "usage": "Integrated Lasing and Optical Circuits",
+                "imgsrc": "https://www.sciencedirect.com/science/article/abs/pii/S0925838815319939"
             }
         ]
     },
