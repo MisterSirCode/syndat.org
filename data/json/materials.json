@@ -475,6 +475,10 @@
         "cry_prop": {
             "system": "Hexagonal"
         },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "Site Owner"
+        },
         "variants": [
             {
                 "label": "4H SiC",
@@ -515,7 +519,8 @@
                 "label": "P-Type SiC",
                 "cause": "Aluminium and Boron Ions",
                 "color": "Blue",
-                "usage": "P-Type Semiconductors"
+                "usage": "P-Type Semiconductors",
+                "imgsrc": "Site Owner"
             }
         ],
         "minID": 2743
