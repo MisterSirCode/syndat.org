@@ -494,6 +494,28 @@
                 "color": "Gray, Dark Blue, Dark Red",
                 "cause": "Cubic 3-Layer Structure",
                 "usage": "N-Type, P-Type Semiconductors"
+            },
+            {
+                "label": "N-Type SiC",
+                "cause": "Nitrogen Ions",
+                "color": "Yellow, Green, Blue, Brown",
+                "effect": "Pleochroism",
+                "usage": "N-Type Semiconductors"
+            },
+            {
+                "label": "SI SiC",
+                "cause": "Vanadium Ions",
+                "usage": "Semi-insulators"
+            },
+            {
+                "cause": "Hydrogen Ions",
+                "color": "Pink, Magenta, Purple"
+            },
+            {
+                "label": "P-Type SiC",
+                "cause": "Aluminium and Boron Ions",
+                "color": "Blue",
+                "usage": "P-Type Semiconductors"
             }
         ],
         "minID": 2743
@@ -700,6 +722,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/bgo-crystal.html"
         }
     },
     {
@@ -1093,6 +1119,12 @@
                 "fluor": "Salmon",
                 "usage": "Lasers, Sensors",
                 "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php"
+            },
+            {
+                "label": "Tm:LuAG",
+                "cause": "Thulium Ions",
+                "usage": "Specialty Lasers",
+                "imgsrc": "Styropyro"
             }
         ]
     },
