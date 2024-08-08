@@ -133,7 +133,6 @@ a {
     left: 20vw;
     right: 20vw;
     z-index: 0;
-    padding: 0.5em;
     padding-top: 8em;
     min-height: 100vh;
 }
@@ -150,7 +149,7 @@ p {
 
 .pageSection {
     background: #151515;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     text-align: left;
@@ -304,7 +303,6 @@ a.statusYellow {
 
 .specialtyGridTitle {
     font-weight: bold;
-    height: 20%;
 }
 
 .shortGridTitle {
@@ -312,13 +310,10 @@ a.statusYellow {
 }
 
 .specialtyGridDesc {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
-    -webkit-box-orient: vertical;
     font-size: 0.8em;
     width: 100%;
     overflow: hidden;
+    word-wrap: normal;
     text-overflow: ellipsis;
     bottom: 0;
 }
@@ -401,6 +396,10 @@ a.statusYellow {
     object-fit: fill;
     width: 100%;
     max-width: 1000px;
+}
+
+.silentFooter {
+    color: #666;
 }
 
 /* Landscape mode Mobile Devices and Tablets */
