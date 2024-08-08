@@ -475,6 +475,27 @@
         "cry_prop": {
             "system": "Hexagonal"
         },
+        "variants": [
+            {
+                "label": "4H SiC",
+                "color": "Yellow, Green, Blue",
+                "cause": "Hexagonal 4-Layer Structure",
+                "usage": "N-Type, P-Type Semiconductors, and Semi-insulators",
+                "imgsrc": "https://www.sic-wafers.com/4h-semi-sic-substrate-and-4h-n-sic-substrate/"
+            },
+            {
+                "label": "6H SiC",
+                "color": "Yellow, Green",
+                "cause": "Hexagonal 6-Layer Structure",
+                "usage": "N-Type, P-Type Semiconductors, and Semi-insulators"
+            },
+            {
+                "label": "3C SiC",
+                "color": "Gray, Dark Blue, Dark Red",
+                "cause": "Cubic 3-Layer Structure",
+                "usage": "N-Type, P-Type Semiconductors"
+            }
+        ],
         "minID": 2743
     },
     {
@@ -1103,7 +1124,15 @@
             {
                 "label": "Er:Cr:YSGG",
                 "cause": "Erbium and Chromium Ions",
+                "color": "Dark Yellow-Green",
                 "usage": "Lamp Pumped Medical Applications"
+            },
+            {
+                "label": "Er:YSGG",
+                "cause": "Erbium Ions",
+                "color": "Salmon, Orange",
+                "effect": "Color Change",
+                "usage": "Far Infrared Medical Lasers"
             }
         ]
     },
