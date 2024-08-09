@@ -445,6 +445,10 @@
             "parent": "Rutile Group",
             "system": "Tetragonal"
         },
+        "neutral": {
+            "color": "Colorless, Amber, Blue",
+            "imgsrc": "https://www.made-in-china.com/showroom/lnxojtcl/product-detailtbfxBJrUuhkD/China-Rutile-Crystal-TiO2-Crystal-.html"
+        },
         "minID": 3486
     },
     {
@@ -854,7 +858,9 @@
         "variants": [
             {
                 "label": "Tl:NaI",
+                "cause": "Thallium Ions",
                 "color": "Colorless",
+                "usage": "Specialty Scintillators, Sensors",
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html"
             }
         ]
