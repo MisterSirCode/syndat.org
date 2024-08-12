@@ -120,7 +120,7 @@ function generateTemplates() {
                     let variant = mat.variants[j];
                     let temp = `
                     <span class="specialtyGridItem variantItem">
-                        <img class="specialtyGridImage"${variant.imgsrc ? ` src="../../content/materials/${mat.label}/var${j}.jpg"` : ''}
+                        <img class="specialtyGridImage"${variant.imgovr ?  ` src="../../content/materials/${mat.label}/${variant.imgovr}.jpg"` : variant.imgsrc ? ` src="../../content/materials/${mat.label}/var${j}.jpg"` : ''}
                             ${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
                         <div class="specialtyGridContent">
                         ${variant.label ? `

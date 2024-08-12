@@ -584,7 +584,7 @@
             "mohs_max": 7,
             "grav_min": 2.329,
             "grav_max": 2.329,
-            "neut_col": "Grey"
+            "neut_col": "Dark Gray"
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -592,6 +592,10 @@
         "bypass_optic": true,
         "cry_prop": {
             "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Dark Gray",
+            "imgsrc": "Theodore W. Gray - https://periodictable.com/Items/014.26/index.html"
         }
     },
     {
@@ -796,8 +800,7 @@
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 4.51,
-            "grav_max": 4.53,
-            "neut_col": "Colorless"
+            "grav_max": 4.53
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -820,7 +823,8 @@
                 "color": "Colorless",
                 "fluor": "Yellow",
                 "usage": "Specialty Scintillators, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
+                "imgovr": "neut"
             },
             {
                 "label": "Na:CsI",
@@ -828,7 +832,8 @@
                 "color": "Colorless",
                 "fluor": "Yellow",
                 "usage": "Specialty Scintillators, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
+                "imgovr": "neut"
             }
         ]
     },
