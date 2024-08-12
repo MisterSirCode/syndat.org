@@ -39,14 +39,35 @@ function generateTemplates() {
 
         // Create Truncated List
 
+        let timg, tsrc;
+        let needsfurthercheck = true;
+        if (mat.neutral) {
+            if (mat.neutral.imgsrc) {
+                timg = 'neut';
+                tsrc = mat.neutral.imgsrc;
+                needsfurthercheck = false;
+            }
+        }
+        if (mat.variants && needsfurthercheck) {
+            if (mat.variants[0].imgsrc) {
+                timg = 'var0';
+                tsrc = mat.variants[0].imgsrc;
+                needsfurthercheck = false;
+            }
+        }
+        if (needsfurthercheck) {
+            timg = '';
+            tsrc = '';
+        }
+
         let status = completionStatus(mat);
         genlist.push([
             mat.id,
             mat.label,
             status,
             mat.chem_prop.formula,
-            mat.neutral ? mat.neutral.imgsrc ? mat.neutral.imgsrc : 0 : 0,
-            mat.variants ? mat.variants[0] ? mat.variants[0].imgsrc ? mat.variants[0].imgsrc : 0 : 0 : 0
+            timg,
+            tsrc
         ]);
 
         // Begin Template Construction
@@ -100,8 +121,8 @@ function generateTemplates() {
         <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
         if (mat.variants || mat.neutral) {
             let final = '';
-            let src = mat.neutral.imgsrc;
             if (mat.neutral) {
+                let src = mat.neutral.imgsrc ? mat.neutral.imgsrc : false;
                 final += `
                 <span class="specialtyGridItem variantItem">
                     <img class="specialtyGridImage"${src ? ` src="../../content/materials/${mat.label}/neut.jpg"` : ''}${src ? ` title="Photo Source: ${src}"` : ''}>
@@ -118,7 +139,7 @@ function generateTemplates() {
                 if (mat.variants.length > 0)
                 for (let j = 0; j < mat.variants.length; j++) {
                     let variant = mat.variants[j];
-                    let src = variant.imgsrc;
+                    let src = variant.imgsrc ? variant.imgsrc : false;
                     let img = variant.imgovr ? variant.imgovr : variant.imgsrc ? `var${j}` : '';
                     let temp = `
                     <span class="specialtyGridItem variantItem">
@@ -237,14 +258,9 @@ function generateTemplates() {
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
         const status = link[2] >= 8 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
-        // let temp = `
-        // <div class="linkGridItem">
-        //     <a href="${link[1]}/" class="linkGridLink${status}">${link[1]}${debug ? `<br>${Math.round(link[2] * 12.5)}%` : ''}</a>
-        // </div>`;
-        console.log(link[4]);
         let temp = `
         <a class="specialtyGridItem${status} gridExpander" href="${link[1]}/">
-            <img class="specialtyGridImage"${link[4].length > 0 ? ` src="../content/materials/${link[1]}/neut.jpg"` : link[5].length > 0 ? ` src="../content/materials/${link[1]}/var0.jpg"` : ''}${variant.imgsrc ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
+            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1]}/${link[4]}.jpg"` : ''}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
