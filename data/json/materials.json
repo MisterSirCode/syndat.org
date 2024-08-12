@@ -6,7 +6,7 @@
         "id": 0,
         "label": "Corundum",
         "aliases": "Sapphire, Ruby, or Carbuncle",
-        "desc": "Corundum is one of the most common synthetic materials grown today. It is an extremely versatile product with exceptional properties. In nature, this material is often known by Sapphire or Ruby. It is sought after because of its optimal hardness and variety of possible colorations. Add on the fact that it's easy to produce, and its not hard to see why its one of the most popular synthetic and natural gemstones in the world.<br><br>As far as synthetic corundum, some of the most common usecases involve specialty optics, such as in Thermal Sensors, Lasers, High-Durability Screens / Viewports, Specialty Lenses, and even in Weaponry / Imaging systems.<br><br>Corundum can also be used in Machining, Bearings, and Polishing. Furthermore, Alumina Ceramics (Microcorundum crystals suspended in solid alumina) are also extensively used across the industry. Most commonly they're used as a high-temperature ceramic barrier, but have also seen use in grinding or even in sintering to produce extremely large optical boules.<br><br>Part of the reason for its wide availability and use is how easy it is to produce. It can be synthesized using a massive variety of methods, some not even listed here. Not to mention, alumina is cheap and easy to purify, making production even simpler. See below for a list of common production methods.",
+        "desc": "Corundum is one of the most common synthetic materials grown today. It's an extremely versatile product with exceptional properties. In nature, this material is often known by the variety names Sapphire and Ruby. It is sought after because of its optimal hardness and variety of possible colorations. Add on the fact that it's easy to produce, and it's not hard to see why it's one of the most popular materials in the world for both scientific and gemological use.<br><br>As far as synthetic corundum, some of the most common usecases involve specialty optics, such as in Thermal Sensors, Lasers, High-Durability Screens / Viewports, Specialty Lenses, and even in Weaponry / Imaging systems.<br><br>Corundum can also be used in Machining, Bearings, and Polishing. Furthermore, Alumina Ceramics (Microcorundum crystals suspended in solid alumina) are also extensively used across the industry. Most commonly they're used as a high-temperature ceramic barrier, but have also seen use in grinding or even in sintering to produce extremely large optical boules.<br><br>Part of the reason for its wide availability and use is how easy it is to produce. It can be synthesized using a massive variety of methods, some not even listed here. Not to mention, alumina is cheap and easy to purify, making production even simpler. See below for a list of common production methods.",
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint", "edfg", "zone"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
@@ -34,7 +34,7 @@
         "minID": 1136,
         "neutral": {
             "color": "Colorless",
-            "usage": "Clock Jewels, Bearings, Specialty Optics, and More",
+            "usage": "Bearings, Clock Jewels, Specialty Optics",
             "imgsrc": "Site Owner"
         },
         "variants": [
@@ -42,8 +42,8 @@
                 "label": "Ruby",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink, Magenta",
-                "fluor": "Red, Pink (255nm)",
-                "usage": "Laser Rods, Clock Jewels, Bearings, Specialty Optics",
+                "fluor": "Red, Pink (UVC)",
+                "usage": "Lasers, Bearings, Clock Jewels",
                 "imgsrc": "https://www.langantiques.com/university/czochralski/"
             },
             {
@@ -56,7 +56,7 @@
                 "label": "Typical Sapphire",
                 "cause": "Iron and Titanium Ions",
                 "color": "Blue",
-                "usage": "Clock Jewels, Bearings",
+                "usage": "Bearings, Clock Jewels",
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-blue-sapphire-rough/"
             },
             {
@@ -131,7 +131,7 @@
                 "label": "Cobalt Spinel",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
-                "fluor": "Red",
+                "fluor": "Red (UVA), Cyan (UVC)",
                 "usage": "Q-Switchers, Laser Rods",
                 "imgsrc": "https://www.etsy.com/listing/1605713029/cobalt-blue-114-djeva-lab-created-spinel"
             }
