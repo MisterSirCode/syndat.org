@@ -656,7 +656,7 @@
     {
         "id": 12,
         "label": "Lithium Niobate",
-        "aliases": "Linobate",
+        "aliases": "Linobate, LN",
         "desc": "Lithium Niobate is a niche optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive",
         "synthesis": ["czok"],
         "chem_prop": {
@@ -680,7 +680,7 @@
         },
         "neutral": {
             "color": "Colorless to Golden Yellow",
-            "imgsrc": "https://www.smm.co.jp/en/business/material/products/lithium/",
+            "imgsrc": "https://www.directindustry.com/prod/union-optic-inc/product-173804-1762901.html",
             "usage": "Piezoelectrics and Specialty Optics"
         },
         "variants": [
@@ -1586,6 +1586,10 @@
         },
         "cry_prop": {
             "system": "Trigonal"
+        },
+        "neutral": {
+            "color": "Colorless to Beige",
+            "imgsrc": "https://www.smm.co.jp/en/business/material/products/lithium/"
         }
     }
 ]
