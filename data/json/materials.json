@@ -623,6 +623,10 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://www.gia.edu/gia-news-research/difference-between-natural-laboratory-grown-diamonds"
+        },
         "minID": 1282
     },
     {
@@ -650,6 +654,10 @@
         "cry_prop": {
             "parent": "Perovskite Subgroup",
             "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Beige to Black",
+            "imgsrc": "https://www.mtixtl.com/SrTiO3-100.aspx"
         },
         "minID": 3895
     },
@@ -1565,7 +1573,7 @@
     {
         "id": 37,
         "label": "Lithium Tantalate",
-        "aliases": "",
+        "aliases": "LT",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
@@ -1590,6 +1598,14 @@
         "neutral": {
             "color": "Colorless to Beige",
             "imgsrc": "https://www.smm.co.jp/en/business/material/products/lithium/"
-        }
+        },
+        "variants": [
+            {
+                "label": "(Needs Research)",
+                "color": "Mint Green, Lime",
+                "cause": "Unknown Dopant",
+                "imgsrc": "https://djeva.com/collections/green-lithium-tantalate"
+            }
+        ]
     }
 ]
