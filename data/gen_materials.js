@@ -125,7 +125,7 @@ function generateTemplates() {
                 let src = mat.neutral.imgsrc ? mat.neutral.imgsrc : false;
                 final += `
                 <span class="specialtyGridItem variantItem">
-                    <img class="specialtyGridImage"${src ? ` src="../../content/materials/${mat.label}/neut.jpg"` : ''}${src ? ` title="Photo Source: ${src}"` : ''}>
+                    <img class="specialtyGridImage"${src ? ` src="../../content/materials/${mat.label}/neut.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${src}"` : ''}>
                     <div class="specialtyGridContent">
                     <div class="specialtyGridTitle mainGridTitle">(Undoped / Generic)</div>
                     <div class="specialtyGridTitle shortGridTitle">(Undoped)</div>
@@ -143,7 +143,7 @@ function generateTemplates() {
                     let img = variant.imgovr ? variant.imgovr : variant.imgsrc ? `var${j}` : '';
                     let temp = `
                     <span class="specialtyGridItem variantItem">
-                        <img class="specialtyGridImage"${src ?  ` src="../../content/materials/${mat.label}/${img}.jpg"` : ''}${src ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
+                        <img class="specialtyGridImage"${src ?  ` src="../../content/materials/${mat.label}/${img}.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
                         <div class="specialtyGridContent">
                         ${variant.label ? `
                             <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
@@ -234,7 +234,7 @@ function generateTemplates() {
             let data = synthesis[method];
             let temp = `
             <a class="specialtyGridItem${additional}" href="../../synthesis/${method}/">
-                <img class="specialtyGridImage">
+                <img class="specialtyGridImage" src="../../content/materials/missing/missing.png">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
                 <div class="specialtyGridTitle shortGridTitle">${data.shorthand || data.title}</div>
@@ -257,10 +257,10 @@ function generateTemplates() {
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
-        const status = link[2] >= 8 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
+        const status = link[2] >= 7 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
         <a class="specialtyGridItem${status} gridExpander" href="${link[1]}/">
-            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1]}/${link[4]}.jpg"` : ''}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
+            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1]}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
