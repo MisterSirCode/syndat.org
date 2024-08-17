@@ -64,7 +64,7 @@ function generateTemplates() {
 
         let temp = `
         <a class="specialtyGridItem" href="${key}/">
-            <img class="specialtyGridImage">
+            <img class="specialtyGridImage" src="../content/materials/missing/missing.png">
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
             <div class="specialtyGridTitle shortGridTitle">${method.shorthand || method.title}</div>
