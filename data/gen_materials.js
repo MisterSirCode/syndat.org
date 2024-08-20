@@ -96,7 +96,7 @@ function generateTemplates() {
         else {
             switch (optic.opt) {
                 case 'opaque':
-                    fix('MISC', 'Opaque in Visible Spectrum');
+                    fix('MISC', '<div class="pageSectionItem">Opaque in Visible Spectrum</div><div class="pageSectionValue"></div>');
                     break;
                 default: 
                     break;
@@ -217,12 +217,14 @@ function generateTemplates() {
             else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
         }
         if (mat.add_prop) {
-            fix('ADDPROPSTITLE', '<br><br><div class="pageSectionTitle">Additional Properties</div>');
+            fix('ADDPROPSTITLE', '<br><div class="pageSectionTitle">Additional Properties</div>');
             let htmlList = '';
             for (let j = 0; j < mat.add_prop.length; j++) {
                 let currentProp = mat.add_prop[j];
                 if (typeof currentProp == "string") {
-                    htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div>\n`;
+                    htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div><br>\n`;
+                } else {
+                    htmlList += `<div class="pageSectionItem">${currentProp[0]}</div><div class="pageSectionValue">${currentProp[1]}</div>\n`
                 }
             }
             fix('ADDPROPS', htmlList);

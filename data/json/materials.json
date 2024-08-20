@@ -230,6 +230,9 @@
         "cry_prop": {
             "system": "Trigonal"
         },
+        "add_prop": [
+            "Piezoelectric"
+        ],
         "minID": 3337,
         "neutral": {
             "color": "Colorless",
@@ -445,6 +448,9 @@
             "parent": "Rutile Group",
             "system": "Tetragonal"
         },
+        "add_prop": [
+            "Piezoelectric"
+        ],
         "neutral": {
             "color": "Colorless, Amber, Blue",
             "imgsrc": "https://www.made-in-china.com/showroom/lnxojtcl/product-detailtbfxBJrUuhkD/China-Rutile-Crystal-TiO2-Crystal-.html"
@@ -655,6 +661,9 @@
             "parent": "Perovskite Subgroup",
             "system": "Isometric"
         },
+        "add_prop": [
+            "Piezoelectric"
+        ],
         "neutral": {
             "color": "Beige to Black",
             "imgsrc": "https://www.mtixtl.com/SrTiO3-100.aspx"
@@ -686,6 +695,9 @@
         "cry_prop": {
             "system": "Trigonal"
         },
+        "add_prop": [
+            "Piezoelectric"
+        ],
         "neutral": {
             "color": "Colorless to Golden Yellow",
             "imgsrc": "https://www.directindustry.com/prod/union-optic-inc/product-173804-1762901.html",
@@ -727,6 +739,9 @@
         "cry_prop": {
             "system": "Trigonal"
         },
+        "add_prop": [
+            "Piezoelectric"
+        ],
         "neutral": {
             "color": "Colorless to Beige",
             "imgsrc": "https://www.smm.co.jp/en/business/material/products/lithium/"
@@ -857,10 +872,11 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Scintillescent (Gamma - UVC, Yellow)"
+            ["Scintillescent", "Gamma - UVA, Yellow"]
         ],
         "neutral": {
             "color": "Colorless",
+            "fluor": "Yellow",
             "usage": "Specialty Scintillators, Sensors",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
         },
@@ -889,7 +905,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "This material shares some similarity and use with Cesium Iodide, but I do not know of anything particularly special about it. It can also be doped with thallium, but suffers from the same poisonous / hygroscopic issues as Tl:CsI",
+        "desc": "This material shares some similarity and use with Cesium Iodide, but not much is known about it. It can also be doped with thallium, but suffers from the same poisonous / hygroscopic issues as Tl:CsI",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
@@ -909,7 +925,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Scintillescent (Gamma - UVC, Yellow)"
+            ["Scintillescent", "Gamma - UVA"]
         ],
         "variants": [
             {
@@ -1477,6 +1493,7 @@
             {
                 "label": "Alexandrite",
                 "cause": "Chromium Ions",
+                "fluor": "Red",
                 "color": "Color Change - Green, Blue, Red, Purple"
             }
         ]
@@ -1590,7 +1607,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            "Scintillescent (XRay - UVC, Blue)"
+            ["Scintillescent", "XRay - UVC, Blue"]
         ],
         "minID": 3560
     },
@@ -1618,7 +1635,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Scintillescent (XRay - UVC, Blue)"
+            ["Scintillescent", "XRay - UVC, Blue"]
         ],
         "neutral": {
             "color": "Beige to Dark Orange",
@@ -1650,7 +1667,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Scintillescent (XRay - UVC, Blue)"
+            ["Scintillescent", "XRay - UVC, Blue"]
         ],
         "neutral": {
             "color": "Colorless to Beige",
