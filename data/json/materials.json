@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.2.0"
+        "revision": "0.2.1"
     },
     {
         "id": 0,
@@ -748,7 +748,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lutetium-Yttrium Oxyorthosilicate",
-            "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub> (YSO > LSO)",
+            "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub> (YSO > LSO Series)",
             "mohs_min": 5.8,
             "mohs_max": 5.8,
             "grav_min": 4.44,
@@ -783,7 +783,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Tetrabismuth Trigermanium Dodecaoxide",
+            "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
             "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 4.5,
@@ -814,7 +814,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Dodecabismuth Germanium Eicosaoxide",
+            "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
             "formula": "Bi<sub>12</sub>Ge<sub></sub>O<sub>20</sub>",
             "mohs_min": 4.5,
@@ -956,7 +956,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Tetrayttrium Dialuminium Nonoxide",
+            "chemical": "Yttrium Aluminium Oxide",
             "alt": "Yttrium Aluminium Monoclinic",
             "formula": "Y<sub>4</sub>Al<sub>2</sub>O<sub>9</sub>",
             "mohs_min": 0,
@@ -979,7 +979,7 @@
         "desc": "",
         "synthesis": ["czok", "sint"],
         "chem_prop": {
-            "chemical": "Triyttrium Pentaluminium Dodecaoxide",
+            "chemical": "Yttrium Aluminium Oxide",
             "alt": "Yttrium Aluminium Garnet",
             "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8.2,
@@ -1031,8 +1031,15 @@
                 "cause": "Chromium 3+ Ions",
                 "color": "Green",
                 "fluor": "Red",
-                "usage": "Dual-Laser Mediums, Sensors, Specialty Optics",
+                "usage": "Sensors, Specialty Optics",
                 "imgsrc": "Unknown"
+            },
+            {
+                "label": "Nd:Cr:YAG",
+                "cause": "Chromium and Neodymium Ions",
+                "color": "Green",
+                "fluor": "Red",
+                "usage": "Dual-Laser Mediums"
             },
             {
                 "label": "Cr4+:YAG",
@@ -1107,7 +1114,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Triyttrium Pentaferrous Dodecaoxide",
+            "chemical": "Yttrium Ferrous Oxide",
             "alt": "Yttrium Iron Garnet",
             "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
@@ -1122,6 +1129,13 @@
         "bypass_optic": true,
         "cry_prop": {
             "system": "Isometric"
+        },
+        "add_prop": [
+            "Ferrimagnetic"
+        ],
+        "neutral": {
+            "color": "Black",
+            "imgsrc": "https://www.mtixtl.com/YIG-c-05D05C1.aspx"
         }
     },
     {
@@ -1131,7 +1145,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Trilutetium Pentaluminium Dodecaoxide",
+            "chemical": "Lutetium Aluminium Oxide",
             "alt": "Lutetium Aluminium Garnet",
             "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
@@ -1182,7 +1196,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Trigadolinium Dialuminium Trigallium Dodecaoxide",
+            "chemical": "Gadolinium Aluminium Gallium Oxide",
             "alt": "Gadolinium Aluminium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
@@ -1201,6 +1215,9 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            "Paramagnetic"
+        ],
         "variants": [
             {
                 "label": "Ce:GAGG",
@@ -1219,7 +1236,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Triyttrium Discandium Trigallium Dodecaoxide",
+            "chemical": "Yttrium Scandium Gallium Oxide",
             "alt": "Yttrium Scandium Gallium Garnet",
             "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 8,
@@ -1236,6 +1253,9 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            "Paramagnetic"
+        ],
         "variants": [
             {
                 "label": "Er:Cr:YSGG",
@@ -1259,7 +1279,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Trigadolinium Discandium Trigallium Dodecaoxide",
+            "chemical": "Gadolinium Scandium Gallium Oxide",
             "alt": "Gadolinium Scandium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
             "mohs_min": 0,
@@ -1274,6 +1294,9 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            "Paramagnetic"
+        ],
         "variants": [
             {
                 "label": "Cr:Nd:GSGG",
@@ -1289,7 +1312,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Trigadolinium Pentagallium Dodecaoxide",
+            "chemical": "Gadolinium Gallium Oxide",
             "alt": "Gadolinium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 6.5,
@@ -1307,7 +1330,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "add_prop": [
+            "Paramagnetic"
+        ]
     },
     {
         "id": 22,
@@ -1316,7 +1342,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Triterbium Pentagallium Dodecaoxide",
+            "chemical": "Terbium Gallium Oxide",
             "alt": "Terbium Gallium Garnet",
             "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 8,
@@ -1334,7 +1360,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "add_prop": [
+            "Paramagnetic"
+        ]
     },
     {
         "id": 34,
@@ -1343,7 +1372,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Triyttrium Pentagallium Dodecaoxide",
+            "chemical": "Yttrium Gallium Oxide",
             "alt": "Yttrium Gallium Garnet",
             "formula": "Y<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
@@ -1357,7 +1386,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "add_prop": [
+            "Paramagnetic"
+        ]
     },
     {
         "id": 35,
@@ -1366,7 +1398,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Trilutetium Pentagallium Dodecaoxide",
+            "chemical": "Lutetium Gallium Oxide",
             "alt": "Lutetium Gallium Garnet",
             "formula": "Lu<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
             "mohs_min": 0,
@@ -1380,7 +1412,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "add_prop": [
+            "Paramagnetic"
+        ]
     },
     {
         "id": 25,
@@ -1448,7 +1483,7 @@
         "desc": "",
         "synthesis": ["hdth", "evap", "rclz"],
         "chem_prop": {
-            "chemical": "Copper(II) Carbonate Hydroxide",
+            "chemical": "Copper (II) Carbonate Hydroxide",
             "formula": "Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub>",
             "mohs_min": 3.5,
             "mohs_max": 4,
@@ -1529,7 +1564,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Calcium Tunstate",
-            "formula": "Ca(WO<sub>4</sub>)",
+            "formula": "CaWO<sub>4</sub>",
             "mohs_min": 4.5,
             "mohs_max": 5,
             "grav_min": 6.1,
@@ -1540,13 +1575,18 @@
             "type": "Uniaxial (+)",
             "ref_min": [1.918, 1.935],
             "ref_max": [1.921, 1.938],
-            "bir_min": 0.017,
-            "bir_max": 0.017
+            "bir_min": 0.016,
+            "bir_max": 0.017,
+            "disp_min": 0.026,
+            "disp_max": 0.026
         },
         "cry_prop": {
             "system": "Tetragonal",
             "parent": "Scheelite Group"
         },
+        "add_prop": [
+            "Fluorescent (XRay - UVC, Blue)"
+        ],
         "minID": 3560
     },
     {
@@ -1557,7 +1597,7 @@
         "synthesis": ["czok", "hdth"],
         "chem_prop": {
             "chemical": "Cadmium Tunstate",
-            "formula": "Cd(WO<sub>4</sub>)",
+            "formula": "CdWO<sub>4</sub>",
             "mohs_min": 4,
             "mohs_max": 4.5,
             "grav_min": 7.9,
@@ -1572,9 +1612,11 @@
         "cry_prop": {
             "system": "Tetragonal"
         },
+        "add_prop": [
+            "Fluorescent (XRay - UVC, Blue)"
+        ],
         "neutral": {
             "color": "Beige to Dark Orange",
-            "fluor": "Blue",
             "usage": "Specialty Scintillators, Sensors",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html"
         }
@@ -1602,9 +1644,11 @@
         "cry_prop": {
             "system": "Tetragonal"
         },
+        "add_prop": [
+            "Fluorescent (XRay - UVC, Blue)"
+        ],
         "neutral": {
             "color": "Colorless to Beige",
-            "fluor": "Blue",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/pbwo4-crystal.html"
         }
     }

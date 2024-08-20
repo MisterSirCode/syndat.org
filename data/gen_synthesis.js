@@ -29,7 +29,6 @@ function generateTemplates() {
             trueIds
         ];
     }
-    console.clear();
     console.log(`Generating ${keys.length} Synthesis Templates`);
     for (let i = 0; i < keys.length; i++) {
 
