@@ -3,6 +3,7 @@ const materials = require('./json/materials.json');
 const revision = materials[0].revision;
 let debug = false;
 const synthesis = require('./json/synthesis.json');
+const { escape } = require('querystring');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
@@ -207,15 +208,27 @@ function generateTemplates() {
                 else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
             }
         }
-
         if (optic.disp_min) {
             if (optic.disp_min == optic.disp_max) fix('DISP', optic.disp_min);
             else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
         }
-
         if (optic.bir_min) {
             if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
             else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
+        }
+        if (mat.add_prop) {
+            fix('ADDPROPSTITLE', '<br><br><div class="pageSectionTitle">Additional Properties</div>');
+            let htmlList = '';
+            for (let j = 0; j < mat.add_prop.length; j++) {
+                let currentProp = mat.add_prop[j];
+                if (typeof currentProp == "string") {
+                    htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div>\n`;
+                }
+            }
+            fix('ADDPROPS', htmlList);
+        } else {
+            fix('ADDPROPSTITLE', '');
+            fix('ADDPROPS', '');
         }
 
         // Write Article
