@@ -856,9 +856,11 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            "Scintillescent (Gamma - UVC, Yellow)"
+        ],
         "neutral": {
             "color": "Colorless",
-            "fluor": "Yellow",
             "usage": "Specialty Scintillators, Sensors",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
         },
@@ -906,6 +908,9 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            "Scintillescent (Gamma - UVC, Yellow)"
+        ],
         "variants": [
             {
                 "label": "Tl:NaI",
@@ -1585,7 +1590,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            "Fluorescent (XRay - UVC, Blue)"
+            "Scintillescent (XRay - UVC, Blue)"
         ],
         "minID": 3560
     },
@@ -1613,7 +1618,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Fluorescent (XRay - UVC, Blue)"
+            "Scintillescent (XRay - UVC, Blue)"
         ],
         "neutral": {
             "color": "Beige to Dark Orange",
@@ -1645,7 +1650,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Fluorescent (XRay - UVC, Blue)"
+            "Scintillescent (XRay - UVC, Blue)"
         ],
         "neutral": {
             "color": "Colorless to Beige",
