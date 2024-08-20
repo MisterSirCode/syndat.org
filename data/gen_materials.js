@@ -269,8 +269,10 @@ function generateTemplates() {
         </a>`;
         tempList.push(temp);
     }
-    matHomeTemplate = matHomeTemplate.replace('REV', revision);
-    matHomeTemplate = matHomeTemplate.replace('MATLIST', tempList.join(''));
+    matHomeTemplate = matHomeTemplate.replace('REV', revision)
+        .replace('REV', revision)
+        .replace('MATLIST', tempList.join(''))
+        .replace('NUM', materials.length);
     console.log('Finished');
     console.log('Writing Material Index File...');
     fs.writeFileSync('../public/materials/index.html', matHomeTemplate);
