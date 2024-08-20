@@ -1563,7 +1563,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Calcium Tunstate",
+            "chemical": "Calcium Tungstate",
             "formula": "CaWO<sub>4</sub>",
             "mohs_min": 4.5,
             "mohs_max": 5,
@@ -1596,7 +1596,7 @@
         "desc": "",
         "synthesis": ["czok", "hdth"],
         "chem_prop": {
-            "chemical": "Cadmium Tunstate",
+            "chemical": "Cadmium Tungstate",
             "formula": "CdWO<sub>4</sub>",
             "mohs_min": 4,
             "mohs_max": 4.5,
