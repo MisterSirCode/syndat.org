@@ -674,7 +674,7 @@
         "id": 12,
         "label": "Lithium Niobate",
         "aliases": "Linobate, LN",
-        "desc": "Lithium Niobate is a niche optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive",
+        "desc": "Lithium Niobate is a niche optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive. TODO: Finish Article",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Niobate",
@@ -718,7 +718,7 @@
         "id": 37,
         "label": "Lithium Tantalate",
         "aliases": "LT",
-        "desc": "",
+        "desc": "Lithium Tantalate is related to Lithium Niobate in many ways. The two materials can often be used in similar applications, however they do have differences in properties. TODO: Finish Article",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Tantalate",
@@ -740,7 +740,9 @@
             "system": "Trigonal"
         },
         "add_prop": [
-            "Piezoelectric"
+            "Piezoelectric",
+            "Pyroelectric",
+            "Diamagnetic"
         ],
         "neutral": {
             "color": "Colorless to Beige",
