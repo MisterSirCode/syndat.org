@@ -88,6 +88,7 @@ function generateTemplates() {
         fix('MATREF', 'Information about ' + mat.label);
         if (!chem.grav_min) delPair('Density', 'GRAV');
         if (!chem.mohs_min) delPair('Mohs Hardness', 'MOHS');
+        if (!chem.melt_pnt) delPair('Melting Point', 'MLTPNT')
         if (!optic.type) delPair('Type', 'OPTYPE');
         if (!optic.ref_min) delPair('Refractive Index', 'REF');
         if (!optic.disp_min) delPair('Dispersion Factor', 'DISP');
@@ -182,8 +183,7 @@ function generateTemplates() {
         else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
         if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
         else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
-        if (chem.neut_col) fix('NEUCOL', chem.neut_col);
-        else fix('NEUCOL', 'Colorless')
+        if (chem.melt_pnt) fix('MLTPNT', `${chem.melt_pnt} °C (${Math.round(chem.melt_pnt * (9 / 5) + 32)} °F)`);
         if (cry.parent) fix('PARENT', cry.parent);
         if (cry.system) fix('CRYSTM', cry.system);
         if (optic.type) fix('OPTYPE', optic.type);
