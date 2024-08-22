@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.2.1"
+        "revision": "0.2.2"
     },
     {
         "id": 0,
@@ -14,8 +14,7 @@
             "mohs_min": 9,
             "mohs_max": 9,
             "grav_min": 3.98,
-            "grav_max": 4.1,
-            "neut_col": "Colorless"
+            "grav_max": 4.1
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
@@ -103,8 +102,7 @@
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 3.6,
-            "grav_max": 4.1,
-            "neut_col": "Colorless"
+            "grav_max": 4.1
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -149,8 +147,7 @@
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 2.63,
-            "grav_max": 2.92,
-            "neut_col": "Colorless"
+            "grav_max": 2.92
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
@@ -214,8 +211,7 @@
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.65,
-            "grav_max": 2.66,
-            "neut_col": "Colorless"
+            "grav_max": 2.66
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -283,8 +279,7 @@
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 5.6,
-            "grav_max": 6.0,
-            "neut_col": "Colorless"
+            "grav_max": 6.0
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -390,8 +385,7 @@
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 3.175,
-            "grav_max": 3.56,
-            "neut_col": "Colorless"
+            "grav_max": 3.56
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -431,8 +425,7 @@
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
-            "grav_max": 4.23,
-            "neut_col": "Near-Colorless / Yellow / Blue"
+            "grav_max": 4.23
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -460,7 +453,7 @@
     {
         "id": 7,
         "label": "Moissanite",
-        "aliases": "",
+        "aliases": "Carborundum",
         "desc": "Moissanite has to be one of the most impressive synthetic materials humans have made. It doesn't form in large quantities in nature, which makes it rather unique. This is a bonus, because this material isnt able to be abused by inhuman mining practices, unlike diamond. This material is interesting in that it's extremely hard, extremely refractive, extremely tough, and very dispersive. At 9.25 on the mohs scale, it's not that far off from diamond. These properties have made it one of the most well-respected synthetics in the gem industry. Like diamond however, there are complications with production. It requires less complexity for both CVD and HPHT growth, so generally resulting material is larger and cleaner most of the time. However, it's still limited to these two methods, both of which are somewhat expensive and time consuming. If it weren't for these limitations, Moissanite would've likely taken over even cubic zirconia as one of the most common diamond simulants in the world. It far exceeds diamond in every way other then conductivity and hardness.<br><br>Beyond it's use in the gem world, Moissanite, or more specifically Silicon Carbide, is quite useful in the industrial machining sector. SiC Ceramics are some of the most affordable 'superhard' materials, and its often used as the core material for machining / drilling bits. You can even find it used in traditional tool bits too, alongside tungsten carbide. Silicon Carbide ceramics have also found a niche use in Armored Plating. Small polygonal pucks of it are produced and used as deflection shielding for both human and machine armor.",
         "synthesis": ["hpht", "cvdp", "sint"],
         "chem_prop": {
@@ -468,9 +461,8 @@
             "formula": "SiC",
             "mohs_min": 9.25,
             "mohs_max": 9.25,
-            "grav_min": 3.218,
-            "grav_max": 3.22,
-            "neut_col": "Colorless"
+            "grav_min": 3.16,
+            "grav_max": 3.22
         },
         "optic_prop": {
             "type":"Uniaxial (+)",
@@ -547,8 +539,7 @@
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.9,
-            "grav_max": 4.1,
-            "neut_col": "Colorless"
+            "grav_max": 4.1
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -589,8 +580,7 @@
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
-            "grav_max": 2.329,
-            "neut_col": "Dark Gray"
+            "grav_max": 2.329
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -616,8 +606,7 @@
             "mohs_min": 10,
             "mohs_max": 10,
             "grav_min": 3.5,
-            "grav_max": 3.53,
-            "neut_col": "Colorless"
+            "grav_max": 3.53
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -647,8 +636,7 @@
             "mohs_min": 5.5,
             "mohs_max": 6.5,
             "grav_min": 4.88,
-            "grav_max": 5.11,
-            "neut_col": "Near-Colorless / Yellow"
+            "grav_max": 5.11
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -682,8 +670,7 @@
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.3,
-            "grav_max": 4.65,
-            "neut_col": "Near-Colorless / Yellow"
+            "grav_max": 4.65
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
@@ -726,8 +713,7 @@
             "mohs_min": 5.75,
             "mohs_max": 6,
             "grav_min": 7.45,
-            "grav_max": 7.46,
-            "neut_col": "colorless"
+            "grav_max": 7.46
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
@@ -769,8 +755,7 @@
             "mohs_min": 5.8,
             "mohs_max": 5.8,
             "grav_min": 4.44,
-            "grav_max": 7.4,
-            "neut_col": "Colorless"
+            "grav_max": 7.4
         },
         "optic_prop": {
             "type": "Biaxial (?)",
@@ -806,8 +791,7 @@
             "mohs_min": 4.5,
             "mohs_max": 5,
             "grav_min": 7.12,
-            "grav_max": 7.13,
-            "neut_col": "Colorless"
+            "grav_max": 7.13
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -837,8 +821,7 @@
             "mohs_min": 4.5,
             "mohs_max": 5.0,
             "grav_min": 9.22,
-            "grav_max": 9.22,
-            "neut_col": "Colorless"
+            "grav_max": 9.22
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -915,8 +898,7 @@
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 3.67,
-            "grav_max": 3.67,
-            "neut_col": "Colorless"
+            "grav_max": 3.67
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -952,8 +934,7 @@
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 4.88,
-            "grav_max": 5.35,
-            "neut_col": "Colorless"
+            "grav_max": 5.35
         },
         "optic_prop": {
             "type": "Biaxial (-)",
@@ -985,8 +966,7 @@
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
-            "grav_max": 0,
-            "neut_col": "Colorless"
+            "grav_max": 0
         },
         "optic_prop": {
             "type": "Biaxial (?)"
@@ -1008,8 +988,7 @@
             "mohs_min": 8.2,
             "mohs_max": 8.5,
             "grav_min": 4.5,
-            "grav_max": 4.6,
-            "neut_col": "Colorless"
+            "grav_max": 4.6
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1143,8 +1122,7 @@
             "mohs_min": 6.5,
             "mohs_max": 7,
             "grav_min": 5.11,
-            "grav_max": 5.17,
-            "neut_col": "Black"
+            "grav_max": 5.17
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -1174,8 +1152,7 @@
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 6.7,
-            "grav_max": 6.71,
-            "neut_col": "Colorless"
+            "grav_max": 6.71
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1225,8 +1202,7 @@
             "mohs_min": 6.5,
             "mohs_max": 8,
             "grav_min": 6.6,
-            "grav_max": 7.08,
-            "neut_col": "Colorless"
+            "grav_max": 7.08
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1265,8 +1241,7 @@
             "mohs_min": 8,
             "mohs_max": 8,
             "grav_min": 5.2,
-            "grav_max": 5.2,
-            "neut_col": "Colorless"
+            "grav_max": 5.2
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1308,8 +1283,7 @@
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
-            "grav_max": 0,
-            "neut_col": "Colorless"
+            "grav_max": 0
         },
         "optic_prop": {
             "type": "Isotropic"
@@ -1341,8 +1315,7 @@
             "mohs_min": 6.5,
             "mohs_max": 7.5,
             "grav_min": 7.08,
-            "grav_max": 7.08,
-            "neut_col": "Colorless"
+            "grav_max": 7.08
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1371,8 +1344,7 @@
             "mohs_min": 8,
             "mohs_max": 8,
             "grav_min": 7.13,
-            "grav_max": 7.13,
-            "neut_col": "Colorless"
+            "grav_max": 7.13
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1401,8 +1373,7 @@
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
-            "grav_max": 0,
-            "neut_col": "Colorless"
+            "grav_max": 0
         },
         "optic_prop": {
             "type": "Isotropic"
@@ -1427,8 +1398,7 @@
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
-            "grav_max": 0,
-            "neut_col": "Colorless"
+            "grav_max": 0
         },
         "optic_prop": {
             "type": "Isotropic"
@@ -1452,8 +1422,7 @@
             "mohs_min": 8,
             "mohs_max": 9.5,
             "grav_min": 4.72,
-            "grav_max": 4.72,
-            "neut_col": "Purple / Black / Red"
+            "grav_max": 4.72
         },
         "optic_prop": {
             "opt": "opaque"
@@ -1475,8 +1444,7 @@
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 3.5,
-            "grav_max": 3.84,
-            "neut_col": "Colorless"
+            "grav_max": 3.84
         },
         "optic_prop": {
             "type": "Biaxial (+)",
@@ -1512,8 +1480,7 @@
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.6,
-            "grav_max": 4.05,
-            "neut_col": "Pale Green to Dark Green"
+            "grav_max": 4.05
         },
         "optic_prop": {
             "type": "Biaxial (-)",
@@ -1540,8 +1507,7 @@
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.24,
-            "grav_max": 4.24,
-            "neut_col": "Colorless / Pale-Green"
+            "grav_max": 4.24
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -1592,8 +1558,7 @@
             "mohs_min": 4.5,
             "mohs_max": 5,
             "grav_min": 6.1,
-            "grav_max": 6.1,
-            "neut_col": "Colorless / Yellow / Orange"
+            "grav_max": 6.1
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -1625,8 +1590,7 @@
             "mohs_min": 4,
             "mohs_max": 4.5,
             "grav_min": 7.9,
-            "grav_max": 8.0,
-            "neut_col": "Colorless / Yellow / Orange"
+            "grav_max": 8.0
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
@@ -1657,8 +1621,7 @@
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 8.28,
-            "grav_max": 8.28,
-            "neut_col": "Colorless"
+            "grav_max": 8.28
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
