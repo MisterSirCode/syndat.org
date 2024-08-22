@@ -430,7 +430,8 @@
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
-            "grav_max": 4.23
+            "grav_max": 4.23,
+            "melt_pnt": 1850
         },
         "optic_prop": {
             "type": "Uniaxial (+)",
@@ -467,7 +468,8 @@
             "mohs_min": 9.25,
             "mohs_max": 9.25,
             "grav_min": 3.16,
-            "grav_max": 3.22
+            "grav_max": 3.22,
+            "decp_pnt": 2730
         },
         "optic_prop": {
             "type":"Uniaxial (+)",
@@ -585,7 +587,8 @@
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
-            "grav_max": 2.329
+            "grav_max": 2.329,
+            "melt_pnt": 1414
         },
         "optic_prop": { 
             "opt": "opaque"
@@ -611,7 +614,8 @@
             "mohs_min": 10,
             "mohs_max": 10,
             "grav_min": 3.5,
-            "grav_max": 3.53
+            "grav_max": 3.53,
+            "decp_pnt": 760
         },
         "optic_prop": {
             "type": "Isotropic",
