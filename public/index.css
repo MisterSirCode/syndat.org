@@ -313,6 +313,13 @@ a.statusYellow {
     display: none;
 }
 
+.specialtyGridDesc.overflow {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
 .specialtyGridDesc {
     font-size: 0.8em;
     width: 100%;

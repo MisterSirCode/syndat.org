@@ -262,7 +262,7 @@ function generateTemplates() {
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
                 <div class="specialtyGridTitle shortGridTitle">${data.shorthand || data.title}</div>
-                <div class="specialtyGridDesc">${data.trunc}</div>
+                <div class="specialtyGridDesc overflow">${data.trunc}</div>
                 </div>
             </a>`;
             tempList.push(temp);
