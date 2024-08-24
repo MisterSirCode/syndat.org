@@ -13,14 +13,14 @@
             "formula": "Al<sub>2</sub>O<sub>3</sub>",
             "mohs_min": 9,
             "mohs_max": 9,
-            "grav_min": 3.98,
+            "grav_min": 3.95,
             "grav_max": 4.1,
             "melt_pnt": 2044
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
-            "ref_min": [1.767, 1.759],
-            "ref_max": [1.772, 1.763],
+            "ref_min": [1.762, 1.759],
+            "ref_max": [1.788, 1.763],
             "disp_min": 0.018,
             "disp_max": 0.018,
             "bir_min": 0.008,
@@ -461,9 +461,9 @@
             "chemical": "Silicon Carbide",
             "formula": "SiC",
             "mohs_min": 9.25,
-            "mohs_max": 9.25,
+            "mohs_max": 9.5,
             "grav_min": 3.16,
-            "grav_max": 3.22,
+            "grav_max": 3.24,
             "decp_pnt": 2730
         },
         "optic_prop": {
