@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.2.3"
+        "revision": "0.2.4"
     },
     {
         "id": 0,
@@ -24,8 +24,7 @@
             "disp_min": 0.018,
             "disp_max": 0.018,
             "bir_min": 0.008,
-            "bir_max": 0.009,
-            "pleo": "Weak"
+            "bir_max": 0.009
         },
         "cry_prop": {
             "parent": "Hematite Group",
@@ -111,8 +110,7 @@
             "ref_min": 1.712,
             "ref_max": 1.736,
             "disp_min": 0.026,
-            "disp_max": 0.026,
-            "disp": "Weak"
+            "disp_max": 0.026
         },
         "cry_prop": {
             "parent": "Spinel Subgroup",
@@ -158,8 +156,7 @@
             "disp_min": 0.014,
             "disp_max": 0.014,
             "bir_min": 0.004,
-            "bir_max": 0.007,
-            "pleo": "Weak to Modest in some Varieties"
+            "bir_max": 0.007
         },
         "cry_prop": {
             "parent": "Beryl Group",
@@ -223,8 +220,7 @@
             "disp_min": 0.013,
             "disp_max": 0.013,
             "bir_min": 0.009,
-            "bir_max": 0.009,
-            "pleo": "Weak in some Varieties"
+            "bir_max": 0.009
         },
         "cry_prop": {
             "system": "Trigonal"
@@ -440,8 +436,7 @@
             "disp_min": 0.28,
             "disp_max": 0.33,
             "bir_min": 0.294,
-            "bir_max": 0.296,
-            "pleo": "Moderate"
+            "bir_max": 0.296
         },
         "cry_prop": {
             "parent": "Rutile Group",
@@ -475,11 +470,10 @@
             "type":"Uniaxial (+)",
             "ref_min": [2.616, 2.654],
             "ref_max": [2.757, 2.812],
-            "disp_min": 0.104,
-            "disp_max": 0.104,
             "bir_min": 0.038,
             "bir_max": 0.038,
-            "pleo": "Weak to Strong in some Varieties"
+            "disp_min": 0.104,
+            "disp_max": 0.104
         },
         "cry_prop": {
             "system": "Hexagonal"
@@ -685,6 +679,8 @@
             "type": "Uniaxial (-)",
             "ref_min": [2.3007, 2.2116],
             "ref_max": [2.3007, 2.2116],
+            "bir_min": "?",
+            "bir_max": "?",
             "disp_min": 0.125,
             "disp_max": 0.125
         },
@@ -728,6 +724,8 @@
             "type": "Uniaxial (?)",
             "ref_min": [2.176, 2.18],
             "ref_max": [2.18, 2.18],
+            "bir_min": "?",
+            "bir_max": "?",
             "disp_min": 0.075,
             "disp_max": 0.075
         },
@@ -770,6 +768,8 @@
             "type": "Biaxial (?)",
             "ref_min": 1.8,
             "ref_max": 1.82,
+            "bir_min": "?",
+            "bir_max": "?",
             "disp_min": 0.03,
             "disp_max": 0.03
         },
@@ -860,7 +860,9 @@
         "optic_prop": {
             "type": "Isotropic",
             "ref_min": 1.78,
-            "ref_max": 1.95
+            "ref_max": 1.95,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -912,7 +914,9 @@
         "optic_prop": {
             "type": "Isotropic",
             "ref_min": 1.85,
-            "ref_max": 1.85
+            "ref_max": 1.85,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -948,7 +952,11 @@
         "optic_prop": {
             "type": "Biaxial (-)",
             "ref_min": [1.96, 1.94, 1.97],
-            "ref_max": [1.96, 1.94, 1.97]
+            "ref_max": [1.96, 1.94, 1.97],
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Orthorhombic"
@@ -972,13 +980,19 @@
             "chemical": "Yttrium Aluminium Oxide",
             "alt": "Yttrium Aluminium Monoclinic",
             "formula": "Y<sub>4</sub>Al<sub>2</sub>O<sub>9</sub>",
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 0,
-            "grav_max": 0
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
         },
         "optic_prop": {
-            "type": "Biaxial (?)"
+            "type": "Biaxial (?)",
+            "ref_min": "?",
+            "ref_max": "?",
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Monoclinic"
@@ -1255,7 +1269,9 @@
         "optic_prop": {
             "type": "Isotropic",
             "ref_min": 1.93,
-            "ref_max": 1.93
+            "ref_max": 1.93,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -1289,13 +1305,17 @@
             "chemical": "Gadolinium Scandium Gallium Oxide",
             "alt": "Gadolinium Scandium Gallium Garnet",
             "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 0,
-            "grav_max": 0
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
         },
         "optic_prop": {
-            "type": "Isotropic"
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -1385,7 +1405,11 @@
             "grav_max": 0
         },
         "optic_prop": {
-            "type": "Isotropic"
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -1410,7 +1434,11 @@
             "grav_max": 0
         },
         "optic_prop": {
-            "type": "Isotropic"
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Isometric"
@@ -1495,8 +1523,10 @@
             "type": "Biaxial (-)",
             "ref_min": [1.655, 1.875, 1.909],
             "ref_max": [1.655, 1.875, 1.909],
-            "bir_min": 0.254,
-            "bir_max": 0.254
+            "bir_min": 0.250,
+            "bir_max": 0.254,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Monoclinic",
@@ -1523,7 +1553,9 @@
             "ref_min": [1.9447, 2.1486],
             "ref_max": [1.9929, 2.2154],
             "bir_min": 0.2039,
-            "bir_max": 0.2225
+            "bir_max": 0.2225,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Tetragonal"
@@ -1604,7 +1636,11 @@
         "optic_prop": {
             "type": "Uniaxial (?)",
             "ref_min": 2.2,
-            "ref_max": 2.3
+            "ref_max": 2.3,
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
             "system": "Tetragonal"
@@ -1620,8 +1656,8 @@
     },
     {
         "id": 31,
-        "label": "PWO",
-        "aliases": "",
+        "label": "Stolzite",
+        "aliases": "PWO",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
@@ -1633,12 +1669,17 @@
             "grav_max": 8.28
         },
         "optic_prop": {
-            "type": "Uniaxial (?)",
-            "ref_min": 2.16,
-            "ref_max": 2.16
+            "type": "Uniaxial (-)",
+            "ref_min": [2.16, 2.16],
+            "ref_max": [2.27, 2.19],
+            "bir_min": 0.09,
+            "bir_max": 0.09,
+            "disp_min": "?",
+            "disp_max": "?"
         },
         "cry_prop": {
-            "system": "Tetragonal"
+            "system": "Tetragonal",
+            "parent": "Scheelite Group"
         },
         "add_prop": [
             ["Scintillescent", "XRay - UVC, Blue"]
@@ -1646,6 +1687,7 @@
         "neutral": {
             "color": "Colorless to Beige",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/pbwo4-crystal.html"
-        }
+        },
+        "minID": 3794
     }
 ]

@@ -19,8 +19,11 @@ function completionStatus(mat) {
         else {
             if (mat.optic_prop.type) points++;
             if (mat.optic_prop.ref_min) points++;
+            if (mat.optic_prop.ref_min == "?") points--;
             if (mat.optic_prop.bir_min || mat.optic_prop.type == "Isotropic") points++;
+            if (mat.optic_prop.bir_min == "?" && mat.optic_prop.type != "Isotropic") points--;
             if (mat.optic_prop.disp_min) points++;
+            if (mat.optic_prop.disp_min == "?") points--;
         }
     }
     if (Object.keys(mat.cry_prop).length > 0) {
@@ -179,6 +182,7 @@ function generateTemplates() {
         else fix('ALIASES', '');
         fix('FORMULA', chem.formula);
         fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
+        if (chem.grav_min == "?") fix('GRAV', '?');
         if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
         else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
         if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
@@ -189,24 +193,27 @@ function generateTemplates() {
         if (cry.system) fix('CRYSTM', cry.system);
         if (optic.type) fix('OPTYPE', optic.type);
         if (optic.ref_min) {
-            if (Array.isArray(optic.ref_min)) {
-                if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
-                    fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]}<br>
-                                n<sub>β</sub> = ${optic.ref_min[1]}<br>
-                                n<sub>γ</sub> = ${optic.ref_min[2]}`);
-                else if (optic.ref_min.length == 3)
-                    fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                n<sub>β</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
-                                n<sub>γ</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
-                if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]}`);
-                else if (optic.ref_min.length == 2)
-                    fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
-            } else {
-                if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
-                else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
+            if (optic.ref_min == "?") fix('REF', '?');
+            else {
+                if (Array.isArray(optic.ref_min)) {
+                    if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
+                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]}<br>
+                                    n<sub>β</sub> = ${optic.ref_min[1]}<br>
+                                    n<sub>γ</sub> = ${optic.ref_min[2]}`);
+                    else if (optic.ref_min.length == 3)
+                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                    n<sub>β</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
+                                    n<sub>γ</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
+                    if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
+                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
+                                    n<sub>ε</sub> = ${optic.ref_min[1]}`);
+                    else if (optic.ref_min.length == 2)
+                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                    n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
+                } else {
+                    if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
+                    else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
+                }
             }
         }
         if (optic.disp_min) {
@@ -214,6 +221,7 @@ function generateTemplates() {
             else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
         }
         if (optic.bir_min) {
+            if (optic.bir_min == "?") fix('BIREF', '?');
             if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
             else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
         }
