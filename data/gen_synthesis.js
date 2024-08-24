@@ -58,6 +58,8 @@ function generateTemplates() {
         if (method.history) fix('HISTORY', method.history.replace('<br>', '<br><br>'));
         else fix('HISTORY', 'Data Missing');
         fix('REV', revision);
+        const img = 'https://syndat.org/content/materials/missing/missing.png'; // TODO: Add images for synthesis methods
+        fix('OGIMG', img);
 
         // Construct List for Index Page
 

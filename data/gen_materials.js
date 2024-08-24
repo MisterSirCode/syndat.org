@@ -272,7 +272,7 @@ function generateTemplates() {
         // Image
 
         const link = genlist[i];
-        const img = link[4] ? `../content/materials/${link[1]}/${link[4]}.jpg` : '../content/materials/missing/missing.png';
+        const img = link[4] ? `https://syndat.org/content/materials/${link[1]}/${link[4]}.jpg` : 'https://syndat.org/content/materials/missing/missing.png';
         fix('OGIMG', img);
 
         // Revision info
