@@ -271,7 +271,11 @@ function generateTemplates() {
 
         // Image
 
-        fix('MATIMG', mat.label.toLowerCase().replace(' ', ''));
+        const link = genlist[i];
+        const img = link[4] ? `../content/materials/${link[1]}/${link[4]}.jpg` : '../content/materials/missing/missing.png';
+        fix('OGIMG', img);
+
+        // Revision info
 
         fix('REV', revision);
         if (!fs.existsSync(`../public/materials/${mat.label}/`))
