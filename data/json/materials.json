@@ -467,11 +467,11 @@
             "decp_pnt": 2730
         },
         "optic_prop": {
-            "type":"Uniaxial (+)",
+            "type": "Uniaxial (+)",
             "ref_min": [2.616, 2.654],
             "ref_max": [2.757, 2.812],
             "bir_min": 0.038,
-            "bir_max": 0.038,
+            "bir_max": 0.043,
             "disp_min": 0.104,
             "disp_max": 0.104
         },
