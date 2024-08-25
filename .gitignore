@@ -70,4 +70,5 @@ node_modules/
 /data/xls
 /public/synthesis/*
 /public/materials/*
-public/search/summary.json
+/public/search/summary.json
+/public/content/*/*/~$*
