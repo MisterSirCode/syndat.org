@@ -147,6 +147,10 @@ p {
     padding-right: 15%;
 }
 
+p.ind {
+    text-indent: 3em;
+}
+
 .pageSection {
     background: #151515;
     position: relative;
