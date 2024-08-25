@@ -66,6 +66,8 @@ This embed will explain how everything works:
         "type": "Uniaxial (+ or - or ?), Isometric, Biaxial, etc",
         // Refractive index.
         // Use arrays for non-isometric materials with axis-specific RIs
+        // For unixial and co. [x, y] coorespond to [nω, nε] // Ordinary and Extraordinary
+        // For biaxial and co. [x, y, z] coorespond to [nα, nβ, nγ] // Alpha Beta Gamma
         "ref_min": "?" or # or [#, #] or [#, #, #],
         "ref_max": "?" or # or [#, #] or [#, #, #],
         // Dispersion Factor.
