@@ -29,7 +29,10 @@ Editing these and running the `generate` command will update the pages with any 
 This embed will explain how everything works:
 ```javascript
 {
-    "id": #, // Next Available ID. Used as reference to know when it was created / Which came before and after it.
+    // Next Available ID. Used as reference to know when it was created / Which came before and after it.
+    // If there are 30 materials in the api, then the highest ID is 29. Next ID will be 30.
+    // This is because it starts at 0. 0 being corundum, the first material.
+    "id": #, 
     "label": "Display Name",
     "aliases": "Trade Name, Historical Name, or Variety Name",
     "desc": "This is a long article displayed in the page.",
