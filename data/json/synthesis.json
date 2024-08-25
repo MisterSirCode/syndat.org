@@ -18,8 +18,6 @@
         "aliases": "Flame Fusion",
         "disc": "Auguste Verneuil",
         "trunc": "Involves sputtering molten material onto a boule similarly to plasma coating. Produces gem-grade quickly and cheaply, but often with defects.",
-        "desc": "The Verneuil Method, otherwise known by the trade name “Flame Fusion”, is a widely used and classic method of quick quality crystal production. It has a limited range of materials in which can be produced with it, but it allows very fast and very cheap growth. Finished boules can be grown in a matter of hours. The tradeoff is that they can be prone to impurities or defects in some situations. As such, it doesn’t tend to grow optics-quality material; However, it still produces gem-grade crystals. Certain materials (Such as Rutile) can be grown to optics-purity via careful parameter control and post-processing, such as annealing.<br>The general process for growth is very simple. It’s not unlike a plasma sputtering device. Solid ingredients are liquified and sputtered at high speeds and temperatures towards a base or a seed crystal. After several hours, this buildup of microscopic molten droplets quickly crystallizes into a solid boule.",
-        "history": "",
         "related": []
     },
     "hdth": {
@@ -28,8 +26,6 @@
         "aliases": "",
         "disc": "Henri Hureau de Sénarmont",
         "trunc": "Involves suspending a seed crystal into a high pressure / high temperature autoclave with liquid ingredients. Sometimes produces optics-grade ingots.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "flux": {
@@ -38,8 +34,6 @@
         "aliases": "",
         "disc": "Carroll Chatham",
         "trunc": "Involves suspending a seed crystal near or inside flux with ingredients. Allows lower-temperature production. Sometimes produces gem-grade crystals.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "kyrp": {
@@ -48,8 +42,6 @@
         "aliases": "KY",
         "disc": "Spyro Kyropoulos",
         "trunc": "Derivative of the Czochralski method. Crystal grows into the feed material instead of being pulled. Can change the output purity and may be preferred.",
-        "desc": "",
-        "history": "",
         "related": ["brst", "czok"]
     },
     "zone": {
@@ -58,8 +50,6 @@
         "aliases": "Zone Refining or Floating-Zone Method",
         "disc": "John Desmond Bernal and William G. Pfann (Bell Laboratories)",
         "trunc": "Involves passing cold / hot zones over a melt / seed to concentrate impurities in specific regions, while forming a monocrystalline ingot at the end of the path.",
-        "desc": "",
-        "history": "",
         "related": ["frfr"]
     },
     "skul": {
@@ -68,8 +58,6 @@
         "aliases": "",
         "disc": "The Lebedev Physical Institute, Moscow",
         "trunc": "Involves compressing ingredients into a puck, and using Induction Heating to cook the inside of the puck into CZ, structured like a brain in a skull.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "brst": {
@@ -78,8 +66,6 @@
         "aliases": "Bridgman-Stockbarger Method",
         "disc": "Percy Williams Bridgman and Donald C. Stockbarger",
         "trunc": "Related to the Czochralski method. Material is melted in a crucible and the crucible itself is moved slowly into a colder zone, allowing for crystallization.",
-        "desc": "",
-        "history": "",
         "related": ["czok", "kyrp"]
     },
     "hdsm": {
@@ -89,8 +75,6 @@
         "aliases": "Bagdasarov Modification or HDSM",
         "disc": "Khachik Bagdasarov",
         "trunc": "Related to the Bridgman technique. Material is melted and a crucible is moved horizontally instead of vertically, as with other methods. ",
-        "desc": "",
-        "history": "",
         "related": ["brst"]
     },
     "hpht": {
@@ -100,8 +84,6 @@
         "aliases": "HPHT",
         "disc": "Tracy Hall & Co",
         "trunc": "Involves supplying extreme pressures / temperatures on ingredients or a seed crystal to produce larger crystals, which can then be used as seeds again or simply used on their own.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "cvdp": {
@@ -111,8 +93,6 @@
         "aliases": "CVD",
         "disc": "Multiple Companies",
         "trunc": "Involves leeching specialty gasses onto a heated / pressurized environment with seed crystals. Slowly builds up atomic layers of material until a solid crystal is produced.",
-        "desc": "",
-        "history": "",
         "related": ["eptx"]
     },
     "sint": {
@@ -121,8 +101,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "An umbrella of methods involving heat treatment or controlled heating / burning to form solids and crystals. Often used for making polycrystalline media or annealing monocrystalline media.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "frcr": {
@@ -132,8 +110,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "A simple method of crystallization involving stages of temperature changes to pull crystals out of a solution.",
-        "desc": "",
-        "history": "",
         "related": ["frfr"]
     },
     "frfr": {
@@ -142,8 +118,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "A simple method of crystallization involving melted ingredients shifting down to certain temperatures to isolate or purify certain materials",
-        "desc": "",
-        "history": "",
         "related": ["frcr"]
     },
     "eptx": {
@@ -152,8 +126,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "An umbrella of methods revolving around film or layer-based crystallization. Can involve phase changes, temperature changes, among other factors.",
-        "desc": "",
-        "history": "",
         "related": ["cvdp"]
     },
     "lhpg": {
@@ -163,8 +135,6 @@
         "aliases": "LHPG, Laser Floating Zone, LFZ",
         "disc": "",
         "trunc": "A process involving melting a transition zone within a crystal using lasers. Similar to Zone Melting.",
-        "desc": "",
-        "history": "",
         "related": ["zone"]
     },
     "mpdn": {
@@ -173,8 +143,6 @@
         "aliases": "μ-PD",
         "disc": "",
         "trunc": "A method involving a heated crucible with an orifice on the bottom. A seed crystal is placed through the bottom and is slowly pulled down, forming a monocrystalline rod / fiber.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "edfg": {
@@ -184,8 +152,6 @@
         "aliases": "EDFFG",
         "disc": "",
         "trunc": "A method that involves pulling a seed through a vertical channel, with a die that feeds a film of molten material upward.",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "rclz": {
@@ -194,8 +160,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "A simple method of purifying materials by dissolving a crystal in a solvent and letting the desired compound precipitate / crystallize out of solution",
-        "desc": "",
-        "history": "",
         "related": []
     },
     "evap": {
@@ -205,8 +169,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "A simple method of crystallization done by drying a solution until the solute concentration is high enough, and it crystallizes into a solid.",
-        "desc": "",
-        "history": "",
         "related": ["cool"]
     },
     "cool": {
@@ -216,8 +178,6 @@
         "aliases": "",
         "disc": "",
         "trunc": "A simple method of crystallization that involves slowly cooling a liquid until it stabilizes and freezes into a crystalline solid.",
-        "desc": "",
-        "history": "",
         "related": ["evap"]
     }
 }
