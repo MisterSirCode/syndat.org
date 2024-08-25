@@ -18,7 +18,12 @@
         "aliases": "Flame Fusion",
         "disc": "Auguste Verneuil",
         "trunc": "Involves sputtering molten material onto a boule similarly to plasma coating. Produces gem-grade quickly and cheaply, but often with defects.",
-        "related": []
+        "related": [],
+        "references": [
+            ["Auguste Verneuil", "The Chemical News and Journal of Physical Science", "https://books.google.com/books?id=VBpLAAAAYAAJ&q=ruby+verneuil&pg=PA96"],
+            ["Dobrovinskaya, Elena R.; Lytvynov, Leonid A.; Pishchik, Valerian", "Sapphire: Material, Manufacturing, Applications", "https://books.google.com/books?id=IchDpFiLrGQC"],
+            ["K. Nassau", "\"Reconstructed\" or \"Geneva\" ruby", "https://www.sciencedirect.com/science/article/abs/pii/0022024869900359"]
+        ]
     },
     "hdth": {
         "title": "Hydrothermal Method",
