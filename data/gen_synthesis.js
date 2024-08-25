@@ -86,7 +86,7 @@ function generateTemplates() {
         else fix('ALIASES', '');
         fix('ARTICLE', mainArticle);
         fix('HISTORY', histArticle);
-        fix('REFERENCES', newRefs);
+        fix('REFERENCES', newRefs || 'Data Missing');
         fix('REV', revision);
         const img = 'https://syndat.org/content/materials/missing/missing.png'; // TODO: Add images for synthesis methods
         fix('OGIMG', img);
