@@ -27,7 +27,7 @@ Editing these and running the `generate` command will update the pages with any 
 ### Material API
 
 This embed will explain how everything works:
-```json
+```javascript
 {
     "id": #, // Next Available ID. Used as reference to know when it was created / Which came before and after it.
     "label": "Display Name",
