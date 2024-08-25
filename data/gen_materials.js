@@ -6,6 +6,16 @@ const synthesis = require('./json/synthesis.json');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
+// Used for formatting formulas.
+function getFormulaHTML(formula) {
+    let count = Math.floor((formula.match(/\_/g) || []).length / 2);
+    let curFormula = formula;
+    for (var i = 0; i < count; i++)
+        curFormula = curFormula.replace("_", "<sub>")
+            .replace("_", "</sub>");
+    return curFormula;
+}
+
 // Used for grading links
 function completionStatus(mat) {
     let points = 0;
@@ -69,7 +79,7 @@ function generateTemplates() {
             mat.id,
             mat.label,
             status,
-            mat.chem_prop.formula,
+            getFormulaHTML(mat.chem_prop.formula),
             timg,
             tsrc
         ]);
@@ -102,7 +112,7 @@ function generateTemplates() {
 
         // Physical and Chemical Data
 
-        fix('FORMULA', chem.formula);
+        fix('FORMULA', getFormulaHTML(chem.formula));
         fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
         if (!chem.grav_min) delPair('Density', 'GRAV');
         else if (chem.grav_min == "?") fix('GRAV', '?');
