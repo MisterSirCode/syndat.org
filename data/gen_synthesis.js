@@ -47,6 +47,22 @@ function generateTemplates() {
 
         const fix = (tag, value) => { template = template.replace(tag, value); }
 
+        // Grab Article
+
+        let articleData = '';
+        let mainArticle = 'Data Missing';
+        let histArticle = 'Data Missing';
+        try {
+            articleData = fs.readFileSync(`../public/content/synthesis/${key}/article.txt`, { encoding: 'utf-8', flag: 'r' });
+        } catch(e) {}
+        if (articleData) {
+            const split = articleData.split('\r\n----\r\n');
+            if (split.length == 2) {
+                mainArticle = split[0].replace(/\r\n/g, '</span><br><br><span class="ind">');
+                histArticle = split[1].replace(/\r\n/g, '</span><br><br><span class="ind">');
+            }
+        }
+
         // Replacements
 
         fix('SYNREF', 'Information about ' + method.prefix + method.title);
@@ -54,9 +70,8 @@ function generateTemplates() {
         fix('SUBTITLE', 'Developed by ' + method.disc);
         if (method.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${method.aliases}</span><br><br>`);
         else fix('ALIASES', '');
-        fix('ARTICLE', method.desc.replace('<br>', '<br><br>'));
-        if (method.history) fix('HISTORY', method.history.replace('<br>', '<br><br>'));
-        else fix('HISTORY', 'Data Missing');
+        fix('ARTICLE', mainArticle);
+        fix('HISTORY', histArticle);
         fix('REV', revision);
         const img = 'https://syndat.org/content/materials/missing/missing.png'; // TODO: Add images for synthesis methods
         fix('OGIMG', img);

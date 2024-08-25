@@ -147,8 +147,9 @@ p {
     padding-right: 15%;
 }
 
-p.ind {
+span.ind {
     text-indent: 3em;
+    display: inline-block;
 }
 
 .pageSection {
