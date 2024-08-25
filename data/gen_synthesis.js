@@ -94,7 +94,7 @@ function generateTemplates() {
         // Construct List for Index Page
 
         let temp = `
-        <a class="specialtyGridItem" href="${key}/">
+        <a class="specialtyGridItem${articleData ? `` : ` statusRed`}" href="${key}/">
             <img class="specialtyGridImage" src="../content/materials/missing/missing.png">
             <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
