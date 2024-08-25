@@ -63,6 +63,20 @@ function generateTemplates() {
             }
         }
 
+        // Make References
+
+        let newRefs = '';
+        let raws = [];
+        if (method.references) raws = method.references;
+        for (var j = 0; j < raws.length; j++) {
+            let ref = raws[j];
+            newRefs += `
+                <span>
+                    ${ref[0]}, <i>${ref[1]}</i>, <a href="${ref[2]}">Link / Source</a>
+                </span><br><br>
+            `;
+        }
+
         // Replacements
 
         fix('SYNREF', 'Information about ' + method.prefix + method.title);
@@ -72,6 +86,7 @@ function generateTemplates() {
         else fix('ALIASES', '');
         fix('ARTICLE', mainArticle);
         fix('HISTORY', histArticle);
+        fix('REFERENCES', newRefs);
         fix('REV', revision);
         const img = 'https://syndat.org/content/materials/missing/missing.png'; // TODO: Add images for synthesis methods
         fix('OGIMG', img);
