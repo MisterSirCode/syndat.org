@@ -67,9 +67,9 @@ function generateTemplates() {
         <a class="specialtyGridItem" href="${key}/">
             <img class="specialtyGridImage" src="../content/materials/missing/missing.png">
             <div class="specialtyGridContent">
-            <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
-            <div class="specialtyGridTitle shortGridTitle">${method.shorthand || method.title}</div>
-            <div class="specialtyGridDesc overflow">${method.trunc}</div>
+                <div class="specialtyGridTitle mainGridTitle">${method.title}</div>
+                <div class="specialtyGridTitle shortGridTitle">${method.shorthand || method.title}</div>
+                <div class="specialtyGridDesc overflow">${method.trunc}</div>
             </div>
         </a>`;
         genlist.push(temp);
@@ -80,7 +80,6 @@ function generateTemplates() {
     }
     synHomeTemplate = synHomeTemplate.replace('REV', revision);
     synHomeTemplate = synHomeTemplate.replace('SYNLIST', genlist.join(''));
-    console.log('Finished');
     console.log('Writing Synthesis Index File...');
     fs.writeFileSync('../public/synthesis/index.html', synHomeTemplate);
     console.log('Finished');

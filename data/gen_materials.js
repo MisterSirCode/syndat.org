@@ -3,10 +3,10 @@ const materials = require('./json/materials.json');
 const revision = materials[0].revision;
 let debug = false;
 const synthesis = require('./json/synthesis.json');
-const { escape } = require('querystring');
 let materialTemplate = fs.readFileSync('./materialTemplate.html', { encoding: 'utf-8', flag: 'r' });
 let matHomeTemplate = fs.readFileSync('./matHomepageTemplate.html', { encoding: 'utf-8', flag: 'r' });
 
+// Used for grading links
 function completionStatus(mat) {
     let points = 0;
     if (mat.desc) points++;
@@ -79,51 +79,121 @@ function generateTemplates() {
         let chem = mat.chem_prop;
         let optic = mat.optic_prop;
         let cry = mat.cry_prop;
-
         const fix = (tag, value) => { template = template.replace(tag, value); }
         const delPair = (tag, repl) => {
             template = template.replace(`<div class="pageSectionItem">${tag}</div><div class="pageSectionValue">${repl}</div>`, '');
         }
 
+        // Cannot use local URLs in meta tags. Only use Syndat's URL here.
+
+        const link = genlist[i];
+        const img = link[4] ? `https://syndat.org/content/materials/${link[1]}/${link[4]}.jpg` : 'https://syndat.org/content/materials/missing/missing.png';
+        fix('OGIMG', img);
+
         // Adjust Template As Needed
 
-        //if (mat.aliases.length == 0) delPair('.aliases');
         fix('MATREF', 'Information about ' + mat.label);
+        if (mat.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${mat.aliases}</span><br><br>`);
+        else fix('ALIASES', '');
+        fix('TITLE', mat.label);
+        if (mat.desc) fix('ARTICLE', mat.desc);
+        else fix('ARTICLE', 'This material is awaiting an article to be written...');
+        fix('REV', revision);
+
+        // Physical and Chemical Data
+
+        fix('FORMULA', chem.formula);
+        fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
         if (!chem.grav_min) delPair('Density', 'GRAV');
+        else if (chem.grav_min == "?") fix('GRAV', '?');
+        else if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
+        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
         if (!chem.mohs_min) delPair('Mohs Hardness', 'MOHS');
+        else if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
+        else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
+
+        // Melting Point / Decomposition Point
+
         if (!chem.melt_pnt && !chem.decp_pnt) delPair('Melting Point', 'MLTPNT');
+        else if (chem.melt_pnt || chem.decp_pnt) // Do Fahrenheit math on the fly, only store C in the database
+            fix('MLTPNT', `${chem.melt_pnt || chem.decp_pnt} °C (${Math.round((chem.melt_pnt || chem.decp_pnt) * (9 / 5) + 32)} °F)`);
+        if (chem.decp_pnt) fix('Melting Point', 'Decomposition Point');
+
+        // Optical and Crystal Data
+
         if (!optic.type) delPair('Type', 'OPTYPE');
+        else fix('OPTYPE', optic.type);
         if (!optic.ref_min) delPair('Refractive Index', 'REF');
-        if (!optic.disp_min) delPair('Dispersion Factor', 'DISP');
-        if (!optic.bir_min) delPair('Birefringence', 'BIREF');
-        if (!optic.opt) fix('MISC', '');
         else {
-            switch (optic.opt) {
-                case 'opaque':
-                    fix('MISC', '<div class="pageSectionItem">Opaque in Visible Spectrum</div><div class="pageSectionValue"></div>');
-                    break;
-                default: 
-                    break;
+            if (optic.ref_min == "?") fix('REF', '?');
+            else {
+                if (Array.isArray(optic.ref_min)) {
+                    if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
+                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]}<br>
+                                    n<sub>β</sub> = ${optic.ref_min[1]}<br>
+                                    n<sub>γ</sub> = ${optic.ref_min[2]}`);
+                    else if (optic.ref_min.length == 3)
+                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                    n<sub>β</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
+                                    n<sub>γ</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
+                    if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
+                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
+                                    n<sub>ε</sub> = ${optic.ref_min[1]}`);
+                    else if (optic.ref_min.length == 2)
+                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
+                                    n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
+                } else {
+                    if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
+                    else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
+                }
             }
         }
-        if (Object.keys(optic).length == 0)
-            fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties</div></div>', '');
-        // if (!mat.bypass_optic) {
-        //     fix('OPSIM', `
-        //         <div class="pageRegionSeparator">
-        //             <div class="pageSectionTitle">Optical Simulation</div>
-        //         </div>
-        //         <span class="pageArticle">
-        //             These may not be fully accurate. Use them only for quick reference, not for scientific use.
-        //             <br><br>
-        //             <img src="../../content/materials/MATIMG.png" class="pageImage" width="256" height="256">
-        //         </span>
-        //     `);
-        // } else fix('OPSIM', '');
-        if (!cry.parent) delPair('Member of', 'PARENT');
+        if (!optic.disp_min) delPair('Dispersion Factor', 'DISP');
+        else {
+            if (optic.disp_min == optic.disp_max) fix('DISP', optic.disp_min);
+            else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
+        }
+        if (!optic.bir_min) delPair('Birefringence', 'BIREF');
+        else {
+            if (optic.bir_min == "?") fix('BIREF', '?');
+            if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
+            else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
+        }
+        if (!optic.opt) fix('MISC', '');
+        else {
+            if (optic.opt == 'opaque') fix('MISC', '<div class="pageSectionItem">Opaque in Visible Spectrum</div><div class="pageSectionValue"></div>');
+        }
+        if (Object.keys(optic).length == 0) fix('<div class="pageRegionRight opticProps"><div class="pageSectionTitle">Optical Properties</div></div>', '');
         if (!cry.system) delPair('Crystal System', 'CRYSTM');
-        if (mat.minID) { fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>
-        <h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`) };
+        if (cry.system) fix('CRYSTM', cry.system);
+
+        // Run only for items with a mineral counterpart
+
+        if (!cry.parent) delPair('Member of', 'PARENT');
+        if (cry.parent) fix('PARENT', cry.parent);
+        if (mat.minID) { 
+            fix('MINID', mat.minID);
+            fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1><h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`);
+        };
+
+        // "Custom" Properties
+
+        if (mat.add_prop) {
+            fix('ADDPROPSTITLE', '<br><div class="pageSectionTitle">Additional Properties</div>');
+            let htmlList = '';
+            for (let j = 0; j < mat.add_prop.length; j++) {
+                let currentProp = mat.add_prop[j];
+                if (typeof currentProp == "string") htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div><br>\n`;
+                else htmlList += `<div class="pageSectionItem">${currentProp[0]}</div><div class="pageSectionValue">${currentProp[1]}</div>\n`;
+            }
+            fix('ADDPROPS', htmlList);
+        } else {
+            fix('ADDPROPSTITLE', '');
+            fix('ADDPROPS', '');
+        }
+        
+        // Generate Variants Tiles
+
         if (mat.variants || mat.neutral) {
             let final = '';
             if (mat.neutral) {
@@ -174,80 +244,7 @@ function generateTemplates() {
             `);
         } else fix('VARTYPES', '');
 
-        // Smaller Replacements
-
-        fix('TITLE', mat.label);
-        if (mat.minID) fix('MINID', mat.minID);
-        if (mat.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${mat.aliases}</span><br><br>`);
-        else fix('ALIASES', '');
-        fix('FORMULA', chem.formula);
-        fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
-        if (chem.grav_min == "?") fix('GRAV', '?');
-        if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
-        else fix('GRAV', `${chem.grav_min} - ${chem.grav_max} g/cm<sup>3</sup>`);
-        if (chem.mohs_min == chem.mohs_max) fix('MOHS', chem.mohs_min);
-        else fix('MOHS', `${chem.mohs_min} - ${chem.mohs_max}`);
-        if (chem.melt_pnt || chem.decp_pnt) fix('MLTPNT', `${chem.melt_pnt || chem.decp_pnt} °C (${Math.round((chem.melt_pnt || chem.decp_pnt) * (9 / 5) + 32)} °F)`);
-        if (chem.decp_pnt) fix('Melting Point', 'Decomposition Point')
-        if (cry.parent) fix('PARENT', cry.parent);
-        if (cry.system) fix('CRYSTM', cry.system);
-        if (optic.type) fix('OPTYPE', optic.type);
-        if (optic.ref_min) {
-            if (optic.ref_min == "?") fix('REF', '?');
-            else {
-                if (Array.isArray(optic.ref_min)) {
-                    if (optic.ref_min.length == 3 && optic.ref_min[0] == optic.ref_max[0])
-                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]}<br>
-                                    n<sub>β</sub> = ${optic.ref_min[1]}<br>
-                                    n<sub>γ</sub> = ${optic.ref_min[2]}`);
-                    else if (optic.ref_min.length == 3)
-                        fix('REF', `n<sub>α</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                    n<sub>β</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}<br>
-                                    n<sub>γ</sub> = ${optic.ref_min[2]} - ${optic.ref_max[2]}`);
-                    if (optic.ref_min.length == 2 && optic.ref_min[0] == optic.ref_max[0])
-                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]}<br>
-                                    n<sub>ε</sub> = ${optic.ref_min[1]}`);
-                    else if (optic.ref_min.length == 2)
-                        fix('REF', `n<sub>ω</sub> = ${optic.ref_min[0]} - ${optic.ref_max[0]}<br>
-                                    n<sub>ε</sub> = ${optic.ref_min[1]} - ${optic.ref_max[1]}`);
-                } else {
-                    if (optic.ref_min == optic.ref_max) fix('REF', `n = ${optic.ref_min}`);
-                    else fix('REF', `n = ${optic.ref_min} - ${optic.ref_max}`);
-                }
-            }
-        }
-        if (optic.disp_min) {
-            if (optic.disp_min == optic.disp_max) fix('DISP', optic.disp_min);
-            else fix('DISP', `${optic.disp_min} - ${optic.disp_max}`);
-        }
-        if (optic.bir_min) {
-            if (optic.bir_min == "?") fix('BIREF', '?');
-            if (optic.bir_min == optic.bir_max) fix('BIREF', 'δ = ' + optic.bir_min);
-            else fix('BIREF', `δ = ${optic.bir_min} - ${optic.bir_max}`);
-        }
-        if (mat.add_prop) {
-            fix('ADDPROPSTITLE', '<br><div class="pageSectionTitle">Additional Properties</div>');
-            let htmlList = '';
-            for (let j = 0; j < mat.add_prop.length; j++) {
-                let currentProp = mat.add_prop[j];
-                if (typeof currentProp == "string") {
-                    htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div><br>\n`;
-                } else {
-                    htmlList += `<div class="pageSectionItem">${currentProp[0]}</div><div class="pageSectionValue">${currentProp[1]}</div>\n`
-                }
-            }
-            fix('ADDPROPS', htmlList);
-        } else {
-            fix('ADDPROPSTITLE', '');
-            fix('ADDPROPS', '');
-        }
-
-        // Write Article
-
-        if (mat.desc) fix('ARTICLE', mat.desc);
-        else fix('ARTICLE', 'Not much is known about this material besides synthesis');
-
-        // Add Production Methods
+        // Add Synthesis Method Tiles
 
         let methods = mat.synthesis;
         let tempList = [];
@@ -269,19 +266,15 @@ function generateTemplates() {
         }
         fix('SYNLIST', tempList.join(''));
 
-        // Image
+        // End Templater for Materials and Write them to Files
 
-        const link = genlist[i];
-        const img = link[4] ? `https://syndat.org/content/materials/${link[1]}/${link[4]}.jpg` : 'https://syndat.org/content/materials/missing/missing.png';
-        fix('OGIMG', img);
-
-        // Revision info
-
-        fix('REV', revision);
         if (!fs.existsSync(`../public/materials/${mat.label}/`))
             fs.mkdirSync(`../public/materials/${mat.label}/`);
         fs.writeFileSync(`../public/materials/${mat.label}/index.html`, template);
     }
+
+    // Use genlist from earlier, template the homepage for browsing materials
+
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
@@ -301,10 +294,8 @@ function generateTemplates() {
         .replace('REV', revision)
         .replace('MATLIST', tempList.join(''))
         .replace('NUM', materials.length);
-    console.log('Finished');
     console.log('Writing Material Index File...');
     fs.writeFileSync('../public/materials/index.html', matHomeTemplate);
-    console.log('Finished');
 }
 
 generateTemplates();

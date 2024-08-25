@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.2.4"
+        "revision": "0.2.5"
     },
     {
         "id": 0,
@@ -10,7 +10,7 @@
         "synthesis": ["czok", "vern", "flux", "hdth", "kyrp", "sint", "edfg", "zone"],
         "chem_prop": {
             "chemical": "Aluminium Oxide",
-            "formula": "Al<sub>2</sub>O<sub>3</sub>",
+            "formula": "Al_2_O_3_",
             "mohs_min": 9,
             "mohs_max": 9,
             "grav_min": 3.95,
@@ -98,7 +98,7 @@
         "synthesis": ["czok", "vern"],
         "chem_prop": {
             "chemical": "Magnesium Aluminium Oxide",
-            "formula": "MgAl<sub>2</sub>O<sub>4</sub>",
+            "formula": "MgAl_2_O_4_",
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 3.6,
@@ -143,7 +143,7 @@
         "synthesis": ["hdth", "flux"],
         "chem_prop": {
             "chemical": "Beryllium Aluminium Cyclosilicate",
-            "formula": "Be<sub>3</sub>Al<sub>2</sub>(Si<sub>6</sub>O<sub>18</sub>)",
+            "formula": "Be_3_Al_2_(Si_6_O_18_)",
             "mohs_min": 7.5,
             "mohs_max": 8,
             "grav_min": 2.63,
@@ -206,7 +206,7 @@
         "synthesis": ["hdth"],
         "chem_prop": {
             "chemical": "Silicon Oxide",
-            "formula": "SiO<sub>2</sub>",
+            "formula": "SiO_2_",
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.65,
@@ -274,7 +274,7 @@
         "synthesis": ["skul", "sint"],
         "chem_prop": {
             "chemical": "Zirconium Oxide",
-            "formula": "ZrO<sub>2</sub>",
+            "formula": "ZrO_2_",
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 5.6,
@@ -297,7 +297,7 @@
         },
         "variants": [
             {
-                "cause": "Ce, CeO<sub>2</sub>, Ce<sub>2</sub>O<sub>3</sub>",
+                "cause": "Ce, CeO_2_, Ce_2_O_3_",
                 "color": "Yellow, Orange, Red",
                 "imgsrc": "Unknown"
             },
@@ -307,17 +307,17 @@
                 "imgsrc": "Unknown"
             },
             {
-                "cause": "Cr<sub>2</sub>O<sub>3</sub>, Tm<sub>2</sub>O<sub>3</sub>, V<sub>2</sub>O<sub>3</sub>",
+                "cause": "Cr_2_O_3_, Tm_2_O_3_, V_2_O_3_",
                 "color": "Green, Olive",
                 "imgsrc": "Unknown"
             },
             {
-                "cause": "Er, Eu, Er<sub>2</sub>O<sub>3</sub>, Eu<sub>2</sub>O<sub>3</sub>, Ho<sub>2</sub>O<sub>3</sub>",
+                "cause": "Er, Eu, Er_2_O_3_, Eu_2_O_3_, Ho_2_O_3_",
                 "color": "Pink",
                 "imgsrc": "Unknown"
             },
             {
-                "cause": "Co<sub>2</sub>O<sub>3</sub>, MnO<sub>2</sub>, Nd<sub>2</sub>O<sub>3</sub>",
+                "cause": "Co_2_O_3_, MnO_2_, Nd_2_O_3_",
                 "color": "Lilac, Violet",
                 "imgsrc": "Unknown"
             },
@@ -327,7 +327,7 @@
                 "imgsrc": "Unknown"
             },
             {
-                "cause": "CuO, Fe<sub>2</sub>O<sub>3</sub>, NiO, Pr<sub>2</sub>O<sub>3</sub>, TiO<sub>2</sub>",
+                "cause": "CuO, Fe_2_O_3_, NiO, Pr_2_O_3_, TiO_2_",
                 "color": "Yellow, Amber, Brown",
                 "imgsrc": "Unknown"
             },
@@ -381,7 +381,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Calcium Fluoride",
-            "formula": "CaF<sub>2</sub>",
+            "formula": "CaF_2_",
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 3.175,
@@ -422,7 +422,7 @@
         "synthesis": ["vern", "sint"],
         "chem_prop": {
             "chemical": "Titanium Oxide",
-            "formula": "TiO<sub>2</sub>",
+            "formula": "TiO_2_",
             "mohs_min": 6,
             "mohs_max": 6.5,
             "grav_min": 4.23,
@@ -635,7 +635,7 @@
         "synthesis": ["vern"],
         "chem_prop": {
             "chemical": "Strontium Titanate",
-            "formula": "SrTiO<sub>3</sub>",
+            "formula": "SrTiO_3_",
             "mohs_min": 5.5,
             "mohs_max": 6.5,
             "grav_min": 4.88,
@@ -669,7 +669,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Niobate",
-            "formula": "LiNbO<sub>3</sub>",
+            "formula": "LiNbO_3_",
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.3,
@@ -714,7 +714,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Tantalate",
-            "formula": "LiTaO<sub>3</sub>",
+            "formula": "LiTaO_3_",
             "mohs_min": 5.75,
             "mohs_max": 6,
             "grav_min": 7.45,
@@ -758,7 +758,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lutetium-Yttrium Oxyorthosilicate",
-            "formula": "Lu<sub>2(1-x)</sub>Y<sub>2x</sub>SiO<sub>5</sub> (YSO > LSO Series)",
+            "formula": "Lu_2(1-x)_Y_2x_SiO_5_ (YSO > LSO Series)",
             "mohs_min": 5.8,
             "mohs_max": 5.8,
             "grav_min": 4.44,
@@ -796,7 +796,7 @@
         "chem_prop": {
             "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
-            "formula": "Bi<sub>4</sub>Ge<sub>3</sub>O<sub>12</sub>",
+            "formula": "Bi_4_Ge_3_O_12_",
             "mohs_min": 4.5,
             "mohs_max": 5,
             "grav_min": 7.12,
@@ -826,7 +826,7 @@
         "chem_prop": {
             "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
-            "formula": "Bi<sub>12</sub>Ge<sub></sub>O<sub>20</sub>",
+            "formula": "Bi_12_Ge__O_20_",
             "mohs_min": 4.5,
             "mohs_max": 5.0,
             "grav_min": 9.22,
@@ -943,7 +943,7 @@
         "chem_prop": {
             "chemical": "Yttrium Orthoaluminate",
             "alt": "Yttrium Aluminium Perovskite",
-            "formula": "YAlO<sub>3</sub>",
+            "formula": "YAlO_3_",
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 4.88,
@@ -979,7 +979,7 @@
         "chem_prop": {
             "chemical": "Yttrium Aluminium Oxide",
             "alt": "Yttrium Aluminium Monoclinic",
-            "formula": "Y<sub>4</sub>Al<sub>2</sub>O<sub>9</sub>",
+            "formula": "Y_4_Al_2_O_9_",
             "mohs_min": "?",
             "mohs_max": "?",
             "grav_min": "?",
@@ -1007,7 +1007,7 @@
         "chem_prop": {
             "chemical": "Yttrium Aluminium Oxide",
             "alt": "Yttrium Aluminium Garnet",
-            "formula": "Y<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
+            "formula": "Y_3_Al_5_O_12_",
             "mohs_min": 8.2,
             "mohs_max": 8.5,
             "grav_min": 4.5,
@@ -1141,7 +1141,7 @@
         "chem_prop": {
             "chemical": "Yttrium Ferrous Oxide",
             "alt": "Yttrium Iron Garnet",
-            "formula": "Y<sub>3</sub>Fe<sub>5</sub>O<sub>12</sub>",
+            "formula": "Y_3_Fe_5_O_12_",
             "mohs_min": 6.5,
             "mohs_max": 7,
             "grav_min": 5.11,
@@ -1171,7 +1171,7 @@
         "chem_prop": {
             "chemical": "Lutetium Aluminium Oxide",
             "alt": "Lutetium Aluminium Garnet",
-            "formula": "Lu<sub>3</sub>Al<sub>5</sub>O<sub>12</sub>",
+            "formula": "Lu_3_Al_5_O_12_",
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 6.7,
@@ -1221,7 +1221,7 @@
         "chem_prop": {
             "chemical": "Gadolinium Aluminium Gallium Oxide",
             "alt": "Gadolinium Aluminium Gallium Garnet",
-            "formula": "Gd<sub>3</sub>Al<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
+            "formula": "Gd_3_Al_2_Ga_3_O_12_",
             "mohs_min": 6.5,
             "mohs_max": 8,
             "grav_min": 6.6,
@@ -1260,7 +1260,7 @@
         "chem_prop": {
             "chemical": "Yttrium Scandium Gallium Oxide",
             "alt": "Yttrium Scandium Gallium Garnet",
-            "formula": "Y<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
+            "formula": "Y_3_Sc_2_Ga_3_O_12_",
             "mohs_min": 8,
             "mohs_max": 8,
             "grav_min": 5.2,
@@ -1304,7 +1304,7 @@
         "chem_prop": {
             "chemical": "Gadolinium Scandium Gallium Oxide",
             "alt": "Gadolinium Scandium Gallium Garnet",
-            "formula": "Gd<sub>3</sub>Sc<sub>2</sub>Ga<sub>3</sub>O<sub>12</sub>",
+            "formula": "Gd_3_Sc_2_Ga_3_O_12_",
             "mohs_min": "?",
             "mohs_max": "?",
             "grav_min": "?",
@@ -1340,7 +1340,7 @@
         "chem_prop": {
             "chemical": "Gadolinium Gallium Oxide",
             "alt": "Gadolinium Gallium Garnet",
-            "formula": "Gd<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "formula": "Gd_3_Ga_5_O_12_",
             "mohs_min": 6.5,
             "mohs_max": 7.5,
             "grav_min": 7.08,
@@ -1369,7 +1369,7 @@
         "chem_prop": {
             "chemical": "Terbium Gallium Oxide",
             "alt": "Terbium Gallium Garnet",
-            "formula": "Tb<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "formula": "Tb_3_Ga_5_O_12_",
             "mohs_min": 8,
             "mohs_max": 8,
             "grav_min": 7.13,
@@ -1398,7 +1398,7 @@
         "chem_prop": {
             "chemical": "Yttrium Gallium Oxide",
             "alt": "Yttrium Gallium Garnet",
-            "formula": "Y<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "formula": "Y_3_Ga_5_O_12_",
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
@@ -1427,7 +1427,7 @@
         "chem_prop": {
             "chemical": "Lutetium Gallium Oxide",
             "alt": "Lutetium Gallium Garnet",
-            "formula": "Lu<sub>3</sub>Ga<sub>5</sub>O<sub>12</sub>",
+            "formula": "Lu_3_Ga_5_O_12_",
             "mohs_min": 0,
             "mohs_max": 0,
             "grav_min": 0,
@@ -1455,7 +1455,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lanthanum Hexaboride",
-            "formula": "LaB<sub>6</sub>",
+            "formula": "LaB_6_",
             "mohs_min": 8,
             "mohs_max": 9.5,
             "grav_min": 4.72,
@@ -1477,7 +1477,7 @@
         "synthesis": ["czok", "flux", "hdth"],
         "chem_prop": {
             "chemical": "Beryllium Aluminium Oxide",
-            "formula": "BeAl<sub>2</sub>O<sub>4</sub>",
+            "formula": "BeAl_2_O_4_",
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 3.5,
@@ -1513,7 +1513,7 @@
         "synthesis": ["hdth", "evap", "rclz"],
         "chem_prop": {
             "chemical": "Copper (II) Carbonate Hydroxide",
-            "formula": "Cu<sub>2</sub>(CO<sub>3</sub>)(OH)<sub>2</sub>",
+            "formula": "Cu_2_(CO_3_)(OH)_2_",
             "mohs_min": 3.5,
             "mohs_max": 4,
             "grav_min": 3.6,
@@ -1542,7 +1542,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Yttrium Orthovanadate",
-            "formula": "YVO<sub>4</sub>",
+            "formula": "YVO_4_",
             "mohs_min": 5,
             "mohs_max": 5,
             "grav_min": 4.24,
@@ -1595,7 +1595,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Calcium Tungstate",
-            "formula": "CaWO<sub>4</sub>",
+            "formula": "CaWO_4_",
             "mohs_min": 4.5,
             "mohs_max": 5,
             "grav_min": 6.1,
@@ -1627,7 +1627,7 @@
         "synthesis": ["czok", "hdth"],
         "chem_prop": {
             "chemical": "Cadmium Tungstate",
-            "formula": "CdWO<sub>4</sub>",
+            "formula": "CdWO_4_",
             "mohs_min": 4,
             "mohs_max": 4.5,
             "grav_min": 7.9,
@@ -1662,7 +1662,7 @@
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lead Tungstate",
-            "formula": "PbWO<sub>4</sub>",
+            "formula": "PbWO_4_",
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 8.28,
