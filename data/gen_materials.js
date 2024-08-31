@@ -225,7 +225,7 @@ function generateTemplates() {
                 for (let j = 0; j < mat.variants.length; j++) {
                     let variant = mat.variants[j];
                     let src = variant.imgsrc ? variant.imgsrc : false;
-                    let img = variant.imgovr ? variant.imgovr : variant.imgsrc ? `var${j}` : '';
+                    let img = variant.imgovr ? variant.imgovr : variant.imgsrc ? `var${variant.id || j}` : '';
                     let temp = `
                     <span class="specialtyGridItem variantItem">
                         <img class="specialtyGridImage"${src ?  ` src="../../content/materials/${mat.label}/${img}.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
