@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.2.6"
+        "revision": "0.3.0"
     },
     {
         "id": 0,
@@ -241,7 +241,7 @@
             "system": "Trigonal"
         },
         "add_prop": [
-            "Piezoelectric"
+            ["Inherent", "Piezoelectric"]
         ],
         "minID": 3337,
         "neutral": {
@@ -436,7 +436,7 @@
         },
         "minID": 1576,
         "neutral": {
-
+            "color": "Colorless"
         },
         "variants": [
             {
@@ -479,7 +479,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Piezoelectric"
+            ["Inherent", "Piezoelectric"]
         ],
         "neutral": {
             "color": "Colorless, Amber, Blue",
@@ -697,7 +697,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Piezoelectric"
+            ["Inherent", "Piezoelectric"]
         ],
         "neutral": {
             "color": "Beige to Black",
@@ -732,7 +732,7 @@
             "system": "Trigonal"
         },
         "add_prop": [
-            "Piezoelectric"
+            ["Inherent", "Piezoelectric"]
         ],
         "neutral": {
             "color": "Colorless to Golden Yellow",
@@ -778,9 +778,7 @@
             "system": "Trigonal"
         },
         "add_prop": [
-            "Piezoelectric",
-            "Pyroelectric",
-            "Diamagnetic"
+            ["Inherent", "Piezoelectric<br>Pyroelectric<br>Diamagnetic"]
         ],
         "neutral": {
             "color": "Colorless to Beige",
@@ -862,7 +860,10 @@
         "neutral": {
             "color": "Colorless",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/bgo-crystal.html"
-        }
+        },
+        "add_prop": [
+            ["Scintillescent", "Peak: 480nm (Teal)"]
+        ]
     },
     {
         "id": 15,
@@ -888,7 +889,10 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        }
+        },
+        "add_prop": [
+            ["Scintillescent", "Peak: 480nm (Teal)"]
+        ]
     },
     {
         "id": 16,
@@ -902,7 +906,8 @@
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 4.51,
-            "grav_max": 4.53
+            "grav_max": 4.53,
+            "melt_pnt": 621
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -915,13 +920,13 @@
             "system": "Isometric"
         },
         "add_prop": [
-            ["Scintillescent", "Gamma - UVA, Yellow"]
+            ["Inherent", "Hygroscopic"],
+            ["Scintillescent", "Peak: 315nm (UVB)<br>Output: 3,500 ph/MeV"]
         ],
         "neutral": {
             "color": "Colorless",
             "fluor": "Yellow",
-            "usage": "Specialty Scintillators, Sensors",
-            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html"
+            "usage": "Specialty Scintillators, Sensors"
         },
         "variants": [
             {
@@ -929,20 +934,27 @@
                 "label": "Tl:CsI",
                 "cause": "Thallium Ions",
                 "color": "Colorless",
-                "fluor": "Yellow",
                 "usage": "Specialty Scintillators, Sensors",
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
-                "imgovr": "neut"
+                "var_prop": {
+                    "add_prop": [
+                        ["Inherent", "Hygroscopic"],
+                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Output: 56,000 ph/MeV"]
+                    ]
+                }
             },
             {
                 "id": "1",
                 "label": "Na:CsI",
                 "cause": "Sodium Ions",
                 "color": "Colorless",
-                "fluor": "Yellow",
                 "usage": "Specialty Scintillators, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
-                "imgovr": "neut"
+                "var_prop": {
+                    "add_prop": [
+                        ["Inherent", "Hygroscopic"],
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 40,000 ph/MeV"]
+                    ]
+                }
             }
         ]
     },
@@ -950,7 +962,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "This material shares some similarity and use with Cesium Iodide, but not much is known about it. It can also be doped with thallium, but suffers from the same poisonous / hygroscopic issues as Tl:CsI",
+        "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
@@ -958,7 +970,8 @@
             "mohs_min": 2,
             "mohs_max": 2,
             "grav_min": 3.67,
-            "grav_max": 3.67
+            "grav_max": 3.67,
+            "melt_pnt": 651
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -971,7 +984,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            ["Scintillescent", "Gamma - UVA"]
+            ["Inherent", "Hygroscopic"]
         ],
         "variants": [
             {
@@ -980,7 +993,13 @@
                 "cause": "Thallium Ions",
                 "color": "Colorless",
                 "usage": "Specialty Scintillators, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Inherent", "Hygroscopic"],
+                        ["Scintillescent", "Peak: 415nm<br>Output: 38,000ph/MeV"]
+                    ]
+                }
             }
         ]
     },
@@ -1063,7 +1082,8 @@
             "mohs_min": 8.2,
             "mohs_max": 8.5,
             "grav_min": 4.5,
-            "grav_max": 4.6
+            "grav_max": 4.6,
+            "melt_pnt": 1970
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1221,7 +1241,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Ferrimagnetic"
+            ["Inherent", "Ferrimagnetic"]
         ],
         "neutral": {
             "color": "Black",
@@ -1241,7 +1261,8 @@
             "mohs_min": 8,
             "mohs_max": 8.5,
             "grav_min": 6.7,
-            "grav_max": 6.71
+            "grav_max": 6.71,
+            "melt_pnt": 2020
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1308,7 +1329,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Paramagnetic"
+            ["Inherent", "Paramagnetic"]
         ],
         "variants": [
             {
@@ -1347,9 +1368,6 @@
         "cry_prop": {
             "system": "Isometric"
         },
-        "add_prop": [
-            "Paramagnetic"
-        ],
         "variants": [
             {
                 "id": "0",
@@ -1394,7 +1412,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Paramagnetic"
+            ["Inherent", "Paramagnetic"]
         ],
         "variants": [
             {
@@ -1431,7 +1449,7 @@
             "system": "Isometric"
         },
         "add_prop": [
-            "Paramagnetic"
+            ["Inherent", "Paramagnetic"]
         ]
     },
     {
@@ -1536,6 +1554,9 @@
         },
         "cry_prop": {
             "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Purple"
         }
     },
     {
@@ -1711,7 +1732,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            ["Scintillescent", "XRay - UVC, Blue"]
+            ["Scintillescent", "Peak: ? (Teal)<br>Output: ? ph/MeV"]
         ],
         "minID": 3560
     },
@@ -1742,7 +1763,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            "Scintillescent"
+            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 13,000ph/MeV"]
         ],
         "neutral": {
             "color": "Beige to Dark Orange",
@@ -1762,7 +1783,8 @@
             "mohs_min": 4,
             "mohs_max": 4,
             "grav_min": 8.28,
-            "grav_max": 8.28
+            "grav_max": 8.28,
+            "melt_pnt": 1123
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
@@ -1778,7 +1800,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            "Scintillescent"
+            ["Scintillescent", "Peak: 440/530nm (Cyan)<br>Output: 190ph/MeV"]
         ],
         "neutral": {
             "color": "Colorless to Beige",
