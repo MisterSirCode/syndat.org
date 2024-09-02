@@ -446,7 +446,12 @@
                 "color": "Colorless",
                 "fluor": "Blue",
                 "usage": "Specialty Scintillators, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/caf2eu-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/caf2eu-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 435nm (Blue)<br>Output: 19,000 ph/MeV"]
+                    ]
+                }
             }
         ]
     },
@@ -795,6 +800,49 @@
         ]
     },
     {
+        "id": 39,
+        "label": "YSO",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Orthosilicate",
+            "formula": "Y_2_SiO_5_",
+            "mohs_min": 5.8,
+            "mohs_max": 5.8,
+            "grav_min": 4.4,
+            "grav_max": 4.4
+        },
+        "optic_prop": {
+            "type": "Biaxial (?)",
+            "ref_min": 1.82,
+            "ref_max": 1.82,
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Monoclinic"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Ce:YSO",
+                "cause": "Cerium Ions",
+                "color": "Colorless",
+                "fluor": "Blue",
+                "usage": "Gamma Arrays, Sensors",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 410nm (Blue)<br>Output: 18,000 ph/MeV"]
+                    ]
+                }
+            }
+        ]
+    },
+    {
         "id": 13,
         "label": "LYSO",
         "aliases": "",
@@ -828,7 +876,12 @@
                 "color": "Colorless",
                 "fluor": "Blue",
                 "usage": "Gamma Arrays, Sensors",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 30,000 ph/MeV"]
+                    ]
+                }
             }
         ]
     },
@@ -1117,7 +1170,12 @@
                 "color": "Yellow",
                 "fluor": "Yellow",
                 "usage": "Lasers, Sensors, Emission Caps",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yag-ce-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yag-ce-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Output: 14,000 ph/MeV"]
+                    ]
+                }
             },
             {
                 "id": "1",
@@ -1359,7 +1417,12 @@
                 "color": "Yellow",
                 "fluor": "Yellow",
                 "usage": "Lasers, Sensors, Gamma Arrays",
-                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/gaggce-crystal.html"
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/gaggce-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 530nm (Yellow)<br>Output: 42,000 ph/MeV"]
+                    ]
+                }
             }
         ]
     },
