@@ -1,1 +1,1 @@
-firebase deploy & pause
+cd data & node gen_materials.js & node gen_synthesis.js & cd ../ & firebase deploy & pause
