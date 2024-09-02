@@ -862,7 +862,7 @@
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/bgo-crystal.html"
         },
         "add_prop": [
-            ["Scintillescent", "Peak: 480nm (Teal)"]
+            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 8,500ph/MeV"]
         ]
     },
     {
@@ -938,7 +938,6 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Inherent", "Hygroscopic"],
                         ["Scintillescent", "Peak: 550nm (Yellow)<br>Output: 56,000 ph/MeV"]
                     ]
                 }
@@ -951,7 +950,6 @@
                 "usage": "Specialty Scintillators, Sensors",
                 "var_prop": {
                     "add_prop": [
-                        ["Inherent", "Hygroscopic"],
                         ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 40,000 ph/MeV"]
                     ]
                 }
@@ -962,7 +960,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "",
+        "desc": "NaI is one of the most effective scintillators on the market. Specifically, Thallium-doped Sodium Iodide (Tl:NaI) is the brightest among known scintillators. Because of this, many professional resources reference the light yields of their scintillators as a percentage of Tl:NaI's output (38,000-40,000ph/MeV). The biggest downside of using it is its hygroscopic nature. Thallium in a water-soluble crystal can be toxic and dangerous, making other scintillators a more realistic option in certain use-cases.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
@@ -996,8 +994,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Inherent", "Hygroscopic"],
-                        ["Scintillescent", "Peak: 415nm<br>Output: 38,000ph/MeV"]
+                        ["Scintillescent", "Peak: 415nm (Blue)<br>Output: 38,000ph/MeV"]
                     ]
                 }
             }
@@ -1016,7 +1013,8 @@
             "mohs_min": 8.5,
             "mohs_max": 8.5,
             "grav_min": 4.88,
-            "grav_max": 5.35
+            "grav_max": 5.4,
+            "melt_pnt": 1875
         },
         "optic_prop": {
             "type": "Biaxial (-)",
@@ -1037,6 +1035,18 @@
                 "cause": "Thulium Ions",
                 "color": "Beige to Dark Orange",
                 "imgsrc": "https://www.scientificmaterials.com/products/yalo3_yttrium-orthoaluminate.php"
+            },
+            {
+                "id": "1",
+                "label": "Ce:YAP",
+                "cause": "Cerium Ions",
+                "color": "Colorless to Beige",
+                "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yap-ce-crystal.html",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 370nm (UVA)<br>Output: 18,000ph/MeV"]
+                    ]
+                }
             }
         ]
     },
@@ -1282,7 +1292,12 @@
                 "color": "Yellow, Lime, Green",
                 "fluor": "Lime",
                 "usage": "Lasers, Sensors",
-                "imgsrc": "https://djeva.com/collections/ce-luag"
+                "imgsrc": "https://djeva.com/collections/ce-luag",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 520nm (Lime)<br>Output: 25,000 ph/MeV"]
+                    ]
+                }
             },
             {
                 "id": "1",
@@ -1291,7 +1306,12 @@
                 "color": "Teal, Pale Green",
                 "fluor": "Salmon",
                 "usage": "Lasers, Sensors",
-                "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php"
+                "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php",
+                "var_prop": {
+                    "add_prop": [
+                        ["Scintillescent", "Peak: 310nm (UVB)<br>Output: 20,000 ph/MeV"]
+                    ]
+                }
             },
             {
                 "id": "2",
@@ -1784,7 +1804,7 @@
             "mohs_max": 4,
             "grav_min": 8.28,
             "grav_max": 8.28,
-            "melt_pnt": 1123
+            "melt_pnt": 1139
         },
         "optic_prop": {
             "type": "Uniaxial (-)",
