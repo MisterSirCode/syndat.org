@@ -38,6 +38,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Ruby",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink, Magenta",
@@ -46,12 +47,14 @@
                 "imgsrc": "https://www.langantiques.com/university/czochralski/"
             },
             {
+                "id": "1",
                 "label": "Padparadscha",
                 "cause": "Iron and Chromium Ions",
                 "color": "Purple, Pink, Salmon, Orange",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "2",
                 "label": "Typical Sapphire",
                 "cause": "Iron and Titanium Ions",
                 "color": "Blue",
@@ -59,11 +62,13 @@
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-blue-sapphire-rough/"
             },
             {
+                "id": "3",
                 "cause": "Iron Ions",
                 "color": "Green, Yellow, Orange",
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-yellow-sapphire-rough/"
             },
             {
+                "id": "4",
                 "label": "Laser Sapphire",
                 "cause": "Titanium Ions",
                 "color": "Red, Pink, Orange",
@@ -71,11 +76,13 @@
                 "imgsrc": "https://www.civillaser.com/index.php?main_page=product_info&products_id=1762"
             },
             {
+                "id": "5",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan, Green",
                 "imgsrc": "https://www.etsy.com/listing/1648770374/dark-paraiba-colored-lab-created?frs=1&sts=1"
             },
             {
+                "id": "6",
                 "label": "'Alexandrite' Sapphire",
                 "cause": "Vanadium Ions",
                 "color": "Purple, Red, Green, Blue, etc",
@@ -83,6 +90,7 @@
                 "imgsrc": "https://www.etsy.com/listing/1218426689/alexandrite-46-colored-lab-created"
             },
             {
+                "id": "7",
                 "label": "Star Sapphire / Ruby",
                 "cause": "Rutile (TiO2) Inclusions",
                 "effect": "Asterism / Cat's Eye",
@@ -119,6 +127,7 @@
         "minID": 3729,
         "variants": [
             {
+                "id": "0",
                 "label": "Typical Spinel",
                 "cause": "Chromium Ions",
                 "color": "Red, Pink",
@@ -126,6 +135,7 @@
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-pulled-czochralski-red-spinel-rough/"
             },
             {
+                "id": "1",
                 "label": "Cobalt Spinel",
                 "cause": "Cobalt Ions",
                 "color": "Blue, Cyan",
@@ -165,6 +175,7 @@
         "minID": 819,
         "variants": [
             {
+                "id": "0",
                 "label": "Emerald",
                 "cause": "Chromium, Vanadium, Copper and Iron Ions",
                 "color": "Green, Cyan, Lime",
@@ -172,18 +183,21 @@
                 "imgsrc": "https://djeva.com/collections/lab-emerald"
             },
             {
+                "id": "1",
                 "label": "Morganite, Red Beryl",
                 "cause": "Manganese Ions",
                 "color": "Pink, Magenta, Red",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "2",
                 "label": "Aquamarine, Heliodor",
                 "cause": "Iron Ions",
                 "color": "Blue, Cyan, Yellow, Orange",
                 "imgsrc": "https://www.ebay.com/itm/155056421996"
             },
             {
+                "id": "3",
                 "label": "(Needs Research)",
                 "cause": "Cobalt, Copper, and other Ions.",
                 "color": "Blue, Cyan, Green",
@@ -191,6 +205,7 @@
                 "imgsrc": "Site Owner"
             },
             {
+                "id": "4",
                 "label": "Red Beryl",
                 "cause": "Cobalt and Manganese Ions",
                 "color": "Red, Orange",
@@ -235,29 +250,34 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Amethyst",
                 "cause": "Iron Ions",
                 "color": "Pale Pink, Purple, Violet",
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-amethyst-quartz-rough/"
             },
             {
+                "id": "1",
                 "label": "Smoky Quartz",
                 "cause": "Iraddiation with Aluminium Ions",
                 "color": "Gray, Brown",
                 "imgsrc": "https://www.gemsngems.com/product/lab-created-smoky-quartz-rough/"
             },
             {
+                "id": "2",
                 "label": "Citrine",
                 "cause": "Iron Oxide Suspension",
                 "color": "Yellow, Orange, Brown",
                 "imgsrc": "https://www.alibaba.com/product-detail/Hydrothermal-quartz-synthetic-gems-rough_60494569676.html"
             },
             {
+                "id": "3",
                 "label": "Pink Quartz",
                 "cause": "Iraddiation with Aluminium and Phosphorous Ions",
                 "color": "Pink"
             },
             {
+                "id": "4",
                 "label": "Cobalt Quartz",
                 "cause": "Cobalt Ions",
                 "color": "Blue",
@@ -297,76 +317,91 @@
         },
         "variants": [
             {
+                "id": "0",
                 "cause": "Ce, CeO_2_, Ce_2_O_3_",
                 "color": "Yellow, Orange, Red",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "1",
                 "cause": "Chromium and Vanadium Ions",
                 "color": "Green",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "2",
                 "cause": "Cr_2_O_3_, Tm_2_O_3_, V_2_O_3_",
                 "color": "Green, Olive",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "3",
                 "cause": "Er, Eu, Er_2_O_3_, Eu_2_O_3_, Ho_2_O_3_",
                 "color": "Pink",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "4",
                 "cause": "Co_2_O_3_, MnO_2_, Nd_2_O_3_",
                 "color": "Lilac, Violet",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "5",
                 "cause": "Cobalt Ions",
                 "color": "Lilac, Violet, Blue",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "6",
                 "cause": "CuO, Fe_2_O_3_, NiO, Pr_2_O_3_, TiO_2_",
                 "color": "Yellow, Amber, Brown",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "7",
                 "cause": "Copper Ions",
                 "color": "Yellow, Pale Blue",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "8",
                 "cause": "Iron Ions",
                 "color": "Yellow",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "9",
                 "cause": "Holmium Ions",
                 "color": "Pale Brown",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "10",
                 "cause": "Manganese Ions",
                 "color": "Brown, Violet",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "11",
                 "cause": "Neodymium Ions",
                 "color": "Purple",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "12",
                 "cause": "Nickel and Thulium Ions",
                 "color": "Yellow, Brown",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "13",
                 "cause": "Praseodymium Ions",
                 "color": "Amber",
                 "imgsrc": "Unknown"
             },
             {
+                "id": "14",
                 "cause": "Titanium Ions",
                 "color": "Amber, Brown",
                 "imgsrc": "Unknown"
@@ -405,6 +440,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Eu:CaF2",
                 "cause": "Europium Ions",
                 "color": "Colorless",
@@ -484,6 +520,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "4H SiC",
                 "color": "Yellow, Green, Blue",
                 "cause": "Hexagonal 4-Layer Structure",
@@ -491,18 +528,21 @@
                 "imgsrc": "https://www.sic-wafers.com/4h-semi-sic-substrate-and-4h-n-sic-substrate/"
             },
             {
+                "id": "1",
                 "label": "6H SiC",
                 "color": "Yellow, Green",
                 "cause": "Hexagonal 6-Layer Structure",
                 "usage": "N-Type, P-Type Semiconductors, and Semi-insulators"
             },
             {
+                "id": "2",
                 "label": "3C SiC",
                 "color": "Gray, Dark Blue, Dark Red",
                 "cause": "Cubic 3-Layer Structure",
                 "usage": "N-Type, P-Type Semiconductors"
             },
             {
+                "id": "3",
                 "label": "N-Type SiC",
                 "cause": "Nitrogen Ions",
                 "color": "Yellow, Green, Blue, Brown",
@@ -510,15 +550,18 @@
                 "usage": "N-Type Semiconductors"
             },
             {
+                "id": "4",
                 "label": "SI SiC",
                 "cause": "Vanadium Ions",
                 "usage": "Semi-insulators"
             },
             {
+                "id": "5",
                 "cause": "Hydrogen Ions",
                 "color": "Pink, Magenta, Purple"
             },
             {
+                "id": "6",
                 "label": "P-Type SiC",
                 "cause": "Aluminium and Boron Ions",
                 "color": "Blue",
@@ -560,6 +603,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Cr:ZnS",
                 "color": "Amber to Vermillion",
                 "cause": "Chromium Ions",
@@ -697,6 +741,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Er:LiNbO3",
                 "cause": "Erbium Ions",
                 "color": "Orange, Salmon, Pink",
@@ -743,6 +788,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "(Needs Research)",
                 "color": "Mint Green, Lime",
                 "cause": "Unknown Dopant",
@@ -778,6 +824,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Ce:LYSO",
                 "cause": "Cerium Ions",
                 "color": "Colorless",
@@ -878,6 +925,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Tl:CsI",
                 "cause": "Thallium Ions",
                 "color": "Colorless",
@@ -887,6 +935,7 @@
                 "imgovr": "neut"
             },
             {
+                "id": "1",
                 "label": "Na:CsI",
                 "cause": "Sodium Ions",
                 "color": "Colorless",
@@ -926,6 +975,7 @@
         ],
         "variants": [
             {
+                "id": "0",
                 "label": "Tl:NaI",
                 "cause": "Thallium Ions",
                 "color": "Colorless",
@@ -963,6 +1013,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Tm:YAP",
                 "cause": "Thulium Ions",
                 "color": "Beige to Dark Orange",
@@ -1203,6 +1254,7 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Ce:LuAG",
                 "cause": "Cerium Ions",
                 "color": "Green, Lime",
@@ -1211,6 +1263,7 @@
                 "imgsrc": "https://djeva.com/collections/ce-luag"
             },
             {
+                "id": "1",
                 "label": "Pr:LuAG",
                 "cause": "Praseodymium Ions",
                 "color": "Pale Green",
@@ -1219,6 +1272,7 @@
                 "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php"
             },
             {
+                "id": "2",
                 "label": "Tm:LuAG",
                 "cause": "Thulium Ions",
                 "usage": "Specialty Lasers",
@@ -1256,6 +1310,7 @@
         ],
         "variants": [
             {
+                "id": "0",
                 "label": "Ce:GAGG",
                 "cause": "Cerium Ions",
                 "color": "Yellow",
@@ -1295,12 +1350,14 @@
         ],
         "variants": [
             {
+                "id": "0",
                 "label": "Er:Cr:YSGG",
                 "cause": "Erbium and Chromium Ions",
                 "color": "Dark Yellow-Green",
                 "usage": "Lamp Pumped Medical Applications"
             },
             {
+                "id": "1",
                 "label": "Er:YSGG",
                 "cause": "Erbium Ions",
                 "color": "Salmon, Orange",
@@ -1339,9 +1396,10 @@
         ],
         "variants": [
             {
+                "id": "0",
                 "label": "Cr:Nd:GSGG",
                 "cause": "Chromium and Neodymium Ions",
-                "usage": "High Transfer Efficiency Lamp Pumped Systems"
+                "usage": "High Transfer Efficiency Lamp-Pumped Systems"
             }
         ]
     },
@@ -1398,10 +1456,7 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        },
-        "add_prop": [
-            "Paramagnetic"
-        ]
+        }
     },
     {
         "id": 34,
@@ -1427,10 +1482,7 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        },
-        "add_prop": [
-            "Paramagnetic"
-        ]
+        }
     },
     {
         "id": 35,
@@ -1456,10 +1508,7 @@
         },
         "cry_prop": {
             "system": "Isometric"
-        },
-        "add_prop": [
-            "Paramagnetic"
-        ]
+        }
     },
     {
         "id": 25,
@@ -1512,6 +1561,7 @@
         "minID": 1039,
         "variants": [
             {
+                "id": "0",
                 "label": "Alexandrite",
                 "cause": "Chromium Ions",
                 "fluor": "Red",
@@ -1576,24 +1626,28 @@
         },
         "variants": [
             {
+                "id": "0",
                 "label": "Nd:YVO4",
                 "cause": "Neodymium Ions",
                 "color": "Purple, Blue, Green, Yelloow",
                 "usage": "Lasers"
             },
             {
+                "id": "1",
                 "label": "Cr:Nd:YVO4",
                 "cause": "Chromium and Neodymium Ions",
                 "color": "Green",
                 "usage": "Lasers"
             },
             {
+                "id": "2",
                 "label": "Pr:YVO4",
                 "cause": "Praseodymium Ions",
                 "color": "Green, Lime, Yellow",
                 "usage": "Lasers"
             },
             {
+                "id": "3",
                 "label": "Tm:Ho:YVO4",
                 "cause": "Thulium and Holmium Ions",
                 "color": "Pink",
@@ -1660,7 +1714,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            ["Scintillescent", "XRay - UVC, Blue"]
+            "Scintillescent"
         ],
         "neutral": {
             "color": "Beige to Dark Orange",
@@ -1696,7 +1750,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            ["Scintillescent", "XRay - UVC, Blue"]
+            "Scintillescent"
         ],
         "neutral": {
             "color": "Colorless to Beige",
