@@ -1033,8 +1033,9 @@
             "formula": "Y_4_Al_2_O_9_",
             "mohs_min": "?",
             "mohs_max": "?",
-            "grav_min": "?",
-            "grav_max": "?"
+            "grav_min": 4.56,
+            "grav_max": 4.56,
+            "melt_pnt": 2020
         },
         "optic_prop": {
             "type": "Biaxial (?)",
