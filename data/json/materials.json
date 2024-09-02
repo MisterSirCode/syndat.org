@@ -1267,7 +1267,7 @@
                 "id": "1",
                 "label": "Pr:LuAG",
                 "cause": "Praseodymium Ions",
-                "color": "Pale Green",
+                "color": "Teal, Pale Green",
                 "fluor": "Salmon",
                 "usage": "Lasers, Sensors",
                 "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php"
@@ -1276,6 +1276,7 @@
                 "id": "2",
                 "label": "Tm:LuAG",
                 "cause": "Thulium Ions",
+                "color": "Pale Yellow, pale Green",
                 "usage": "Specialty Lasers",
                 "imgsrc": "Styropyro"
             }
