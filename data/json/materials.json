@@ -1468,10 +1468,10 @@
             "chemical": "Yttrium Gallium Oxide",
             "alt": "Yttrium Gallium Garnet",
             "formula": "Y_3_Ga_5_O_12_",
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 0,
-            "grav_max": 0
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
         },
         "optic_prop": {
             "type": "Isotropic",
@@ -1494,10 +1494,36 @@
             "chemical": "Lutetium Gallium Oxide",
             "alt": "Lutetium Gallium Garnet",
             "formula": "Lu_3_Ga_5_O_12_",
-            "mohs_min": 0,
-            "mohs_max": 0,
-            "grav_min": 0,
-            "grav_max": 0
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 38,
+        "label": "NdGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Neodymium Gallium Oxide",
+            "alt": "Neodymium Gallium Garnet",
+            "formula": "Nd_3_Ga_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
         },
         "optic_prop": {
             "type": "Isotropic",
