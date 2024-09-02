@@ -1258,8 +1258,8 @@
                 "id": "0",
                 "label": "Ce:LuAG",
                 "cause": "Cerium Ions",
-                "color": "Green, Lime",
-                "fluor": "Green",
+                "color": "Yellow, Lime, Green",
+                "fluor": "Lime",
                 "usage": "Lasers, Sensors",
                 "imgsrc": "https://djeva.com/collections/ce-luag"
             },
@@ -1276,9 +1276,9 @@
                 "id": "2",
                 "label": "Tm:LuAG",
                 "cause": "Thulium Ions",
-                "color": "Pale Yellow, pale Green",
+                "color": "Pale Yellow, Pale Green",
                 "usage": "Specialty Lasers",
-                "imgsrc": "Styropyro"
+                "imgsrc": "Styropyro ; Provided directly through discord"
             }
         ]
     },
