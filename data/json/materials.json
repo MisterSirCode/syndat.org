@@ -625,15 +625,14 @@
         "desc": "Silicon is a particularly unique synthetic element. It is one of the most common materials grown to exceptional purities, and is the backbone of modern civilization. Effectively every device with an integrated circuit most likely uses a doped / etched die made from polished wafers of pure silicon grown via the czochralski method or similar processes. Without these dies there would be virtually no smart devices or compact computing.<br><br>The process of chemically and optically modifying wafers to create microscopic digital circuits is one of mankind's greatest achievements, and this material makes it possible. Furthermore, the technology developed around silicon helped propel the material science industry as a whole. Silicon and other semiconductors are really what started it all.",
         "synthesis": ["czok", "kyrp", "brst", "hdsm", "zone"],
         "chem_prop": {
-            "chemical": "Silicon",
-            "formula": "Si",
+            "element": ["14", "Si", "Silicon", 28.085],
             "mohs_min": 7,
             "mohs_max": 7,
             "grav_min": 2.329,
             "grav_max": 2.329,
             "melt_pnt": 1414
         },
-        "optic_prop": { 
+        "optic_prop": {
             "opt": "opaque"
         },
         "bypass_optic": true,
@@ -644,6 +643,35 @@
             "color": "Dark Gray",
             "imgsrc": "Theodore W. Gray - https://periodictable.com/Items/014.26/index.html"
         }
+    },
+    {
+        "id": 40,
+        "label": "Antimony",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok", "kyrp", "zone"],
+        "chem_prop": {
+            "element": ["51", "Sb", "Antimony", 121.76],
+            "alt": "Stibium",
+            "mohs_min": 3,
+            "mohs_max": 3.5,
+            "grav_min": 6.61,
+            "grav_max": 6.71,
+            "decp_pnt": 630
+        },
+        "optic_prop": {
+            "opt": "opaque"
+        },
+        "bypass_optic": true,
+        "cry_prop": {
+            "system": "Trigonal",
+            "parent": "Arsenic Group"
+        },
+        "neutral": {
+            "color": "Gray",
+            "imgsrc": "Site Owner"
+        },
+        "minID": 262
     },
     {
         "id": 10,
