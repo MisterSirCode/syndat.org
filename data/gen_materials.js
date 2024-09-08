@@ -79,7 +79,9 @@ function generateTemplates() {
             mat.id,
             mat.label,
             status,
-            getFormulaHTML(mat.chem_prop.formula),
+            mat.chem_prop.element ? 
+                `Element ${mat.chem_prop.element[0]}<br><br>${mat.chem_prop.element[1]}` : 
+                getFormulaHTML(mat.chem_prop.formula),
             timg,
             tsrc
         ]);
@@ -112,8 +114,14 @@ function generateTemplates() {
 
         // Physical and Chemical Data
 
-        fix('FORMULA', getFormulaHTML(chem.formula));
-        fix('CHEM', chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical);
+        if (chem.element) {
+            fix('Composition', 'Periodic Element');
+            fix('CHEM', `Element ${chem.element[0]}<br><br>${chem.element[1]} - ${chem.element[2]}${chem.alt ? '<br>alt. ' + chem.alt : ''}`);
+            fix('ATMW', `${chem.element[3]} u`);
+        } else {
+            delPair('Atomic Weight', 'ATMW');
+            fix('CHEM', `${getFormulaHTML(chem.formula)}<br><br>${chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical}`);
+        }
         if (!chem.grav_min) delPair('Density', 'GRAV');
         else if (chem.grav_min == "?") fix('GRAV', '?');
         else if (chem.grav_min == chem.grav_max) fix('GRAV', chem.grav_min + ' g/cm<sup>3</sup>');
