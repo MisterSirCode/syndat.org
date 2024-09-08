@@ -80,7 +80,7 @@ function generateTemplates() {
             mat.label,
             status,
             mat.chem_prop.element ? 
-                `Element ${mat.chem_prop.element[0]}<br><br>${mat.chem_prop.element[1]}` : 
+                `Element ${mat.chem_prop.element[0]}<br>${mat.chem_prop.element[1]}` : 
                 getFormulaHTML(mat.chem_prop.formula),
             timg,
             tsrc
