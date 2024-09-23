@@ -241,7 +241,7 @@
             "system": "Trigonal"
         },
         "add_prop": [
-            ["Inherent", "Piezoelectric"]
+            ["Inherent", ["Piezoelectric", "Thermoluminescent"]]
         ],
         "minID": 3337,
         "neutral": {
@@ -519,6 +519,9 @@
         "cry_prop": {
             "system": "Hexagonal"
         },
+        "add_prop": [
+            ["Inherent", ["Semiconductive", "Thermoluminescent", "Thermochromic"]]
+        ],
         "neutral": {
             "color": "Colorless",
             "imgsrc": "Site Owner"
@@ -639,10 +642,14 @@
         "cry_prop": {
             "system": "Isometric"
         },
+        "add_prop": [
+            ["Inherent", ["Semiconductive"]]
+        ],
         "neutral": {
             "color": "Dark Gray",
             "imgsrc": "Theodore W. Gray - https://periodictable.com/Items/014.26/index.html"
-        }
+        },
+        "minID": 3659
     },
     {
         "id": 40,
@@ -667,6 +674,9 @@
             "system": "Trigonal",
             "parent": "Arsenic Group"
         },
+        "add_prop": [
+            ["Inherent", ["Semiconductive"]]
+        ],
         "neutral": {
             "color": "Gray",
             "imgsrc": "Site Owner"
@@ -742,7 +752,7 @@
         "id": 12,
         "label": "Lithium Niobate",
         "aliases": "Linobate, LN",
-        "desc": "Lithium Niobate is a niche optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive. TODO: Finish Article",
+        "desc": "Lithium Niobate is an optical salt grown industrially for use in piezoelectrics and specialty optics. It is also called Linobate in the trades. It has had use as a niche diamond simulant, but is quite rare to come by on the market. It is soft and unfit for cut stones, but the few that have been made are exceptionally refractive and dispersive. TODO: Finish Article",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Lithium Niobate",

@@ -49,6 +49,7 @@ function generateTemplates() {
     console.log(`Generating ${materials.length} Material Templates`);
     for (let i = 0; i < materials.length; i++) {
         let mat = materials[i];
+        let linker = mat.label.toLowerCase().replace(' ', '-');
         let template = materialTemplate;
 
         // Create Truncated List
@@ -115,7 +116,6 @@ function generateTemplates() {
         // Physical and Chemical Data
 
         if (chem.element) {
-            fix('Composition', 'Periodic Element');
             fix('CHEM', `Element ${chem.element[0]}<br><br>${chem.element[1]} - ${chem.element[2]}${chem.alt ? '<br>alt. ' + chem.alt : ''}`);
             fix('ATMW', `${chem.element[3]} u`);
         } else {
@@ -191,8 +191,11 @@ function generateTemplates() {
         if (cry.parent) fix('PARENT', cry.parent);
         if (mat.minID) { 
             fix('MINID', mat.minID);
-            fix('TITLE</h1>', `TITLE <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1><h4 class="minSubTitle">IMA-Approved Mineral Species</h4>`);
-        };
+            fix(`${mat.label}</h1>`, `${mat.label} <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>`);
+            fix('SUBTITLE', `IMA-Approved Mineral Species${chem.element ? "<br><br>Chemical Element" : ""}`);
+        } else {
+            fix('SUBTITLE', chem.element ? "Chemical Element" : "");
+        }
 
         // "Custom" Properties
 
@@ -202,7 +205,7 @@ function generateTemplates() {
             for (let j = 0; j < mat.add_prop.length; j++) {
                 let currentProp = mat.add_prop[j];
                 if (typeof currentProp == "string") htmlList += `<div class="pageSectionItem itemStatement">${currentProp}</div><br>\n`;
-                else htmlList += `<div class="pageSectionItem">${currentProp[0]}</div><div class="pageSectionValue">${currentProp[1]}</div>\n`;
+                else htmlList += `<div class="pageSectionItem">${currentProp[0]}</div><div class="pageSectionValue">${Array.isArray(currentProp[1]) ? currentProp[1].join('<br>') : currentProp[1]}</div>\n`;
             }
             fix('ADDPROPS', htmlList);
         } else {
@@ -218,7 +221,7 @@ function generateTemplates() {
                 let src = mat.neutral.imgsrc ? mat.neutral.imgsrc : false;
                 final += `
                 <span class="specialtyGridItem variantItem">
-                    <img class="specialtyGridImage"${src ? ` src="../../content/materials/${mat.label}/neut.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${src}"` : ''}>
+                    <img class="specialtyGridImage"${src ? ` src="../../content/materials/${linker}/neut.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${src}"` : ''}>
                     <div class="specialtyGridContent">
                     <div class="specialtyGridTitle mainGridTitle">(Undoped / Generic)</div>
                     <div class="specialtyGridTitle shortGridTitle">(Undoped)</div>
@@ -236,7 +239,7 @@ function generateTemplates() {
                     let img = variant.imgovr ? variant.imgovr : variant.imgsrc ? `var${variant.id || j}` : '';
                     let temp = `
                     <span class="specialtyGridItem variantItem">
-                        <img class="specialtyGridImage"${src ?  ` src="../../content/materials/${mat.label}/${img}.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
+                        <img class="specialtyGridImage"${src ?  ` src="../../content/materials/${linker}/${img}.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${variant.imgsrc}"` : ''}>
                         <div class="specialtyGridContent">
                         ${variant.label ? `
                             <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
@@ -244,7 +247,7 @@ function generateTemplates() {
                         ` : ''}
                         ${variant.color ? `<div class="specialtyGridDesc variantDesc">Color: ${variant.color}</div>` : ''}
                         ${variant.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${variant.fluor}</div>` : ''}
-                        ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${variant.cause}</div>` : ''}
+                        ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${getFormulaHTML(variant.cause)}</div>` : ''}
                         ${variant.effect ? `<div class="specialtyGridDesc variantDesc">Effect: ${variant.effect}</div>` : ''}
                         ${variant.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${variant.usage}</div>` : ''}
                         </div>
@@ -272,7 +275,7 @@ function generateTemplates() {
             let method = methods[m];
             let data = synthesis[method];
             let temp = `
-            <a class="specialtyGridItem${additional}" href="../../synthesis/${method}/">
+            <a class="specialtyGridItem${additional}" href="../../synthesis/${method.toLowerCase().replace(' ', '-')}/">
                 <img class="specialtyGridImage" src="../../content/materials/missing/missing.png">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
@@ -286,9 +289,9 @@ function generateTemplates() {
 
         // End Templater for Materials and Write them to Files
 
-        if (!fs.existsSync(`../public/materials/${mat.label}/`))
-            fs.mkdirSync(`../public/materials/${mat.label}/`);
-        fs.writeFileSync(`../public/materials/${mat.label}/index.html`, template);
+        if (!fs.existsSync(`../public/materials/${linker}/`))
+            fs.mkdirSync(`../public/materials/${linker}/`);
+        fs.writeFileSync(`../public/materials/${linker}/index.html`, template);
     }
 
     // Use genlist from earlier, template the homepage for browsing materials
@@ -298,8 +301,8 @@ function generateTemplates() {
         const link = genlist[i];
         const status = link[2] >= 7 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
-        <a class="specialtyGridItem${status} gridExpander" href="${link[1]}/">
-            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1]}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
+        <a class="specialtyGridItem${status} gridExpander" href="${link[1].toLowerCase().replace(' ', '-')}/">
+            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1].toLowerCase().replace(' ', '-')}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>
