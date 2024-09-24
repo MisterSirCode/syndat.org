@@ -1160,6 +1160,34 @@
         ]
     },
     {
+        "id": 49,
+        "label": "YbAP",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Ytterbium Orthoaluminate",
+            "alt": "Ytterbium Aluminium Perovskite",
+            "formula": "YbAlO_3_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Biaxial (?)",
+            "ref_min": "?",
+            "ref_max": "?",
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Orthorhombic"
+        }
+    },
+    {
         "id": 36,
         "label": "YAM",
         "aliases": "",
@@ -1438,6 +1466,191 @@
         ]
     },
     {
+        "id": 41,
+        "label": "YLuAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Lutetium Aluminium Oxide",
+            "alt": "Yttrium Lutetium Aluminium Garnet",
+            "formula": "Y_x_Lu_3-x_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 43,
+        "label": "HoAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Holmium Aluminium Oxide",
+            "alt": "Holmium Aluminium Garnet",
+            "formula": "Ho_3_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 44,
+        "label": "ErAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Erbium Aluminium Oxide",
+            "alt": "Erbium Aluminium Garnet",
+            "formula": "Er_3_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 45,
+        "label": "YbAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Ytterbium Aluminium Oxide",
+            "alt": "Ytterbium Aluminium Garnet",
+            "formula": "Yb_3_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 46,
+        "label": "TmAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Thulium Aluminium Oxide",
+            "alt": "Thulium Aluminium Garnet",
+            "formula": "Tm_3_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 47,
+        "label": "GSAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Gadolinium Scandium Aluminium Oxide",
+            "alt": "Gadolinium Scandium Aluminium Garnet",
+            "formula": "Gd_3_Sc_x_Al_5-x_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "add_prop": [
+            ["Inherent", "Paramagnetic"]
+        ]
+    },
+    {
+        "id": 48,
+        "label": "YSAG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Scandium Aluminium Oxide",
+            "alt": "Yttrium Scandium Aluminium Garnet",
+            "formula": "Y_3_Sc_x_Al_5-x_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
         "id": 19,
         "label": "GAGG",
         "aliases": "",
@@ -1483,6 +1696,32 @@
         ]
     },
     {
+        "id": 42,
+        "label": "YAGG",
+        "aliases": "",
+        "desc": "", 
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Aluminium Gallium Oxide",
+            "alt": "Yttrium Aluminium Gallium Garnet",
+            "formula": "Y_3_Al_5-x_Ga_x_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
         "id": 24,
         "label": "YSGG",
         "aliases": "",
@@ -1491,7 +1730,7 @@
         "chem_prop": {
             "chemical": "Yttrium Scandium Gallium Oxide",
             "alt": "Yttrium Scandium Gallium Garnet",
-            "formula": "Y_3_Sc_2_Ga_3_O_12_",
+            "formula": "Y_3_Sc_x_Ga_5-x_O_12_",
             "mohs_min": 8,
             "mohs_max": 8,
             "grav_min": 5.2,
