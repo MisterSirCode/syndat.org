@@ -1129,8 +1129,8 @@
             "type": "Biaxial (-)",
             "ref_min": [1.96, 1.94, 1.97],
             "ref_max": [1.96, 1.94, 1.97],
-            "bir_min": "?",
-            "bir_max": "?",
+            "bir_min": 0.03,
+            "bir_max": 0.03,
             "disp_min": "?",
             "disp_max": "?"
         },
@@ -1777,8 +1777,8 @@
             "ref_max": [1.655, 1.875, 1.909],
             "bir_min": 0.250,
             "bir_max": 0.254,
-            "disp_min": "?",
-            "disp_max": "?"
+            "disp_min": "Weak (Unknown)",
+            "disp_max": "Weak (Unknown)"
         },
         "cry_prop": {
             "system": "Monoclinic",
