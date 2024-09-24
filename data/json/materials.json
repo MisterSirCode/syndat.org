@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.3.0"
+        "revision": "0.3.1"
     },
     {
         "id": 0,
@@ -849,19 +849,24 @@
             "mohs_min": 5.8,
             "mohs_max": 5.8,
             "grav_min": 4.4,
-            "grav_max": 4.4
+            "grav_max": 4.4,
+            "melt_pnt": 2100
         },
         "optic_prop": {
-            "type": "Biaxial (?)",
-            "ref_min": 1.82,
-            "ref_max": 1.82,
-            "bir_min": "?",
-            "bir_max": "?",
+            "type": "Biaxial (+)",
+            "ref_min": [1.782, 1.785, 1.806],
+            "ref_max": [1.82, 1.82, 1.82],
+            "bir_min": 0.024,
+            "bir_max": 0.024,
             "disp_min": "?",
             "disp_max": "?"
         },
         "cry_prop": {
             "system": "Monoclinic"
+        },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://www.scientificmaterials.com/products/yso_Y2SiO5_yttrium-orthosilicate.php"
         },
         "variants": [
             {
@@ -874,7 +879,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 410nm (Blue)<br>Output: 18,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 18,000 ph/MeV"]
                     ]
                 }
             }
@@ -965,15 +970,15 @@
         "chem_prop": {
             "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
-            "formula": "Bi_12_Ge__O_20_",
+            "formula": "Bi_12_GeO_20_",
             "mohs_min": 4.5,
             "mohs_max": 5.0,
-            "grav_min": 9.22,
+            "grav_min": 9.2,
             "grav_max": 9.22
         },
         "optic_prop": {
             "type": "Isotropic",
-            "ref_min": 2.57,
+            "ref_min": 2.55,
             "ref_max": 2.57,
             "disp_min": 0.221,
             "disp_max": 0.221
@@ -983,6 +988,19 @@
         },
         "add_prop": [
             ["Scintillescent", "Peak: 480nm (Teal)"]
+        ],
+        "neutral": {
+            "color": "Amber, Brown"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Eu:BGO-20",
+                "cause": "Europium Ions",
+                "color": "Red, Orange",
+                "usage": "Specialty Scintillators, Sensors",
+                "imgsrc": "https://www.researchgate.net/figure/Bi12GeO20-BGO-crystal-doped-with-03-mol-Eu_fig13_340528814"
+            }
         ]
     },
     {
