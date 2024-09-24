@@ -1217,6 +1217,36 @@
         }
     },
     {
+        "id": 21,
+        "label": "YIG",
+        "aliases": "Yttrium Ferrite",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Ferrous Oxide",
+            "alt": "Yttrium Iron Garnet",
+            "formula": "Y_3_Fe_5_O_12_",
+            "mohs_min": 6.5,
+            "mohs_max": 7,
+            "grav_min": 5.11,
+            "grav_max": 5.17
+        },
+        "optic_prop": { 
+            "opt": "opaque"
+        },
+        "bypass_optic": true,
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "add_prop": [
+            ["Inherent", "Ferrimagnetic"]
+        ],
+        "neutral": {
+            "color": "Black",
+            "imgsrc": "https://www.mtixtl.com/YIG-c-05D05C1.aspx"
+        }
+    },
+    {
         "id": 18,
         "label": "YAG",
         "aliases": "",
@@ -1369,36 +1399,6 @@
                 "imgsrc": "https://www.scientificmaterials.com/products/ho-yag.php"
             }
         ]
-    },
-    {
-        "id": 21,
-        "label": "YIG",
-        "aliases": "Yttrium Ferrite",
-        "desc": "",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "chemical": "Yttrium Ferrous Oxide",
-            "alt": "Yttrium Iron Garnet",
-            "formula": "Y_3_Fe_5_O_12_",
-            "mohs_min": 6.5,
-            "mohs_max": 7,
-            "grav_min": 5.11,
-            "grav_max": 5.17
-        },
-        "optic_prop": { 
-            "opt": "opaque"
-        },
-        "bypass_optic": true,
-        "cry_prop": {
-            "system": "Isometric"
-        },
-        "add_prop": [
-            ["Inherent", "Ferrimagnetic"]
-        ],
-        "neutral": {
-            "color": "Black",
-            "imgsrc": "https://www.mtixtl.com/YIG-c-05D05C1.aspx"
-        }
     },
     {
         "id": 23,
