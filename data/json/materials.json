@@ -838,6 +838,35 @@
         ]
     },
     {
+        "id": 51,
+        "label": "Forsterite",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Magnesium Silicate",
+            "formula": "Mg_2_SiO_4_",
+            "mohs_min": 6.5,
+            "mohs_max": 7,
+            "grav_min": 3.23,
+            "grav_max": 3.275
+        },
+        "optic_prop": {
+            "type": "Biaxial (+)",
+            "ref_min": [1.636, 1.650, 1.669],
+            "ref_max": [1.730, 1.739, 1.772],
+            "bir_min": 0.033,
+            "bir_max": 0.042,
+            "disp_min": 0.015,
+            "disp_max": 0.015
+        },
+        "cry_prop": {
+            "system": "Orthorhombic",
+            "parent": "Olivine Group"
+        },
+        "minID": 1584
+    },
+    {
         "id": 39,
         "label": "YSO",
         "aliases": "",
@@ -1918,6 +1947,35 @@
             "chemical": "Neodymium Gallium Oxide",
             "alt": "Neodymium Gallium Garnet",
             "formula": "Nd_3_Ga_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Purple"
+        }
+    },
+    {
+        "id": 50,
+        "label": "SmGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Samarium Gallium Oxide",
+            "alt": "Samarium Gallium Garnet",
+            "formula": "Sm_3_Ga_5_O_12_",
             "mohs_min": "?",
             "mohs_max": "?",
             "grav_min": "?",
