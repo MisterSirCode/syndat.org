@@ -458,7 +458,7 @@
     {
         "id": 6,
         "label": "Rutile",
-        "aliases": "",
+        "aliases": "Titania",
         "desc": "Rutile is a unique material in regards to material science and optics. Among all optically useful materials, it has one of the highest refractive indexes in the visible spectrum. It also has the highest known visible spectrum dispersion of any known material. Faceted stones made of this synthetic rutile display the most color and refractivity of any material known to man, which has made it a sought-after collectible for enthusiasts of exotic gemstones. The only downside to rutile is its hardness, which makes it less attractive for use in decorational jewelry. Generally, Rutile is used industrially for piezoelectrics. It has some attractive properties which have made it a popular option in certain situations, but its complexity and difficulties in synthesis have made it troublesome in research. The primary process of growth is the Verneuil Method. Crystals of rutile grown this way almost never form pure, and tend to be heat treated after synthesis to create optical boules. These boules are also rarely colorless, and are stained a pale orange color (Though it can be grown to express dimorphs of natural titanium oxide, such as Anatase, which is blue). These troubles have led to disinterest in synthesizing large quantities of the material, which make it a rare and valuable collectible for gem enthusiasts and collectors.\n\n",
         "synthesis": ["vern", "sint"],
         "chem_prop": {
