@@ -867,6 +867,72 @@
         "minID": 1584
     },
     {
+        "id": 26,
+        "label": "Chrysoberyl",
+        "aliases": "Alexandrite, Diaphanite, Cymophane",
+        "desc": "",
+        "synthesis": ["czok", "flux", "hdth"],
+        "chem_prop": {
+            "chemical": "Beryllium Aluminium Oxide",
+            "formula": "BeAl_2_O_4_",
+            "mohs_min": 8.5,
+            "mohs_max": 8.5,
+            "grav_min": 3.5,
+            "grav_max": 3.84
+        },
+        "optic_prop": {
+            "type": "Biaxial (+)",
+            "ref_min": [1.745, 1.748, 1.754],
+            "ref_max": [1.746, 1.748, 1.756],
+            "bir_min": 0.01,
+            "bir_max": 0.01,
+            "disp_min": 0.015,
+            "disp_max": 0.015
+        },
+        "cry_prop": {
+            "system": "Orthorhombic"
+        },
+        "minID": 1039,
+        "variants": [
+            {
+                "id": "0",
+                "label": "Alexandrite",
+                "cause": "Chromium Ions",
+                "fluor": "Red",
+                "color": "Color Change - Green, Blue, Red, Purple"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "label": "Malachite",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["hdth", "evap", "rclz"],
+        "chem_prop": {
+            "chemical": "Copper (II) Carbonate Hydroxide",
+            "formula": "Cu_2_(CO_3_)(OH)_2_",
+            "mohs_min": 3.5,
+            "mohs_max": 4,
+            "grav_min": 3.6,
+            "grav_max": 4.05
+        },
+        "optic_prop": {
+            "type": "Biaxial (-)",
+            "ref_min": [1.655, 1.875, 1.909],
+            "ref_max": [1.655, 1.875, 1.909],
+            "bir_min": 0.250,
+            "bir_max": 0.254,
+            "disp_min": "Weak (Unknown)",
+            "disp_max": "Weak (Unknown)"
+        },
+        "cry_prop": {
+            "system": "Monoclinic",
+            "parent": "Rosasite Group"
+        },
+        "minID": 2550
+    },
+    {
         "id": 39,
         "label": "YSO",
         "aliases": "",
@@ -1137,6 +1203,110 @@
                 }
             }
         ]
+    },
+    {
+        "id": 29,
+        "label": "Scheelite",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Calcium Tungstate",
+            "formula": "CaWO_4_",
+            "mohs_min": 4.5,
+            "mohs_max": 5,
+            "grav_min": 6.1,
+            "grav_max": 6.1
+        },
+        "optic_prop": {
+            "type": "Uniaxial (+)",
+            "ref_min": [1.918, 1.935],
+            "ref_max": [1.921, 1.938],
+            "bir_min": 0.016,
+            "bir_max": 0.017,
+            "disp_min": 0.026,
+            "disp_max": 0.026
+        },
+        "cry_prop": {
+            "system": "Tetragonal",
+            "parent": "Scheelite Group"
+        },
+        "add_prop": [
+            ["Scintillescent", "Peak: ? (Teal)<br>Output: ? ph/MeV"]
+        ],
+        "minID": 3560
+    },
+    {
+        "id": 30,
+        "label": "CWO",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok", "hdth"],
+        "chem_prop": {
+            "chemical": "Cadmium Tungstate",
+            "formula": "CdWO_4_",
+            "mohs_min": 4,
+            "mohs_max": 4.5,
+            "grav_min": 7.9,
+            "grav_max": 8.0
+        },
+        "optic_prop": {
+            "type": "Uniaxial (?)",
+            "ref_min": 2.2,
+            "ref_max": 2.3,
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Tetragonal"
+        },
+        "add_prop": [
+            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 13,000ph/MeV"]
+        ],
+        "neutral": {
+            "color": "Beige to Dark Orange",
+            "usage": "Specialty Scintillators, Sensors",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html"
+        }
+    },
+    {
+        "id": 31,
+        "label": "Stolzite",
+        "aliases": "PWO",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lead Tungstate",
+            "formula": "PbWO_4_",
+            "mohs_min": 4,
+            "mohs_max": 4,
+            "grav_min": 8.28,
+            "grav_max": 8.28,
+            "melt_pnt": 1139
+        },
+        "optic_prop": {
+            "type": "Uniaxial (-)",
+            "ref_min": [2.16, 2.16],
+            "ref_max": [2.27, 2.19],
+            "bir_min": 0.09,
+            "bir_max": 0.09,
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Tetragonal",
+            "parent": "Scheelite Group"
+        },
+        "add_prop": [
+            ["Scintillescent", "Peak: 440/530nm (Cyan)<br>Output: 190ph/MeV"]
+        ],
+        "neutral": {
+            "color": "Colorless to Beige",
+            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/pbwo4-crystal.html"
+        },
+        "minID": 3794
     },
     {
         "id": 32,
@@ -2018,72 +2188,6 @@
         }
     },
     {
-        "id": 26,
-        "label": "Chrysoberyl",
-        "aliases": "Alexandrite, Diaphanite, Cymophane",
-        "desc": "",
-        "synthesis": ["czok", "flux", "hdth"],
-        "chem_prop": {
-            "chemical": "Beryllium Aluminium Oxide",
-            "formula": "BeAl_2_O_4_",
-            "mohs_min": 8.5,
-            "mohs_max": 8.5,
-            "grav_min": 3.5,
-            "grav_max": 3.84
-        },
-        "optic_prop": {
-            "type": "Biaxial (+)",
-            "ref_min": [1.745, 1.748, 1.754],
-            "ref_max": [1.746, 1.748, 1.756],
-            "bir_min": 0.01,
-            "bir_max": 0.01,
-            "disp_min": 0.015,
-            "disp_max": 0.015
-        },
-        "cry_prop": {
-            "system": "Orthorhombic"
-        },
-        "minID": 1039,
-        "variants": [
-            {
-                "id": "0",
-                "label": "Alexandrite",
-                "cause": "Chromium Ions",
-                "fluor": "Red",
-                "color": "Color Change - Green, Blue, Red, Purple"
-            }
-        ]
-    },
-    {
-        "id": 27,
-        "label": "Malachite",
-        "aliases": "",
-        "desc": "",
-        "synthesis": ["hdth", "evap", "rclz"],
-        "chem_prop": {
-            "chemical": "Copper (II) Carbonate Hydroxide",
-            "formula": "Cu_2_(CO_3_)(OH)_2_",
-            "mohs_min": 3.5,
-            "mohs_max": 4,
-            "grav_min": 3.6,
-            "grav_max": 4.05
-        },
-        "optic_prop": {
-            "type": "Biaxial (-)",
-            "ref_min": [1.655, 1.875, 1.909],
-            "ref_max": [1.655, 1.875, 1.909],
-            "bir_min": 0.250,
-            "bir_max": 0.254,
-            "disp_min": "Weak (Unknown)",
-            "disp_max": "Weak (Unknown)"
-        },
-        "cry_prop": {
-            "system": "Monoclinic",
-            "parent": "Rosasite Group"
-        },
-        "minID": 2550
-    },
-    {
         "id": 28,
         "label": "YVO4",
         "aliases": "",
@@ -2139,109 +2243,5 @@
                 "usage": "Lasers"
             }
         ]
-    },
-    {
-        "id": 29,
-        "label": "Scheelite",
-        "aliases": "",
-        "desc": "",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "chemical": "Calcium Tungstate",
-            "formula": "CaWO_4_",
-            "mohs_min": 4.5,
-            "mohs_max": 5,
-            "grav_min": 6.1,
-            "grav_max": 6.1
-        },
-        "optic_prop": {
-            "type": "Uniaxial (+)",
-            "ref_min": [1.918, 1.935],
-            "ref_max": [1.921, 1.938],
-            "bir_min": 0.016,
-            "bir_max": 0.017,
-            "disp_min": 0.026,
-            "disp_max": 0.026
-        },
-        "cry_prop": {
-            "system": "Tetragonal",
-            "parent": "Scheelite Group"
-        },
-        "add_prop": [
-            ["Scintillescent", "Peak: ? (Teal)<br>Output: ? ph/MeV"]
-        ],
-        "minID": 3560
-    },
-    {
-        "id": 30,
-        "label": "CWO",
-        "aliases": "",
-        "desc": "",
-        "synthesis": ["czok", "hdth"],
-        "chem_prop": {
-            "chemical": "Cadmium Tungstate",
-            "formula": "CdWO_4_",
-            "mohs_min": 4,
-            "mohs_max": 4.5,
-            "grav_min": 7.9,
-            "grav_max": 8.0
-        },
-        "optic_prop": {
-            "type": "Uniaxial (?)",
-            "ref_min": 2.2,
-            "ref_max": 2.3,
-            "bir_min": "?",
-            "bir_max": "?",
-            "disp_min": "?",
-            "disp_max": "?"
-        },
-        "cry_prop": {
-            "system": "Tetragonal"
-        },
-        "add_prop": [
-            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 13,000ph/MeV"]
-        ],
-        "neutral": {
-            "color": "Beige to Dark Orange",
-            "usage": "Specialty Scintillators, Sensors",
-            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html"
-        }
-    },
-    {
-        "id": 31,
-        "label": "Stolzite",
-        "aliases": "PWO",
-        "desc": "",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "chemical": "Lead Tungstate",
-            "formula": "PbWO_4_",
-            "mohs_min": 4,
-            "mohs_max": 4,
-            "grav_min": 8.28,
-            "grav_max": 8.28,
-            "melt_pnt": 1139
-        },
-        "optic_prop": {
-            "type": "Uniaxial (-)",
-            "ref_min": [2.16, 2.16],
-            "ref_max": [2.27, 2.19],
-            "bir_min": 0.09,
-            "bir_max": 0.09,
-            "disp_min": "?",
-            "disp_max": "?"
-        },
-        "cry_prop": {
-            "system": "Tetragonal",
-            "parent": "Scheelite Group"
-        },
-        "add_prop": [
-            ["Scintillescent", "Peak: 440/530nm (Cyan)<br>Output: 190ph/MeV"]
-        ],
-        "neutral": {
-            "color": "Colorless to Beige",
-            "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/pbwo4-crystal.html"
-        },
-        "minID": 3794
     }
 ]
