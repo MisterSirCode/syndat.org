@@ -1102,7 +1102,7 @@
         "id": 16,
         "label": "CsI",
         "aliases": "",
-        "desc": "Cesium Iodide is one of the most common scintillators in scientific use. This material is very effective, especially the commonly doped varieties of it, Thallium and Sodium-based CsI. A major downside of this material is its hygroscopic nature. The Thallium variant is especially poisonous. Accordingly, almost every crystal of this material is precut to spec, and are sealed inside of an optical chamber that cuts it off from the normal atmosphere.",
+        "desc": "Cesium Iodide is one of the most common scintillators in scientific use. This material is very effective, especially thallium and sodium doped CsI. A major downside of this material is its hygroscopic nature. Furthermore, the thallium variant is poisonous. Accordingly, almost every crystal of this material is precut to spec, and are sealed inside of an optical chamber that cuts it off from the normal atmosphere.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Cesium Iodide",
@@ -1164,7 +1164,7 @@
         "id": 17,
         "label": "NaI",
         "aliases": "",
-        "desc": "NaI is one of the most effective scintillators on the market. Specifically, Thallium-doped Sodium Iodide (Tl:NaI) is the brightest among known scintillators. Because of this, many professional resources reference the light yields of their scintillators as a percentage of Tl:NaI's output (38,000-40,000ph/MeV). The biggest downside of using it is its hygroscopic nature. Thallium in a water-soluble crystal can be toxic and dangerous, making other scintillators a more realistic option in certain use-cases.",
+        "desc": "NaI is one of the most effective scintillators on the market. Specifically, Thallium-doped Sodium Iodide (Tl:NaI) is one of the brightest among known scintillators. Because of this, many professional resources reference the light yields of their scintillators as a percentage of Tl:NaI's output (38,000-40,000ph/MeV). The biggest downside of using it is its hygroscopic nature. Thallium in a water-soluble crystal can be toxic and dangerous, making other scintillators a more realistic option in certain use-cases.",
         "synthesis": ["czok"],
         "chem_prop": {
             "chemical": "Sodium Iodide",
