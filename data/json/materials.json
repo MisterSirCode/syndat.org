@@ -1600,6 +1600,42 @@
         ]
     },
     {
+        "id": 52,
+        "label": "LuYAG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Lutetium-Yttrium Aluminium Oxide",
+            "alt": "Lutetium-Yttrium Aluminium Garnet",
+            "formula": "(Lu_1-x_Y_x_)_3_Al_5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?",
+            "melt_pnt": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Ce:LuYAG",
+                "cause": "Cerium Ions",
+                "color": "Yellow, Lime, Green",
+                "fluor": "Yellow-Green"
+            }
+        ]
+    },
+    {
         "id": 23,
         "label": "LuAG",
         "aliases": "",
