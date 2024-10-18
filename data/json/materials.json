@@ -939,7 +939,7 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Yttrium Orthosilicate",
+            "chemical": "Yttrium Oxyorthosilicate",
             "formula": "Y_2_SiO_5_",
             "mohs_min": 5.8,
             "mohs_max": 5.8,
