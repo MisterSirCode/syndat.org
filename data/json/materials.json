@@ -486,6 +486,38 @@
         ]
     },
     {
+        "id": 59,
+        "label": "Barium Fluoride",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Barium Fluoride",
+            "formula": "BaF_2_",
+            "mohs_min": 3,
+            "mohs_max": 3,
+            "grav_min": 4.893,
+            "grav_max": 4.893,
+            "melt_pnt": 1386
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": 1.4744,
+            "ref_max": 1.557,
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "parent": "Fluorite Group",
+            "system": "Isometric"
+        },
+        "minID": 1596,
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://www.icc.ltd/barium-fluoridebaf2/"
+        }
+    },
+    {
         "id": 6,
         "label": "Rutile",
         "aliases": "Titania",
@@ -946,6 +978,10 @@
             "system": "Orthorhombic",
             "parent": "Olivine Group"
         },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=96"
+        },
         "minID": 1584
     },
     {
@@ -975,6 +1011,10 @@
             "system": "Orthorhombic"
         },
         "minID": 1039,
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=272"
+        },
         "variants": [
             {
                 "id": "0",
