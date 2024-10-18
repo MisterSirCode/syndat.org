@@ -49,7 +49,7 @@ function generateTemplates() {
     console.log(`Generating ${materials.length} Material Templates`);
     for (let i = 0; i < materials.length; i++) {
         let mat = materials[i];
-        let linker = mat.label.toLowerCase().replace(' ', '-');
+        let linker = mat.label.toLowerCase().replaceAll(' ', '-');
         let template = materialTemplate;
 
         // Create Truncated List
@@ -275,7 +275,7 @@ function generateTemplates() {
             let method = methods[m];
             let data = synthesis[method];
             let temp = `
-            <a class="specialtyGridItem${additional}" href="../../synthesis/${method.toLowerCase().replace(' ', '-')}/">
+            <a class="specialtyGridItem${additional}" href="../../synthesis/${method.toLowerCase().replaceAll(' ', '-')}/">
                 <img class="specialtyGridImage" src="../../content/materials/missing/missing.png">
                 <div class="specialtyGridContent">
                 <div class="specialtyGridTitle mainGridTitle">${data.title}</div>
@@ -301,8 +301,8 @@ function generateTemplates() {
         const link = genlist[i];
         const status = link[2] >= 7 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
         let temp = `
-        <a class="specialtyGridItem${status} gridExpander" href="${link[1].toLowerCase().replace(' ', '-')}/">
-            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1].toLowerCase().replace(' ', '-')}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
+        <a class="specialtyGridItem${status} gridExpander" href="${link[1].toLowerCase().replaceAll(' ', '-')}/">
+            <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1].toLowerCase().replaceAll(' ', '-')}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>
             <div class="specialtyGridContent">
             <div class="specialtyGridTitle mainGridTitle">${link[1]}</div>
             <div class="specialtyGridTitle shortGridTitle">${link[1]}</div>

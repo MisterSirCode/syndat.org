@@ -779,6 +779,58 @@
         "minID": 3895
     },
     {
+        "id": 57,
+        "label": "Cobalt Titanate",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Cobalt Titanate",
+            "formula": "CoTiO_3_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": 4.99,
+            "grav_max": 4.99
+        },
+        "optic_prop": {
+            "opt": "opaque"
+        },
+        "bypass_optic": true,
+        "cry_prop": {
+            "system": "Tetragonal"
+        },
+        "neutral": {
+            "color": "Black",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=209"
+        }
+    },
+    {
+        "id": 58,
+        "label": "Cobalt Titanium Oxide",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Cobalt Titanium Oxide",
+            "formula": "Co_2_TiO_4_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": 5.06,
+            "grav_max": 5.06
+        },
+        "optic_prop": {
+            "opt": "opaque"
+        },
+        "bypass_optic": true,
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Black",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=212"
+        }
+    },
+    {
         "id": 12,
         "label": "Lithium Niobate",
         "aliases": "Linobate, LN",
