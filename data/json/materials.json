@@ -1050,6 +1050,7 @@
         },
         "neutral": {
             "color": "Colorless",
+            "fluor": "Bluish White",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/bgo-crystal.html"
         },
         "add_prop": [
