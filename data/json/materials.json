@@ -1,6 +1,6 @@
 [
     {
-        "revision": "0.3.1"
+        "revision": "0.3.2"
     },
     {
         "id": 0,
@@ -103,7 +103,7 @@
         "label": "Spinel",
         "aliases": "",
         "desc": "Spinel is a quite common synthetic material. It is unique in the aspect that it doesn't have a large amount of industrial uses beyond a few specific varieties. Most commonly you may come by synthetic spinels in the gem industry. Like corundum, spinel is easy to grow and cheap. It also has a large amount of stable colors with known dopants. In nature, it is quite a sought-after mineral for the very same reasons. There are a large variety of colors and gem qualities from some finds.<br><br>Interestingly, a very specific blue variety of spinel, called Cobalt Spinel (which is, as its name implies, doped with cobalt) is actively used industrially as a Q-Switcher. This allows it to be used in some forms of specialty lasers, mostly in the medical industry. This variety of spinel does exist in nature, though it is much more rare and valuable.",
-        "synthesis": ["czok", "vern"],
+        "synthesis": ["czok", "vern", "flux"],
         "chem_prop": {
             "chemical": "Magnesium Aluminium Oxide",
             "formula": "MgAl_2_O_4_",
@@ -407,6 +407,36 @@
                 "imgsrc": "Unknown"
             }
         ]
+    },
+    {
+        "id": 54,
+        "label": "BZO",
+        "aliases": "BCZ",
+        "desc": "",
+        "synthesis": ["skul"],
+        "chem_prop": {
+            "chemical": "Barium Zirconate",
+            "formula": "BaZrO_3_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": 5.52,
+            "grav_max": 5.52,
+            "melt_pnt": 2600
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        },
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=156"
+        }
     },
     {
         "id": 5,
