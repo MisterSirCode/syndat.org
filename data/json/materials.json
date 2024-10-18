@@ -1083,7 +1083,7 @@
         },
         "neutral": {
             "color": "Colorless",
-            "imgsrc": "https://www.scientificmaterials.com/products/yso_Y2SiO5_yttrium-orthosilicate.php"
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=144"
         },
         "variants": [
             {
@@ -1633,7 +1633,7 @@
     {
         "id": 21,
         "label": "YIG",
-        "aliases": "Yttrium Ferrite",
+        "aliases": "",
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
