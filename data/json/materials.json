@@ -1099,6 +1099,42 @@
         ]
     },
     {
+        "id": 53,
+        "label": "GSO",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Germanium Oxyorthosilicate",
+            "formula": "Ge_2_SiO_5_",
+            "mohs_min": 6,
+            "mohs_max": 6,
+            "grav_min": 6.7,
+            "grav_max": 6.71,
+            "melt_pnt": 1900
+        },
+        "optic_prop": {
+            "type": "Biaxial (?)",
+            "ref_min": 1.87,
+            "ref_max": 1.87,
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Monoclinic"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Ce:GSO",
+                "cause": "Cerium Ions",
+                "color": "Colorless",
+                "fluor": "Blue",
+                "imgsrc": "https://www.opt-oxide.com/956/"
+            }
+        ]
+    },
+    {
         "id": 16,
         "label": "CsI",
         "aliases": "",
