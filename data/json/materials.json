@@ -2464,6 +2464,10 @@
         "cry_prop": {
             "system": "Tetragonal"
         },
+        "neutral": {
+            "color": "Colorless to Amber",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=145"
+        },
         "variants": [
             {
                 "id": "0",
