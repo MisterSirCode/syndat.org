@@ -1333,6 +1333,30 @@
         "add_prop": [
             ["Scintillescent", "Peak: ? (Teal)<br>Output: ? ph/MeV"]
         ],
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=160"
+        },
+        "variants": [
+            {
+                "label": "Er:CaWO4",
+                "cause": "Erbium Ions",
+                "color": "Colorless",
+                "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=169"
+            },
+            {
+                "label": "Eu:CaWO4",
+                "cause": "Europium Ions",
+                "color": "Amber to Vermillion",
+                "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=244"
+            },
+            {
+                "label": "Pr:CaWO4",
+                "cause": "Praseodymium Ions",
+                "color": "Pale Green, Pale Yellow",
+                "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=54"
+            }
+        ],
         "minID": 3560
     },
     {
