@@ -1836,6 +1836,21 @@
                 "color": "Pale Green, Pale Yellow",
                 "usage": "Specialty Optics",
                 "imgsrc": "https://www.scientificmaterials.com/products/ho-yag.php"
+            },
+            {
+                "id": "13",
+                "label": "Dy:YAG",
+                "cause": "Holmium Ions",
+                "color": "Orange",
+                "fluor": "Orange",
+                "usage": "Specialty Optics and Lasers"
+            },
+            {
+                "id": "14",
+                "label": "Dy:Tm:YAG",
+                "cause": "Dysprosium and Thulium Ions",
+                "color": "",
+                "usage": "Specialty Optics and Co-Doped Lasers"
             }
         ]
     },
