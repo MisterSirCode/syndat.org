@@ -100,7 +100,7 @@ function generateTemplates() {
         // Cannot use local URLs in meta tags. Only use Syndat's URL here.
 
         const link = genlist[i];
-        const img = link[4] ? `https://syndat.org/content/materials/${link[1]}/${link[4]}.jpg` : 'https://syndat.org/content/materials/missing/missing.png';
+        const img = link[4] ? `https://syndat.org/content/materials/${link[1].toLowerCase()}/${link[4]}.jpg` : 'https://syndat.org/content/materials/missing/missing.png';
         fix('OGIMG', img);
 
         // Adjust Template As Needed
