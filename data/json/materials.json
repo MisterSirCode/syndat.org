@@ -1656,8 +1656,8 @@
         "chem_prop": {
             "chemical": "Bismuth Orthovanadate",
             "formula": "BiVO_4_",
-            "mohs_min": "",
-            "mohs_max": "",
+            "mohs_min": "?",
+            "mohs_max": "?",
             "grav_min": 6.1,
             "grav_max": 6.1
         },
@@ -1676,6 +1676,33 @@
         "neutral": {
             "color": "Amber to Vermillion",
             "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=179"
+        }
+    },
+    {
+        "id": 64,
+        "label": "CALGO",
+        "aliases": "CALGO",
+        "desc": "",
+        "synthesis": ["czok", "flux"],
+        "chem_prop": {
+            "chemical": "Calcium Gadolinium Orthoaluminate",
+            "formula": "CaGdAlO_4_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Uniaxial (?)",
+            "ref_min": "?",
+            "ref_max": "?",
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Orthorhombic"
         }
     },
     {
