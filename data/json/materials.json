@@ -1549,6 +1549,136 @@
         "minID": 3794
     },
     {
+        "id": 28,
+        "label": "YVO4",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Yttrium Orthovanadate",
+            "formula": "YVO_4_",
+            "mohs_min": 5,
+            "mohs_max": 5,
+            "grav_min": 4.24,
+            "grav_max": 4.24
+        },
+        "optic_prop": {
+            "type": "Uniaxial (+)",
+            "ref_min": [1.9447, 2.1486],
+            "ref_max": [1.9929, 2.2154],
+            "bir_min": 0.2039,
+            "bir_max": 0.2225,
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Tetragonal"
+        },
+        "neutral": {
+            "color": "Colorless to Amber",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=145"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Nd:YVO4",
+                "cause": "Neodymium Ions",
+                "color": "Purple, Blue, Green, Yellow",
+                "usage": "Lasers"
+            },
+            {
+                "id": "1",
+                "label": "Cr:Nd:YVO4",
+                "cause": "Chromium and Neodymium Ions",
+                "color": "Green",
+                "usage": "Lasers"
+            },
+            {
+                "id": "2",
+                "label": "Pr:YVO4",
+                "cause": "Praseodymium Ions",
+                "color": "Green, Lime, Yellow",
+                "usage": "Lasers"
+            },
+            {
+                "id": "3",
+                "label": "Tm:Ho:YVO4",
+                "cause": "Thulium and Holmium Ions",
+                "color": "Pink",
+                "usage": "Lasers"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "label": "GdVO4",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Gadolinium Orthovanadate",
+            "formula": "GdVO_4_",
+            "mohs_min": 4.6,
+            "mohs_max": 5,
+            "grav_min": 5.48,
+            "grav_max": 5.48,
+            "melt_pnt": 1780
+        },
+        "optic_prop": {
+            "type": "Biaxial (+)",
+            "ref_min": [2.01685, 2.25431],
+            "ref_max": [2.01685, 2.25431],
+            "bir_min": 0.23746,
+            "bir_max": 0.23746,
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Tetragonal"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Nd:GdVO4",
+                "cause": "Neodymium Ions",
+                "color": "Purple, Orange",
+                "usage": "Lasers",
+                "imgsrc": "https://www.newlightphotonics.com/Laser-Crystals/Nd-doped-GdVO4-Crystals"
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "label": "BiVO4",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Bismuth Orthovanadate",
+            "formula": "BiVO_4_",
+            "mohs_min": "",
+            "mohs_max": "",
+            "grav_min": 6.1,
+            "grav_max": 6.1
+        },
+        "optic_prop": {
+            "type": "?",
+            "ref_min": 2.45,
+            "ref_max": 2.45,
+            "bir_min": "?",
+            "bir_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Monoclinic"
+        },
+        "neutral": {
+            "color": "Amber to Vermillion",
+            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=179"
+        }
+    },
+    {
         "id": 32,
         "label": "YAP",
         "aliases": "",
@@ -1768,7 +1898,7 @@
                 "id": "4",
                 "label": "Cr4+:YAG",
                 "cause": "Chromium 4+ Ions",
-                "color": "Black, Dark Red, Dark Orange",
+                "color": "Dark Green, Black, Dark Red, Dark Orange",
                 "usage": "Q-Switchers, Specialty Optics",
                 "imgsrc": "https://www.findlight.net/optics/crystals/laser-crystals/chromium-doped-yttrium-aluminium-garnet-cr4-yag-crystals-by-casix"
             },
@@ -2529,98 +2659,6 @@
         "bypass_optic": true,
         "cry_prop": {
             "system": "Isometric"
-        }
-    },
-    {
-        "id": 28,
-        "label": "YVO4",
-        "aliases": "",
-        "desc": "",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "chemical": "Yttrium Orthovanadate",
-            "formula": "YVO_4_",
-            "mohs_min": 5,
-            "mohs_max": 5,
-            "grav_min": 4.24,
-            "grav_max": 4.24
-        },
-        "optic_prop": {
-            "type": "Uniaxial (+)",
-            "ref_min": [1.9447, 2.1486],
-            "ref_max": [1.9929, 2.2154],
-            "bir_min": 0.2039,
-            "bir_max": 0.2225,
-            "disp_min": "?",
-            "disp_max": "?"
-        },
-        "cry_prop": {
-            "system": "Tetragonal"
-        },
-        "neutral": {
-            "color": "Colorless to Amber",
-            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=145"
-        },
-        "variants": [
-            {
-                "id": "0",
-                "label": "Nd:YVO4",
-                "cause": "Neodymium Ions",
-                "color": "Purple, Blue, Green, Yelloow",
-                "usage": "Lasers"
-            },
-            {
-                "id": "1",
-                "label": "Cr:Nd:YVO4",
-                "cause": "Chromium and Neodymium Ions",
-                "color": "Green",
-                "usage": "Lasers"
-            },
-            {
-                "id": "2",
-                "label": "Pr:YVO4",
-                "cause": "Praseodymium Ions",
-                "color": "Green, Lime, Yellow",
-                "usage": "Lasers"
-            },
-            {
-                "id": "3",
-                "label": "Tm:Ho:YVO4",
-                "cause": "Thulium and Holmium Ions",
-                "color": "Pink",
-                "usage": "Lasers"
-            }
-        ]
-    },
-    {
-        "id": 56,
-        "label": "Bismuth Vanadate",
-        "aliases": "",
-        "desc": "",
-        "synthesis": ["czok"],
-        "chem_prop": {
-            "chemical": "Bismuth Vanadate",
-            "formula": "BiVO_4_",
-            "mohs_min": "",
-            "mohs_max": "",
-            "grav_min": 6.1,
-            "grav_max": 6.1
-        },
-        "optic_prop": {
-            "type": "?",
-            "ref_min": 2.45,
-            "ref_max": 2.45,
-            "bir_min": "?",
-            "bir_max": "?",
-            "disp_min": "?",
-            "disp_max": "?"
-        },
-        "cry_prop": {
-            "system": "Monoclinic"
-        },
-        "neutral": {
-            "color": "Amber to Vermillion",
-            "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=179"
         }
     }
 ]
