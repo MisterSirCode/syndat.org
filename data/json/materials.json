@@ -909,6 +909,31 @@
         ]
     },
     {
+        "id": 62,
+        "label": "Calcium Niobate",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Calcium Niobate",
+            "formula": "CaNb_2_O_6_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Biaxial (+)",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Orthorhombic"
+        }
+    },
+    {
         "id": 37,
         "label": "Lithium Tantalate",
         "aliases": "LT",
@@ -2414,6 +2439,59 @@
         },
         "neutral": {
             "color": "Purple"
+        }
+    },
+    {
+        "id": 60,
+        "label": "CNGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Calcium Niobium Gallium Oxide",
+            "alt": "Calcium Niobium Garnet",
+            "formula": "~Ca_3_Nb_1.5_Ga_3.5_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?"
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
+        }
+    },
+    {
+        "id": 61,
+        "label": "CLNGG",
+        "aliases": "",
+        "desc": "",
+        "synthesis": ["czok"],
+        "chem_prop": {
+            "chemical": "Calcium Lithium Niobium Gallium Oxide",
+            "alt": "Calcium Lithium Niobium Gallium Garnet",
+            "formula": "~Ca_3_Li_0.275_Nb_1.775_Ga_2.95_O_12_",
+            "mohs_min": "?",
+            "mohs_max": "?",
+            "grav_min": "?",
+            "grav_max": "?",
+            "melt_pnt": 1450
+        },
+        "optic_prop": {
+            "type": "Isotropic",
+            "ref_min": "?",
+            "ref_max": "?",
+            "disp_min": "?",
+            "disp_max": "?"
+        },
+        "cry_prop": {
+            "system": "Isometric"
         }
     },
     {
