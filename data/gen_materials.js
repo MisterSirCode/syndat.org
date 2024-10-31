@@ -191,7 +191,7 @@ function generateTemplates() {
         if (cry.parent) fix('PARENT', cry.parent);
         if (mat.minID) { 
             fix('MINID', mat.minID);
-            fix(`${mat.label}</h1>`, `${mat.label} <a href="https://mindat.org/min-MINID.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>`);
+            fix(`${mat.label}</h1>`, `${mat.label} <a href="https://mindat.org/min-${mat.minID}.html" class="mindatMicroLink"><img src="../../content/social/mindat_16x16.png" target="_blank" rel="noopener noreferrer" class="mindatMicroIcon"></a></h1>`);
             fix('SUBTITLE', `IMA-Approved Mineral Species${chem.element ? "<br><br>Chemical Element" : ""}`);
         } else {
             fix('SUBTITLE', chem.element ? "Chemical Element" : "");
