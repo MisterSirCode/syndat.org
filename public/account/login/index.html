@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syndat - About</title>
+    <title>Syndat - Login</title>
     <link rel="stylesheet" href="../../index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,16 +10,16 @@
     <link rel="shortcut icon" href="../../content/icons/logo_medium.png" type="image/png">
     <link rel="apple-touch-icon" sizes="128x128" href="../../content/icons/logo_medium.png">
     <meta property="og:site_name" content="Syndat - Material Science Database" />
-    <meta property="og:title" content="More" />
+    <meta property="og:title" content="Log Into Your Account" />
     <meta property="og:description" content="This website is under development!" />
     <meta property="og:image" content="https://syndat.org/content/icons/logo_medium.png">
     <meta name="theme-color" content="#ECFF2B">
 </head>
 <body>
     <div class="navi">
-        <div class="logoButton"><a href="../../" class="mainLogoLink"><img src="../../content/icons/logo_medium_text.png" class="mainLogo"></a></div>
+        <div class="logoButton"><a href="../../" class="mainLogoLink"><img src="../../content/icons/logo_medium_text.png" class="mainLogo"><img src="../../content/icons/logo.png" class="mainLogoTrunc"></a></div>
         <div class="naviLinks naviAbove">
-            <a>Log In</a>
+            <a class="dynProfileLink">Log In / Register</a>
         </div>
         <div class="naviLinks">
             <a href="../../materials/">Materials</a>
@@ -33,9 +33,9 @@
         <h4>This Page is Under Construction</h4>
         <h4>All Network Functionality is Disabled</h4>
         <br>
-            <input type="text" class="loginInput" placeholder="Username / Email"><br>
-            <input type="password" class="loginInput" placeholder="Password"><br>
-            <a href="../reset/" class="lowProfileLink">Reset Password</a><br><br>
+            <input type="text" class="loginInput" placeholder="Username / Email" autocomplete="username"><br>
+            <input type="password" class="loginInput" placeholder="Password" autocomplete="current-password"><br>
+            <span class="lowProfile"><a href="../reset/" class="lowProfileLink">Reset Password</a> | <a href="../register/" class="lowProfileLink">Register</a></span><br><br>
             <button class="loginButton">Log In</button>
         <br>
         <span>

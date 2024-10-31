@@ -122,6 +122,10 @@ a {
     margin-right: 0.5em;
 }
 
+.mainLogoTrunc {
+    display: none;
+}
+
 .warningLink {
     background: rgb(78, 0, 0);
     border-radius: 3px;
@@ -137,7 +141,7 @@ a {
     background-color: #333;
     border: 0;
     border-radius: 5px;
-    width: 20%;
+    width: 15em;
     height: 2em;
     color: white;
     padding: 1em;
@@ -158,8 +162,12 @@ a {
     cursor: pointer;
 }
 
-.lowProfileLink {
+.lowProfile {
     font-size: 0.8em;
+    color: #555;
+}
+
+.lowProfileLink {
     color: #555;
 }
 
@@ -635,8 +643,14 @@ a.statusYellow {
 
     .mainLogo {
         object-fit: contain;
-        width: 8em;
-        height: 2em;
+        display: none;
+    }
+
+    .mainLogoTrunc {
+        display: block;
+        object-fit: contain;
+        width: 3.5em;
+        height: 3.5em;
     }
 
     .mainLogoLink {
