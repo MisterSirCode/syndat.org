@@ -116,11 +116,13 @@ function generateTemplates() {
         // Physical and Chemical Data
 
         if (chem.element) {
-            fix('CHEM', `Element ${chem.element[0]}<br><br>${chem.element[1]} - ${chem.element[2]}${chem.alt ? '<br>alt. ' + chem.alt : ''}`);
+            fix('COMP', `Element ${chem.element[0]}<br><br>${chem.element[1]} - ${chem.element[2]}${chem.alt ? '<br>alt. ' + chem.alt : ''}`);
             fix('ATMW', `${chem.element[3]} u`);
+            delPair('Chemical Name', 'CHEM')
         } else {
             delPair('Atomic Weight', 'ATMW');
-            fix('CHEM', `${getFormulaHTML(chem.formula)}<br><br>${chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical}`);
+            fix('COMP', `${getFormulaHTML(chem.formula)}`);
+            fix('CHEM', `${chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical}`)
         }
         if (!chem.grav_min) delPair('Density', 'GRAV');
         else if (chem.grav_min == "?") fix('GRAV', '?');
