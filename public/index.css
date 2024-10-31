@@ -546,8 +546,8 @@ a.statusYellow {
     }
 
     p {
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 6em;
+        padding-right: 6em;
     }
 
     .mainList {
@@ -641,6 +641,20 @@ a.statusYellow {
         padding-right: 0.5em;
     }
 
+    .linkGridItem {
+        width: 50%;
+    }
+
+    .pageSearchInput {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .specialtyGridItem.gridExpander {
+        width: 100%;
+    }
+
     .mainLogo {
         object-fit: contain;
         display: none;
@@ -655,20 +669,5 @@ a.statusYellow {
 
     .mainLogoLink {
         font-size: 0.9em;
-        text-shadow: -0.2px -0.2px 0.2px white, 0.2px 0.2px 0.2px white;
-    }
-
-    .linkGridItem {
-        width: 50%;
-    }
-
-    .pageSearchInput {
-        width: 70%;
-    }
-}
-
-@media (max-width: 600px) {
-    .specialtyGridItem.gridExpander {
-        width: 100%;
     }
 }
