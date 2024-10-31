@@ -130,6 +130,43 @@ a {
     bottom: 0;
 }
 
+/* Login and Profile Pages */
+
+.loginInput {
+    box-sizing: border-box;
+    background-color: #333;
+    border: 0;
+    border-radius: 5px;
+    width: 20%;
+    height: 2em;
+    color: white;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.loginButton {
+    background-color: #333;
+    border: 0;
+    border-radius: 5px;
+    height: 2em;
+    color: white;
+    padding-inline: 1em;
+    margin: 0.5em;
+}
+
+.loginButton:hover {
+    cursor: pointer;
+}
+
+.lowProfileLink {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.lowProfileLink:hover {
+    text-decoration: underline;
+}
+
 /* Body Content */
 
 .pageContent {
