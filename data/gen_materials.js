@@ -111,7 +111,7 @@ function generateTemplates() {
         fix('TITLE', mat.label);
         // if (mat.desc) fix('ARTICLE', mat.desc);
         // else fix('ARTICLE', 'This material is awaiting an article to be written...');
-        fix('ARTICLE', 'Material articles have temporarily been disabled for renewal and polishing.');
+        fix('ARTICLE', '<span class="statusYellow">Material articles have temporarily been disabled for renewal and polishing.</span>');
         fix('REV', revision);
 
         // Physical and Chemical Data
@@ -247,7 +247,10 @@ function generateTemplates() {
                         ${variant.label ? `
                             <div class="specialtyGridTitle mainGridTitle">${variant.label}</div>
                             <div class="specialtyGridTitle shortGridTitle">${variant.shorthand || variant.label}</div>
-                        ` : ''}
+                        ` : `
+                            <div class="specialtyGridTitle mainGridTitle">Unnamed Variant</div>
+                            <div class="specialtyGridTitle shortGridTitle">Unnamed Variant</div>
+                        `}
                         ${variant.color ? `<div class="specialtyGridDesc variantDesc">Color: ${variant.color}</div>` : ''}
                         ${variant.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${variant.fluor}</div>` : ''}
                         ${variant.cause ? `<div class="specialtyGridDesc variantDesc">Cause: ${getFormulaHTML(variant.cause)}</div>` : ''}

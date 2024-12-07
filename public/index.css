@@ -313,15 +313,15 @@ sub, sup {
     zoom: 1;
 }
 
-a.statusGreen {
+.statusGreen {
     color: #8f8;
 }
 
-a.statusRed {
+.statusRed {
     color: #f88;
 }
 
-a.statusYellow {
+.statusYellow {
     color: #ff8;
 }
 
