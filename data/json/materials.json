@@ -1283,8 +1283,8 @@
         "desc": "",
         "synthesis": ["czok"],
         "chem_prop": {
-            "chemical": "Germanium Oxyorthosilicate",
-            "formula": "Ge_2_SiO_5_",
+            "chemical": "Gadolinium Oxyorthosilicate",
+            "formula": "Gd_2_SiO_5_",
             "mohs_min": 6,
             "mohs_max": 6,
             "grav_min": 6.7,

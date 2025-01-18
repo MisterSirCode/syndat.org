@@ -13,6 +13,8 @@ function generateTemplates() {
     let genlist = [];
     let synListForSummary = [];
     let matListForSummary = [];
+    if (!fs.existsSync(`../public/synthesis/`))
+        fs.mkdirSync(`../public/synthesis/`);
     for (let i = 0; i < materials.length; i++) {
         const mat = materials[i];
 

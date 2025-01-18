@@ -47,6 +47,8 @@ function generateTemplates() {
     let genlist = [];
     console.clear();
     console.log(`Generating ${materials.length} Material Templates`);
+    if (!fs.existsSync(`../public/materials/`))
+        fs.mkdirSync(`../public/materials/`);
     for (let i = 0; i < materials.length; i++) {
         let mat = materials[i];
         let linker = mat.label.toLowerCase().replaceAll(' ', '-');
@@ -294,7 +296,6 @@ function generateTemplates() {
         fix('SYNLIST', tempList.join(''));
 
         // End Templater for Materials and Write them to Files
-
         if (!fs.existsSync(`../public/materials/${linker}/`))
             fs.mkdirSync(`../public/materials/${linker}/`);
         fs.writeFileSync(`../public/materials/${linker}/index.html`, template);
