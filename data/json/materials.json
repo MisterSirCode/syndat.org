@@ -1214,6 +1214,7 @@
             "chemical": "Bismuth Germanium Oxide",
             "alt": "Bismuth Germanate",
             "formula": "Bi_12_GeO_20_",
+            "genmol": true,
             "mohs_min": 4.5,
             "mohs_max": 5.0,
             "grav_min": 9.2,
