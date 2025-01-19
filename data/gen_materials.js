@@ -228,8 +228,8 @@ function generateTemplates() {
                 <span class="specialtyGridItem variantItem">
                     <img class="specialtyGridImage"${src ? ` src="../../content/materials/${linker}/neut.jpg"` : ' src="../../content/materials/missing/missing.png"'}${src ? ` title="Photo Source: ${src}"` : ''}>
                     <div class="specialtyGridContent">
-                    <div class="specialtyGridTitle mainGridTitle">(Undoped / Generic)</div>
-                    <div class="specialtyGridTitle shortGridTitle">(Undoped)</div>
+                    <div class="specialtyGridTitle mainGridTitle">Intrinsic</div>
+                    <div class="specialtyGridTitle shortGridTitle">Intrinsic</div>
                     ${mat.neutral.color ? `<div class="specialtyGridDesc variantDesc">Color: ${mat.neutral.color}</div>` : ''}
                     ${mat.neutral.fluor ? `<div class="specialtyGridDesc variantDesc">Fluorescence: ${mat.neutral.fluor}</div>` : ''}
                     ${mat.neutral.usage ? `<div class="specialtyGridDesc variantDesc">Used for ${mat.neutral.usage}</div>` : ''}
