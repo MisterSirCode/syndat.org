@@ -120,10 +120,14 @@ function generateTemplates() {
 
         if (chem.element) {
             fix('COMP', `Element ${chem.element[0]}<br><br>${chem.element[1]} - ${chem.element[2]}${chem.alt ? '<br>alt. ' + chem.alt : ''}`);
-            fix('ATMW', `${chem.element[3]} u`);
+            fix('ATMW', `${chem.element[3]} Da`);
             delPair('Chemical Name', 'CHEM')
         } else {
-            delPair('Atomic Weight', 'ATMW');
+            if (chem.genmol) {
+                
+                fix('Atomic Weight', 'Molecular Weight');
+                fix('ATMW', ``);
+            } else delPair('Atomic Weight', 'ATMW');
             fix('COMP', `${getFormulaHTML(chem.formula)}`);
             fix('CHEM', `${chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical}`)
         }
