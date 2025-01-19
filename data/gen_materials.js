@@ -1,5 +1,7 @@
 const fs = require('fs');
 const materials = require('./json/materials.json');
+const periodic = require('./json/periodic.json');
+const pOrder = periodic.order;
 const revision = materials[0].revision;
 let debug = false;
 const synthesis = require('./json/synthesis.json');
@@ -14,6 +16,18 @@ function getFormulaHTML(formula) {
         curFormula = curFormula.replace("_", "<sub>")
             .replace("_", "</sub>");
     return curFormula;
+}
+
+function getMolWeight(formula) {
+    let tokens = formula.match(/([A-Z][a-z]\_[\d.]+\_|[A-Z]\_[\d.]+\_|[A-Z][a-z]|[A-Z])/g);
+    let weight = 0;
+    for (let t = 0; t < tokens.length; t++) {
+        let tokenbits = tokens[t].split('_');
+        let element = pOrder[tokenbits[0] || tokenbits];
+        let count = tokenbits[1] || 1;
+        weight += periodic[element].atomic_mass * count;
+    }
+    return weight;
 }
 
 // Used for grading links
@@ -124,9 +138,11 @@ function generateTemplates() {
             delPair('Chemical Name', 'CHEM')
         } else {
             if (chem.genmol) {
-                
+                let formula = chem.formula;
+                if (chem.molform) formula = chem.molform;
+                let weight = getMolWeight(formula);
                 fix('Atomic Weight', 'Molecular Weight');
-                fix('ATMW', ``);
+                fix('ATMW', `${Math.round(weight * 1000) / 1000} g/mol`);
             } else delPair('Atomic Weight', 'ATMW');
             fix('COMP', `${getFormulaHTML(chem.formula)}`);
             fix('CHEM', `${chem.alt ? chem.chemical + '<br>alt. ' + chem.alt : chem.chemical}`)
