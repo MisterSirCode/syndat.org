@@ -66,6 +66,7 @@ node_modules/
 .env
 
 # custom stuff
+/data/research/*
 /public/data/*
 /public/synthesis/*
 /public/materials/*
