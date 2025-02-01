@@ -158,8 +158,8 @@ function generateTemplates() {
         // Melting Point / Decomposition Point
 
         if (!chem.melt_pnt && !chem.decp_pnt) delPair('Melting Point', 'MLTPNT');
-        else if (chem.melt_pnt || chem.decp_pnt) // Do Fahrenheit math on the fly, only store C in the database
-            fix('MLTPNT', `${chem.melt_pnt || chem.decp_pnt} °C (${Math.round((chem.melt_pnt || chem.decp_pnt) * (9 / 5) + 32)} °F)`);
+        else if (chem.melt_pnt || chem.decp_pnt) // Do Fahrenheit and Kelvin math on the fly, only store C in the database
+            fix('MLTPNT', `${chem.melt_pnt || chem.decp_pnt} °C (${Math.round((chem.melt_pnt || chem.decp_pnt) * (9 / 5) + 32)} °F - ${Math.round((chem.melt_pnt || chem.decp_pnt) + 273.15)} °K)`);
         if (chem.decp_pnt) fix('Melting Point', 'Decomposition Point');
 
         // Optical and Crystal Data
