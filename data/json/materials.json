@@ -1520,7 +1520,7 @@
             "mohs_max": 4.5,
             "grav_min": 7.9,
             "grav_max": 8.0,
-            "melt_pnt": 1598
+            "melt_pnt": 1325
         },
         "optic_prop": {
             "type": "Uniaxial (+)",

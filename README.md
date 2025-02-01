@@ -43,6 +43,8 @@ This embed will explain how everything works:
         "chemical": "Chemical Name Here",
         // Formula Example: Al2O3 = Al_2_O_3_
         "formula": "Element _Subscript_ Spaces",
+        // Optional property which enables molecular weight calculation based on formula
+        "genmol": true or false,
         // Mohs Hardness. All min/max values share properties.
         // Make both the same value to display it singular.
         // Different values will display a range on the site.
@@ -63,19 +65,19 @@ This embed will explain how everything works:
     // if the material is opaque in the visible spectrum.
     "optic_prop": {
         // Optical Type. Related to Crystal System
-        "type": "Uniaxial (+ or - or ?), Isometric, Biaxial, etc",
+        "type": "Uniaxial (+ or - or ?), Biaxial (+ or - or ?), Isometric, etc",
         // Refractive index.
         // Use arrays for non-isometric materials with axis-specific RIs
         // For unixial and co. [x, y] coorespond to [nω, nε] // Ordinary and Extraordinary
         // For biaxial and co. [x, y, z] coorespond to [nα, nβ, nγ] // Alpha Beta Gamma
         "ref_min": "?" or # or [#, #] or [#, #, #],
         "ref_max": "?" or # or [#, #] or [#, #, #],
-        // Dispersion Factor.
-        "disp_min": "?" or #,
-        "disp_max": "?" or #,
         // Birefringence Factor. Exclude for Isometric materials.
         "bir_min": "?" or #,
-        "bir_max": "?" or #
+        "bir_max": "?" or #,
+        // Dispersion Factor.
+        "disp_min": "?" or #,
+        "disp_max": "?" or #
     },
     // Crystal Properties.
     "cry_prop": {
@@ -89,21 +91,20 @@ This embed will explain how everything works:
     // Use Single Values or Arrays.
     // OPTIONAL.
     "add_prop": [
-        "Piezoelectric",
-        "Pyroelectric",
-        "Paramagnetic",
+        // Inherent / material-specific properties
+        ["Inherent", ["Piezoelectric", "Pyroelectric", "Thermoluminescent", "Paramagnetic"]]
         // Can use tiny description or values for arrays.
         ["Fluorescent", "Blue (XRay-UVB)"] 
+        // Other custom properties follow the same structure
     ],
     // Mindat minID. ONLY USE FOR MINERALOGICAL MATERIALS.
     // This will change the page slightly.
     // Also creates a link to the mindat page of that ID.
     "minID": ####,
-    // Neutral Variant / Default Material State. Optional if not known.
+    // Intrinsic Material State. Optional if not known.
     "neutral": {
         // All properties below are optional. 
         "color": "Colorless", // Material Color
-        "fluor": "Red (UVC)", // Fluorescence (NOT doped)
         // Only use if a `neut.jpg` exists in the material's content folder.
         "imgsrc": "Persons Name, URL" or "Unknown"
     },
@@ -117,7 +118,6 @@ This embed will explain how everything works:
             // All properties below are optional.
             "label": "Variant One",
             "color": "Red", // Material Color
-            "fluor": "Blue (UVA-UVB)", // Fluorescence
             // Cause is the direct reason the variant exists / differs.
             "cause": "<Element> Ions, Vacancies, Inclusions, etc",
             // Include Effect only if its significant.
