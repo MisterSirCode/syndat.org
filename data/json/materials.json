@@ -1519,10 +1519,11 @@
             "mohs_min": 4,
             "mohs_max": 4.5,
             "grav_min": 7.9,
-            "grav_max": 8.0
+            "grav_max": 8.0,
+            "melt_pnt": 1598
         },
         "optic_prop": {
-            "type": "Uniaxial (?)",
+            "type": "Uniaxial (+)",
             "ref_min": 2.2,
             "ref_max": 2.3,
             "bir_min": "?",
@@ -1540,7 +1541,10 @@
             "color": "Beige to Dark Orange",
             "usage": "Specialty Scintillators, Sensors",
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/cdwo4-crystal.html"
-        }
+        },
+        "references": [
+            ["Density, Melting Point, Hardness, IOR, Emission Spectra, Light Yield", "Large volume CdWO4 crystal scintillators", "https://doi.org/10.1016/0168-9002(95)00675-3"]
+        ]
     },
     {
         "id": 31,
