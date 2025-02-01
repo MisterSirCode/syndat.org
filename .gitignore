@@ -67,7 +67,6 @@ node_modules/
 
 # custom stuff
 /public/data/*
-/data/xls
 /public/synthesis/*
 /public/materials/*
 /public/search/summary.json
