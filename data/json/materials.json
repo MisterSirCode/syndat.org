@@ -777,7 +777,8 @@
             {
                 "id": "0",
                 "label": "",
-                "cause": ""
+                "cause": "Nitrogen Vacancy",
+                "color": ""
             }
         ]
     },
@@ -1509,7 +1510,7 @@
             "system": "Tetragonal"
         },
         "add_prop": [
-            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 13,000ph/MeV"]
+            ["Scintillescent", "Peak: 470/540nm (Teal)<br>Yield: 25-40% of Tl:NaI"]
         ],
         "neutral": {
             "color": "Beige to Dark Orange",
