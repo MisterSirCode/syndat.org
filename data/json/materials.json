@@ -479,7 +479,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/caf2eu-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 435nm (Blue)<br>Output: 19,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 435nm (Blue)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1128,7 +1128,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 18,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1170,7 +1170,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/lysoce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 30,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1207,7 +1207,7 @@
             "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/bgo-crystal.html"
         },
         "add_prop": [
-            ["Scintillescent", "Peak: 480nm (Teal)<br>Output: 8,500ph/MeV"]
+            ["Scintillescent", "Peak: 480nm (Teal)<br>Light Yield: % of Tl:NaI"]
         ]
     },
     {
@@ -1347,7 +1347,7 @@
         },
         "add_prop": [
             ["Inherent", "Hygroscopic"],
-            ["Scintillescent", "Peak: 315nm (UVB)<br>Output: 3,500 ph/MeV"]
+            ["Scintillescent", "Peak: 315nm (UVB)<br>Light Yield: % of Tl:NaI"]
         ],
         "neutral": {
             "color": "Colorless",
@@ -1364,7 +1364,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/csi-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Output: 56,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             },
@@ -1376,7 +1376,7 @@
                 "usage": "Specialty Scintillators, Sensors",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 420nm (Blue)<br>Output: 40,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 420nm (Blue)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1420,7 +1420,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/nai-tl-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 415nm (Blue)<br>Output: 38,000ph/MeV"]
+                        ["Scintillescent", "Peak: 415nm (Blue)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1454,7 +1454,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            ["Scintillescent", "Peak: ? (Teal)<br>Output: ? ph/MeV"]
+            ["Scintillescent", "Peak: ? (Teal)<br>Light Yield: % of Tl:NaI"]
         ],
         "neutral": {
             "color": "Colorless",
@@ -1550,7 +1550,7 @@
             "parent": "Scheelite Group"
         },
         "add_prop": [
-            ["Scintillescent", "Peak: 440/530nm (Cyan)<br>Output: 190ph/MeV"]
+            ["Scintillescent", "Peak: 440/530nm (Cyan)<br>Light Yield: % of Tl:NaI"]
         ],
         "neutral": {
             "color": "Colorless to Beige",
@@ -1560,7 +1560,7 @@
     },
     {
         "id": 28,
-        "label": "YVO4",
+        "label": "Wakefieldite-(Y)",
         "aliases": "",
         "synthesis": ["czok"],
         "chem_prop": {
@@ -1584,6 +1584,7 @@
         "cry_prop": {
             "system": "Tetragonal"
         },
+        "minID": 4234,
         "neutral": {
             "color": "Colorless to Amber",
             "imgsrc": "https://surfacenet.de/files/kristall_daten.php?crystal=145"
@@ -1691,16 +1692,17 @@
     {
         "id": 64,
         "label": "CALGO",
-        "aliases": "CALGO",
+        "aliases": "",
         "synthesis": ["czok", "flux"],
         "chem_prop": {
             "chemical": "Calcium Gadolinium Orthoaluminate",
             "formula": "CaGdAlO_4_",
             "genmol": true,
-            "mohs_min": "?",
-            "mohs_max": "?",
-            "grav_min": "?",
-            "grav_max": "?"
+            "mohs_min": 6,
+            "mohs_max": 6,
+            "grav_min": 4.8,
+            "grav_max": 4.8,
+            "melt_pnt": 1840
         },
         "optic_prop": {
             "type": "Uniaxial (?)",
@@ -1712,8 +1714,23 @@
             "disp_max": "?"
         },
         "cry_prop": {
-            "system": "Orthorhombic"
-        }
+            "system": "Tetragonal"
+        },
+        "neutral": {
+            "color": "Colorless"
+        },
+        "variants": [
+            {
+                "id": "0",
+                "label": "Yb:CALGO",
+                "cause": "Ytterbium Ions",
+                "color": "Colorless to Beige",
+                "imgsrc": "https://www.samaterials.com/yb-cagdalo4.html"
+            }
+        ],
+        "references": [
+            
+        ]
     },
     {
         "id": 32,
@@ -1759,7 +1776,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yap-ce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 370nm (UVA)<br>Output: 18,000ph/MeV"]
+                        ["Scintillescent", "Peak: 370nm (UVA)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }
@@ -1893,7 +1910,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/yag-ce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Output: 14,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 550nm (Yellow)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             },
@@ -2093,7 +2110,7 @@
                 "imgsrc": "https://djeva.com/collections/ce-luag",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 520nm (Lime)<br>Output: 25,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 520nm (Lime)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             },
@@ -2107,7 +2124,7 @@
                 "imgsrc": "https://www.scientificmaterials.com/products/luag_Lu3Al5O12_lutetium_aluminum.php",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 310nm (UVB)<br>Output: 20,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 310nm (UVB)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             },
@@ -2343,7 +2360,7 @@
                 "imgsrc": "https://www.epic-crystal.com/scintillation-crystals/gaggce-crystal.html",
                 "var_prop": {
                     "add_prop": [
-                        ["Scintillescent", "Peak: 530nm (Yellow)<br>Output: 42,000 ph/MeV"]
+                        ["Scintillescent", "Peak: 530nm (Yellow)<br>Light Yield: % of Tl:NaI"]
                     ]
                 }
             }

@@ -129,5 +129,9 @@ This embed will explain how everything works:
             // Since this is the first variant, itd be `var0.jpg`
             "imgsrc": "Persons Name, URL" or "Unknown"
         }
+    ],
+    // References are important for keeping track of sources for information used to get material info
+    "references": [
+        ["What the Reference covers", "Reference Name", "URL"]
     ]
 }
