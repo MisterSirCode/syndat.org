@@ -326,7 +326,7 @@ function generateTemplates() {
     let tempList = [];
     for (let i = 0; i < genlist.length; i++) {
         const link = genlist[i];
-        const status = link[2] >= 7 ? '' : (link[2] >= 6 ? ' statusYellow' : ' statusRed');
+        const status = link[2] >= 6 ? '' : (link[2] >= 4 ? ' statusYellow' : ' statusRed');
         let temp = `
         <a class="specialtyGridItem${status} gridExpander" href="${link[1].toLowerCase().replaceAll(' ', '-')}/">
             <img class="specialtyGridImage"${link[4] ? ` src="../content/materials/${link[1].toLowerCase().replaceAll(' ', '-')}/${link[4]}.jpg"` : ' src="../content/materials/missing/missing.png"'}${link[5] ? ` title="Photo Source: ${link[5]}"` : ''}>

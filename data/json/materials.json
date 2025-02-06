@@ -925,8 +925,8 @@
             "genmol": true,
             "mohs_min": "?",
             "mohs_max": "?",
-            "grav_min": "?",
-            "grav_max": "?"
+            "grav_min": 4.7,
+            "grav_max": 4.78
         },
         "optic_prop": {
             "type": "Biaxial (+)",
@@ -937,7 +937,10 @@
         },
         "cry_prop": {
             "system": "Orthorhombic"
-        }
+        },
+        "references": [
+            ["Density", "The Crystal Structure of Calcium Niobate", "http://www.minsocam.org/msa/collectors_corner/amtoc/toc1970.htm"]
+        ]
     },
     {
         "id": 37,
