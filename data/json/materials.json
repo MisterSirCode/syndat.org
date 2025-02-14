@@ -2035,6 +2035,13 @@
                 "cause": "Dysprosium and Thulium Ions",
                 "color": "",
                 "usage": "Specialty Optics and Co-Doped Lasers"
+            },
+            {
+                "id": "15",
+                "label": "U:YAG",
+                "cause": "Uranium Ions",
+                "color": "Light to Dark Green",
+                "usage": "Unknown. Unstable unless trace."
             }
         ]
     },
