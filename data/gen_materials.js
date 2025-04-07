@@ -1,6 +1,6 @@
 const fs = require('fs');
 const materials = require('./json/materials.json');
-const materials = require('./json/matarts.json');
+const articles = require('./json/matarts.json');
 const periodic = require('./json/periodic.json');
 const pOrder = periodic.order;
 const revision = materials[0].revision;
@@ -68,6 +68,7 @@ function generateTemplates() {
         let mat = materials[i];
         let linker = mat.label.toLowerCase().replaceAll(' ', '-');
         let template = materialTemplate;
+        let article = articles[mat.label.toLowerCase()] || false;
 
         // Create Truncated List
 
@@ -126,7 +127,7 @@ function generateTemplates() {
         if (mat.aliases.length > 0) fix('ALIASES', `<span>Otherwise known by ${mat.aliases}</span><br><br>`);
         else fix('ALIASES', '');
         fix('TITLE', mat.label);
-        if (mat.desc) fix('ARTICLE', mat.desc);
+        if (article) fix('ARTICLE', article.primary);
         else fix('ARTICLE', 'This material is awaiting an article to be written...');
         //fix('ARTICLE', '<span class="statusYellow">Material articles have temporarily been disabled for renewal and polishing.</span>');
         fix('REV', revision);
