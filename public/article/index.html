@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Syndat - Materials</title>
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="special.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -63,9 +64,12 @@
             </div>
             <div class="pageArticle">
                 ALIASES
-                ARTICLE
+                <br><br>
+                <textarea class="nativeInput materialArticle" placeholder="Custom Article Here"></textarea>
+                <br><br>
+                Exported: <br>
+                <input type="text" class="nativeInput formattedArticle">
             </div>
-            VARTYPES
             <div class="pageRegionSeparator">
                 <div class="pageSectionTitle">Production and Synthesis</div>
             </div>
@@ -95,4 +99,5 @@
     </div>
 </body>
 <script src="../fixer.js"></script>
+<script src="exportArticle.js"></script>
 </html>
