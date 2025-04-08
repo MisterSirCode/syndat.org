@@ -32,24 +32,7 @@ conf.addEventListener('click', async function(el) {
         const token = tokens[i];
         const rawToken = rawTokens[i];
         for (var s = 0; s < data[0].length; s++) {
-            const syn = data[0][s];
-            if (syn[1].toLowerCase().includes(token)) { matches.push([`syn.${syn[0]}.name`, syn[1], s]); continue; }
-            if (syn[2].length > 0) {
-                let filteredAliases = syn[2].filter(str => str.toLowerCase().includes(token));
-                if (filteredAliases.length > 0) { matches.push([`syn.${syn[0]}.aliases`, filteredAliases, s]); continue; }
-            }
-            if (syn[3].toLowerCase().includes(token)) { matches.push([`syn.${syn[0]}.disc`, syn[3], s]); continue; }
-        }
-        for (var m = 0; m < data[1].length; m++) {
-            const mat = data[1][m];
-            if (mat[0].toLowerCase().includes(token)) { matches.push([`mat.${mat[0]}.name`, mat[0], m]); continue; }
-            if (mat[1].toLowerCase().includes(token)) { matches.push([`mat.${mat[0]}.aliases`, mat[1], m]); continue; }
-            if (mat[2].toLowerCase().includes(token)) { matches.push([`mat.${mat[0]}.chemical`, mat[2], m]); continue; }
-            if (mat[3].replace('<sub>', '').replace('</sub>', '').includes(rawToken)) { matches.push([`mat.${mat[0]}.formula`, mat[3], m]); continue; }
-            if (mat[4].length > 0) {
-                let filteredSynth = mat[4].filter(str => str.toLowerCase().includes(token));
-                if (filteredSynth.length > 0) { matches.push([`mat.${mat[0]}.synthesis`, filteredSynth, m]); continue; }
-            }
+        
         }
     }
     let total = '';
