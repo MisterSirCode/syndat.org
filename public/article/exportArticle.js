@@ -6,6 +6,6 @@ console.log(button, article, output);
 
 article.addEventListener('input', () => {
     let content = article.value;
-    content = content.replace('\n', '\\n');
+    content = content.replaceAll('\n', '<br>');
     output.value = content;
 });
