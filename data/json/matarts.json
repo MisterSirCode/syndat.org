@@ -1,5 +1,36 @@
 {
     "corundum": {
-        "primary": "Corundum is an important commodity in the industrial and gemological sectors. This material has a useful combination of unique properties, and ease of production. This makes it a common product in the material science market. Its most common use-cases include bearings, plungers, high-temperature ceramics, gauges, high-pressure windows, abrasion-resistant lenses, optical wave guides, semiconductors, and laser excitation media.<br><br>Typically, it is most often produced using three methods; Verneuil (Flame Fusion), Czochralski, and Kyropoulos. The Verneuil material makes up the vast majority of synthetic sapphires and rubies on the market. Corundum produced with this method is often clear enough for use in Gemology, which is why it is the preferred source for most of the cut synthetic stones on the market. It does not always produce high quality material, and effectively never approaches optics grade, so it is not preferred where the circumstances require a specific grade of optical purity. Czochralski is more common for use cases such as those. Kyropoulos sapphire is often used for bulk production, though it is not clear where that material tends to go, or how pure it is.<br><br>Other methods of production, such a sintering, hydrothermal synthesis, flux synthesis, and others are used, but exist far less as commodities or products for general use."
-    }
+        "primary": "Corundum is an important commodity in the industrial and gemological sectors. This material has a useful combination of unique properties and ease of production. This makes it a common product in the material science market. Its most common use-cases include bearings, plungers, high-temperature ceramics, gauges, high-pressure windows, abrasion-resistant lenses, optical wave guides, semiconductors, and laser excitation media.<br><br>Typically, it is most often produced using three methods; Verneuil (Flame Fusion), Czochralski, and Kyropoulos. The Verneuil material makes up the vast majority of synthetic sapphires and rubies on the market. Corundum produced with this method is often clear enough for use in Gemology, which is why it is the preferred source for most of the cut synthetic stones on the market. It does not always produce high quality material, and effectively never approaches optics grade, so it is not preferred where the circumstances require a specific grade of optical purity. Czochralski is more common for use cases such as those. Kyropoulos sapphire is often used for bulk production, though it is not clear where that material tends to go, or how pure it is.<br><br>Other methods of production, such a sintering, hydrothermal synthesis, flux synthesis, and others are used, but exist far less as commodities or products for general use."
+    },
+    "spinel": {},
+    "beryl": {},
+    "quartz": {},
+    "cubic-zirconia": {},
+    "bzo": {},
+    "fluorite": {},
+    "frankdicksonite": {},
+    "rutile": {},
+    "moissanite": {},
+    "sphalerite": {},
+    "silicon": {},
+    "antimony": {},
+    "diamond": {},
+    "tausonite": {},
+    "cobalt-titanate": {},
+    "cobalt-titanium-oxide": {},
+    "lithium-niobate": {},
+    "calcium-niobate": {},
+    "lithium-tantalate": {},
+    "forsterite": {},
+    "chrysoberyl": {},
+    "malachite": {},
+    "yso": {},
+    "lyso": {},
+    "bgo-12": {},
+    "bgo-20": {},
+    "bso": {},
+    "gso": {},
+    "csi": {},
+    "nai": {},
+    "scheelite": {}
 }
