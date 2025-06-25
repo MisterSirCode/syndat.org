@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syndat - About</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../content/icons/logo_medium.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="128x128" href="../../content/icons/logo_medium.png">
+    <meta property="og:site_name" content="Syndat - Material Science Database" />
+    <meta property="og:title" content="More" />
+    <meta property="og:description" content="This website is under development!" />
+    <meta property="og:image" content="https://syndat.org/content/icons/logo_medium.png">
+    <meta name="theme-color" content="#ECFF2B">
+</head>
+<body>
+    <div class="navi">
+        <div class="logoButton"><a href="../../" class="mainLogoLink"><img src="../../content/icons/logo_medium_text.png" class="mainLogo"><img src="../../content/icons/logo.png" class="mainLogoTrunc"></a></div>
+        <div class="naviLinks naviBelow">
+            <a href="../../account/login/">Log In</a>
+        </div>
+        <div class="naviLinks naviAbove">
+            <a href="../../materials/">Materials</a>
+            <a href="../../synthesis/">Synthesis</a>
+            <a href="../../search/">Search</a>
+            <a href="../../more/">More</a>
+        </div>
+    </div>
+    <div class="pageContent">
+        <h1>Wafer Identifier</h1>
+        <h4>Calculate parameters based off practical dies or specificiations</h4>
+        <span>Wafer Diameter (mm)</span> <input type="text" class="waferDiameter" value="100">
+        <br><br>
+        <span>Leave Chord at 0 if there is none.</span><br>
+        <span>Wafer Chord (mm)</span> <input type="text" class="waferChord" value="50">
+        <br><br>
+        <span>Wafer Thickness (mm)</span> <input type="text" class="waferThickness" value="50">
+        <br><br>
+        <span>Wafer Weight (g)</span> <input type="text" class="waferWeight" value="941">
+        <br><br>
+        Cross-Sectional Area: <span class="waferArea">0</span>cm<sup>2</sup>
+        <br><br>
+        Volume: <span class="waferVolume">0</span>cm<sup>3</sup>
+        <br><br>
+        Density: <span class="waferDensity">0</span>g/cm<sup>3</sup>
+        <br><br>
+        <canvas class="waferCanvas"></canvas>
+        <span>
+            <br><br><br><br>
+        </span>
+        <br>
+        <span class="silentFooter">Copyright (c) 2024 - Taylor Schneider</span>
+        <br><br>
+        <span class="silentFooter"><a href="../../about/" class="silentFooter">About Syndat</a></span>
+        <br>
+        <span>
+            <br><br><br><br>
+        </span>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="../../fixer.js"></script>
+</html>
