@@ -32,14 +32,17 @@
     <div class="pageContent">
         <h1>Wafer Identifier</h1>
         <h4>Calculate parameters based off practical dies or specificiations</h4>
-        <span>Wafer Diameter (mm)</span> <input type="text" class="waferDiameter" value="100">
+        <span>Wafer Diameter (mm)</span> <input type="text" class="waferDiameter" value="150">
         <br><br>
         <span>Leave Chord at 0 if there is none.</span><br>
-        <span>Wafer Chord (mm)</span> <input type="text" class="waferChord" value="50">
+        <span>All values are Chord Lengths (mm)</span> 
+        <br>
+        <span>Upper Chord</span> <input type="text" class="waferUChord" value="0"> - <span>Lower Chord</span> <input type="text" class="waferDChord" value="57"><br>
+        <span>Left Chord</span> <input type="text" class="waferLChord" value="37.5"> - <span>Right Chord</span> <input type="text" class="waferRChord" value="0">
         <br><br>
-        <span>Wafer Thickness (mm)</span> <input type="text" class="waferThickness" value="50">
+        <span>Wafer Thickness (mm)</span> <input type="text" class="waferThickness" value="0.6">
         <br><br>
-        <span>Wafer Weight (g)</span> <input type="text" class="waferWeight" value="941">
+        <span>Wafer Weight (g)</span> <input type="text" class="waferWeight" value="21.98">
         <br><br>
         Cross-Sectional Area: <span class="waferArea">0</span>cm<sup>2</sup>
         <br><br>
@@ -47,7 +50,8 @@
         <br><br>
         Density: <span class="waferDensity">0</span>g/cm<sup>3</sup>
         <br><br>
-        <canvas class="waferCanvas"></canvas>
+        <canvas class="waferCanvas"></canvas><br>
+        <span class="debug"></span>
         <span>
             <br><br><br><br>
         </span>
