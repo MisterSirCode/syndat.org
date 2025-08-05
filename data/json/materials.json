@@ -125,6 +125,10 @@
             "system": "Isometric"
         },
         "minID": 3729,
+        "neutral": {
+            "color": "Colorless",
+            "imgsrc": "https://www.gemsngems.com/product/lab-created-white-spinel-rough/"
+        },
         "variants": [
             {
                 "id": "0",
@@ -142,6 +146,20 @@
                 "fluor": "Red (UVA), Cyan (UVC)",
                 "usage": "Q-Switchers, Laser Rods",
                 "imgsrc": "https://www.etsy.com/listing/1605713029/cobalt-blue-114-djeva-lab-created-spinel"
+            },
+            {
+                "id": "2",
+                "label": "",
+                "cause": "Iron Ions",
+                "color": "Brown, Yellow, Green",
+                "imgsrc": "https://www.gemsngems.com/product/lab-created-yellowish-green-rough/"
+            },
+            {
+                "id": "3",
+                "label": "",
+                "cause": "Research Needed",
+                "color": "Pink",
+                "imgsrc": "https://www.etsy.com/listing/1697047494/pink-140-djeva-lab-created-spinel"
             }
         ]
     },
