@@ -1,0 +1,21 @@
+{
+  "name": "syndat.org",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"./public/content/icons/large_graphic.png\" />   <h1>A Material Science Database</h1> </p>",
+  "homepage": "https://github.com/MisterSirCode/syndat.org#readme",
+  "bugs": {
+    "url": "https://github.com/MisterSirCode/syndat.org/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MisterSirCode/syndat.org.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
